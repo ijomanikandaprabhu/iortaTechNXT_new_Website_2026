@@ -23,6 +23,8 @@ export type BentoPanel = {
   getStarted: { title: string; primary: Action; secondary: Action };
   /** Decorative; the heading carries the meaning. */
   icon?: string;
+  /** Product brand hue; set on the sheet so every art panel inherits it. */
+  tint?: { h: number; s: number };
 };
 
 /**
@@ -92,7 +94,17 @@ export function BentoModal({
       }}
     >
       {panel && (
-        <div className="bentomodal__panel">
+        <div
+          className="bentomodal__panel"
+          style={
+            panel.tint
+              ? ({
+                  "--product-h": panel.tint.h,
+                  "--product-s": `${panel.tint.s}%`,
+                } as React.CSSProperties)
+              : undefined
+          }
+        >
           <button
             aria-label={`${closeLabel}: ${panel.title}`}
             className="bentomodal__close"

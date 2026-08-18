@@ -33,6 +33,11 @@ export type BentoItem = {
   icon?: string;
   /** Absent = the cell is a plain panel, as it was before the pages existed. */
   href?: string;
+  /**
+   * The product's brand hue, carried into CSS as custom properties. Optional so
+   * a grid without brand colours still renders on the default wash.
+   */
+  tint?: { h: number; s: number };
 };
 
 type BentoGridProps = {
@@ -58,7 +63,21 @@ export function BentoGrid({
     <>
       <ul className={cn("bento", className)}>
         {items.map((item) => (
-          <li className="bento__cell" key={item.title}>
+          <li
+            className="bento__cell"
+            key={item.title}
+            // Colour is bound to the product, not to the grid slot. It used to
+            // be six `nth-child` overrides, so reordering CELLS silently
+            // reassigned washes.
+            style={
+              item.tint
+                ? ({
+                    "--product-h": item.tint.h,
+                    "--product-s": `${item.tint.s}%`,
+                  } as React.CSSProperties)
+                : undefined
+            }
+          >
             <button
               aria-haspopup="dialog"
               // The icon alone names nothing, and six identical "Show details"

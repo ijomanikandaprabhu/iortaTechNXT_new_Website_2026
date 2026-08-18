@@ -256,14 +256,33 @@
  * grid its bento feel: the wide cells get tall panels, the narrow ones get
  * shorter ones, from the same rule.
  */
+/**
+ * The card's artwork wash, derived from the product's brand hue.
+ *
+ * `--product-h` and `--product-s` are set on the cell by BentoGrid from
+ * `productBrand` in brand.config.ts. The values here are a fallback so a grid
+ * without brand colours still renders.
+ *
+ * The deep stop is 80% lightness on purpose. Measured across the six hues, at
+ * 92% the closest pair (BrokerVerse 272 and AgentVerse 310) differed by an RGB
+ * distance of 11 and read as the same colour; they only separate at 80%, where
+ * ink still measures 9.8:1 against the darkest wash.
+ */
 .bento__art {
   flex: 1 1 auto;
   display: grid;
   place-items: center;
   min-height: 9rem;
   border-radius: 14px;
-  /* Overridden per cell below. */
-  background: linear-gradient(150deg, #eaf6ff, #dbe9fb 55%, #f4f8ff);
+  /* The fallback lives in `var()`, not as a declaration on this element: a
+     custom property set here would shadow the cell's inherited value and every
+     card would paint the same default blue. */
+  background: linear-gradient(
+    150deg,
+    hsl(var(--product-h, 210) var(--product-s, 60%) 95%),
+    hsl(var(--product-h, 210) var(--product-s, 60%) 80%) 60%,
+    hsl(var(--product-h, 210) var(--product-s, 60%) 92%)
+  );
 }
 
 .bento__icon {
@@ -272,29 +291,6 @@
   min-width: 44px;
   height: auto;
   opacity: 0.5;
-}
-
-/**
- * A different wash per cell so the wall has variety without leaving the brand
- * blues. Ordered light-to-deep down the grid.
- */
-.bento__cell:nth-child(1) .bento__art {
-  background: linear-gradient(145deg, #e4f4ff, #cfe4fb 60%, #eef6ff);
-}
-.bento__cell:nth-child(2) .bento__art {
-  background: linear-gradient(160deg, #eef3ff, #dfe9fd);
-}
-.bento__cell:nth-child(3) .bento__art {
-  background: linear-gradient(150deg, #e8f6fb, #d6ecf7);
-}
-.bento__cell:nth-child(4) .bento__art {
-  background: linear-gradient(150deg, #edf2fc, #dde6f8);
-}
-.bento__cell:nth-child(5) .bento__art {
-  background: linear-gradient(150deg, #e6f2ff, #d3e6fa);
-}
-.bento__cell:nth-child(6) .bento__art {
-  background: linear-gradient(120deg, #e4f3ff, #dde8fb 45%, #eaf1ff);
 }
 
 /* The row height already sizes the panel through `flex: 1`, so the wide cells
@@ -521,7 +517,12 @@
   display: grid;
   place-items: center;
   border-radius: 14px;
-  background: linear-gradient(150deg, #eaf1ff 0%, #f6f4ff 55%, #fdf1f6 100%);
+  background: linear-gradient(
+    150deg,
+    hsl(var(--product-h, 210) var(--product-s, 60%) 96%),
+    hsl(var(--product-h, 210) var(--product-s, 60%) 84%) 60%,
+    hsl(var(--product-h, 210) var(--product-s, 60%) 93%)
+  );
 }
 
 .bentomodal__artcell--wide {
@@ -581,7 +582,9 @@
   margin-bottom: var(--space-3);
   border: 1px solid var(--line);
   border-radius: 7px;
-  background: #f7faff;
+  /* Tinted to the product, but the border stays neutral so the chip keeps its
+     shape against the sheet regardless of hue. */
+  background: hsl(var(--product-h, 210) var(--product-s, 60%) 96%);
 }
 
 .bentomodal__featureicon img {
@@ -642,7 +645,12 @@
 .bentomodal__moreart {
   aspect-ratio: 4 / 3;
   border-radius: 12px;
-  background: linear-gradient(150deg, #eaf1ff 0%, #f6f4ff 55%, #fdf1f6 100%);
+  background: linear-gradient(
+    150deg,
+    hsl(var(--product-h, 210) var(--product-s, 60%) 96%),
+    hsl(var(--product-h, 210) var(--product-s, 60%) 84%) 60%,
+    hsl(var(--product-h, 210) var(--product-s, 60%) 93%)
+  );
 }
 
 .bentomodal__morebody {

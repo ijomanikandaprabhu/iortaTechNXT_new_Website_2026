@@ -1,5 +1,6 @@
 import { getTranslations } from "next-intl/server";
 import { BentoGrid, type BentoItem } from "@/components/ui/BentoGrid";
+import { productBrand } from "@/config/brand.config";
 import { PRODUCTS, STANDALONE_PATHS, productPath } from "@/config/site.config";
 import type { Locale } from "@/core/i18n/config";
 import { getLocalizedPath } from "@/core/i18n/routing";
@@ -42,12 +43,14 @@ export async function BentoSection({ locale }: { locale: Locale }) {
     const overview = getLocalizedPath(productPath(key), locale);
     const iconSrc = `${ICON_DIR}/${icon}.${ICON_EXT}`;
     const name = t(`items.${key}.title`);
+    const tint = productBrand[key];
 
     return {
       title: name,
       body: t(`items.${key}.body`),
       icon: iconSrc,
       href: product?.built ? overview : undefined,
+      tint,
       panel: {
         title: name,
         lede: t(`items.${key}.lede`),
@@ -97,6 +100,7 @@ export async function BentoSection({ locale }: { locale: Locale }) {
           },
         },
         icon: iconSrc,
+        tint,
       },
     };
   });
