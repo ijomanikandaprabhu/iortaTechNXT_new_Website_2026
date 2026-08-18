@@ -1,6 +1,8 @@
 "use client";
 
-import { useId, useState } from "react";
+import { useState } from "react";
+import Link from "next/link";
+import { BentoModal, type BentoPanel } from "@/components/ui/BentoModal";
 import { cn } from "@/lib/utils";
 
 /**
@@ -17,59 +19,62 @@ import { cn } from "@/lib/utils";
  * eventually hold — deliberately abstract rather than a mocked-up interface,
  * which would read as a screenshot of something that does not exist.
  *
- * The corner control is a real disclosure, not decoration: it expands the card
- * to reveal `detail`. A button that only looked like a control would be worse
- * than none, since it invites a click and answers with nothing.
+ * The corner control opens the cell's expanded view in a modal. It replaced an
+ * inline disclosure: the panel carries a lede, outcome points, two calls to
+ * action, feature blurbs and onward links, which is far more than a card can
+ * hold without wrecking the grid's proportions.
  */
 export type BentoItem = {
   title: string;
   body: string;
-  /** Revealed by the corner control. */
-  detail: string;
+  /** Opened by the corner control. */
+  panel: BentoPanel;
   /** Decorative; the title carries the meaning. */
   icon?: string;
+  /** Absent = the cell is a plain panel, as it was before the pages existed. */
+  href?: string;
 };
 
 type BentoGridProps = {
   items: BentoItem[];
   /** Localised control labels; the card title is appended for context. */
   showLabel: string;
-  hideLabel: string;
+  closeLabel: string;
+  moreTitle: string;
   className?: string;
 };
 
-export function BentoGrid({ items, showLabel, hideLabel, className }: BentoGridProps) {
-  // One at a time: two expanded cards in the same row would stretch it twice
-  // over and push the artwork out of proportion.
+export function BentoGrid({
+  items,
+  showLabel,
+  closeLabel,
+  moreTitle,
+  className,
+}: BentoGridProps) {
   const [openTitle, setOpenTitle] = useState<string | null>(null);
-  const baseId = useId();
+  const active = items.find((item) => item.title === openTitle) ?? null;
 
   return (
-    <ul className={cn("bento", className)}>
-      {items.map((item) => {
-        const open = openTitle === item.title;
-        const detailId = `${baseId}-${item.title.replace(/\W+/g, "-")}`;
-
-        return (
-          <li className={cn("bento__cell", open && "bento__cell--open")} key={item.title}>
+    <>
+      <ul className={cn("bento", className)}>
+        {items.map((item) => (
+          <li className="bento__cell" key={item.title}>
             <button
-              aria-controls={detailId}
-              aria-expanded={open}
+              aria-haspopup="dialog"
               // The icon alone names nothing, and six identical "Show details"
               // buttons are indistinguishable in a list of controls.
-              aria-label={`${open ? hideLabel : showLabel}: ${item.title}`}
+              aria-label={`${showLabel}: ${item.title}`}
               className="bento__expand"
-              onClick={() => setOpenTitle(open ? null : item.title)}
+              onClick={() => setOpenTitle(item.title)}
               type="button"
             >
               {/*
-                Corner brackets, pointing out to expand and back in to collapse.
-                Drawn as strokes here rather than lifting the reference's filled
-                path data — same glyph, own geometry.
+                Corner brackets pointing outward, the reference's expand glyph.
+                Drawn as strokes here rather than lifting its filled path data.
               */}
               <svg aria-hidden="true" fill="none" viewBox="0 0 20 20">
                 <path
-                  d={open ? "M16 8.25h-3.25V5M5 12.75h3.25V16" : "M12.75 5H16v3.25M8.25 16H5v-3.25"}
+                  d="M12.75 5H16v3.25M8.25 16H5v-3.25"
                   stroke="currentColor"
                   strokeLinecap="round"
                   strokeLinejoin="round"
@@ -79,12 +84,22 @@ export function BentoGrid({ items, showLabel, hideLabel, className }: BentoGridP
             </button>
 
             <div className="bento__head">
-              <h3 className="bento__title">{item.title}</h3>
+              <h3 className="bento__title">
+                {/*
+                  The link wraps only the title, not the cell. A card-wide
+                  anchor would swallow the expand button nested inside it, and
+                  `::after` stretches the hit area back over the whole cell so
+                  it still behaves like one clickable card.
+                */}
+                {item.href ? (
+                  <Link className="bento__link" href={item.href}>
+                    {item.title}
+                  </Link>
+                ) : (
+                  item.title
+                )}
+              </h3>
               <p className="bento__body">{item.body}</p>
-
-              <p className="bento__detail" hidden={!open} id={detailId}>
-                {item.detail}
-              </p>
             </div>
 
             <div aria-hidden="true" className="bento__art">
@@ -94,8 +109,16 @@ export function BentoGrid({ items, showLabel, hideLabel, className }: BentoGridP
               ) : null}
             </div>
           </li>
-        );
-      })}
-    </ul>
+        ))}
+      </ul>
+
+      <BentoModal
+        closeLabel={closeLabel}
+        moreTitle={moreTitle}
+        onClose={() => setOpenTitle(null)}
+        open={Boolean(active)}
+        panel={active?.panel ?? null}
+      />
+    </>
   );
 }

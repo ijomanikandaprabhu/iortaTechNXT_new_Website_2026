@@ -305,3 +305,434 @@
     font-size: 1.625rem;
   }
 }
+
+/* ---- Product link ---- */
+
+/**
+ * Each cell links to its product overview.
+ *
+ * Only the title is an anchor. Wrapping the whole cell would nest the
+ * disclosure button inside a link, which is invalid and would make the button
+ * unusable. `::after` stretches the hit area back across the cell so it still
+ * behaves like one clickable card.
+ */
+.bento__link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.bento__link::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  /* Above the card's own content, below the disclosure control. */
+  z-index: 1;
+}
+
+.bento__link:hover {
+  color: var(--ui-blue);
+}
+
+/* The stretched pseudo-element gives the link no shape of its own, so focus
+   would otherwise draw a zero-height outline at the top of the card. */
+.bento__link:focus-visible {
+  outline: var(--state-focus-width) solid var(--state-focus);
+  outline-offset: var(--state-focus-offset);
+  border-radius: 4px;
+}
+
+/**
+ * The disclosure sits above the stretched link. Without this it is buried by
+ * the overlay — it comes first in the DOM, so the later-painted overlay wins
+ * on equal stacking.
+ */
+.bento__expand {
+  z-index: 2;
+}
+
+/* Reinforces that the whole cell is the target, not just the words. */
+.bento__cell:has(.bento__link:hover) {
+  border-color: rgba(15, 23, 42, 0.16);
+}
+
+/* ---- Expanded panel ---- */
+
+/**
+ * The bento cell's expanded view, matching the reference: a tall sheet on a
+ * dimmed page, scrolling internally.
+ *
+ * A native <dialog> is doing the work — focus trap, Escape, top layer and
+ * background inerting all come from the platform. These rules only undo the
+ * UA's centred, content-sized default box.
+ */
+.bentomodal {
+  width: min(64rem, 92vw);
+  max-height: 88vh;
+  margin: auto;
+  padding: 0;
+  border: 0;
+  border-radius: 20px;
+  background: var(--white);
+  color: var(--ink);
+  overflow: hidden;
+}
+
+.bentomodal::backdrop {
+  background: rgba(15, 23, 42, 0.45);
+  backdrop-filter: blur(2px);
+}
+
+/* Opens with the same short rise the cards use, and sits still for anyone who
+   has asked for less motion. */
+.bentomodal[open] {
+  animation: bentomodal-in 200ms ease-out;
+}
+
+@keyframes bentomodal-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bentomodal[open] {
+    animation: none;
+  }
+}
+
+.bentomodal__panel {
+  max-height: 88vh;
+  overflow-y: auto;
+  padding: var(--space-7);
+}
+
+@media (max-width: 640px) {
+  .bentomodal__panel {
+    padding: var(--space-5);
+  }
+}
+
+.bentomodal__close {
+  position: absolute;
+  top: var(--space-5);
+  right: var(--space-5);
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  padding: 0;
+  border: 0;
+  border-radius: 4px;
+  background: #f2f7ff;
+  color: var(--ui-blue);
+  cursor: pointer;
+}
+
+.bentomodal__close:hover {
+  background: var(--ui-blue);
+  color: var(--white);
+}
+
+.bentomodal__close svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* ---- Head: intro beside the outcome checklist ---- */
+
+.bentomodal__head {
+  display: grid;
+  gap: var(--space-6);
+  /* Clears the close control. */
+  padding-right: 3rem;
+}
+
+@media (min-width: 860px) {
+  .bentomodal__head {
+    grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr);
+    gap: var(--space-8);
+  }
+}
+
+.bentomodal__title {
+  margin: 0 0 var(--space-3);
+  max-width: 22ch;
+  font-family: var(--font-display);
+  font-size: clamp(1.5rem, 3vw, 2.125rem);
+  font-weight: 700;
+  line-height: var(--leading-tight);
+  letter-spacing: -0.03em;
+}
+
+.bentomodal__lede {
+  margin: 0 0 var(--space-5);
+  font-size: var(--text-body);
+  line-height: var(--leading-normal);
+  color: var(--ink-soft);
+}
+
+.bentomodal__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  margin: 0;
+}
+
+.bentomodal__points {
+  display: grid;
+  align-content: start;
+  gap: var(--space-3);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.bentomodal__point {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+  font-size: var(--text-body);
+  line-height: var(--leading-snug);
+  color: var(--ink-soft);
+}
+
+.bentomodal__point svg {
+  flex: 0 0 auto;
+  width: 16px;
+  height: 16px;
+  /* Optical alignment with the first line of text, not the box. */
+  margin-top: 0.2em;
+  color: var(--ui-blue);
+}
+
+/* ---- Artwork ---- */
+
+.bentomodal__art {
+  display: grid;
+  grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: var(--space-4);
+  margin: var(--space-7) 0;
+  min-height: 16rem;
+}
+
+.bentomodal__artcell {
+  display: grid;
+  place-items: center;
+  border-radius: 14px;
+  background: linear-gradient(150deg, #eaf1ff 0%, #f6f4ff 55%, #fdf1f6 100%);
+}
+
+.bentomodal__artcell--wide {
+  grid-row: span 2;
+}
+
+@media (max-width: 640px) {
+  .bentomodal__art {
+    grid-template-columns: 1fr;
+    grid-template-rows: none;
+    min-height: 0;
+  }
+
+  .bentomodal__artcell {
+    min-height: 7rem;
+  }
+
+  .bentomodal__artcell--wide {
+    grid-row: auto;
+    min-height: 11rem;
+  }
+}
+
+.bentomodal__icon {
+  width: 56px;
+  height: 56px;
+  opacity: 0.6;
+}
+
+/* ---- Feature blurbs ---- */
+
+.bentomodal__features {
+  display: grid;
+  gap: var(--space-5);
+  margin: 0;
+  padding: var(--space-6) 0 0;
+  border-top: 1px solid var(--line);
+  list-style: none;
+}
+
+@media (min-width: 780px) {
+  .bentomodal__features {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: var(--space-6);
+  }
+}
+
+/**
+ * Icon chip over a single block of small text, matching the reference: the
+ * term is emphasis inside the sentence rather than a heading above it.
+ */
+.bentomodal__featureicon {
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  margin-bottom: var(--space-3);
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  background: #f7faff;
+}
+
+.bentomodal__featureicon img {
+  width: 16px;
+  height: 16px;
+  opacity: 0.75;
+}
+
+.bentomodal__featurebody {
+  margin: 0;
+  font-size: var(--text-caption);
+  line-height: var(--leading-normal);
+  color: var(--ink-soft);
+}
+
+.bentomodal__featureterm {
+  font-weight: 600;
+  color: var(--ink);
+}
+
+/* ---- More to discover ---- */
+
+.bentomodal__more {
+  margin-top: var(--space-7);
+  padding-top: var(--space-6);
+  border-top: 1px solid var(--line);
+}
+
+.bentomodal__moretitle {
+  margin: 0 0 var(--space-4);
+  font-family: var(--font-display);
+  font-size: var(--text-body-lg);
+  font-weight: 700;
+  letter-spacing: -0.015em;
+}
+
+/* Card: artwork panel, a line of description, then the link. */
+.bentomodal__morelist {
+  display: grid;
+  gap: var(--space-5);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@media (min-width: 780px) {
+  .bentomodal__morelist {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.bentomodal__moreitem {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.bentomodal__moreart {
+  aspect-ratio: 4 / 3;
+  border-radius: 12px;
+  background: linear-gradient(150deg, #eaf1ff 0%, #f6f4ff 55%, #fdf1f6 100%);
+}
+
+.bentomodal__morebody {
+  margin: 0;
+  font-size: var(--text-caption);
+  line-height: var(--leading-normal);
+  color: var(--ink-soft);
+}
+
+.bentomodal__morelink {
+  margin-top: auto;
+  font-size: var(--text-caption);
+  font-weight: 600;
+  color: var(--ui-blue);
+  text-decoration: none;
+}
+
+.bentomodal__morelink:hover {
+  text-decoration: underline;
+}
+
+/* ---- Customer proof ---- */
+
+/**
+ * Centred quote between rules, as in the reference. The badge is not
+ * decoration: nothing here is approved for publication yet, and an unlabelled
+ * placeholder quote in a finished-looking layout is exactly the thing that
+ * ends up shipped by accident.
+ */
+.bentomodal__quote {
+  margin: var(--space-7) 0 0;
+  padding: var(--space-7) 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  text-align: center;
+}
+
+.bentomodal__quotebadge {
+  display: inline-block;
+  margin: 0 0 var(--space-4);
+  padding: 0.15rem 0.45rem;
+  border-radius: 4px;
+  background: var(--state-warning-bg);
+  color: var(--state-warning);
+  font-size: var(--text-caption-sm);
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.bentomodal__quotetext {
+  margin: 0 auto var(--space-4);
+  max-width: 46rem;
+  font-size: var(--text-body-lg);
+  line-height: var(--leading-snug);
+  color: var(--ink-soft);
+}
+
+.bentomodal__quoteby {
+  font-size: var(--text-caption);
+  color: var(--ink-soft);
+}
+
+.bentomodal__quoteby strong {
+  color: var(--ink);
+}
+
+.bentomodal__quotecta {
+  margin: var(--space-4) 0 0;
+  font-size: var(--text-caption);
+  font-weight: 600;
+  color: var(--ink-soft);
+}
+
+/* ---- Closing band ---- */
+
+.bentomodal__start {
+  padding: var(--space-7) 0 var(--space-3);
+  text-align: center;
+}
+
+.bentomodal__starttitle {
+  margin: 0 0 var(--space-5);
+  font-family: var(--font-display);
+  font-size: var(--text-body-lg);
+  font-weight: 700;
+  letter-spacing: -0.015em;
+  color: var(--ink);
+}
+
+.bentomodal__actions--center {
+  justify-content: center;
+}

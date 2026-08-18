@@ -111,42 +111,186 @@
     "eyebrow": "The Verse ecosystem",
     "titleLine1": "One ecosystem.",
     "titleLine2": "Built around insurance.",
-    "sub": "Specialized products for the people, channels and journeys that power modern insurance.",
+    "sub": "Six products for the people, channels and journeys that power modern insurance.",
     "noteOne": "Each Verse solves a distinct challenge.",
-    "noteTwo": "Together, they create something bigger.",
+    "noteTwo": "Together, they cover the whole lifecycle.",
     "showDetails": "Show details",
-    "hideDetails": "Hide details",
     "items": {
-      "core": {
-        "title": "Core insurance",
-        "body": "Policy administration, underwriting and product configuration running on a single core.",
-        "detail": "Product definition, rating, policy issue, endorsements and renewals, configured rather than coded."
+      "salesverse": {
+        "title": "SalesVerse",
+        "body": "Insurance sales and new business, from first opportunity to issued policy.",
+        "detail": "Lead management, guided selling, digital applications and new-business operations in one structured journey.",
+        "lede": "Simplify new business, keep the sale visible and move every opportunity toward an issued policy.",
+        "points": [
+          "Keep lead ownership clear across every channel",
+          "Turn customer interest into a complete application",
+          "Keep visibility after the seller clicks submit",
+          "Understand pipeline, conversion and turnaround"
+        ],
+        "features": [
+          {
+            "title": "Guided selling",
+            "body": "Product discovery, needs capture and approved content inside the conversation."
+          },
+          {
+            "title": "Digital application",
+            "body": "Structured forms, documents, requirements and completeness checks before submission."
+          },
+          {
+            "title": "New-business operations",
+            "body": "Review queues, underwriting hand-off, referrals and SLA visibility."
+          }
+        ]
       },
-      "distribution": {
-        "title": "Distribution",
-        "body": "Broker, agent, partner and direct channels served from the same platform.",
-        "detail": "Onboarding, hierarchies, commissions and quoting for every channel you sell through."
+      "agentverse": {
+        "title": "AgentVerse",
+        "body": "Onboard, activate and enable the advisors who carry your distribution.",
+        "detail": "Recruitment, readiness, daily planning, customer portfolios, renewals and manager visibility for the field force.",
+        "lede": "Recruit, activate and enable the distribution workforce, and give every advisor one place to work.",
+        "points": [
+          "Move new advisors from approved to ready to sell",
+          "Turn a list of customers into an actionable day",
+          "Keep the advisor useful after the policy is issued",
+          "Give managers the signals behind the numbers"
+        ],
+        "features": [
+          {
+            "title": "Onboarding and activation",
+            "body": "Candidate intake, readiness, documents and activation status."
+          },
+          {
+            "title": "Daily planner",
+            "body": "Leads, appointments, tasks and reminders built for field work."
+          },
+          {
+            "title": "Coaching and performance",
+            "body": "Targets, achievements, learning and manager visibility."
+          }
+        ]
       },
-      "journeys": {
-        "title": "Customer journeys",
-        "body": "Quote, buy, service and renew, designed as one continuous path.",
-        "detail": "Self-service portals and assisted flows working from one view of the customer."
+      "customerverse": {
+        "title": "CustomerVerse",
+        "body": "A policyholder experience that shows customers what needs attention next.",
+        "detail": "Policies, documents, payments, service requests, renewals and claim status, with assisted support when it is needed.",
+        "lede": "Give policyholders a clear digital destination, and surface the action that needs attention next.",
+        "points": [
+          "One view of every policy the customer holds",
+          "Digital servicing instead of forms and follow-up",
+          "Guided renewal and payment moments",
+          "Assisted support when self-service is not enough"
+        ],
+        "features": [
+          {
+            "title": "Policy and documents",
+            "body": "Coverage information, schedules, certificates and notices in one place."
+          },
+          {
+            "title": "Payments and renewals",
+            "body": "Due dates, payment links, reminders and digital renewal."
+          },
+          {
+            "title": "Claims visibility",
+            "body": "Digital notification, evidence upload and status the customer can follow."
+          }
+        ]
       },
-      "claims": {
-        "title": "Claims",
-        "body": "Intake, assessment, settlement and recovery, tracked end to end.",
-        "detail": "First notice of loss through to settlement, with assessment and recovery held in the same file."
+      "merchantverse": {
+        "title": "MerchantVerse",
+        "body": "Onboard and govern the partners who take insurance to new customers.",
+        "detail": "Partner application, business documents, review, approval, activation and one maintained partner record.",
+        "lede": "Onboard, review, approve and govern the businesses through which insurance is distributed.",
+        "points": [
+          "A structured entry point for prospective partners",
+          "Consistent review against the documents required",
+          "Traceable approval and activation decisions",
+          "One maintained record for every partner"
+        ],
+        "features": [
+          {
+            "title": "Partner application",
+            "body": "Guided submission, business information and supporting documents."
+          },
+          {
+            "title": "Review and approval",
+            "body": "Queues, reviewers, information requests and a recorded decision trail."
+          },
+          {
+            "title": "Activation and status",
+            "body": "Activation checklists, partner records and operational exceptions."
+          }
+        ]
       },
-      "payments": {
-        "title": "Payments and finance",
-        "body": "Collections, disbursements and reconciliation wired into the policy lifecycle.",
-        "detail": "Premium collection, refunds, payouts and reconciliation against the policy ledger."
+      "claimverse": {
+        "title": "ClaimVerse",
+        "body": "Claims orchestrated from first notice through decision and settlement.",
+        "detail": "Digital FNOL, evidence, triage, the handler workbench, assessment, authority controls and settlement.",
+        "lede": "Move a claim from first notice through assessment, decision and settlement with clearer control.",
+        "points": [
+          "Cleaner intake without asking for everything at once",
+          "Route each claim down the path it actually needs",
+          "Evidence and judgement in one controlled workflow",
+          "Authority and audit around every settlement"
+        ],
+        "features": [
+          {
+            "title": "Digital FNOL and triage",
+            "body": "Guided notification, validation and rules-based routing."
+          },
+          {
+            "title": "Claims workbench",
+            "body": "Timeline, documents, tasks, assessment and provider activity in one view."
+          },
+          {
+            "title": "Decision and settlement",
+            "body": "Authority limits, approvals, payment connectivity and customer communication."
+          }
+        ]
       },
-      "data": {
-        "title": "Data and analytics",
-        "body": "Operational and portfolio reporting drawn from live system data.",
-        "detail": "Dashboards and extracts built on the same records the operational system writes."
+      "brokerverse": {
+        "title": "BrokerVerse",
+        "body": "The operating platform behind the broker relationship.",
+        "detail": "Clients, placement, policies, renewals, claims support, premiums and commissions in one insurance-first workspace.",
+        "lede": "Run clients, placement, servicing, renewals and brokerage finance in one insurance-first workspace.",
+        "points": [
+          "The whole client relationship in one record",
+          "Placement activity organized across carriers",
+          "Expiries turned into assigned, tracked work",
+          "Policy activity connected to broker revenue"
+        ],
+        "features": [
+          {
+            "title": "Client and placement",
+            "body": "Accounts, requirements, carrier responses and placement status."
+          },
+          {
+            "title": "Servicing and renewals",
+            "body": "Policy records, endorsements, service cases and the renewal diary."
+          },
+          {
+            "title": "Premium and commission",
+            "body": "Premiums, expected commission, reconciliation and receivables."
+          }
+        ]
       }
+    },
+    "close": "Close",
+    "moreTitle": "More to discover",
+    "panelExplore": "Explore {name}",
+    "panelDemo": "Request a demo",
+    "panelFeatures": "See the full feature set",
+    "panelUseCases": "See how teams use it",
+    "moreBody": "Placeholder description. Replace with the summary for this link.",
+    "quote": {
+      "badge": "Placeholder",
+      "text": "Placeholder customer quote. Replace once a customer statement has been approved for public use.",
+      "name": "Name, Role",
+      "org": "Organization",
+      "cta": "Read the story"
+    },
+    "getStarted": {
+      "title": "Get started with {name}",
+      "primary": "Request a demo",
+      "secondary": "Talk to us"
     }
   },
   "stack": {

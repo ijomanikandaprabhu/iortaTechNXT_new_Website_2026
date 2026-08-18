@@ -1,42 +1,105 @@
 import { getTranslations } from "next-intl/server";
 import { BentoGrid, type BentoItem } from "@/components/ui/BentoGrid";
+import { PRODUCTS, STANDALONE_PATHS, productPath } from "@/config/site.config";
 import type { Locale } from "@/core/i18n/config";
+import { getLocalizedPath } from "@/core/i18n/routing";
 import { ICON_DIR, ICON_EXT, type CapabilitySlug } from "@/features/hero/capabilities";
 
 /**
- * The six domains, paired with the capability icon that already represents each
- * one elsewhere on the page.
+ * The six Verse products, paired with the capability icon that already
+ * represents each one elsewhere on the page.
  *
- * Both fields are unions drawn from the message bundle and the icon set rather
- * than plain strings, so a cell without a translation, or pointing at an icon
- * that does not exist, is a compile error instead of a blank panel.
+ * `key` doubles as the product slug, so the cell's link is derived rather than
+ * written out a second time. Both fields are unions drawn from the message
+ * bundle and the icon set rather than plain strings, so a cell without a
+ * translation, or pointing at an icon that does not exist, is a compile error
+ * instead of a blank panel.
  */
 type BentoKey = keyof IntlMessages["home"]["bento"]["items"];
 
 const CELLS: Array<{ key: BentoKey; icon: CapabilitySlug }> = [
-  { key: "core", icon: "core-insurance" },
-  { key: "distribution", icon: "sales-distribution" },
-  { key: "journeys", icon: "customer-agent" },
-  { key: "claims", icon: "claims-management" },
-  { key: "payments", icon: "payments-finance" },
-  { key: "data", icon: "data-analytics" },
+  { key: "salesverse", icon: "sales-distribution" },
+  { key: "agentverse", icon: "customer-agent" },
+  { key: "customerverse", icon: "communication-support" },
+  { key: "merchantverse", icon: "digital-insurtech" },
+  { key: "claimverse", icon: "claims-management" },
+  { key: "brokerverse", icon: "insurance-categories" },
 ];
 
 /**
- * Fifth band: the platform's six domains as a bento grid.
+ * Fifth band: the six Verse products as a bento grid.
  *
- * Cells are not links. The pages they would point at do not exist yet, and a
- * grid of anchors that all resolve to "/" is worse than plain panels.
+ * Cells now link to their product overview. They were plain panels while those
+ * pages did not exist, since a grid of anchors all resolving to "/" is worse
+ * than no links at all; `built` is still checked so the rule holds if a product
+ * is ever added here before its page ships.
  */
 export async function BentoSection({ locale }: { locale: Locale }) {
   const t = await getTranslations({ locale, namespace: "home.bento" });
 
-  const items: BentoItem[] = CELLS.map(({ key, icon }) => ({
-    title: t(`items.${key}.title`),
-    body: t(`items.${key}.body`),
-    detail: t(`items.${key}.detail`),
-    icon: `${ICON_DIR}/${icon}.${ICON_EXT}`,
-  }));
+  const items: BentoItem[] = CELLS.map(({ key, icon }) => {
+    const product = PRODUCTS.find((entry) => entry.slug === key);
+    const overview = getLocalizedPath(productPath(key), locale);
+    const iconSrc = `${ICON_DIR}/${icon}.${ICON_EXT}`;
+    const name = t(`items.${key}.title`);
+
+    return {
+      title: name,
+      body: t(`items.${key}.body`),
+      icon: iconSrc,
+      href: product?.built ? overview : undefined,
+      panel: {
+        title: name,
+        lede: t(`items.${key}.lede`),
+        // `t.raw` because these are arrays, which the string translator cannot
+        // return. The bundle is the source of the types, so the shape is checked.
+        points: t.raw(`items.${key}.points`) as string[],
+        features: t.raw(`items.${key}.features`) as { title: string; body: string }[],
+        primary: { label: t("panelExplore", { name }), href: overview },
+        secondary: {
+          label: t("panelDemo"),
+          // Arriving from a product card preselects that product on the form.
+          href: `${getLocalizedPath(STANDALONE_PATHS.requestDemo, locale)}?product=${key}`,
+        },
+        more: [
+          {
+            label: t("panelFeatures"),
+            body: t("moreBody"),
+            href: getLocalizedPath(productPath(key, "features"), locale),
+          },
+          {
+            label: t("panelUseCases"),
+            body: t("moreBody"),
+            href: getLocalizedPath(productPath(key, "use-cases"), locale),
+          },
+          {
+            label: t("panelDemo"),
+            body: t("moreBody"),
+            href: `${getLocalizedPath(STANDALONE_PATHS.requestDemo, locale)}?product=${key}`,
+          },
+        ],
+        quote: {
+          badge: t("quote.badge"),
+          text: t("quote.text"),
+          name: t("quote.name"),
+          org: t("quote.org"),
+          cta: t("quote.cta"),
+        },
+        getStarted: {
+          title: t("getStarted.title", { name }),
+          primary: {
+            label: t("getStarted.primary"),
+            href: `${getLocalizedPath(STANDALONE_PATHS.requestDemo, locale)}?product=${key}`,
+          },
+          secondary: {
+            label: t("getStarted.secondary"),
+            href: getLocalizedPath("/contact", locale),
+          },
+        },
+        icon: iconSrc,
+      },
+    };
+  });
 
   return (
     <section className="bentosec" aria-labelledby="bento-title">
@@ -59,7 +122,12 @@ export async function BentoSection({ locale }: { locale: Locale }) {
 
         {/* Labels resolved here so the grid can stay a dumb client component
             without pulling the translator into it. */}
-        <BentoGrid hideLabel={t("hideDetails")} items={items} showLabel={t("showDetails")} />
+        <BentoGrid
+          closeLabel={t("close")}
+          items={items}
+          moreTitle={t("moreTitle")}
+          showLabel={t("showDetails")}
+        />
       </div>
     </section>
   );
