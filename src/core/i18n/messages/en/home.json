@@ -9,27 +9,27 @@
     "cta": "Talk to us"
   },
   "sequence": {
-    "label": "Enterprise platform film",
+    "label": "Insurance platform film",
     "loading": "Loading sequence",
     "ch1": {
-      "label": "Enterprise platform",
-      "title": "Built above the complexity",
-      "body": "Multi-tenant architecture that keeps every client isolated, on one codebase."
+      "label": "Distribution",
+      "title": "Every channel, one operating model",
+      "body": "Direct, agency, broker, bank and partner journeys that no longer each need their own system."
     },
     "ch2": {
-      "label": "One system",
-      "title": "Every team, one source of truth",
-      "body": "Marketing, sales and operations working from the same platform."
+      "label": "Underwriting",
+      "title": "From an inbox to a decision workflow",
+      "body": "Decision-ready submissions, clear referrals and straight-through processing where the rules allow."
     },
     "ch3": {
-      "label": "Integration",
-      "title": "Your CRM, already connected",
-      "body": "HubSpot, Salesforce or Zoho: change provider without touching the interface."
+      "label": "Servicing",
+      "title": "The customer knows what happens next",
+      "body": "Policies, payments, renewals and requests in one place, with a person when it matters."
     },
     "ch4": {
-      "label": "Reach",
-      "title": "Speaks your customer's language",
-      "body": "Localised routing, metadata and content across every market you serve."
+      "label": "Claims",
+      "title": "Moved forward, not just recorded",
+      "body": "Notification through assessment, decision and settlement, held in one controlled workflow."
     },
     "capabilities": {
       "core-insurance": "Core insurance",
