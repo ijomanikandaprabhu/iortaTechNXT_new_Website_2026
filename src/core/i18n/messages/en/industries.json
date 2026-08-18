@@ -1,0 +1,1418 @@
+{
+  "insurance-carriers": {
+    "meta": {
+      "title": "Insurance Carrier Technology & Modernization | Iorta TechNXT",
+      "description": "Modernize carrier distribution, underwriting, servicing, claims and core technology with insurance-focused products and engineering from Iorta TechNXT."
+    },
+    "hero": {
+      "eyebrow": "Insurance carriers",
+      "title": "Modernize the insurance carrier operating model.",
+      "lede": "Insurance carriers are under pressure to improve customer experience, open new distribution channels, increase operational productivity and change technology faster without disrupting the policy systems that still run the business.",
+      "primary": "Talk to Us",
+      "secondary": "Explore Distribution Modernization"
+    },
+    "sections": [
+      {
+        "number": "01",
+        "eyebrow": "Market reality",
+        "title": "The challenge is no longer one portal or one core system.",
+        "body": [
+          "Distribution is becoming more varied. Underwriting and claims need more structured workflows. Customers expect clearer service. Operations need less manual work. Technology teams need reusable services and stronger controls."
+        ]
+      },
+      {
+        "number": "02",
+        "eyebrow": "Critical journeys",
+        "title": "Context should survive every hand-off.",
+        "body": [
+          "Each journey may involve different users and systems, but customers and teams should not have to rebuild context at every hand-off."
+        ],
+        "steps": [
+          "Acquire",
+          "Distribute",
+          "Advise",
+          "Apply",
+          "Underwrite",
+          "Onboard",
+          "Serve",
+          "Renew",
+          "Claim",
+          "Settle"
+        ]
+      },
+      {
+        "number": "03",
+        "eyebrow": "Where technology gets stuck",
+        "title": "The constraints carriers describe most often.",
+        "tags": [
+          "Fragmented channels",
+          "Repeated data entry",
+          "Legacy interfaces",
+          "Point-to-point integration",
+          "Manual work queues",
+          "Inaccessible data",
+          "Slow releases",
+          "Limited end-to-end visibility"
+        ]
+      },
+      {
+        "number": "04",
+        "eyebrow": "How Iorta helps",
+        "title": "Products across the carrier lifecycle.",
+        "tone": "muted",
+        "roles": [
+          {
+            "role": "SalesVerse",
+            "description": "Sales and new business."
+          },
+          {
+            "role": "AgentVerse",
+            "description": "Advisor enablement."
+          },
+          {
+            "role": "CustomerVerse",
+            "description": "Policyholder servicing."
+          },
+          {
+            "role": "ClaimVerse",
+            "description": "Claims operations."
+          },
+          {
+            "role": "MerchantVerse",
+            "description": "Partner-led distribution where applicable."
+          },
+          {
+            "role": "BrokerVerse",
+            "description": "Intermediary operations where the carrier runs broker-facing programs."
+          }
+        ]
+      },
+      {
+        "number": "05",
+        "eyebrow": "Modernization capabilities",
+        "title": "The engineering behind the products.",
+        "tags": [
+          "Core modernization",
+          "API enablement",
+          "Data & analytics",
+          "Intelligent operations",
+          "Experience design",
+          "Security",
+          "Quality",
+          "Cloud & DevOps",
+          "Oracle modernization"
+        ]
+      },
+      {
+        "number": "06",
+        "eyebrow": "Operating outcomes",
+        "title": "What changes day to day.",
+        "body": [
+          "Faster change. Better channel visibility. Cleaner hand-offs. More digital service. Better operational prioritization. Reduced repetitive work. Stronger integration reuse."
+        ]
+      }
+    ],
+    "proof": {
+      "eyebrow": "Proof direction",
+      "title": "Evidence across the lifecycle.",
+      "body": "A mix of approved sales and distribution, API and core, and underwriting customer stories shows work across the carrier lifecycle.",
+      "pending": "Awaiting approval",
+      "pendingNote": "Publish customer names and metrics only once cleared for external use."
+    },
+    "related": {
+      "eyebrow": "Related thinking",
+      "title": "Perspectives worth reading next.",
+      "items": [
+        {
+          "label": "Why core modernization doesn't always start with replacement"
+        },
+        {
+          "label": "The next phase of insurance distribution"
+        },
+        {
+          "label": "From underwriting inbox to decision workflow"
+        }
+      ]
+    },
+    "cta": {
+      "title": "Change the journeys customers and teams feel first.",
+      "convert": "Talk to Iorta TechNXT",
+      "evaluate": "Explore Distribution Modernization",
+      "explore": "Explore SalesVerse"
+    }
+  },
+  "life-health-insurance": {
+    "meta": {
+      "title": "Life & Health Insurance Technology | Iorta TechNXT",
+      "description": "Modernize life and health distribution, new business, underwriting, policyholder servicing, renewals and claims with Iorta TechNXT."
+    },
+    "hero": {
+      "eyebrow": "Life & health insurance",
+      "title": "Modern technology for long-term insurance relationships.",
+      "lede": "Life and health products can create customer relationships that last years or decades. Technology has to support not only acquisition, but advice, new-business underwriting, ongoing service, premium and payment events, renewals and claims.",
+      "primary": "Talk to Iorta TechNXT",
+      "secondary": "Underwriting Modernization"
+    },
+    "sections": [
+      {
+        "number": "01",
+        "eyebrow": "Scope of this page",
+        "title": "Carrier-focused, by design.",
+        "body": [
+          "This page is written for carriers. Employer, member and provider benefits workflows are covered separately under Health Benefits & Healthcare."
+        ],
+        "tone": "muted"
+      },
+      {
+        "number": "02",
+        "eyebrow": "Market reality",
+        "title": "Advice-led distribution meets digital expectation.",
+        "body": [
+          "Advisor and bancassurance distribution remain important in many markets while customers increasingly expect digital continuation. New-business processing can involve extensive information and underwriting. Long-term servicing generates recurring customer moments that generic portals do not handle well."
+        ]
+      },
+      {
+        "number": "03",
+        "eyebrow": "Critical journeys",
+        "title": "A relationship measured in decades.",
+        "steps": [
+          "Needs discovery",
+          "Product discussion",
+          "Application",
+          "Documents",
+          "Underwriting",
+          "Issuance",
+          "Premium servicing",
+          "Policy service",
+          "Renewal",
+          "Claims",
+          "Relationship review"
+        ]
+      },
+      {
+        "number": "04",
+        "eyebrow": "Where technology gets stuck",
+        "title": "The friction teams describe most often.",
+        "tags": [
+          "Incomplete applications",
+          "Advisor-to-operations hand-offs",
+          "Underwriting rework",
+          "Repeated customer information",
+          "Limited renewal visibility",
+          "Fragmented policy service",
+          "Claims separated from the broader relationship"
+        ]
+      },
+      {
+        "number": "05",
+        "eyebrow": "Distribution",
+        "title": "Support the advisor and the channel behind them.",
+        "roles": [
+          {
+            "role": "SalesVerse",
+            "description": "Opportunity and new-business orchestration."
+          },
+          {
+            "role": "AgentVerse",
+            "description": "Advisor onboarding, daily work and customer portfolio management."
+          },
+          {
+            "role": "Bancassurance",
+            "description": "Journeys combining SalesVerse, AgentVerse and partner connectivity."
+          }
+        ]
+      },
+      {
+        "number": "06",
+        "eyebrow": "Underwriting & new business",
+        "title": "Return the decision to the people waiting on it.",
+        "body": [
+          "Use Underwriting Modernization for the deeper operating model."
+        ],
+        "tags": [
+          "Submission completeness",
+          "Documents",
+          "Rules",
+          "Referrals",
+          "Human review",
+          "STP for eligible cases",
+          "Decision visibility back to distribution"
+        ]
+      },
+      {
+        "number": "07",
+        "eyebrow": "Policyholder relationship",
+        "title": "Keep serving after issuance.",
+        "body": [
+          "CustomerVerse can provide policy information, documents, payments, service requests, renewals, claims status and proactive next actions."
+        ]
+      },
+      {
+        "number": "08",
+        "eyebrow": "Health & protection claims",
+        "title": "Claims that belong to the relationship.",
+        "body": [
+          "ClaimVerse can support configured health, personal accident or protection-claim journeys where product scope is validated."
+        ]
+      },
+      {
+        "number": "09",
+        "eyebrow": "Business outcomes",
+        "title": "What the business should feel.",
+        "body": [
+          "Faster new-business progression. Better advisor productivity. More digital servicing. Earlier renewal action. Cleaner customer communication. Greater operational visibility."
+        ]
+      }
+    ],
+    "proof": {
+      "eyebrow": "Proof in practice",
+      "title": "Evidence, close to the claim.",
+      "body": "Advisor and new-business transformation work, alongside underwriting engagements, is the most relevant evidence for this segment.",
+      "pending": "Awaiting approval",
+      "pendingNote": "Customer identity and metrics require public-use approval."
+    },
+    "related": {
+      "eyebrow": "Related thinking",
+      "title": "Perspectives worth reading next.",
+      "items": [
+        {
+          "label": "Why Advisor Technology Still Matters"
+        },
+        {
+          "label": "What Human-Governed Underwriting Looks Like"
+        },
+        {
+          "label": "From Self-Service to Proactive Insurance Service"
+        }
+      ]
+    },
+    "cta": {
+      "title": "Build beyond policy issuance.",
+      "convert": "Talk to Iorta TechNXT",
+      "evaluate": "Underwriting Modernization",
+      "explore": "Explore CustomerVerse"
+    }
+  },
+  "general-insurance": {
+    "meta": {
+      "title": "General Insurance Technology | Distribution, Service & Claims",
+      "description": "Modernize personal and retail general insurance distribution, broker and partner channels, servicing and claims through connected products and APIs."
+    },
+    "hero": {
+      "eyebrow": "General insurance",
+      "title": "Speed across distribution, service and claims.",
+      "lede": "General insurance combines high-volume personal and retail products with direct, broker and partner distribution. The technology priority is to quote, issue, service and resolve claims with less friction.",
+      "primary": "Talk to Iorta TechNXT",
+      "secondary": "Distribution Modernization"
+    },
+    "sections": [
+      {
+        "number": "01",
+        "eyebrow": "Best fit",
+        "title": "Where this page applies.",
+        "body": [
+          "Personal lines, retail general insurance, motor, travel, property and other higher-volume general-insurance journeys."
+        ],
+        "tone": "muted"
+      },
+      {
+        "number": "02",
+        "eyebrow": "Market reality",
+        "title": "Easy to buy, heavy to serve.",
+        "body": [
+          "Customers often buy general insurance near a transaction or immediate need. Products can be simple to purchase but generate high volumes of service and claims. Brokers and partners remain important. Catastrophe events can also create sudden operational peaks."
+        ]
+      },
+      {
+        "number": "03",
+        "eyebrow": "Critical journeys",
+        "title": "From quote to settlement.",
+        "steps": [
+          "Quote",
+          "Buy",
+          "Issue",
+          "Pay",
+          "Service",
+          "Renew",
+          "Notify claim",
+          "Triage",
+          "Assess",
+          "Settle"
+        ]
+      },
+      {
+        "number": "04",
+        "eyebrow": "Where technology gets stuck",
+        "title": "The friction teams describe most often.",
+        "tags": [
+          "Disconnected partner journeys",
+          "Slow product and channel changes",
+          "Repeated customer information",
+          "Manual policy service",
+          "Claims intake through email and call centres",
+          "Limited catastrophe visibility",
+          "Difficult core integration"
+        ]
+      },
+      {
+        "number": "05",
+        "eyebrow": "Distribution",
+        "title": "Products across the channel mix.",
+        "roles": [
+          {
+            "role": "SalesVerse",
+            "description": "Direct or assisted acquisition."
+          },
+          {
+            "role": "BrokerVerse",
+            "description": "Broker operations."
+          },
+          {
+            "role": "MerchantVerse",
+            "description": "Partner onboarding and administration."
+          },
+          {
+            "role": "API & Microservices",
+            "description": "Reusable quote and policy capabilities for digital channels."
+          }
+        ]
+      },
+      {
+        "number": "06",
+        "eyebrow": "Customer service",
+        "title": "Answer the routine question digitally.",
+        "body": [
+          "CustomerVerse can surface policies, documents, payments, renewals, requests and claims status."
+        ]
+      },
+      {
+        "number": "07",
+        "eyebrow": "Claims",
+        "title": "Volume without chaos.",
+        "body": [
+          "ClaimVerse can support digital FNOL, evidence, triage, provider workflows, assessment, STP for eligible cases and settlement."
+        ]
+      },
+      {
+        "number": "08",
+        "eyebrow": "Connected & external data",
+        "title": "Operationalize what others already know.",
+        "body": [
+          "Iorta can connect and operationalize external information. Proprietary pricing and risk models are claimed only where they exist."
+        ],
+        "tags": [
+          "Weather",
+          "Geospatial",
+          "Telematics",
+          "Provider data",
+          "Identity",
+          "Fraud signals"
+        ]
+      },
+      {
+        "number": "09",
+        "eyebrow": "Modernization",
+        "title": "Change the constraint, not the whole estate.",
+        "body": [
+          "Expose core capabilities through APIs. Modernize customer and broker experiences. Introduce configurable workflows. Improve operational data. Replace constrained components progressively."
+        ]
+      },
+      {
+        "number": "10",
+        "eyebrow": "Business outcomes",
+        "title": "What the business should feel.",
+        "body": [
+          "Faster digital distribution. Easier servicing. Better broker and partner connectivity. Cleaner claim intake. Improved operational capacity during high volumes."
+        ]
+      }
+    ],
+    "related": {
+      "eyebrow": "Related thinking",
+      "title": "Perspectives worth reading next.",
+      "items": [
+        {
+          "label": "From Claims Processing to Claims Orchestration"
+        },
+        {
+          "label": "The Next Phase of Partner-Led Insurance Distribution"
+        }
+      ]
+    },
+    "cta": {
+      "title": "Make high-volume insurance easier to sell, serve and settle.",
+      "convert": "Talk to Iorta TechNXT",
+      "evaluate": "Distribution Modernization",
+      "explore": "Explore ClaimVerse"
+    }
+  },
+  "commercial-specialty-insurance": {
+    "meta": {
+      "title": "Commercial & Specialty Insurance Technology | Iorta TechNXT",
+      "description": "Modernize broker-led commercial submissions, underwriting workbenches, decision workflows, external data and carrier connectivity."
+    },
+    "hero": {
+      "eyebrow": "Commercial & specialty insurance",
+      "title": "Put better information behind complex risk decisions.",
+      "lede": "Commercial and specialty insurance combines broker relationships, complex submissions, unstructured information, specialist underwriting and significant judgement.",
+      "primary": "Talk to Iorta TechNXT",
+      "secondary": "Underwriting Modernization"
+    },
+    "sections": [
+      {
+        "number": "01",
+        "eyebrow": "Best fit",
+        "title": "Where this page applies.",
+        "body": [
+          "Broker-led commercial business, complex submissions, referral-heavy underwriting and risks requiring deeper assessment than high-volume retail insurance."
+        ],
+        "tone": "muted"
+      },
+      {
+        "number": "02",
+        "eyebrow": "Market reality",
+        "title": "The problem is not digitizing a form.",
+        "body": [
+          "Submissions can arrive in different formats, information is often incomplete, multiple stakeholders participate and underwriters need context from internal and external sources."
+        ]
+      },
+      {
+        "number": "03",
+        "eyebrow": "Critical journeys",
+        "title": "From broker submission to bound risk.",
+        "steps": [
+          "Broker submission",
+          "Intake",
+          "Extraction",
+          "Completeness",
+          "Triage",
+          "Underwriting",
+          "Referral",
+          "Quote and terms",
+          "Approval",
+          "Binding",
+          "Policy service"
+        ]
+      },
+      {
+        "number": "04",
+        "eyebrow": "Where technology gets stuck",
+        "title": "The friction teams describe most often.",
+        "tags": [
+          "Email-heavy submissions",
+          "Re-keying",
+          "Missing information",
+          "Disconnected broker communication",
+          "Underwriter search time",
+          "Manual referrals",
+          "Limited portfolio and workload visibility",
+          "Slow integration with core systems"
+        ]
+      },
+      {
+        "number": "05",
+        "eyebrow": "Submission management",
+        "title": "Turn an inbox into intake.",
+        "tags": [
+          "Structured intake",
+          "Document collection",
+          "Information extraction",
+          "Missing-information identification",
+          "Triage",
+          "Work queues",
+          "Broker communication"
+        ]
+      },
+      {
+        "number": "06",
+        "eyebrow": "Underwriting workbench",
+        "title": "Everything the specialist needs, in one place.",
+        "body": [
+          "Use Underwriting Modernization as the primary solution story."
+        ],
+        "tags": [
+          "Customer and account context",
+          "Submission summary",
+          "Documents",
+          "External data",
+          "Rules",
+          "Referrals",
+          "Authority",
+          "Tasks",
+          "Decisions",
+          "History"
+        ]
+      },
+      {
+        "number": "07",
+        "eyebrow": "Broker and carrier connectivity",
+        "title": "Close the loop with the intermediary.",
+        "body": [
+          "BrokerVerse and API integration capabilities can support submission exchange, quote requests, carrier responses, documents, placement status and policy information according to the carrier and broker environment."
+        ]
+      },
+      {
+        "number": "08",
+        "eyebrow": "Portfolio & operational visibility",
+        "title": "Understand the book and the workload.",
+        "body": [
+          "Exposure aggregation and pricing analytics are claimed only where implemented."
+        ],
+        "tags": [
+          "Submission pipeline",
+          "Workload",
+          "Ageing",
+          "Referral volumes",
+          "Turnaround",
+          "Distribution source",
+          "Decision outcomes",
+          "Operational performance"
+        ]
+      },
+      {
+        "number": "09",
+        "eyebrow": "Modernization",
+        "title": "The engineering behind the workbench.",
+        "tags": [
+          "Modern front ends",
+          "API layers",
+          "Data integration",
+          "Document services",
+          "Workflow orchestration",
+          "Core connectivity",
+          "Progressive application modernization"
+        ]
+      },
+      {
+        "number": "10",
+        "eyebrow": "Business outcomes",
+        "title": "What the business should feel.",
+        "body": [
+          "Less administrative underwriting work. Better submission quality. Faster broker response. Clearer referrals. More specialist capacity. Better decision traceability."
+        ]
+      }
+    ],
+    "related": {
+      "eyebrow": "Related thinking",
+      "title": "Perspectives worth reading next.",
+      "items": [
+        {
+          "label": "From Underwriting Inbox to Decision Workflow"
+        },
+        {
+          "label": "How Automation Changes Underwriting Without Removing Accountability"
+        }
+      ]
+    },
+    "cta": {
+      "title": "Give specialist underwriting better operational support.",
+      "convert": "Talk to Iorta TechNXT",
+      "evaluate": "Explore BrokerVerse",
+      "explore": "Underwriting Modernization"
+    }
+  },
+  "bancassurance": {
+    "meta": {
+      "title": "Bancassurance Technology | Insurance Sales & Bank Partner Journeys",
+      "description": "Connect banking relationships with insurer sales, applications, partner operations, consent, identity and policyholder servicing."
+    },
+    "hero": {
+      "eyebrow": "Bancassurance",
+      "title": "Make protection part of the banking relationship.",
+      "lede": "Bancassurance works when insurance feels connected to the customer's banking context while the insurer still maintains the controls, product processes and operational workflow required behind the journey.",
+      "primary": "Talk to Iorta TechNXT",
+      "secondary": "Distribution Modernization"
+    },
+    "sections": [
+      {
+        "number": "01",
+        "eyebrow": "Market reality",
+        "title": "Two organizations, one customer.",
+        "body": [
+          "Relationship managers may not be insurance specialists. Bank and insurer systems use different customer identities. Consent and information-sharing requirements matter. Applications can lose visibility after hand-off. Customer servicing often moves entirely to the insurer after purchase."
+        ]
+      },
+      {
+        "number": "02",
+        "eyebrow": "Critical journey",
+        "title": "One thread across two institutions.",
+        "steps": [
+          "Customer opportunity",
+          "Relationship manager",
+          "Needs discussion",
+          "Quote and proposal",
+          "Application",
+          "Insurer review",
+          "Policy",
+          "Service"
+        ]
+      },
+      {
+        "number": "03",
+        "eyebrow": "Where hand-offs break",
+        "title": "The friction teams describe most often.",
+        "tags": [
+          "Duplicate customer information",
+          "Manual lead transfer",
+          "Consent captured in the wrong place",
+          "Repeated document requests",
+          "Limited application status",
+          "Different identifiers",
+          "No continuation after issuance"
+        ]
+      },
+      {
+        "number": "04",
+        "eyebrow": "Sales & advisor experience",
+        "title": "Support the non-specialist seller.",
+        "body": [
+          "SalesVerse can manage bank-originated opportunities and new-business progression. AgentVerse can support relationship managers and advisors where the distribution model requires a focused front end."
+        ]
+      },
+      {
+        "number": "05",
+        "eyebrow": "Partner administration",
+        "title": "Govern the institutional relationship.",
+        "body": [
+          "MerchantVerse can support onboarding and administration of the bank or partner relationship where that capability is required."
+        ]
+      },
+      {
+        "number": "06",
+        "eyebrow": "Identity, consent & data",
+        "title": "Share only what the customer agreed to.",
+        "tags": [
+          "Customer consent",
+          "Identity and eKYC connectivity",
+          "Secure information exchange",
+          "API authorization",
+          "Data scope",
+          "Traceability",
+          "Status return"
+        ]
+      },
+      {
+        "number": "07",
+        "eyebrow": "Customer continuation",
+        "title": "Do not send the customer back to the branch.",
+        "body": [
+          "CustomerVerse can give policyholders access to policy information, payments, requests, renewals and claims after purchase instead of forcing them back through the bank for every service need."
+        ]
+      },
+      {
+        "number": "08",
+        "eyebrow": "Management visibility",
+        "title": "Understand the channel, branch by branch.",
+        "tags": [
+          "Lead source",
+          "Channel",
+          "Branch and relationship manager",
+          "Pipeline",
+          "Application status",
+          "Conversion",
+          "Turnaround",
+          "Partner performance where data is available"
+        ]
+      },
+      {
+        "number": "09",
+        "eyebrow": "Business outcomes",
+        "title": "What the business should feel.",
+        "body": [
+          "Cleaner bank-to-insurer hand-off. Better relationship-manager support. Less repeated information. Stronger status visibility. More consistent servicing after issuance."
+        ]
+      }
+    ],
+    "related": {
+      "eyebrow": "Related thinking",
+      "title": "Perspectives worth reading next.",
+      "items": [
+        {
+          "label": "The Next Phase of Insurance Distribution"
+        },
+        {
+          "label": "Open Finance and the Future of Connected Insurance"
+        }
+      ]
+    },
+    "cta": {
+      "title": "Connect bank context with insurer execution.",
+      "convert": "Talk to Iorta TechNXT",
+      "evaluate": "Distribution Modernization",
+      "explore": "Explore SalesVerse"
+    }
+  },
+  "takaful": {
+    "meta": {
+      "title": "Takaful Technology & Modernization | Iorta TechNXT",
+      "description": "Modernize Takaful participant, advisor, servicing, claims and core workflows with configurable technology and insurance modernization engineering."
+    },
+    "hero": {
+      "eyebrow": "Takaful",
+      "title": "Modern technology built around the way Takaful operates.",
+      "lede": "Takaful modernization should improve participant and advisor experiences without flattening Takaful-specific product, contribution, workflow and governance requirements into generic insurance processes.",
+      "primary": "Talk to Iorta TechNXT",
+      "secondary": "Core Modernization"
+    },
+    "sections": [
+      {
+        "number": "01",
+        "eyebrow": "Market reality",
+        "title": "Same expectations, different operating model.",
+        "body": [
+          "Takaful organizations face many of the same digital expectations as insurers: better distribution, mobile experiences, self-service, integration and claims. Product and operating requirements can differ materially.",
+          "Technology has to be configurable enough to support those differences."
+        ]
+      },
+      {
+        "number": "02",
+        "eyebrow": "Critical journeys",
+        "title": "The participant relationship end to end.",
+        "steps": [
+          "Participant acquisition",
+          "Advisor interaction",
+          "Product presentation",
+          "Application",
+          "Contribution processes",
+          "Certificate service",
+          "Renewal",
+          "Claims",
+          "Participant communication"
+        ]
+      },
+      {
+        "number": "03",
+        "eyebrow": "Where technology gets stuck",
+        "title": "The friction teams describe most often.",
+        "tags": [
+          "Legacy policy platforms",
+          "Hard-coded product rules",
+          "Manual administration",
+          "Interfaces that do not reflect the operating model",
+          "Point-to-point integration",
+          "Difficult product change"
+        ]
+      },
+      {
+        "number": "04",
+        "eyebrow": "Distribution",
+        "title": "Advisor-led, branch or digital-assisted.",
+        "body": [
+          "SalesVerse and AgentVerse can support advisor-led, branch, bancassurance or digital-assisted Takaful distribution according to the operating model."
+        ]
+      },
+      {
+        "number": "05",
+        "eyebrow": "Participant experience",
+        "title": "Access to certificates, contributions and claims.",
+        "body": [
+          "CustomerVerse can provide participant access to certificates and policies, documents, payments and contributions where connected, service requests, renewals and claims information."
+        ]
+      },
+      {
+        "number": "06",
+        "eyebrow": "Configurable product & workflow",
+        "title": "Support the rules the operator defines.",
+        "body": [
+          "Shariah governance remains an organizational and governance responsibility. Technology supports the rules and processes defined by the Takaful operator."
+        ],
+        "tags": [
+          "Product configuration",
+          "Business rules",
+          "Workflow",
+          "Required documents",
+          "Approvals",
+          "Contribution journeys",
+          "Market-specific forms and communications"
+        ]
+      },
+      {
+        "number": "07",
+        "eyebrow": "Claims",
+        "title": "Configured Takaful claim journeys.",
+        "body": [
+          "ClaimVerse can support configured Takaful claims journeys with intake, documents, triage, assessment, approvals and settlement."
+        ]
+      },
+      {
+        "number": "08",
+        "eyebrow": "Core modernization",
+        "title": "Change the platform progressively.",
+        "tags": [
+          "Modern front ends",
+          "APIs",
+          "Workflow layers",
+          "Oracle and PAS modernization",
+          "Data access",
+          "Progressive replacement"
+        ]
+      }
+    ],
+    "proof": {
+      "eyebrow": "Proof in practice",
+      "title": "Evidence, close to the claim.",
+      "body": "A Takaful engagement covering Oracle policy administration optimization, Shariah-aligned product and workflow configuration and configurable business rules is the most relevant evidence here.",
+      "pending": "Awaiting approval",
+      "pendingNote": "Customer identity and metrics require public-use approval."
+    },
+    "related": {
+      "eyebrow": "Related thinking",
+      "title": "Perspectives worth reading next.",
+      "items": [
+        {
+          "label": "Designing Insurance Technology Across Southeast Asian Markets"
+        },
+        {
+          "label": "Why Core Modernization Doesn't Always Start With Replacement"
+        }
+      ]
+    },
+    "cta": {
+      "title": "Modernize Takaful without losing the operating model behind it.",
+      "convert": "Talk to Iorta TechNXT",
+      "evaluate": "Core Modernization",
+      "explore": "Digital Insurance & Takaful"
+    }
+  },
+  "insurance-brokers-agencies": {
+    "meta": {
+      "title": "Insurance Broker & Agency Technology | Iorta TechNXT",
+      "description": "Modernize broker and agency operations across clients, placement, policies, advisors, leads, renewals, commissions and servicing."
+    },
+    "hero": {
+      "eyebrow": "Brokers & agencies",
+      "title": "Modernize the business behind the relationship.",
+      "lede": "Intermediaries create value through relationships, advice and market access. Their technology should reduce administration around those relationships rather than force brokers and advisors into generic CRM processes.",
+      "primary": "Talk to Iorta TechNXT",
+      "secondary": "Distribution Modernization"
+    },
+    "sections": [
+      {
+        "number": "01",
+        "eyebrow": "Two different operating models",
+        "title": "A brokerage is not an agency.",
+        "body": [
+          "Iorta treats these as related distribution businesses with different technology needs."
+        ],
+        "roles": [
+          {
+            "role": "Brokerages",
+            "description": "Manage clients, insurers, placement, policies, service, claims advocacy, premiums and commissions."
+          },
+          {
+            "role": "Agencies",
+            "description": "Manage advisor recruitment, activation, leads, customer activity, sales, renewals, targets and coaching."
+          }
+        ]
+      },
+      {
+        "number": "02",
+        "eyebrow": "Broker journeys",
+        "title": "From prospect to commission.",
+        "body": [
+          "BrokerVerse is the primary product for brokerage operations."
+        ],
+        "steps": [
+          "Prospect",
+          "Client",
+          "Requirement",
+          "Quote",
+          "Placement",
+          "Policy",
+          "Service",
+          "Renewal",
+          "Claims support",
+          "Commission"
+        ]
+      },
+      {
+        "number": "03",
+        "eyebrow": "Agency journeys",
+        "title": "From recruit to coach.",
+        "body": [
+          "AgentVerse is the primary product for advisor and distribution-workforce enablement."
+        ],
+        "steps": [
+          "Recruit",
+          "Onboard",
+          "Activate",
+          "Lead",
+          "Plan",
+          "Engage",
+          "Sell",
+          "Serve",
+          "Renew",
+          "Coach"
+        ]
+      },
+      {
+        "number": "04",
+        "eyebrow": "Where technology gets stuck",
+        "title": "The friction teams describe most often.",
+        "tags": [
+          "Spreadsheets",
+          "Generic CRM",
+          "Email-based placement",
+          "Disconnected policy information",
+          "Weak renewal discipline",
+          "Limited commission visibility",
+          "Separate advisor apps",
+          "Manual onboarding"
+        ]
+      },
+      {
+        "number": "05",
+        "eyebrow": "Broker and carrier connectivity",
+        "title": "Reduce friction with the market.",
+        "tags": [
+          "Submission exchange",
+          "Carrier responses",
+          "Documents",
+          "Placement status",
+          "Policy information",
+          "Renewal information",
+          "Claims-related status",
+          "APIs where available"
+        ]
+      },
+      {
+        "number": "06",
+        "eyebrow": "Sales and new business",
+        "title": "When the sales process outgrows the specialist tool.",
+        "body": [
+          "SalesVerse can support enterprise lead, opportunity and new-business orchestration when broker or agency sales needs extend beyond the specialist BrokerVerse or AgentVerse workflow."
+        ]
+      },
+      {
+        "number": "07",
+        "eyebrow": "Customer continuation",
+        "title": "Serve the client after placement.",
+        "body": [
+          "CustomerVerse can support downstream self-service. ClaimVerse can support formal claim processing when the intermediary is part of a carrier operating model."
+        ]
+      },
+      {
+        "number": "08",
+        "eyebrow": "Business outcomes",
+        "title": "What the business should feel.",
+        "body": [
+          "More time on relationships. Better renewal control. Faster placement follow-up. More structured advisor management. Better management visibility."
+        ]
+      }
+    ],
+    "related": {
+      "eyebrow": "Related thinking",
+      "title": "Perspectives worth reading next.",
+      "items": [
+        {
+          "label": "The Next Phase of Insurance Distribution"
+        },
+        {
+          "label": "Why Advisor Technology Still Matters"
+        }
+      ]
+    },
+    "cta": {
+      "title": "Give intermediaries better tools for the work behind the relationship.",
+      "convert": "Talk to Iorta TechNXT",
+      "evaluate": "Distribution Modernization",
+      "explore": "Explore BrokerVerse"
+    }
+  },
+  "fintech-digital-platforms": {
+    "meta": {
+      "title": "Insurance Technology for Fintech & Digital Platforms | Iorta TechNXT",
+      "description": "Connect insurance with fintech, lending, banking and digital platforms through partner onboarding, APIs, identity, consent and policyholder journeys."
+    },
+    "hero": {
+      "eyebrow": "Fintech & digital platforms",
+      "title": "Turn insurance into a capability your platform can use.",
+      "lede": "Digital platforms want to add protection close to a financial or commercial need without rebuilding an insurer. Insurers want new distribution without losing product, regulatory and operational control. Iorta TechNXT helps bridge those two models.",
+      "primary": "Talk to Iorta TechNXT",
+      "secondary": "API & Microservices"
+    },
+    "sections": [
+      {
+        "number": "01",
+        "eyebrow": "Market reality",
+        "title": "Two different clock speeds.",
+        "body": [
+          "Platform experiences are built for speed. Insurance processes often depend on product rules, identity, documents, approvals, payment and policy systems that were not designed for embedded or partner-led journeys."
+        ]
+      },
+      {
+        "number": "02",
+        "eyebrow": "Critical journey",
+        "title": "From partner signature to claim.",
+        "steps": [
+          "Partner onboarding",
+          "Customer opportunity",
+          "Quote and offer",
+          "Consent and identity",
+          "Purchase",
+          "Policy confirmation",
+          "Service",
+          "Claim"
+        ]
+      },
+      {
+        "number": "03",
+        "eyebrow": "Where insurance creates friction",
+        "title": "The friction platforms describe most often.",
+        "tags": [
+          "Long partner onboarding",
+          "Duplicate identity checks",
+          "Unclear consent",
+          "Hard-coded interfaces",
+          "Slow insurer status",
+          "Repeated customer information",
+          "Poor post-purchase service continuity"
+        ]
+      },
+      {
+        "number": "04",
+        "eyebrow": "Partner operations",
+        "title": "Govern the relationship before the traffic starts.",
+        "body": [
+          "MerchantVerse can support partner application, documents, review, approval, activation and partner records."
+        ]
+      },
+      {
+        "number": "05",
+        "eyebrow": "Sales and purchase journey",
+        "title": "Match the journey to the product.",
+        "body": [
+          "SalesVerse can support the sales and new-business flow where a deeper sales process is required. Simpler embedded experiences can consume insurer APIs directly according to architecture."
+        ]
+      },
+      {
+        "number": "06",
+        "eyebrow": "APIs & reusable services",
+        "title": "Expose the capability once.",
+        "body": [
+          "Expose business capabilities safely through APIs instead of creating a custom direct database or point-to-point connection for every platform."
+        ],
+        "tags": [
+          "Quote",
+          "Product",
+          "Application",
+          "Policy",
+          "Payment",
+          "Status",
+          "Documents",
+          "Claims"
+        ]
+      },
+      {
+        "number": "07",
+        "eyebrow": "Identity, consent & data",
+        "title": "Exchange data on defined terms.",
+        "tags": [
+          "Customer consent",
+          "eKYC and identity",
+          "Authorization",
+          "Data scope",
+          "Secure exchange",
+          "Traceability",
+          "Revocation and expiry where applicable"
+        ]
+      },
+      {
+        "number": "08",
+        "eyebrow": "Post-purchase continuation",
+        "title": "The relationship continues after checkout.",
+        "body": [
+          "CustomerVerse can provide ongoing policyholder service. ClaimVerse can provide configured digital claims journeys."
+        ]
+      },
+      {
+        "number": "09",
+        "eyebrow": "Business outcomes",
+        "title": "What the business should feel.",
+        "body": [
+          "Faster partner enablement. More reusable insurer connectivity. Lower integration duplication. Better customer continuity after purchase. Stronger control over data exchange."
+        ]
+      }
+    ],
+    "related": {
+      "eyebrow": "Related thinking",
+      "title": "Perspectives worth reading next.",
+      "items": [
+        {
+          "label": "Open Finance and the Future of Connected Insurance"
+        },
+        {
+          "label": "The Next Phase of Partner-Led Distribution"
+        }
+      ]
+    },
+    "cta": {
+      "title": "Connect your platform to insurance without turning it into an insurance core.",
+      "convert": "Talk to Iorta TechNXT",
+      "evaluate": "API & Microservices",
+      "explore": "Explore MerchantVerse"
+    }
+  },
+  "travel-commerce": {
+    "meta": {
+      "title": "Embedded Insurance Technology for Travel & Commerce | Iorta TechNXT",
+      "description": "Connect protection with travel, commerce, retail and marketplace journeys through partner onboarding, APIs, customer service and claims."
+    },
+    "hero": {
+      "eyebrow": "Travel & commerce",
+      "title": "Put protection beside the transaction.",
+      "lede": "Insurance can be most relevant at the moment a customer books a trip, buys a device, rents an asset or completes another digital purchase. The insurance journey must fit that context without slowing the core transaction.",
+      "primary": "Talk to Iorta TechNXT",
+      "secondary": "Explore Integrations"
+    },
+    "sections": [
+      {
+        "number": "01",
+        "eyebrow": "Market reality",
+        "title": "Two owners, one checkout.",
+        "body": [
+          "Travel and commerce partners own the primary customer experience. The insurer still owns product rules, coverage, policy issuance, servicing and claims. Technology has to connect those responsibilities cleanly."
+        ]
+      },
+      {
+        "number": "02",
+        "eyebrow": "Critical journey",
+        "title": "From partner onboarding to claim.",
+        "steps": [
+          "Partner onboarding",
+          "Contextual offer",
+          "Customer information and consent",
+          "Purchase",
+          "Policy confirmation",
+          "Service",
+          "Claim"
+        ]
+      },
+      {
+        "number": "03",
+        "eyebrow": "Where technology gets stuck",
+        "title": "The friction teams describe most often.",
+        "tags": [
+          "Partner onboarding by email",
+          "Hard-coded product integrations",
+          "Duplicate customer information",
+          "Slow quote and policy responses",
+          "Poor policy document delivery",
+          "Claims disconnected from the original purchase"
+        ]
+      },
+      {
+        "number": "04",
+        "eyebrow": "Partner operations",
+        "title": "Approve and activate the partner.",
+        "body": [
+          "MerchantVerse can support partner onboarding, review, activation and ongoing partner records."
+        ]
+      },
+      {
+        "number": "05",
+        "eyebrow": "Purchase integration",
+        "title": "Do not force a sales workflow into a simple transaction.",
+        "body": [
+          "APIs can connect product, quote and policy services into travel or commerce checkout where supported.",
+          "SalesVerse may support assisted or higher-touch journeys. Do not force a full sales workflow into a simple transaction if it is not needed."
+        ]
+      },
+      {
+        "number": "06",
+        "eyebrow": "Customer servicing",
+        "title": "Somewhere to go after the booking.",
+        "body": [
+          "CustomerVerse can provide policy information, documents, contact and service requests and claims status after purchase."
+        ]
+      },
+      {
+        "number": "07",
+        "eyebrow": "Claims continuation",
+        "title": "Resolve what the customer bought protection for.",
+        "body": [
+          "ClaimVerse can support travel, device, property or other configured claim types, depending on product validation."
+        ]
+      },
+      {
+        "number": "08",
+        "eyebrow": "Business outcomes",
+        "title": "What the business should feel.",
+        "body": [
+          "Faster partner onboarding. Less integration duplication. Lower checkout friction. Better post-purchase service. Cleaner transition into claims."
+        ]
+      }
+    ],
+    "related": {
+      "eyebrow": "Related thinking",
+      "title": "Perspectives worth reading next.",
+      "items": [
+        {
+          "label": "The Next Phase of Partner-Led Insurance Distribution"
+        },
+        {
+          "label": "From Self-Service to Proactive Insurance Service"
+        }
+      ]
+    },
+    "cta": {
+      "title": "Add protection without adding unnecessary transaction friction.",
+      "convert": "Talk to Iorta TechNXT",
+      "evaluate": "Explore Integrations",
+      "explore": "Explore MerchantVerse"
+    }
+  },
+  "health-benefits-healthcare": {
+    "meta": {
+      "title": "Health Benefits & Healthcare Technology | Iorta TechNXT",
+      "description": "Connect employers, members, insurers and healthcare providers through digital benefits, servicing, authorization, documents and claims-related workflows."
+    },
+    "hero": {
+      "eyebrow": "Health benefits & healthcare",
+      "title": "Connect benefits, members and healthcare journeys.",
+      "lede": "Health benefits involve more than the insurer and the policyholder. Employers, members, providers, administrators and insurers may all participate in enrollment, benefit information, authorization, documents and claims-related processes.",
+      "primary": "Talk to Iorta TechNXT",
+      "secondary": "Explore ClaimVerse"
+    },
+    "sections": [
+      {
+        "number": "01",
+        "eyebrow": "Scope of this page",
+        "title": "The connected employer, member and provider model.",
+        "body": [
+          "This page focuses on the connected employer, member and provider operating model. Carrier-wide life and health insurance transformation remains under Life & Health Insurance."
+        ],
+        "tone": "muted"
+      },
+      {
+        "number": "02",
+        "eyebrow": "Market reality",
+        "title": "A simple benefit, a complicated process.",
+        "body": [
+          "Members often struggle to understand benefits and status. Employers need better administration. Providers need timely coverage or authorization information. Insurers receive documents and claims from multiple sources.",
+          "The result can be high administrative effort even when the benefit itself is straightforward."
+        ]
+      },
+      {
+        "number": "03",
+        "eyebrow": "Critical journeys",
+        "title": "From enrollment to settlement information.",
+        "steps": [
+          "Enrollment",
+          "Member activation",
+          "Benefit lookup",
+          "Eligibility inquiry",
+          "Pre-authorization",
+          "Service request",
+          "Claim submission",
+          "Status",
+          "Settlement information"
+        ]
+      },
+      {
+        "number": "04",
+        "eyebrow": "Where technology gets stuck",
+        "title": "The friction teams describe most often.",
+        "tags": [
+          "Separate member and insurer records",
+          "Manual eligibility checks",
+          "Repeated forms",
+          "Email and fax documents",
+          "Authorization follow-up",
+          "Limited claim visibility",
+          "Provider and member call volume"
+        ]
+      },
+      {
+        "number": "05",
+        "eyebrow": "Member experience",
+        "title": "Make the benefit understandable.",
+        "body": [
+          "CustomerVerse can support the member-facing layer where configured."
+        ],
+        "tags": [
+          "Digital access",
+          "Coverage and benefit information",
+          "Documents",
+          "Requests",
+          "Claims-related information",
+          "Notifications",
+          "Support",
+          "Communication preferences"
+        ]
+      },
+      {
+        "number": "06",
+        "eyebrow": "Employer & benefits administration",
+        "title": "Reduce the administrative load on the employer.",
+        "body": [
+          "Payroll and HR functions are described only where integrated or delivered."
+        ],
+        "tags": [
+          "Group and member information",
+          "Enrollment workflows",
+          "Member changes",
+          "Benefit documents",
+          "Communication",
+          "Service status",
+          "Reporting where supported"
+        ]
+      },
+      {
+        "number": "07",
+        "eyebrow": "Provider interaction",
+        "title": "Answer the provider before the patient waits.",
+        "tags": [
+          "Member information capture",
+          "Eligibility connectivity where supported",
+          "Authorization workflow",
+          "Documents",
+          "Status",
+          "Claim-related communication",
+          "Provider tasks"
+        ]
+      },
+      {
+        "number": "08",
+        "eyebrow": "Claims & authorization operations",
+        "title": "Structure the work behind the benefit.",
+        "body": [
+          "ClaimVerse or configured workflow applications can support intake, documents, provider involvement, assessment, authorization and referral and status according to product scope."
+        ]
+      },
+      {
+        "number": "09",
+        "eyebrow": "Affordability & efficiency",
+        "title": "Be precise about what technology changes.",
+        "body": [
+          "Technology can reduce avoidable servicing friction, manual re-keying, document handling and status enquiries. It is not a guarantee that premiums or medical costs will decrease."
+        ]
+      },
+      {
+        "number": "10",
+        "eyebrow": "Business outcomes",
+        "title": "What the business should feel.",
+        "body": [
+          "Clearer member service. Faster document exchange. Better authorization status. Lower administrative handling. Better provider and member visibility."
+        ]
+      }
+    ],
+    "related": {
+      "eyebrow": "Related thinking",
+      "title": "Perspectives worth reading next.",
+      "items": [
+        {
+          "label": "Making Health Protection Easier to Operate"
+        },
+        {
+          "label": "From Self-Service to Proactive Insurance Service"
+        }
+      ]
+    },
+    "cta": {
+      "title": "Make health benefits easier to understand and easier to operate.",
+      "convert": "Talk to Iorta TechNXT",
+      "evaluate": "Explore ClaimVerse",
+      "explore": "Explore CustomerVerse"
+    }
+  }
+}

@@ -1,0 +1,548 @@
+{
+  "name": "MerchantVerse",
+  "overview": {
+    "meta": {
+      "title": "MerchantVerse | Insurance Partner Onboarding & Management Platform",
+      "description": "Digitize partner application, review, approval, activation and ongoing management for insurance distribution relationships."
+    },
+    "hero": {
+      "eyebrow": "MerchantVerse: Partner onboarding & distribution",
+      "title": "Scale partnerships without scaling onboarding complexity.",
+      "lede": "MerchantVerse provides a digital foundation for onboarding, reviewing, activating and managing the businesses through which insurance is distributed.",
+      "primary": "Request Demo",
+      "secondary": "Explore Features"
+    },
+    "problem": {
+      "eyebrow": "Partner-led distribution",
+      "title": "Put insurance closer to where the need appears.",
+      "body": [
+        "Relevant distribution relationships can include banks, fintechs, digital lenders, travel businesses, commerce platforms, retail relationships and affinity partners.",
+        "MerchantVerse helps manage the business onboarding and administrative work behind those relationships."
+      ]
+    },
+    "journey": {
+      "eyebrow": "Partner journey",
+      "title": "From first conversation to managed relationship.",
+      "steps": [
+        "Recruit",
+        "Apply",
+        "Verify",
+        "Review",
+        "Approve",
+        "Activate",
+        "Manage"
+      ],
+      "body": "Create a structured entry point. Capture business information. Collect supporting documents. Move the application through internal checks. Record approval. Complete activation tasks. Maintain the ongoing partner record."
+    },
+    "builtFor": {
+      "eyebrow": "Built for",
+      "title": "The teams behind the partnership.",
+      "items": [
+        {
+          "role": "Partner operations",
+          "description": "Applications, documents, review and activation."
+        },
+        {
+          "role": "Distribution managers",
+          "description": "The path from prospective partner to active relationship."
+        },
+        {
+          "role": "Partner administrators",
+          "description": "Ongoing partner records and status."
+        },
+        {
+          "role": "Business operations",
+          "description": "Internal coordination across review steps."
+        },
+        {
+          "role": "Business leaders",
+          "description": "Visibility across a growing partner portfolio."
+        }
+      ]
+    },
+    "intelligence": {
+      "eyebrow": "Governance",
+      "title": "Keep the partner record defensible.",
+      "body": "Partner identity, business verification, documents, approval status, access, communication history, exceptions and auditability, held together in one maintained record."
+    },
+    "integration": {
+      "eyebrow": "Works with your technology",
+      "title": "Connect the services partner review depends on.",
+      "body": "Every integration is an implementation possibility unless a maintained connector is confirmed.",
+      "tags": [
+        "Identity and business verification",
+        "Document services",
+        "Digital signature",
+        "CRM",
+        "Partner portals",
+        "Insurance APIs",
+        "Communication services",
+        "Reporting environments"
+      ]
+    },
+    "outcomes": {
+      "eyebrow": "What changes for the business",
+      "title": "Different leaders, different gains.",
+      "items": [
+        {
+          "role": "Distribution leaders",
+          "description": "A clearer path from prospective partner to active relationship."
+        },
+        {
+          "role": "Partner operations",
+          "description": "More consistent application, review, approval and status management."
+        },
+        {
+          "role": "Risk and control teams",
+          "description": "Better traceability around partner information and approvals."
+        },
+        {
+          "role": "Technology leaders",
+          "description": "A partner-management layer that can connect with required enterprise and external services."
+        }
+      ]
+    },
+    "proof": {
+      "eyebrow": "Proof in practice",
+      "title": "Evidence, close to the claim.",
+      "body": "A partner-onboarding or distribution-connectivity engagement is the relevant evidence here. Results from unrelated implementations are not transferable to this product.",
+      "pending": "Awaiting approval",
+      "pendingNote": "Do not infer MerchantVerse-specific results from unrelated implementations."
+    },
+    "faq": {
+      "eyebrow": "Questions",
+      "title": "Common questions about MerchantVerse.",
+      "items": [
+        {
+          "question": "Is MerchantVerse an embedded-insurance checkout product?",
+          "answer": "MerchantVerse is positioned primarily around partner onboarding and management. Transaction or product-distribution functions should be scoped according to the confirmed product configuration."
+        },
+        {
+          "question": "Who uses MerchantVerse?",
+          "answer": "It is relevant to insurers and distribution organizations managing external business partners such as banks, fintechs, travel businesses or other affinity relationships."
+        },
+        {
+          "question": "Can MerchantVerse support multiple markets?",
+          "answer": "Partner workflows can be configured for different information, approval and operating requirements where supported by the implementation."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Make partner growth easier to operate.",
+      "convert": "Request a MerchantVerse Demo",
+      "explore": "View MerchantVerse Use Cases"
+    }
+  },
+  "features": {
+    "meta": {
+      "title": "MerchantVerse Features | Partner Application, Review, Approval & Activation",
+      "description": "Explore MerchantVerse capabilities for partner applications, business information, documents, review, approval, activation, partner profiles, status and administration."
+    },
+    "hero": {
+      "eyebrow": "MerchantVerse features",
+      "title": "From partner application to active distribution relationship.",
+      "lede": "MerchantVerse is positioned around the onboarding and ongoing administration of businesses through which insurance may be distributed. The current validated product story is strongest around partner application, information, documents, review, approval, activation and partner-record management.",
+      "primary": "Request Demo",
+      "secondary": "Explore the Overview"
+    },
+    "note": "Advanced commercial, transaction, commission, settlement and embedded-journey functions are deliberately not described here. They will be published only after product-owner validation.",
+    "groups": [
+      {
+        "number": "01",
+        "eyebrow": "Partner application",
+        "title": "Give prospective partners a structured entry point.",
+        "items": [
+          {
+            "term": "Partner application forms",
+            "description": "Replace email-based onboarding with a guided submission."
+          },
+          {
+            "term": "Business contact information",
+            "description": "Capture who to deal with at the partner organization."
+          },
+          {
+            "term": "Organization details",
+            "description": "Record the business behind the relationship."
+          },
+          {
+            "term": "Distribution interest",
+            "description": "Understand what the partner wants to offer where required."
+          },
+          {
+            "term": "Application reference",
+            "description": "Give both sides something to track."
+          },
+          {
+            "term": "Save and continue",
+            "description": "Let partners complete the application over time where supported."
+          },
+          {
+            "term": "Submission confirmation and status",
+            "description": "Confirm receipt and show progress. The journey can vary by partner type, market and insurer due-diligence model."
+          }
+        ]
+      },
+      {
+        "number": "02",
+        "eyebrow": "Business information & documents",
+        "title": "Keep the information required for review together.",
+        "items": [
+          {
+            "term": "Legal and business name",
+            "description": "Record the entity as it is formally registered."
+          },
+          {
+            "term": "Contact information and address",
+            "description": "Maintain where and how the business can be reached."
+          },
+          {
+            "term": "Registration information",
+            "description": "Capture business registration detail where applicable."
+          },
+          {
+            "term": "Business category",
+            "description": "Classify the partner for review and reporting."
+          },
+          {
+            "term": "Supporting documents",
+            "description": "Collect the evidence review requires."
+          },
+          {
+            "term": "Agreements and declarations",
+            "description": "Capture what the partner has signed where configured."
+          },
+          {
+            "term": "Document status and requests",
+            "description": "Show what is present and ask for what is missing. Specific KYB or KYC checks are named only where the deployed product integrates or owns those services."
+          }
+        ]
+      },
+      {
+        "number": "03",
+        "eyebrow": "Review & verification workflow",
+        "title": "Turn partner review into managed work.",
+        "items": [
+          {
+            "term": "Review queues",
+            "description": "Organize applications waiting on internal action."
+          },
+          {
+            "term": "Assigned reviewer",
+            "description": "Give each application an owner."
+          },
+          {
+            "term": "Application status",
+            "description": "Make progress visible to everyone involved."
+          },
+          {
+            "term": "Required-document checks",
+            "description": "Confirm the submission is complete before review time is spent."
+          },
+          {
+            "term": "Internal comments",
+            "description": "Keep reviewer notes with the application."
+          },
+          {
+            "term": "Additional-information requests",
+            "description": "Ask the partner for what is still needed."
+          },
+          {
+            "term": "Escalation and exception handling",
+            "description": "Route difficult cases onward, with communication history retained. External verification services can be connected where part of the implementation."
+          }
+        ]
+      },
+      {
+        "number": "04",
+        "eyebrow": "Approval & decision",
+        "title": "Make partner decisions traceable.",
+        "items": [
+          {
+            "term": "Approval workflow",
+            "description": "Move the decision through the required internal steps."
+          },
+          {
+            "term": "Decision status",
+            "description": "Record the outcome clearly."
+          },
+          {
+            "term": "Reason and comments",
+            "description": "Capture why the decision was made where configured."
+          },
+          {
+            "term": "Multi-step internal approval",
+            "description": "Support more than one approver where the policy requires it."
+          },
+          {
+            "term": "Exception referral",
+            "description": "Route cases that fall outside standard criteria."
+          },
+          {
+            "term": "Rework and resubmission",
+            "description": "Let a partner correct and resubmit."
+          },
+          {
+            "term": "Audit history",
+            "description": "Retain the decision trail. This supports controlled decision workflow without implying automated approval in markets where human or compliance review is required."
+          }
+        ]
+      },
+      {
+        "number": "05",
+        "eyebrow": "Activation",
+        "title": "Move approved partners toward operational readiness.",
+        "items": [
+          {
+            "term": "Activation checklist",
+            "description": "Track what remains before the partner can operate."
+          },
+          {
+            "term": "Required agreements",
+            "description": "Confirm the paperwork is complete."
+          },
+          {
+            "term": "Access preparation",
+            "description": "Prepare what the partner will need."
+          },
+          {
+            "term": "Internal hand-off",
+            "description": "Pass the relationship to the team that will run it."
+          },
+          {
+            "term": "Partner status and activation date",
+            "description": "Record when the relationship became live."
+          },
+          {
+            "term": "Outstanding activation items",
+            "description": "Keep unfinished setup visible."
+          },
+          {
+            "term": "Confirmation communication",
+            "description": "Tell the partner they are live. Product and channel assignment and integration setup are referenced only when validated as native MerchantVerse functionality."
+          }
+        ]
+      },
+      {
+        "number": "06",
+        "eyebrow": "Partner profile & ongoing status",
+        "title": "One maintained record after onboarding.",
+        "items": [
+          {
+            "term": "Partner profile",
+            "description": "Hold the relationship in one place."
+          },
+          {
+            "term": "Business information and documents",
+            "description": "Keep the onboarding evidence available."
+          },
+          {
+            "term": "Contact information",
+            "description": "Maintain who to reach as people change."
+          },
+          {
+            "term": "Approval history",
+            "description": "Retain how the relationship was approved."
+          },
+          {
+            "term": "Active and inactive status",
+            "description": "Reflect the current state of the relationship."
+          },
+          {
+            "term": "Agreement information",
+            "description": "Track what is in force where supported."
+          },
+          {
+            "term": "Communication history and operational notes",
+            "description": "Retain the working record of the relationship."
+          }
+        ]
+      },
+      {
+        "number": "07",
+        "eyebrow": "Access & administration",
+        "title": "Control who can review and decide.",
+        "items": [
+          {
+            "term": "User and access information",
+            "description": "Manage who can act, where supported."
+          },
+          {
+            "term": "Internal roles",
+            "description": "Separate reviewers, approvers and administrators."
+          },
+          {
+            "term": "Reviewer permissions",
+            "description": "Limit action to the right stage."
+          },
+          {
+            "term": "Partner-administration permissions",
+            "description": "Control who maintains partner records."
+          },
+          {
+            "term": "Status controls",
+            "description": "Govern who can change a partner's state."
+          },
+          {
+            "term": "Workflow and document configuration",
+            "description": "Adapt steps and requirements without code."
+          },
+          {
+            "term": "Audit history and market configuration",
+            "description": "Retain evidence and support regional variation."
+          }
+        ]
+      },
+      {
+        "number": "08",
+        "eyebrow": "Operational issues & exceptions",
+        "title": "Keep partner administration visible after launch.",
+        "items": [
+          {
+            "term": "Issue logging",
+            "description": "Record problems against the partner record."
+          },
+          {
+            "term": "Missing or expired documents",
+            "description": "Surface evidence that needs refreshing where configured."
+          },
+          {
+            "term": "Status exceptions",
+            "description": "Flag partners that fall outside normal state."
+          },
+          {
+            "term": "Internal tasks",
+            "description": "Assign the work required to resolve an issue."
+          },
+          {
+            "term": "Communication",
+            "description": "Keep the partner informed during resolution."
+          },
+          {
+            "term": "Escalation",
+            "description": "Move unresolved issues to the right level."
+          },
+          {
+            "term": "Suspension and deactivation",
+            "description": "Stop distribution where required and supported."
+          }
+        ]
+      },
+      {
+        "number": "09",
+        "eyebrow": "Integration points",
+        "title": "Connect what partner onboarding depends on.",
+        "items": [
+          {
+            "term": "Identity and business verification",
+            "description": "Connect providers that confirm the business is real."
+          },
+          {
+            "term": "Document services",
+            "description": "Store and retrieve onboarding evidence."
+          },
+          {
+            "term": "Digital signature",
+            "description": "Execute agreements without paper."
+          },
+          {
+            "term": "CRM",
+            "description": "Connect the commercial relationship with the operational record."
+          },
+          {
+            "term": "Partner portals",
+            "description": "Give the partner a place to submit and track."
+          },
+          {
+            "term": "Insurance APIs and communication services",
+            "description": "Connect to the wider insurer estate."
+          },
+          {
+            "term": "How to read this list",
+            "description": "Every integration is an implementation possibility unless a maintained out-of-the-box connector is confirmed."
+          }
+        ]
+      }
+    ],
+    "cta": {
+      "title": "Make partner onboarding easier to operate and easier to govern.",
+      "convert": "Request a MerchantVerse Demo",
+      "evaluate": "Explore the MerchantVerse Overview",
+      "explore": "View MerchantVerse Use Cases"
+    }
+  },
+  "useCases": {
+    "meta": {
+      "title": "MerchantVerse Use Cases | Bancassurance, Fintech, Travel & Commerce Partners",
+      "description": "See how MerchantVerse can support partner onboarding and administration for banks, fintechs, lenders, travel businesses, commerce platforms and affinity partners."
+    },
+    "hero": {
+      "eyebrow": "MerchantVerse use cases",
+      "title": "Operationalize the businesses that take insurance to new customers.",
+      "lede": "MerchantVerse is most credible when used to solve the partner-management problem behind partner-led distribution: collecting the right information, reviewing it consistently, activating approved partners and maintaining a controlled partner record.",
+      "primary": "Request Demo",
+      "secondary": "Review Features"
+    },
+    "labels": {
+      "situation": "Business situation",
+      "usage": "How MerchantVerse is used",
+      "change": "What changes"
+    },
+    "cases": [
+      {
+        "number": "01",
+        "title": "Bancassurance partner onboarding",
+        "situation": "An insurer is working with banks or financial institutions that require structured onboarding, documentation, approvals and internal coordination before distribution can begin.",
+        "usage": "The prospective partner submits business information and documents, internal teams review the application, missing items are requested and the relationship moves through approval and activation.",
+        "change": "Clearer onboarding status. Less email-based administration. Better traceability around approvals and documents."
+      },
+      {
+        "number": "02",
+        "title": "Fintech and digital-lender partnerships",
+        "situation": "Digital financial platforms can move quickly, but insurer partner-approval processes often remain manual.",
+        "usage": "Business details, documents, verification results where integrated, internal review and activation tasks are coordinated in one partner journey.",
+        "change": "More consistent onboarding. Better visibility between business-development, operations, risk and technology teams."
+      },
+      {
+        "number": "03",
+        "title": "Travel partners",
+        "situation": "Airlines, travel platforms, agencies or booking businesses may distribute protection alongside a trip, but the commercial relationship still requires approval and operational setup.",
+        "usage": "The insurer uses a structured partner application, review and activation process before the travel partner goes live.",
+        "change": "A clearer path from partnership discussion to approved distribution relationship."
+      },
+      {
+        "number": "04",
+        "title": "Commerce and retail partners",
+        "situation": "E-commerce, retail, device or marketplace businesses may want to introduce insurance or protection products without becoming insurance experts.",
+        "usage": "The partner relationship is created and governed through application, documents, internal approval, activation status and ongoing partner records.",
+        "change": "Better partner administration. More consistent governance across a growing partner portfolio."
+      },
+      {
+        "number": "05",
+        "title": "Affinity and association partners",
+        "situation": "Associations, membership organizations and other affinity groups can become distribution partners but often have different documentation and approval requirements from large banks or fintechs.",
+        "usage": "The onboarding workflow is configured around the required business information, documents, approvals and communication.",
+        "change": "One repeatable operating process without forcing every partner type into an identical form."
+      },
+      {
+        "number": "06",
+        "title": "High-volume partner onboarding",
+        "situation": "An insurer is expanding partner-led distribution and cannot scale partner administration by adding more spreadsheets and email.",
+        "usage": "Applications enter standardized queues, status and missing information remain visible, and approvals are processed through a structured workflow.",
+        "change": "Higher administrative capacity. Better consistency. Easier management visibility."
+      },
+      {
+        "number": "07",
+        "title": "Regional partner administration",
+        "situation": "A regional insurer works with partners across several markets with different information and approval requirements.",
+        "usage": "Market-specific workflows and document requirements can be configured while maintaining a consistent partner-management model.",
+        "change": "Regional consistency without erasing local operating differences."
+      }
+    ],
+    "cta": {
+      "title": "Build a repeatable operating model for partner growth.",
+      "convert": "Request a MerchantVerse Demo",
+      "evaluate": "Review MerchantVerse Features",
+      "explore": "Explore Partner Distribution"
+    }
+  }
+}

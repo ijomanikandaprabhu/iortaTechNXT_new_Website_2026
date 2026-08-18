@@ -1,0 +1,603 @@
+{
+  "name": "SalesVerse",
+  "overview": {
+    "meta": {
+      "title": "SalesVerse | Insurance Sales & New Business Platform",
+      "description": "Manage leads, customer engagement, guided selling, applications, new-business operations and sales performance with SalesVerse."
+    },
+    "hero": {
+      "eyebrow": "SalesVerse: Insurance sales & new business",
+      "title": "Turn opportunity into issued business.",
+      "lede": "SalesVerse connects lead management, customer engagement, guided selling, applications, operational review and business visibility across modern insurance distribution.",
+      "primary": "Request Demo",
+      "secondary": "Explore Features"
+    },
+    "problem": {
+      "eyebrow": "Keep the sale visible",
+      "title": "One customer journey should not require five disconnected systems.",
+      "body": [
+        "Sales teams often move between CRM, product portals, spreadsheets, email, quotation applications and policy systems. That fragmentation makes it harder to know who owns the opportunity, what the customer has already provided, what needs to happen next and where an application is waiting.",
+        "SalesVerse creates a structured operating view from first interest through new business."
+      ]
+    },
+    "journey": {
+      "eyebrow": "Journey",
+      "title": "Move every opportunity forward.",
+      "steps": [
+        "Capture",
+        "Prioritize",
+        "Engage",
+        "Advise",
+        "Propose",
+        "Apply",
+        "Review",
+        "Decide",
+        "Onboard",
+        "Grow"
+      ],
+      "body": "Capture opportunities from multiple channels. Prioritize what needs attention. Bring customer context into the conversation. Support needs-based selling. Create proposals. Capture applications and documents. Connect submitted business with operations and underwriting. Complete onboarding. Surface renewals and future opportunities."
+    },
+    "builtFor": {
+      "eyebrow": "Built for",
+      "title": "One product, six ways of working.",
+      "items": [
+        {
+          "role": "Sales teams & advisors",
+          "description": "Leads, customers, activities, proposals and applications."
+        },
+        {
+          "role": "Sales managers",
+          "description": "Pipeline, conversion, forecasting and team performance."
+        },
+        { "role": "Business leaders", "description": "Channel and growth visibility." },
+        {
+          "role": "Operations teams",
+          "description": "Applications, documents, exceptions and turnaround."
+        },
+        {
+          "role": "Underwriters",
+          "description": "Submitted-business context and structured review."
+        },
+        {
+          "role": "Administrators",
+          "description": "Users, roles, rules, workflows and configuration."
+        }
+      ]
+    },
+    "intelligence": {
+      "eyebrow": "Intelligent sales operations",
+      "title": "Know what needs attention next.",
+      "body": "Support lead prioritization, next-action guidance, document understanding, application completeness checks, operational routing, exception visibility and forecasting, while keeping people in control of decisions that require judgement."
+    },
+    "integration": {
+      "eyebrow": "Works with your technology",
+      "title": "Connect the systems already running the business.",
+      "body": "Connect SalesVerse, where configured, with the platforms your teams depend on today.",
+      "tags": [
+        "Policy administration",
+        "CRM",
+        "Quotation services",
+        "Identity / eKYC",
+        "Payments",
+        "Digital signatures",
+        "Document platforms",
+        "Communication services",
+        "Data platforms",
+        "Partner systems"
+      ]
+    },
+    "outcomes": {
+      "eyebrow": "What changes for the business",
+      "title": "Different leaders, different gains.",
+      "items": [
+        {
+          "role": "Distribution leaders",
+          "description": "Better visibility from opportunity through issued business."
+        },
+        {
+          "role": "Operations leaders",
+          "description": "Fewer manual hand-offs, clearer queues and better turnaround visibility."
+        },
+        {
+          "role": "Underwriting leaders",
+          "description": "Better submission context and more structured referral workflows."
+        },
+        {
+          "role": "Technology leaders",
+          "description": "A modern sales and new-business layer that can work with established policy technology."
+        }
+      ]
+    },
+    "proof": {
+      "eyebrow": "Proof in practice",
+      "title": "Evidence, close to the claim.",
+      "body": "Strong internal proof candidates for this product include agent productivity, adoption and policy-issuance turnaround.",
+      "pending": "Awaiting approval",
+      "pendingNote": "Publish only the customer name and metric set cleared for public use."
+    },
+    "faq": {
+      "eyebrow": "Questions",
+      "title": "Common questions about SalesVerse.",
+      "items": [
+        {
+          "question": "Is SalesVerse a CRM?",
+          "answer": "SalesVerse includes customer and opportunity management, but it is positioned around the insurance sales and new-business workflow rather than generic contact management."
+        },
+        {
+          "question": "Can SalesVerse support multiple distribution channels?",
+          "answer": "Yes. The product can be configured for models such as agency, direct, branch, bancassurance and intermediary-originated business."
+        },
+        {
+          "question": "Does SalesVerse replace the policy administration system?",
+          "answer": "Not necessarily. It can work as a modern sales and new-business layer connected to established policy platforms."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Don't just manage leads. Move business.",
+      "convert": "Request a SalesVerse Demo",
+      "explore": "View SalesVerse Use Cases"
+    }
+  },
+
+  "features": {
+    "meta": {
+      "title": "SalesVerse Features | Insurance Sales, Applications & New Business",
+      "description": "Explore SalesVerse capabilities across leads, customer engagement, guided selling, proposals, digital applications, new-business operations, distribution controls and performance."
+    },
+    "hero": {
+      "eyebrow": "SalesVerse features",
+      "title": "Everything behind a modern insurance sales journey.",
+      "lede": "SalesVerse is designed to help insurance sales and new-business teams move from first opportunity to issued business with less fragmentation. The product brings sales activity, customer context, applications, operational hand-offs and management visibility into one structured environment.",
+      "primary": "Request Demo",
+      "secondary": "Explore the Overview"
+    },
+    "note": "The exact modules enabled in an implementation can vary by channel, product, market and integration landscape.",
+    "groups": [
+      {
+        "number": "01",
+        "eyebrow": "Lead & opportunity management",
+        "title": "Find the right opportunity and keep ownership clear.",
+        "items": [
+          {
+            "term": "Lead capture",
+            "description": "Bring opportunities into a structured pipeline from configured digital, branch, campaign, intermediary or imported sources."
+          },
+          {
+            "term": "Lead allocation",
+            "description": "Assign leads by channel, geography, team, advisor, branch or other configured business rules."
+          },
+          {
+            "term": "Lead ownership",
+            "description": "Keep accountability visible as opportunities move between users or teams."
+          },
+          {
+            "term": "Opportunity stages",
+            "description": "Define sales stages appropriate to the insurer's sales model and make progress visible."
+          },
+          {
+            "term": "Lead history",
+            "description": "Retain important activity and status changes so teams can understand what has already happened."
+          },
+          {
+            "term": "Prioritization",
+            "description": "Surface opportunities requiring attention using configured criteria and, where implemented, analytical or intelligent signals."
+          },
+          {
+            "term": "Re-engagement",
+            "description": "Return stalled or inactive opportunities into follow-up workflows when business rules or campaigns require it."
+          }
+        ]
+      },
+      {
+        "number": "02",
+        "eyebrow": "Activity & work management",
+        "title": "Turn sales intent into a clear daily plan.",
+        "items": [
+          {
+            "term": "Tasks and follow-ups",
+            "description": "Create and track the actions required to move an opportunity forward."
+          },
+          {
+            "term": "Calls and meetings",
+            "description": "Record planned and completed customer interactions."
+          },
+          {
+            "term": "Appointments and calendar",
+            "description": "Organize meetings and time-sensitive activities around customer and opportunity context."
+          },
+          {
+            "term": "Reminders",
+            "description": "Surface activities that are approaching or overdue."
+          },
+          {
+            "term": "Team visibility",
+            "description": "Give managers appropriate visibility into activity levels, follow-up and pipeline movement."
+          },
+          {
+            "term": "Suggested actions",
+            "description": "Where configured, surface recommended next activities based on workflow state or available customer information."
+          }
+        ]
+      },
+      {
+        "number": "03",
+        "eyebrow": "Customer & relationship context",
+        "title": "Put the relationship beside the sale.",
+        "items": [
+          {
+            "term": "Customer profile",
+            "description": "Bring relevant identity, contact and relationship information into the seller workspace."
+          },
+          {
+            "term": "Customer 360",
+            "description": "Connect available customer, policy, activity and opportunity information into a more complete working view."
+          },
+          {
+            "term": "Interaction history",
+            "description": "Show prior activity so customers do not have to repeat the same information unnecessarily."
+          },
+          {
+            "term": "Existing-policy context",
+            "description": "Surface relevant current-policy information when integrations make it available."
+          },
+          {
+            "term": "Needs information",
+            "description": "Capture structured information used during needs-based conversations."
+          },
+          {
+            "term": "Renewal context",
+            "description": "Highlight upcoming policy events that can create a service or sales opportunity."
+          },
+          {
+            "term": "Cross-sell and upsell context",
+            "description": "Use approved customer and policy information to support relevant additional conversations."
+          }
+        ]
+      },
+      {
+        "number": "04",
+        "eyebrow": "Guided selling & sales enablement",
+        "title": "Give sellers more useful support inside the conversation.",
+        "items": [
+          {
+            "term": "Product discovery",
+            "description": "Help sellers navigate available products according to the configured product catalogue and sales process."
+          },
+          {
+            "term": "Product information",
+            "description": "Make relevant product details, documents and approved sales content available in context."
+          },
+          {
+            "term": "Needs discovery",
+            "description": "Capture customer needs through structured questions and sales journeys."
+          },
+          {
+            "term": "Guided selling",
+            "description": "Use configured rules, workflows or recommendations to guide the seller through appropriate next steps."
+          },
+          {
+            "term": "Sales pitch content",
+            "description": "Surface approved product material, scripts, brochures, illustrations or supporting content."
+          },
+          {
+            "term": "Knowledge and learning content",
+            "description": "Give advisors access to sales or product knowledge without leaving the working experience where supported."
+          },
+          {
+            "term": "Recommendation support",
+            "description": "Where implemented, help surface suitable next actions or product options while keeping required human judgement and regulatory controls explicit."
+          }
+        ]
+      },
+      {
+        "number": "05",
+        "eyebrow": "Quote, proposal & digital application",
+        "title": "Turn customer interest into a complete application.",
+        "items": [
+          {
+            "term": "Quotation access",
+            "description": "Connect quotation capabilities into the sales journey where the relevant product or pricing service is available."
+          },
+          {
+            "term": "Proposal creation",
+            "description": "Prepare customer-facing proposals using configured product and customer information."
+          },
+          {
+            "term": "Digital application",
+            "description": "Capture application information through structured digital forms."
+          },
+          {
+            "term": "Online proposal forms",
+            "description": "Support assisted or customer-completed data capture where the implementation permits it."
+          },
+          {
+            "term": "Document collection",
+            "description": "Collect and attach supporting documents required for the application."
+          },
+          {
+            "term": "Requirements management",
+            "description": "Track outstanding information or documents before the case can progress."
+          },
+          {
+            "term": "Quality checks",
+            "description": "Apply configured completeness or business-rule checks before submission."
+          },
+          {
+            "term": "Digital signature connectivity",
+            "description": "Connect electronic-signature services where required and available."
+          },
+          {
+            "term": "Identity / eKYC connectivity",
+            "description": "Connect customer verification services where applicable."
+          },
+          {
+            "term": "Payment connectivity",
+            "description": "Link available payment journeys into the application or onboarding process."
+          },
+          {
+            "term": "Application status",
+            "description": "Keep the seller informed after submission instead of making the application disappear into another system."
+          }
+        ]
+      },
+      {
+        "number": "06",
+        "eyebrow": "New-business operations & underwriting hand-off",
+        "title": "Keep visibility after the seller clicks submit.",
+        "items": [
+          {
+            "term": "Submission review",
+            "description": "Route applications into operational review queues."
+          },
+          {
+            "term": "Application validation",
+            "description": "Check required information, documents and configured conditions."
+          },
+          {
+            "term": "Operational work queues",
+            "description": "Organize cases according to status, ownership, ageing, priority or exception."
+          },
+          {
+            "term": "Underwriting hand-off",
+            "description": "Move cases requiring underwriting into a controlled review process while preserving sales context."
+          },
+          {
+            "term": "Referral workflows",
+            "description": "Route cases that require specialist or higher-authority review."
+          },
+          {
+            "term": "SLA tracking",
+            "description": "Monitor how long applications remain at each operational stage."
+          },
+          {
+            "term": "Exception management",
+            "description": "Surface missing information, rule failures or unresolved requirements."
+          },
+          {
+            "term": "Straight-through processing",
+            "description": "Allow qualifying cases to progress automatically where configured rules, integrations and product conditions permit."
+          },
+          {
+            "term": "Decision visibility",
+            "description": "Return relevant decision or status information to sales teams so the customer can be updated."
+          }
+        ]
+      },
+      {
+        "number": "07",
+        "eyebrow": "Distribution structure & administration",
+        "title": "Fit the sales model without losing control.",
+        "items": [
+          {
+            "term": "Country and market configuration",
+            "description": "Support market-specific structures and business rules where configured."
+          },
+          {
+            "term": "Language and currency settings",
+            "description": "Adapt user and transaction experiences where supported."
+          },
+          {
+            "term": "Channel configuration",
+            "description": "Represent agency, branch, bancassurance, direct or other distribution structures."
+          },
+          {
+            "term": "Role and designation management",
+            "description": "Define who can access which functions and data."
+          },
+          {
+            "term": "Hierarchy management",
+            "description": "Represent team, manager, branch or other reporting structures."
+          },
+          {
+            "term": "User administration",
+            "description": "Manage users, activation status and relevant access."
+          },
+          {
+            "term": "Access controls",
+            "description": "Apply permissions according to role, responsibility and implementation design."
+          },
+          {
+            "term": "Business rules",
+            "description": "Configure process logic appropriate to products, channels and markets."
+          },
+          {
+            "term": "Workflow configuration",
+            "description": "Adapt the progression of opportunities and applications without hard-coding every business variation."
+          }
+        ]
+      },
+      {
+        "number": "08",
+        "eyebrow": "Performance, incentives & management intelligence",
+        "title": "Make sales performance easier to understand and act on.",
+        "items": [
+          {
+            "term": "Sales dashboards",
+            "description": "Show pipeline, activity and outcome information appropriate to the user's role."
+          },
+          {
+            "term": "Custom and operational reports",
+            "description": "Provide structured reporting against configured sales and new-business data."
+          },
+          {
+            "term": "Targets",
+            "description": "Track individual, team, branch or channel goals where configured."
+          },
+          {
+            "term": "Conversion visibility",
+            "description": "Understand movement between lead, opportunity, application and issued-business stages."
+          },
+          {
+            "term": "Forecasting",
+            "description": "Use active pipeline information to support sales planning."
+          },
+          {
+            "term": "Engagement and propensity signals",
+            "description": "Where analytical capabilities are implemented, surface indicators that help teams prioritize follow-up."
+          },
+          {
+            "term": "Commission and incentive information",
+            "description": "Support commission, incentive or payout visibility where those modules are implemented."
+          },
+          {
+            "term": "Contests and leaderboards",
+            "description": "Support configured performance and motivation programs where appropriate."
+          }
+        ]
+      },
+      {
+        "number": "09",
+        "eyebrow": "Omnichannel experience & integrations",
+        "title": "Work across the channels and systems the business already uses.",
+        "body": "SalesVerse can be implemented across responsive web and mobile experiences according to the deployment model. Integration availability depends on the target system, interface, market and implementation scope, so treat these as areas rather than guaranteed out-of-the-box connectors.",
+        "tags": [
+          "Policy administration",
+          "CRM",
+          "Product and quotation services",
+          "Identity / eKYC",
+          "Payments",
+          "Digital signatures",
+          "Document management",
+          "Telephony",
+          "Email / SMS / notifications",
+          "Data platforms",
+          "Partner systems",
+          "Reporting platforms"
+        ]
+      },
+      {
+        "number": "10",
+        "eyebrow": "Security, audit & controls",
+        "title": "A controlled enterprise environment, not a front end.",
+        "body": "SalesVerse should be positioned as a controlled enterprise sales and new-business environment, not simply a front-end lead-management application.",
+        "tags": [
+          "Role-based access",
+          "User permissions",
+          "Workflow controls",
+          "Business-rule traceability",
+          "Audit history",
+          "Data-access controls",
+          "Administrative configuration",
+          "Human review of exceptions"
+        ]
+      }
+    ],
+    "cta": {
+      "title": "See how SalesVerse fits your sales operating model.",
+      "convert": "Request a SalesVerse Demo",
+      "evaluate": "Explore the SalesVerse Overview",
+      "explore": "View SalesVerse Use Cases"
+    }
+  },
+
+  "useCases": {
+    "meta": {
+      "title": "SalesVerse Use Cases | Agency, Bancassurance, Direct & Assisted Sales",
+      "description": "See how SalesVerse supports agency, bancassurance, direct, branch, campaign and assisted insurance sales from opportunity through new-business processing."
+    },
+    "hero": {
+      "eyebrow": "SalesVerse use cases",
+      "title": "Built for the different ways insurance gets sold.",
+      "lede": "SalesVerse is not limited to one distribution channel. It can be configured around different insurance sales models while preserving a structured journey from lead or customer opportunity through application, review and new-business progression.",
+      "primary": "Request Demo",
+      "secondary": "Review Features"
+    },
+    "labels": {
+      "situation": "Business situation",
+      "usage": "How SalesVerse is used",
+      "change": "What changes"
+    },
+    "cases": [
+      {
+        "number": "01",
+        "title": "Agency distribution",
+        "situation": "Agency sales teams often work across lead lists, mobile tools, messaging, quotation systems and policy platforms. Managers can see activity in one place and application status somewhere else, making it difficult to understand the complete sales journey.",
+        "usage": "Leads can enter a structured pipeline, be allocated to the appropriate advisor or team and remain connected to customer activity, needs discovery, proposals and applications. After submission, relevant operational and underwriting status can remain visible to the sales organization where integrations permit.",
+        "change": "Clearer lead ownership. Better follow-up. Less status chasing. More consistent customer journeys. Better visibility from opportunity to issued business."
+      },
+      {
+        "number": "02",
+        "title": "Bancassurance",
+        "situation": "Bank-originated opportunities frequently move through manual hand-offs between relationship managers, insurer sales teams and insurer operations. Customer information, consent, documents and status updates can become fragmented.",
+        "usage": "A bank-originated opportunity can retain channel and source context as it enters the insurer sales process. The journey can support needs-based engagement, digital application, required documents, identity or consent integrations and downstream new-business processing.",
+        "change": "More structured bank-to-insurer hand-off. Better ownership. Reduced duplicate follow-up. Clearer status visibility for the teams supporting the customer."
+      },
+      {
+        "number": "03",
+        "title": "Direct and contact-centre sales",
+        "situation": "Customers may enquire through a website, campaign, call centre or digital form but still require human support before completing a purchase.",
+        "usage": "Digital or contact-centre leads can enter the same opportunity structure, be prioritized and assigned, and move through guided engagement, quotation, proposal and application. Activity history helps the next user continue rather than restart the conversation.",
+        "change": "Better response discipline. Improved continuity between digital and assisted sales. More complete pipeline visibility."
+      },
+      {
+        "number": "04",
+        "title": "Branch and relationship-led sales",
+        "situation": "Branch users or relationship managers may sell insurance as one part of a broader customer relationship. They need a simple journey without becoming insurance-system specialists.",
+        "usage": "The user can work through configured customer, product, needs, quote and application steps while insurer processes remain connected behind the experience. Relevant permissions and channel structures can be applied by role.",
+        "change": "More consistent branch execution. Less dependence on disconnected forms. Better channel reporting. Easier transfer into insurer operations."
+      },
+      {
+        "number": "05",
+        "title": "Digital-to-assisted journeys",
+        "situation": "A customer starts online, becomes uncertain or encounters a requirement that needs a person. Without journey continuity, the customer is asked to start again.",
+        "usage": "The digital journey can create an opportunity and preserve available customer and application context. A salesperson or advisor can then continue the conversation, complete missing information and progress the case.",
+        "change": "Lower journey abandonment. Better customer continuity. Less repeated data capture. More useful digital-lead conversion."
+      },
+      {
+        "number": "06",
+        "title": "Campaign conversion and lead re-engagement",
+        "situation": "Campaign responses, dormant opportunities and existing-customer signals can generate large volumes of potential work, but teams may not know which opportunities to prioritize.",
+        "usage": "Campaign leads can be segmented, routed and tracked through defined stages. Re-engagement workflows can bring stalled leads back into activity. Where analytical capabilities are implemented, prioritization or propensity signals can help focus attention.",
+        "change": "More disciplined campaign follow-up. Clearer conversion measurement. Better use of existing pipeline and customer opportunities."
+      },
+      {
+        "number": "07",
+        "title": "Renewals and relationship growth",
+        "situation": "Renewal events are operationally important but can also create an opportunity to review customer needs and maintain the relationship.",
+        "usage": "Approaching renewals can surface as actionable sales work where policy information is available. Advisors can follow up, review the relationship and identify relevant additional needs while maintaining the existing-policy context.",
+        "change": "Better renewal visibility. More structured retention activity. More relevant cross-sell conversations."
+      },
+      {
+        "number": "08",
+        "title": "New-business processing with underwriting referral",
+        "situation": "Sales teams often lose visibility after submitting an application. Operations and underwriting teams receive incomplete information and spend time requesting documents or clarification.",
+        "usage": "Applications can move through validation, requirements, operational queues and underwriting referral while preserving customer and sales context. Eligible business can progress through configured straight-through processing; exceptions remain visible and can be escalated.",
+        "change": "Cleaner hand-off from sales to operations. Fewer avoidable requirements. Better turnaround visibility. Faster communication back to the customer."
+      },
+      {
+        "number": "09",
+        "title": "Multi-channel sales management",
+        "situation": "An insurer operates agency, branch, direct, bancassurance or partner channels simultaneously, each with different structures and processes.",
+        "usage": "Channel, hierarchy, role and workflow configuration can support different operating models while management dashboards provide a more consistent view of pipeline, activity and outcomes.",
+        "change": "Channel-specific execution without losing enterprise visibility. More comparable performance information. Better governance across distribution models."
+      }
+    ],
+    "cta": {
+      "title": "Map SalesVerse to your distribution journey.",
+      "convert": "Request a SalesVerse Demo",
+      "evaluate": "Review SalesVerse Features",
+      "explore": "Explore the SalesVerse Overview"
+    }
+  }
+}

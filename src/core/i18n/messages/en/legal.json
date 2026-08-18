@@ -1,0 +1,246 @@
+{
+  "privacy": {
+    "meta": {
+      "title": "Privacy Policy | Iorta TechNXT",
+      "description": "How Iorta TechNXT collects, uses, shares and protects information through this website and related business interactions."
+    },
+    "hero": {
+      "eyebrow": "Legal",
+      "title": "Privacy Policy",
+      "lede": "This page explains how Iorta TechNXT handles information collected through this website and related business interactions."
+    },
+    "sections": [
+      {
+        "eyebrow": "Status",
+        "title": "This policy is awaiting legal review.",
+        "body": [
+          "The structure below is production-ready, but the operative wording must come from approved legal and privacy documentation reviewed against each applicable jurisdiction. Nothing on this page should be relied on as the published policy until that review is complete.",
+          "The final version will state the date it was last updated and the legal entity or entities it covers."
+        ],
+        "tone": "muted"
+      },
+      {
+        "eyebrow": "Information and use",
+        "title": "What is collected and why.",
+        "body": [
+          "The final policy will explain the categories of information collected through the website and applicable business interactions, how that information is used, the legal bases relied on where required and the principles governing how long it is retained.",
+          "It will distinguish clearly between website and marketing data and the customer or product data Iorta processes on behalf of clients, because the two are governed differently."
+        ]
+      },
+      {
+        "eyebrow": "Sharing, transfers and security",
+        "title": "Who else may handle the information.",
+        "body": [
+          "The final policy will describe processors and service providers, international transfers where applicable, the safeguards applied to those transfers, security practices at the level approved for public disclosure and how Iorta handles relevant third-party services."
+        ]
+      },
+      {
+        "eyebrow": "Your choices and rights",
+        "title": "What you can ask us to do.",
+        "body": [
+          "The final policy will explain applicable data-subject rights, marketing preferences, cookie choices, access, correction and deletion mechanisms where legally required, and how a person can submit a privacy request."
+        ]
+      },
+      {
+        "eyebrow": "Contact and updates",
+        "title": "How to reach us and how changes are communicated.",
+        "body": [
+          "The final policy will provide the approved privacy contact, identify the legal entity or entities responsible for the policy and explain how material changes will be communicated."
+        ]
+      }
+    ]
+  },
+  "cookies": {
+    "meta": {
+      "title": "Cookie Policy | Iorta TechNXT",
+      "description": "What cookies and similar technologies this website uses, why they are used and how to change your preferences."
+    },
+    "hero": {
+      "eyebrow": "Legal",
+      "title": "Cookie Policy",
+      "lede": "This page explains what cookies and similar technologies are used on this website and why."
+    },
+    "sections": [
+      {
+        "eyebrow": "Status",
+        "title": "This policy is awaiting the production cookie audit.",
+        "body": [
+          "The cookie table below must be generated from the actual production site scanner or configuration, not written by hand, and consent requirements must be reviewed by jurisdiction before publication.",
+          "Listing a category that the production site does not actually set would itself be inaccurate, so nothing is enumerated here yet."
+        ],
+        "tone": "muted"
+      },
+      {
+        "eyebrow": "What we use",
+        "title": "Only the categories genuinely present.",
+        "body": [
+          "The final policy will explain the categories of cookies and similar technologies actually present on the production website: strictly necessary, analytics, functional and marketing technologies, and only where they are genuinely used."
+        ]
+      },
+      {
+        "eyebrow": "Why they are used",
+        "title": "Purpose, provider and duration.",
+        "body": [
+          "For each category the final policy will describe its purpose, the service or provider involved, whether the cookie is first-party or third-party, and the relevant duration or expiry period."
+        ]
+      },
+      {
+        "eyebrow": "Your choices",
+        "title": "Accepting and rejecting.",
+        "body": [
+          "The final policy will explain the consent controls available, how visitors can accept or reject non-essential categories where required, and how cookie preferences can be changed later."
+        ]
+      },
+      {
+        "eyebrow": "Cookie table and contact",
+        "title": "The published inventory.",
+        "body": [
+          "The final policy will publish the production cookie inventory with cookie and provider name, purpose, category and duration, together with the approved privacy contact route for questions."
+        ]
+      }
+    ]
+  },
+  "terms": {
+    "meta": {
+      "title": "Website Terms of Use | Iorta TechNXT",
+      "description": "The terms governing access to and use of the public Iorta TechNXT website."
+    },
+    "hero": {
+      "eyebrow": "Legal",
+      "title": "Website Terms of Use",
+      "lede": "These terms govern access to and use of the public Iorta TechNXT website."
+    },
+    "sections": [
+      {
+        "eyebrow": "Status",
+        "title": "These terms are awaiting review by counsel.",
+        "body": [
+          "The structure below is production-ready, but the operative wording must be reviewed and approved by counsel before publication. Nothing here is enforceable as published terms until that review is complete."
+        ],
+        "tone": "muted"
+      },
+      {
+        "eyebrow": "Using this website",
+        "title": "Who may use it, and how.",
+        "body": [
+          "The final terms will define who may use the public website, the permitted purpose of the content and any restrictions on misuse, interference, automated abuse or unlawful activity."
+        ]
+      },
+      {
+        "eyebrow": "Content and intellectual property",
+        "title": "What you may reuse.",
+        "body": [
+          "The final terms will explain ownership and licensing of website content, trademarks and other materials, and set the rules for permitted reference, copying or reuse."
+        ]
+      },
+      {
+        "eyebrow": "Third parties, disclaimers and liability",
+        "title": "The limits of what this site provides.",
+        "body": [
+          "The final terms will address third-party links and services, the informational nature of public website content, and the applicable disclaimers and limitation-of-liability language approved for the relevant legal entities and jurisdictions."
+        ]
+      },
+      {
+        "eyebrow": "Governing terms, changes and contact",
+        "title": "Which law applies.",
+        "body": [
+          "The final terms will identify governing law and jurisdiction as approved by counsel, explain how the terms may change and provide the official contact route for legal questions."
+        ]
+      }
+    ]
+  },
+  "accessibility": {
+    "meta": {
+      "title": "Accessibility Statement | Iorta TechNXT",
+      "description": "How Iorta TechNXT approaches accessibility, how to report a barrier and how accessibility is reviewed over time."
+    },
+    "hero": {
+      "eyebrow": "Legal",
+      "title": "Accessibility at Iorta TechNXT",
+      "lede": "We want our digital experiences to be usable by as many people as possible."
+    },
+    "sections": [
+      {
+        "eyebrow": "Our approach",
+        "title": "We will name a standard once we can support the claim.",
+        "body": [
+          "Accessibility is considered in how this site is designed and built: semantic structure, keyboard operability, visible focus, text contrast and content that does not depend on colour alone.",
+          "We have deliberately not named a specific conformance level here. Publishing a standard before the production site has been tested against it, and before the organization is prepared to maintain that claim, would be a commitment we could not stand behind."
+        ]
+      },
+      {
+        "eyebrow": "Feedback",
+        "title": "Tell us where it does not work.",
+        "body": [
+          "If you encounter a barrier on this site, or need content in an alternative format, contact us and we will work with you to provide the information you need."
+        ]
+      },
+      {
+        "eyebrow": "Continuous improvement",
+        "title": "Reviewed as the site changes.",
+        "body": [
+          "Accessibility is reviewed as the site, its content and its components evolve, rather than treated as a one-time audit."
+        ]
+      }
+    ],
+    "cta": {
+      "title": "Found a barrier? Tell us.",
+      "convert": "Contact Iorta TechNXT"
+    }
+  },
+  "responsible-disclosure": {
+    "meta": {
+      "title": "Security & Responsible Disclosure | Iorta TechNXT",
+      "description": "How to report a suspected security issue affecting an Iorta TechNXT public system or product."
+    },
+    "hero": {
+      "eyebrow": "Legal",
+      "title": "Help us keep Iorta TechNXT secure.",
+      "lede": "If you believe you have identified a security issue affecting an Iorta TechNXT public system or product, report it through the approved security contact."
+    },
+    "sections": [
+      {
+        "eyebrow": "Status",
+        "title": "This process is awaiting security-team confirmation.",
+        "body": [
+          "This page will be published in full once the responsible security team confirms the scope, the process, the monitored contact channel and any safe-harbor language.",
+          "Until a monitored channel is confirmed, please use the general contact route rather than assuming a security mailbox is being watched."
+        ],
+        "tone": "muted"
+      },
+      {
+        "eyebrow": "Scope",
+        "title": "What is in scope, and what is not.",
+        "body": [
+          "The published page will identify which public systems and products are in scope, and which systems, customer environments or third-party services are explicitly out of scope."
+        ]
+      },
+      {
+        "eyebrow": "How to report",
+        "title": "What to include.",
+        "body": [
+          "Please include the affected asset, a description of the issue, reproduction steps, the potential impact and any supporting evidence that can be shared safely."
+        ]
+      },
+      {
+        "eyebrow": "Responsible testing",
+        "title": "What not to do while testing.",
+        "body": [
+          "Do not violate privacy, destroy data, perform denial-of-service activity, use social engineering, or access more information than is required to demonstrate the issue.",
+          "Safe-harbor language will be added only once it is formally approved. Please do not assume protection that has not been published."
+        ]
+      },
+      {
+        "eyebrow": "What happens next",
+        "title": "What to expect from us.",
+        "body": [
+          "The published page will set realistic acknowledgement and response expectations, explain coordinated-disclosure expectations and state how the security team will communicate during validation and remediation."
+        ]
+      }
+    ],
+    "cta": {
+      "title": "Report a suspected security issue.",
+      "convert": "Contact Iorta TechNXT"
+    }
+  }
+}

@@ -1,0 +1,111 @@
+/**
+ * SlideGlowButton — hollow label that fills with a glowing accent on hover,
+ * led by a travelling caret.
+ *
+ * Matched to the reference clip: no chrome at all (no border, background or
+ * radius), outlined glyphs at rest, a solid accent fill swept in from the left,
+ * a hard caret bar at the leading edge, and a wide glow around the filled word.
+ *
+ * The reference is neon green on black. This is the same construction in
+ * --ui-blue, because the hero it sits in is a light band: neon green on near
+ * white is both off-brand and unreadable.
+ */
+
+.glowbtn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  /* Left/right padding leaves the caret somewhere to park without overlapping
+     the first glyph, and gives the pointer a reasonable target height. */
+  padding: 1.0625rem 1rem;
+  border: 0;
+  background: none;
+  font-family: var(--font-display);
+  font-size: 1.3125rem;
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Solid, not outlined. Hollow glyphs sat too light against the hero for a
+   primary action, and the sweep reads just as clearly filling over a solid
+   label as it did over an outline. */
+.glowbtn__base {
+  display: block;
+  color: var(--ink);
+}
+
+/**
+ * The accent copy, clipped to nothing until hover.
+ *
+ * `clip-path`, not `width`: the element is padded, and under `border-box` a
+ * width of 0 still resolves to the padding, so the accent copy sat 52px wide at
+ * rest with a slice permanently visible. A clip inset ignores padding and never
+ * moves the glyphs, so the two labels stay perfectly registered.
+ */
+.glowbtn__wipe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  /* Must track .glowbtn's padding exactly, or the two labels fall out of
+     register and the sweep reveals text offset from the one beneath it. */
+  padding: 1.0625rem 1rem;
+  white-space: nowrap;
+  color: var(--ui-blue);
+  clip-path: inset(0 100% 0 0);
+  transition:
+    clip-path 700ms cubic-bezier(0.65, 0, 0.35, 1),
+    filter 700ms ease;
+}
+
+/* The bar at the leading edge. Parked at the left at rest, exactly as in the
+   reference, so the control reads as ready rather than unfinished. */
+.glowbtn__caret {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 4px;
+  height: 1.35em;
+  transform: translateY(-50%);
+  background: var(--ui-blue);
+  box-shadow: 0 0 10px rgba(10, 140, 255, 0.9);
+  transition: left 700ms cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+.glowbtn:hover .glowbtn__wipe,
+.glowbtn:focus-visible .glowbtn__wipe {
+  clip-path: inset(0 0 0 0);
+  /* Two shadows: a tight core and a wide halo, which is what gives the
+     reference its bloom rather than a flat blur. */
+  filter: drop-shadow(0 0 10px rgba(10, 140, 255, 0.75))
+    drop-shadow(0 0 26px rgba(10, 140, 255, 0.45));
+}
+
+.glowbtn:hover .glowbtn__caret,
+.glowbtn:focus-visible .glowbtn__caret {
+  left: calc(100% - 4px);
+}
+
+.glowbtn:focus-visible {
+  outline: var(--state-focus-width, 3px) solid var(--state-focus);
+  outline-offset: var(--state-focus-offset, 2px);
+}
+
+/**
+ * The sweep is the whole point, so reduced motion keeps the accent state and
+ * arrives at it instantly rather than travelling.
+ */
+@media (prefers-reduced-motion: reduce) {
+  .glowbtn__wipe,
+  .glowbtn__caret {
+    transition: none;
+  }
+}

@@ -1,0 +1,373 @@
+/**
+ * Opening hero block, laid over the sky frames.
+ * Eyebrow, oversized headline, two supporting paragraphs, two text CTAs, and
+ * a large rounded panel reserved for the product film. Centred.
+ * Type is ink rather than white — the sky frames are light.
+ */
+
+/* No inner scrolling: this sits on a pinned, scroll-scrubbed canvas, so a
+   nested scroll area would swallow the wheel and stall the film. */
+.intro__wrap {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  will-change: opacity, transform;
+}
+
+/**
+ * White wash over the clean sky. Runs from behind the header and fades out
+ * around the middle of the video panel (~62% of the viewport), which lifts the
+ * nav and the hero copy off the image without flattening the sky below it.
+ *
+ * Lives inside the intro wrapper on purpose: it inherits the same fade, so it
+ * clears with the copy instead of hanging over the office frames.
+ */
+.intro__wrap::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.94) 0%,
+    rgba(255, 255, 255, 0.88) 18%,
+    rgba(255, 255, 255, 0.6) 38%,
+    rgba(255, 255, 255, 0.24) 52%,
+    rgba(255, 255, 255, 0) 62%
+  );
+}
+
+/* Content sits above the wash. */
+.intro {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  /* The card already starts below the nav, so this is internal padding only. */
+  padding-top: var(--space-5);
+  /* Reserves the strip the ticker occupies, since it is taken out of flow. */
+  --ticker-h: 3.25rem;
+  padding-bottom: var(--ticker-h);
+}
+
+/**
+ * Column flex so the video panel inside it can absorb the height left over
+ * after the copy. As a plain block it could not: `flex: 1 1 auto` on the panel
+ * had no flex container to grow against, so the slot sat at its floor.
+ * Items still stretch to full width, so the centred text is unaffected.
+ */
+.intro__inner {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  min-height: 0;
+  width: 100%;
+  max-width: 82rem;
+  margin: 0 auto;
+  padding: 0 var(--space-6);
+  text-align: center;
+}
+
+/* ---- Headline ---- */
+
+.intro__title {
+  max-width: 22ch;
+  margin: 0 auto var(--space-4);
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-weight: 700;
+  line-height: 1.02;
+  letter-spacing: -0.035em;
+  color: var(--ink);
+}
+
+/* ---- Headline text loop ----
+   Stacked, not inline: the static line sits above and the rotating phrase
+   gets its own line, so the headline keeps a fixed shape as phrase lengths
+   change. Scoped here — the shared component stays inline by default. */
+
+.intro__loop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+}
+
+/* ---- Eyebrow + supporting copy ---- */
+
+.intro__eyebrow {
+  margin: 0 0 var(--space-4);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  color: var(--ink-soft);
+}
+
+.intro__lead {
+  max-width: 46ch;
+  margin: 0 auto var(--space-4);
+  font-size: clamp(1rem, 1.5vw, 1.1875rem);
+  line-height: var(--leading-snug);
+  color: var(--ink-soft);
+}
+
+.intro__sub {
+  max-width: 46ch;
+  margin: 0 auto var(--space-6);
+  font-size: clamp(0.9375rem, 1.3vw, 1.0625rem);
+  line-height: var(--leading-snug);
+  color: var(--ink-soft);
+}
+
+/* ---- CTAs ----
+   Layout, colour and focus come from .btn in components.css; only the
+   arrow behaviour is added here. */
+
+.intro__ctas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-3) var(--space-4);
+  margin: 0;
+}
+
+.intro__cta {
+  /* Slightly roomier than the nav's copy of the same button — these are the
+     page's primary actions and sit alone in the composition. */
+  padding: 1.0625rem 1.5rem;
+}
+
+.intro__arrow {
+  transition: transform 160ms ease;
+}
+
+.intro__cta:hover .intro__arrow {
+  transform: translateX(3px);
+}
+
+/* ---- Video slot ---- */
+
+/**
+ * Takes whatever height is left after the copy and the ticker, rather than
+ * claiming a fixed share of the viewport. A `46vh` slot plus the copy exceeded
+ * the stage on shorter screens, and the overflow landed on the ticker.
+ */
+.intro__panel {
+  flex: 1 1 auto;
+  min-height: 0;
+  /* Column flex, not grid: the slot grows along the main axis and derives its
+     width from the ratio. A percentage height cannot resolve against a track
+     whose own height is content-derived, which collapsed it to its floor. */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: var(--space-5) 0 var(--space-4);
+}
+
+/**
+ * Width-led: the film takes the full column, and its height follows from 16:9.
+ * Height-led sizing kept it honest about fitting one viewport, but it left the
+ * slot ~518px wide in a 940px card, with dead space either side.
+ *
+ * It can now run past the bottom of the card, which the stage clips — the film
+ * carries on below the fold rather than being boxed in, and the ticker's
+ * translucent bar rides over it.
+ */
+.intro__videoslot {
+  display: grid;
+  place-content: center;
+  justify-items: center;
+  gap: 6px;
+  aspect-ratio: 16 / 9;
+  flex: 0 0 auto;
+  width: 100%;
+  max-width: 64rem;
+  height: auto;
+  margin-inline: auto;
+  border: 1px dashed var(--border, #c9d4e4);
+  border-radius: var(--radius-lg, 24px);
+  /* Light enough that the dot field reads through the panel rather than
+     being masked out by it. */
+  background: rgba(255, 255, 255, 0.24);
+  backdrop-filter: blur(3px);
+}
+
+.intro__slotlabel {
+  font-family: var(--font-display);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.intro__slothint {
+  font-size: 0.8125rem;
+  color: var(--ink-soft);
+}
+
+@media (max-width: 768px) {
+  .intro {
+    padding-top: var(--space-4);
+    /* Matches the tighter ticker padding below. */
+    --ticker-h: 2.75rem;
+  }
+
+  /* The card is short here; these trims keep the ticker inside it. */
+  .intro__lead {
+    margin-bottom: var(--space-3);
+  }
+
+  .intro__sub {
+    margin-bottom: var(--space-4);
+  }
+
+  .intro__panel {
+    margin: var(--space-4) 0 var(--space-3);
+  }
+
+  /**
+   * Width-led on small screens. The desktop rule is height-led, which breaks
+   * the ratio here: max-width clamps the width while the explicit height holds,
+   * so the slot rendered 287x374 (0.77) instead of 16:9.
+   */
+  .intro__videoslot {
+    width: 100%;
+    height: auto;
+    max-height: none;
+    /* Width-led here, so it must not flex: with the default shrink factor the
+       flex pass took 4px off the height and the ratio drifted to 1.83. */
+    flex: 0 0 auto;
+  }
+}
+
+/* ---- Bottom ticker (marquee) ---- */
+
+/**
+ * Anchored to the card's bottom edge rather than pushed there by `margin-top:
+ * auto`. Auto margins only pin when there is free space left over; the intro
+ * copy is taller than the stage on short viewports, so the ticker was being
+ * shoved 75px past the bottom of the card and clipped away by the wrapper's
+ * `overflow: hidden`. Out of flow, it sits on the edge at every height.
+ */
+.ticker {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* Above the copy column. `.intro__inner` carries `z-index: 1`, and a
+     positioned sibling on `auto` paints below that regardless of DOM order —
+     so the video slot was covering the ticker. */
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: var(--space-5);
+  padding: var(--space-4) var(--space-6);
+  /* Glass: a brighter top edge catches the light, and the saturation boost
+     keeps the sky's colour alive through the panel instead of greying it. */
+  border-top: 1px solid rgba(255, 255, 255, 0.55);
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(18px) saturate(180%);
+  overflow: hidden;
+}
+
+.ticker__label {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  flex: 0 0 auto;
+  margin: 0;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--ink);
+  white-space: nowrap;
+}
+
+/* Dev-only marker so placeholder figures are never mistaken for real ones. */
+.ticker__sample {
+  padding: 0.1rem 0.35rem;
+  border-radius: 3px;
+  background: var(--state-warning-bg, #fcf0d9);
+  color: var(--state-warning, #b4680a);
+  font-size: 0.625rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.ticker__viewport {
+  flex: 1 1 auto;
+  min-width: 0;
+  overflow: hidden;
+  /* Softens the entry and exit so items do not pop at the edges. */
+  mask-image: linear-gradient(90deg, transparent, #000 4%, #000 96%, transparent);
+}
+
+.ticker__rail {
+  display: flex;
+  width: max-content;
+  animation-name: ticker-scroll;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.ticker__track {
+  display: flex;
+  align-items: center;
+  gap: var(--space-5);
+  padding-right: var(--space-5);
+}
+
+.ticker__item {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  white-space: nowrap;
+}
+
+/**
+ * `--ink`, not `--ink-soft`. At 11px these are small text and need 4.5:1, but
+ * measured against the frame behind the glass the soft tone gave 3.5:1 (4.0:1
+ * even at the panel's old opacity). Hierarchy comes from weight and tracking
+ * against the bolder label instead of from a lighter colour.
+ */
+.ticker__name {
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  color: var(--ink);
+}
+
+.ticker__value {
+  padding: 0.125rem 0.4rem;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.85);
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+/* Two copies translated by exactly half the rail = seamless loop. */
+@keyframes ticker-scroll {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ticker__rail {
+    animation: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .ticker {
+    gap: var(--space-3);
+    padding: var(--space-3) var(--space-5);
+  }
+}

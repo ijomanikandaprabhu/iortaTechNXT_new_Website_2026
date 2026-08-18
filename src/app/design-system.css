@@ -1,0 +1,230 @@
+/**
+ * Design-system reference page.
+ * Layout only — every specimen uses the real component classes and tokens.
+ */
+
+.ds {
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: var(--space-8) 0 var(--space-9);
+}
+
+.ds__head {
+  margin-bottom: var(--space-8);
+}
+
+.ds__title {
+  font-family: var(--font-display);
+  font-size: var(--text-display-sm);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin: var(--space-2) 0 var(--space-3);
+  color: var(--ink);
+}
+
+.ds__intro {
+  max-width: 60ch;
+  margin: 0;
+  color: var(--ink-soft);
+  line-height: var(--leading-normal);
+}
+
+.ds__section {
+  padding: var(--space-7) 0;
+  border-top: 1px solid var(--line);
+}
+
+.ds__section--split {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  gap: var(--space-8);
+}
+
+.ds__h2 {
+  font-family: var(--font-display);
+  font-size: var(--text-heading);
+  font-weight: 700;
+  margin: 0 0 var(--space-3);
+  color: var(--ink);
+}
+
+.ds__h3 {
+  font-family: var(--font-display);
+  font-size: var(--text-body-lg);
+  font-weight: 600;
+  margin: var(--space-6) 0 var(--space-2);
+  color: var(--ink);
+}
+
+.ds__desc {
+  max-width: 68ch;
+  margin: 0 0 var(--space-5);
+  font-size: var(--text-body);
+  line-height: var(--leading-normal);
+  color: var(--ink-soft);
+}
+
+.ds__group {
+  margin-bottom: var(--space-6);
+}
+
+.ds__token {
+  font-family: ui-monospace, "SFMono-Regular", Menlo, monospace;
+  font-size: var(--text-caption-sm);
+  color: var(--ink);
+}
+
+.ds__value {
+  font-family: ui-monospace, "SFMono-Regular", Menlo, monospace;
+  font-size: var(--text-caption-sm);
+  color: var(--ink-soft);
+}
+
+.ds__note {
+  margin: 0;
+  font-size: var(--text-caption-sm);
+  line-height: var(--leading-snug);
+  color: var(--ink-soft);
+}
+
+/* ---- Colour ---- */
+
+.ds__swatches {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(13rem, 1fr));
+  gap: var(--space-4);
+}
+
+.ds__swatch {
+  display: grid;
+  gap: 2px;
+}
+
+.ds__chip {
+  display: block;
+  height: 56px;
+  margin-bottom: var(--space-2);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+}
+
+/* ---- Typography ---- */
+
+.ds__rows {
+  display: grid;
+  gap: var(--space-5);
+}
+
+.ds__row {
+  display: grid;
+  gap: var(--space-2);
+  padding-bottom: var(--space-4);
+  border-bottom: 1px solid var(--line);
+}
+
+.ds__specimen {
+  margin: 0;
+  color: var(--ink);
+  line-height: var(--leading-tight);
+}
+
+.ds__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  align-items: baseline;
+}
+
+/* ---- Spacing + radius ---- */
+
+.ds__stack {
+  display: grid;
+  gap: var(--space-3);
+}
+
+.ds__spaceitem,
+.ds__radiusitem {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.ds__bar {
+  display: block;
+  height: 16px;
+  background: var(--ui-blue);
+  border-radius: 2px;
+}
+
+.ds__radiusbox {
+  display: block;
+  width: 56px;
+  height: 40px;
+  flex: 0 0 auto;
+  background: var(--control-fill);
+  border: 1px solid var(--line);
+}
+
+/* ---- Specimens ---- */
+
+.ds__specimens {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+.ds__cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  gap: var(--space-4);
+}
+
+/* ---- Logo ---- */
+
+.ds__logos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-6);
+}
+
+.ds__logoitem {
+  display: grid;
+  justify-items: start;
+  gap: var(--space-2);
+  padding: var(--space-5);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  background: var(--white);
+}
+
+.ds__logoitem--dark {
+  background: var(--ink);
+}
+
+.ds__logoitem--dark .ds__token,
+.ds__logoitem--dark .ds__note {
+  color: rgba(255, 255, 255, 0.72);
+}
+
+/* ---- Elevation ---- */
+
+.ds__shadows {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-6);
+}
+
+.ds__shadowitem {
+  display: grid;
+  gap: var(--space-3);
+  justify-items: center;
+}
+
+.ds__shadowbox {
+  display: block;
+  width: 8rem;
+  height: 5rem;
+  background: var(--white);
+  border-radius: var(--radius-lg);
+}

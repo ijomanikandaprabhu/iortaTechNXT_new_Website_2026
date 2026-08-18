@@ -1,0 +1,155 @@
+/**
+ * Floating capability field — the fourth band. Icons drift behind a centred
+ * copy block and shy away from the cursor.
+ *
+ * Replaces the utility classes the upstream component assumed. Everything is
+ * driven by tokens; the only inline styles are the per-icon coordinates and
+ * the transform the pointer logic writes.
+ */
+
+.platform {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  padding: var(--space-9) var(--space-6);
+  background: var(--paper);
+}
+
+.floaticons {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /**
+   * Tall enough for the copy plus a tile above and below it. The four-paragraph
+   * block is ~420px; a tile is 87px once rotated, so anything under ~40rem puts
+   * the top and bottom rows on the text.
+   */
+  min-height: 40rem;
+  max-width: 84rem;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/* ---- The drifting field ---- */
+
+/**
+ * Inset by half a tile plus everything that can push the visible tile past its
+ * wrapper: the ±8px drift and the 5° rotation, which widens an 80px tile to
+ * 87px. Keep this in step with EDGE_PAD in FloatingIcons.tsx.
+ *
+ * Percentages alone cannot guarantee the clearance: they resolve against a host
+ * whose size changes with the viewport, while the tile stays a fixed 80px.
+ * Tuning coordinates to clear the edge at one width just moves the clipping to
+ * another. With the field inset, the safe band is built into the coordinates.
+ */
+.floaticons__field {
+  position: absolute;
+  inset: calc(2.5rem + 14px);
+  /* Never intercepts the CTA underneath it. */
+  pointer-events: none;
+}
+
+/* Coordinates arrive inline as `left`/`top`; this centres the tile on that
+   point so a figure at 92% is not pushed off the right edge. */
+.floaticons__icon {
+  position: absolute;
+  margin-left: -2.5rem;
+  margin-top: -2.5rem;
+}
+
+.floaticons__tile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 5rem;
+  height: 5rem;
+  padding: var(--space-3);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg, 24px);
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(8px);
+  box-shadow: var(--shadow-neutral);
+}
+
+.floaticons__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  /* Placeholder artwork is mixed weight; muting it keeps the field even. */
+  opacity: 0.72;
+}
+
+/* ---- Centred copy ---- */
+
+.floaticons__content {
+  position: relative;
+  z-index: 1;
+  /* 42rem left a 6px corner clip against the two mid-height tiles, and the
+     drift swings ±6px on top of that. This keeps ~26px of clearance. */
+  max-width: 38rem;
+  padding: var(--space-6) 0;
+  text-align: center;
+}
+
+/**
+ * The opening statement. Body copy, not a heading — it sets up the situation
+ * that the h2 below answers. Sized for a sentence rather than a headline: this
+ * runs to ~130 characters, and at display scale it filled the column and pushed
+ * into the icon ring.
+ */
+.platform__lead {
+  max-width: 34rem;
+  margin: 0 auto var(--space-3);
+  /* Body face and weight. It reads as the opening sentence of the paragraph
+     set, a touch larger than the rest, not as a title. */
+  font-size: clamp(1.0625rem, 1.7vw, 1.25rem);
+  font-weight: 400;
+  line-height: var(--leading-snug);
+  color: var(--ink-soft);
+  text-wrap: balance;
+}
+
+.platform__sub {
+  max-width: 34rem;
+  margin: 0 auto var(--space-4);
+  font-size: clamp(1rem, 1.5vw, 1.125rem);
+  line-height: var(--leading-snug);
+  color: var(--ink-soft);
+}
+
+.platform__sub:last-child {
+  margin-bottom: 0;
+}
+
+/* The turn in the argument — full ink weight so it reads as the answer to the
+   line above rather than more supporting copy. */
+.platform__connect {
+  margin: var(--space-2) auto var(--space-5);
+  font-family: var(--font-display);
+  /* Display scale — the largest line in the section, above the lead. It is the
+     answer the surrounding copy builds to, and it carries the animation. */
+  font-size: clamp(1.75rem, 3.4vw, 2.75rem);
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+  color: var(--ink);
+}
+
+/**
+ * Below this the field has nowhere to go. The copy column is close to the full
+ * width, so the side tiles would sit on the text rather than around it —
+ * there is no arrangement of coordinates that fixes that, only less room.
+ *
+ * It is decorative and already `aria-hidden`, and the capability names are
+ * listed separately for assistive tech, so dropping it costs nothing.
+ */
+@media (max-width: 900px) {
+  .floaticons__field {
+    display: none;
+  }
+
+  .floaticons {
+    min-height: 0;
+  }
+}

@@ -1,0 +1,73 @@
+/**
+ * Weight-axis "breathing" for AnimatedText.
+ *
+ * The keyframes are real CSS rather than styled-jsx on purpose: styled-jsx
+ * renames scoped keyframes, and the component sets its per-character timing
+ * through inline styles, which styled-jsx does not rewrite. The names would
+ * never match and nothing would animate.
+ *
+ * Layout and animation are deliberately separated. The sizer establishes every
+ * box at the heaviest weight and the live copy is painted over it, absolutely
+ * positioned so it is out of flow. Weight changes a glyph's advance, so without
+ * this the line's width, its centring and its wrap points all move while it
+ * animates.
+ */
+
+.breathe {
+  /* Endpoints arrive as custom properties from the component. */
+  --breathe-min: 300;
+  --breathe-max: 800;
+}
+
+/* Holds a word together; breaks happen at the space text nodes between them. */
+.breathe__word {
+  white-space: nowrap;
+}
+
+.breathe__char {
+  position: relative;
+  display: inline-block;
+}
+
+/* Reserves the widest state of this exact glyph. Hidden, but occupies space. */
+.breathe__sizer {
+  visibility: hidden;
+  font-variation-settings: "wght" var(--breathe-max);
+}
+
+.breathe__live {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  animation-name: breathe-weight;
+  animation-timing-function: cubic-bezier(0.37, 0, 0.63, 1);
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  /* `both` matters with the negative delays: without it the leading characters
+     pop from their static weight on the first frame. */
+  animation-fill-mode: both;
+  font-variation-settings: "wght" var(--breathe-min);
+  will-change: font-variation-settings;
+}
+
+@keyframes breathe-weight {
+  from {
+    font-variation-settings: "wght" var(--breathe-min);
+  }
+  to {
+    font-variation-settings: "wght" var(--breathe-max);
+  }
+}
+
+/**
+ * Holds a settled weight rather than freezing on the thin end, which is what
+ * `animation: none` alone would do given the static rule above.
+ */
+@media (prefers-reduced-motion: reduce) {
+  .breathe__live {
+    animation: none;
+    font-variation-settings: "wght" var(--breathe-max);
+  }
+}

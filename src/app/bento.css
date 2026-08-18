@@ -1,0 +1,307 @@
+/**
+ * Bento grid — fifth band, following the stripe.com arrangement: a left-aligned
+ * two-tone intro, then a three-column grid that runs two-thirds + one-third,
+ * three thirds, then one full-width cell.
+ *
+ * Placement is a named grid rather than per-cell classes, so the whole
+ * arrangement is legible in one place and each breakpoint restates only the
+ * shape. The areas run `a`–`f` in DOM order.
+ *
+ * The area names are declared at every breakpoint, mobile included. Leaving
+ * them undefined at one size while cells still claim `grid-area: a` would drop
+ * those cells into implicit tracks and scramble the order.
+ */
+
+.bentosec {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  padding: var(--space-9) var(--space-6);
+  background: var(--white);
+}
+
+/* Shares the grid's container so both start on the same left edge; the measure
+   is capped on the heading itself rather than by centring a narrower block. */
+.bentosec__inner {
+  max-width: 76rem;
+  margin: 0 auto;
+}
+
+.bentosec__eyebrow {
+  margin: 0 0 var(--space-4);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+
+/**
+ * Two-tone and left-aligned, keeping the device from the reference: the claim
+ * carries full ink and the qualifying line follows at --ink-soft, so the pair
+ * reads as one statement rather than a title with a subtitle bolted under it.
+ */
+.bentosec__title {
+  max-width: 52rem;
+  margin: 0 0 var(--space-5);
+  font-family: var(--font-display);
+  font-size: clamp(1.625rem, 3.4vw, 2.75rem);
+  font-weight: 600;
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+  color: var(--ink);
+}
+
+.bentosec__rest {
+  color: var(--ink-soft);
+}
+
+.bentosec__sub {
+  max-width: 40rem;
+  margin: 0 0 var(--space-3);
+  font-size: clamp(1rem, 1.5vw, 1.125rem);
+  line-height: var(--leading-snug);
+  color: var(--ink-soft);
+}
+
+/* The closing pair finishes the thought above rather than introducing the cards
+   below, so it sits tight to the subtitle and leaves the gap before the grid. */
+.bentosec__note {
+  max-width: 40rem;
+  margin: 0 0 var(--space-7);
+  font-size: clamp(1rem, 1.5vw, 1.125rem);
+  line-height: var(--leading-snug);
+  color: var(--ink);
+}
+
+/* ---- Grid ---- */
+
+/**
+ * Geometry measured off the reference at a 1280px viewport: a 1199px container
+ * on a 16px gap, cards 662px tall across the first two rows and 438px for the
+ * full-width closer. Those proportions are the effect — at half that height the
+ * same arrangement reads as a feature table rather than a bento.
+ */
+.bento {
+  display: grid;
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  /* Single column by default; the areas still exist so the cells keep order. */
+  grid-template-columns: 1fr;
+  grid-auto-rows: minmax(26rem, auto);
+  grid-template-areas:
+    "a"
+    "b"
+    "c"
+    "d"
+    "e"
+    "f";
+}
+
+@media (min-width: 640px) {
+  .bento {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(30rem, auto);
+    grid-template-areas:
+      "a a"
+      "b c"
+      "d e"
+      "f f";
+  }
+}
+
+/**
+ * The bento proper: a wide lead beside a narrow one, then three thirds, then a
+ * full-width cell to close.
+ *
+ * Rows are `minmax`, not fixed: the reference heights are the floor, and copy
+ * longer than mine (or a translation that runs longer) grows the row instead of
+ * overflowing it.
+ */
+@media (min-width: 1024px) {
+  .bento {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: minmax(41.375rem, auto) minmax(41.375rem, auto) minmax(27.375rem, auto);
+    grid-template-areas:
+      "a a b"
+      "c d e"
+      "f f f";
+  }
+}
+
+.bento__cell:nth-child(1) {
+  grid-area: a;
+}
+.bento__cell:nth-child(2) {
+  grid-area: b;
+}
+.bento__cell:nth-child(3) {
+  grid-area: c;
+}
+.bento__cell:nth-child(4) {
+  grid-area: d;
+}
+.bento__cell:nth-child(5) {
+  grid-area: e;
+}
+.bento__cell:nth-child(6) {
+  grid-area: f;
+}
+
+/* ---- Cells ---- */
+
+.bento__cell {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  padding: var(--space-5);
+  border: 1px solid rgba(15, 23, 42, 0.07);
+  border-radius: 20px;
+  background: var(--white);
+  overflow: hidden;
+}
+
+.bento__head {
+  flex: 0 0 auto;
+  /* Keeps the title clear of the corner control rather than running under it. */
+  padding-right: 2.75rem;
+}
+
+/* ---- Corner disclosure ---- */
+
+/**
+ * Measured off the reference: a 38x38 chip inset 16px from the card's top-right
+ * corner, 4px radius, a near-white tinted ground and a 20px glyph in the brand
+ * colour. Stripe's is their purple on #f5f5ff; this is the same treatment in
+ * --ui-blue, so it belongs to this site rather than reading as a borrowed part.
+ */
+.bento__expand {
+  position: absolute;
+  /* 15, not 16: absolute offsets resolve from the padding box and this card
+     carries a 1px border, so 15 puts the chip 16px from the outer edge. */
+  top: 15px;
+  right: 15px;
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  padding: 0;
+  border: 0;
+  border-radius: 4px;
+  background: #f2f7ff;
+  color: var(--ui-blue);
+  cursor: pointer;
+  transition:
+    background 160ms ease,
+    color 160ms ease;
+}
+
+.bento__expand svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* Inverts on hover, as the reference does. */
+.bento__expand:hover {
+  background: var(--ui-blue);
+  color: var(--white);
+}
+
+.bento__expand:focus-visible {
+  outline: 3px solid var(--state-focus);
+  outline-offset: 2px;
+}
+
+.bento__detail {
+  margin: var(--space-3) 0 0;
+  padding-top: var(--space-3);
+  border-top: 1px solid rgba(15, 23, 42, 0.08);
+  max-width: 34rem;
+  font-size: 0.9375rem;
+  line-height: var(--leading-snug);
+  color: var(--ink-soft);
+}
+
+/* `hidden` is otherwise overridden by the display the cascade gives it. */
+.bento__detail[hidden] {
+  display: none;
+}
+
+/* Stepped up with the card height. The reference sets these at 26px/300; the
+   size follows it, the weight stays at the site's 600 rather than importing a
+   light display weight the rest of the page never uses. */
+.bento__title {
+  margin: 0 0 var(--space-2);
+  font-family: var(--font-display);
+  font-size: clamp(1.25rem, 1.7vw, 1.5rem);
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+}
+
+.bento__body {
+  margin: 0;
+  max-width: 34rem;
+  font-size: 0.9375rem;
+  line-height: var(--leading-snug);
+  color: var(--ink-soft);
+}
+
+/**
+ * Artwork panel. Takes the height left under the title, which is what gives the
+ * grid its bento feel: the wide cells get tall panels, the narrow ones get
+ * shorter ones, from the same rule.
+ */
+.bento__art {
+  flex: 1 1 auto;
+  display: grid;
+  place-items: center;
+  min-height: 9rem;
+  border-radius: 14px;
+  /* Overridden per cell below. */
+  background: linear-gradient(150deg, #eaf6ff, #dbe9fb 55%, #f4f8ff);
+}
+
+.bento__icon {
+  width: 34%;
+  max-width: 96px;
+  min-width: 44px;
+  height: auto;
+  opacity: 0.5;
+}
+
+/**
+ * A different wash per cell so the wall has variety without leaving the brand
+ * blues. Ordered light-to-deep down the grid.
+ */
+.bento__cell:nth-child(1) .bento__art {
+  background: linear-gradient(145deg, #e4f4ff, #cfe4fb 60%, #eef6ff);
+}
+.bento__cell:nth-child(2) .bento__art {
+  background: linear-gradient(160deg, #eef3ff, #dfe9fd);
+}
+.bento__cell:nth-child(3) .bento__art {
+  background: linear-gradient(150deg, #e8f6fb, #d6ecf7);
+}
+.bento__cell:nth-child(4) .bento__art {
+  background: linear-gradient(150deg, #edf2fc, #dde6f8);
+}
+.bento__cell:nth-child(5) .bento__art {
+  background: linear-gradient(150deg, #e6f2ff, #d3e6fa);
+}
+.bento__cell:nth-child(6) .bento__art {
+  background: linear-gradient(120deg, #e4f3ff, #dde8fb 45%, #eaf1ff);
+}
+
+/* The row height already sizes the panel through `flex: 1`, so the wide cells
+   need no separate minimum — only the larger type that their scale calls for. */
+@media (min-width: 1024px) {
+  .bento__cell:nth-child(1) .bento__title,
+  .bento__cell:nth-child(6) .bento__title {
+    font-size: 1.625rem;
+  }
+}

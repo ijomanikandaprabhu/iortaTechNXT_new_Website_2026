@@ -1,0 +1,79 @@
+/**
+ * TextLoop — width-reveal rotating text with a blinking cursor.
+ * Replaces the Tailwind utilities the upstream component assumed; the violet
+ * palette is mapped onto the TECHNXT blue family.
+ */
+
+.textloop {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0 0.28em;
+}
+
+.textloop__static {
+  white-space: nowrap;
+}
+
+.textloop__slot {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+/* The element whose width animates from 0 → auto. */
+.textloop__reveal {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  /* Descenders would clip against the overflow edge without this. */
+  padding-bottom: 0.08em;
+  margin-bottom: -0.08em;
+}
+
+/* Soft wash trailing the revealed word. */
+.textloop__bg {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(43, 182, 255, 0.1) 40%,
+    rgba(43, 182, 255, 0.24)
+  );
+}
+
+.textloop__word {
+  position: relative;
+  padding-right: 0.06em;
+  background-image: linear-gradient(90deg, var(--ui-blue-bright), var(--ui-blue-deep));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.textloop__cursor {
+  display: inline-block;
+  flex: 0 0 auto;
+  width: 3px;
+  height: 1em;
+  margin-left: 0.06em;
+  background: var(--ui-blue);
+  border-radius: 1px;
+}
+
+@media (min-width: 768px) {
+  .textloop__cursor {
+    width: 4px;
+  }
+}
+
+/* Gradient text can render as invisible if background-clip is unsupported. */
+@supports not ((background-clip: text) or (-webkit-background-clip: text)) {
+  .textloop__word {
+    background-image: none;
+    color: var(--ui-blue-deep);
+  }
+}

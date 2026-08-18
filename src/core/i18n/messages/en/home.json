@@ -1,0 +1,216 @@
+{
+  "meta": {
+    "title": "Enterprise software, built to scale",
+    "description": "Iorta Technxt builds multi-tenant, multi-language platforms for enterprises."
+  },
+  "hero": {
+    "title": "Enterprise software, built to scale",
+    "subtitle": "Multi-tenant, multi-language platforms designed for growth.",
+    "cta": "Talk to us"
+  },
+  "sequence": {
+    "label": "Enterprise platform film",
+    "loading": "Loading sequence",
+    "ch1": {
+      "label": "Enterprise platform",
+      "title": "Built above the complexity",
+      "body": "Multi-tenant architecture that keeps every client isolated, on one codebase."
+    },
+    "ch2": {
+      "label": "One system",
+      "title": "Every team, one source of truth",
+      "body": "Marketing, sales and operations working from the same platform."
+    },
+    "ch3": {
+      "label": "Integration",
+      "title": "Your CRM, already connected",
+      "body": "HubSpot, Salesforce or Zoho: change provider without touching the interface."
+    },
+    "ch4": {
+      "label": "Reach",
+      "title": "Speaks your customer's language",
+      "body": "Localised routing, metadata and content across every market you serve."
+    },
+    "capabilities": {
+      "core-insurance": "Core insurance",
+      "customer-agent": "Customer & agent",
+      "sales-distribution": "Sales & distribution",
+      "claims-management": "Claims management",
+      "payments-finance": "Payments & finance",
+      "digital-insurtech": "Digital insurance & InsurTech",
+      "data-analytics": "Data & analytics",
+      "security-compliance": "Security & compliance",
+      "communication-support": "Communication & support",
+      "insurance-categories": "Insurance categories",
+      "system-ui": "System & UI",
+      "ai-automation": "AI and automation"
+    }
+  },
+  "scenes": {
+    "s1": "Insurance was built on processes.\nThen the processes multiplied.",
+    "s2": "More systems. More handoffs.\nMore complexity.",
+    "s3": "But insurance\ndoesn't have to work this way.",
+    "s4": "It can move faster. Connect better.\nOperate smarter.",
+    "s5": "Technology built for\nthe next era of insurance."
+  },
+  "intro": {
+    "eyebrow": "INSURANCE TECHNOLOGY, REIMAGINED",
+    "titlePrefix": "Build what's next in",
+    "rotate": {
+      "insurance": "insurance.",
+      "distribution": "distribution.",
+      "cx": "customer experience.",
+      "claims": "claims.",
+      "embedded": "embedded insurance.",
+      "brokerage": "brokerage.",
+      "ecosystems": "digital ecosystems."
+    },
+    "lead": "A connected ecosystem of products, workflows and technology for insurers, brokers, agents, customers and partners.",
+    "sub": "Modernize distribution. Connect operations. Create better experiences. Move insurance forward.",
+    "ctaProducts": "Explore our products",
+    "ctaContact": "Ask Me",
+    "videoPlaceholder": "Hero video",
+    "videoHint": "Drop the product film here, 16:9",
+    "tickerLabel": "LIVE ON THE PLATFORM TODAY",
+    "tickerSample": "sample data",
+    "ticker": {
+      "policies": "POLICIES BOUND",
+      "claims": "CLAIMS SETTLED",
+      "payments": "PAYMENTS CLEARED",
+      "documents": "DOCUMENTS ISSUED",
+      "partners": "PARTNERS CONNECTED"
+    }
+  },
+  "partners": {
+    "titleLead": "The teams building modern insurance",
+    "titleAccent": "run on TECHNXT.",
+    "placeholderNote": "Placeholder marks, replace with real partner logos",
+    "featured": {
+      "brand": "Case study",
+      "stat": "—",
+      "caption": "Faster claims settlement",
+      "cta": "Read the story",
+      "imageNote": "Case-study image"
+    }
+  },
+  "possibilities": {
+    "eyebrow": "Insurance is evolving",
+    "words": [
+      "New channels",
+      "New expectations",
+      "New possibilities"
+    ]
+  },
+  "platform": {
+    "lead": "Insurance now happens everywhere: through brokers, agents, digital platforms, merchants, partners and directly with customers.",
+    "problem": "But the technology behind these experiences is often fragmented.",
+    "connect": "iorta TechNXT\nconnects the pieces.",
+    "build": "We build specialized products and technology that bring distribution, customer journeys, operations and servicing into a connected insurance ecosystem."
+  },
+  "bento": {
+    "eyebrow": "The Verse ecosystem",
+    "titleLine1": "One ecosystem.",
+    "titleLine2": "Built around insurance.",
+    "sub": "Specialized products for the people, channels and journeys that power modern insurance.",
+    "noteOne": "Each Verse solves a distinct challenge.",
+    "noteTwo": "Together, they create something bigger.",
+    "showDetails": "Show details",
+    "hideDetails": "Hide details",
+    "items": {
+      "core": {
+        "title": "Core insurance",
+        "body": "Policy administration, underwriting and product configuration running on a single core.",
+        "detail": "Product definition, rating, policy issue, endorsements and renewals, configured rather than coded."
+      },
+      "distribution": {
+        "title": "Distribution",
+        "body": "Broker, agent, partner and direct channels served from the same platform.",
+        "detail": "Onboarding, hierarchies, commissions and quoting for every channel you sell through."
+      },
+      "journeys": {
+        "title": "Customer journeys",
+        "body": "Quote, buy, service and renew, designed as one continuous path.",
+        "detail": "Self-service portals and assisted flows working from one view of the customer."
+      },
+      "claims": {
+        "title": "Claims",
+        "body": "Intake, assessment, settlement and recovery, tracked end to end.",
+        "detail": "First notice of loss through to settlement, with assessment and recovery held in the same file."
+      },
+      "payments": {
+        "title": "Payments and finance",
+        "body": "Collections, disbursements and reconciliation wired into the policy lifecycle.",
+        "detail": "Premium collection, refunds, payouts and reconciliation against the policy ledger."
+      },
+      "data": {
+        "title": "Data and analytics",
+        "body": "Operational and portfolio reporting drawn from live system data.",
+        "detail": "Dashboards and extracts built on the same records the operational system writes."
+      }
+    }
+  },
+  "stack": {
+    "eyebrow": "Connected by design",
+    "headlineLine1": "Insurance doesn't happen in one system.",
+    "headlineLine2": "It moves across people, channels, products and moments.",
+    "cards": {
+      "policy": {
+        "tab": "Discover"
+      },
+      "distribution": {
+        "tab": "Distribute"
+      },
+      "claims": {
+        "tab": "Engage"
+      },
+      "payments": {
+        "tab": "Service"
+      },
+      "reporting": {
+        "tab": "Claim"
+      },
+      "spreadsheets": {
+        "tab": "Grow"
+      }
+    },
+    "placeholder": "Placeholder card"
+  },
+  "challenge": {
+    "eyebrow": "Start with your challenge",
+    "headline": "What do you want to transform?",
+    "subLine1": "You don't need to know which technology you need.",
+    "subLine2": "Start with the business outcome you're trying to create.",
+    "cards": {
+      "distribution": {
+        "title": "Modernize Distribution",
+        "body": "Connect direct, broker, agent and partner channels.",
+        "cta": "Explore Distribution"
+      },
+      "brokerage": {
+        "title": "Transform Brokerage",
+        "body": "Digitize the complete broker journey from prospect to renewal.",
+        "cta": "Explore Broker Transformation"
+      },
+      "agents": {
+        "title": "Empower Agents",
+        "body": "Give agents better tools to acquire, sell and serve.",
+        "cta": "Explore Agent Enablement"
+      },
+      "customer": {
+        "title": "Reinvent Customer Experience",
+        "body": "Create simpler digital experiences throughout the insurance lifecycle.",
+        "cta": "Explore Customer Experience"
+      },
+      "embedded": {
+        "title": "Launch Embedded Insurance",
+        "body": "Bring insurance into merchant, marketplace and partner journeys.",
+        "cta": "Explore Embedded Insurance"
+      },
+      "claims": {
+        "title": "Transform Claims",
+        "body": "Connect the claims journey from notification through settlement.",
+        "cta": "Explore Claims"
+      }
+    }
+  }
+}

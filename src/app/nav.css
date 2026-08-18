@@ -1,0 +1,446 @@
+/**
+ * Site navigation, built to the structure and geometry measured from
+ * ramp.com: announcement bar, 14px/400 nav links at 0 12px, 6px button radius,
+ * 12px/16px button padding, and a full-width mega panel with grouped columns
+ * (uppercase eyebrow, icon + label + description rows) plus a featured card.
+ *
+ * Colours are TECHNXT's own tokens rather than Ramp's black/lime palette —
+ * matching those would put another company's brand identity on this site.
+ */
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 60;
+}
+
+/* ---- Announcement bar ---- */
+
+.nav__banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-4);
+  padding: 0.6875rem var(--space-6);
+  background: rgba(10, 14, 26, 0.9);
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.nav__bannertext {
+  margin: 0;
+  font-size: 0.8125rem;
+  line-height: 1.3;
+  text-align: center;
+}
+
+.nav__bannerlink {
+  color: var(--white);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  white-space: nowrap;
+}
+
+.nav__bannerclose {
+  position: absolute;
+  right: var(--space-5);
+  display: grid;
+  place-items: center;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  background: none;
+  border: 0;
+  border-radius: 4px;
+  color: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+}
+
+.nav__bannerclose svg {
+  width: 12px;
+  height: 12px;
+}
+
+.nav__bannerclose:hover {
+  color: var(--white);
+  background: rgba(255, 255, 255, 0.12);
+}
+
+/* ---- Bar ---- */
+
+/**
+ * Glassmorphism: translucent body with a blurred, saturated backdrop so the
+ * film reads through the bar. Strengthened by .nav--scrolled once the page
+ * leaves the bright opening frame, where the footage behind turns dark.
+ *
+ * -webkit- prefix included: Safari still needs it for backdrop-filter.
+ */
+.nav__bar {
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: saturate(180%) blur(18px);
+  -webkit-backdrop-filter: saturate(180%) blur(18px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.28);
+  transition:
+    background-color 240ms ease,
+    border-color 240ms ease;
+}
+
+.nav--scrolled .nav__bar {
+  background: rgba(255, 255, 255, 0.82);
+  border-bottom-color: var(--line);
+}
+
+/* An opaque bar would defeat the effect; the panel supplies its own ground. */
+.nav__banner {
+  backdrop-filter: saturate(140%) blur(12px);
+  -webkit-backdrop-filter: saturate(140%) blur(12px);
+}
+
+/* No blur support: fall back to a solid bar rather than unreadable text. */
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+  .nav__bar {
+    background: var(--white);
+    border-bottom-color: var(--line);
+  }
+}
+
+/**
+ * 72px, not Ramp's 56px: the TECHNXT lockup has a mandated 160px minimum
+ * width, which makes it 45.5px tall. A 56px row would leave 5px of breathing
+ * room — shrinking the logo below its minimum is not an option, so the bar
+ * grows instead.
+ */
+.nav__inner {
+  display: flex;
+  align-items: center;
+  gap: var(--space-5);
+  max-width: 82rem;
+  margin: 0 auto;
+  padding: 0 var(--space-6);
+  height: 72px;
+}
+
+.nav__brand {
+  display: inline-flex;
+  align-items: center;
+  flex: 0 0 auto;
+  text-decoration: none;
+}
+
+.nav__brand .logo {
+  display: block;
+}
+
+/* ---- Links ---- */
+
+.nav__links {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.nav__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  height: 34px;
+  padding: 0 12px;
+  border: 0;
+  border-radius: 6px;
+  background: none;
+  font-family: inherit;
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: var(--ink);
+  text-decoration: none;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.nav__link:hover {
+  background: var(--state-disabled-bg);
+}
+
+.nav__chevron {
+  width: 12px;
+  height: 12px;
+  transition: transform 160ms ease;
+}
+
+.nav__link[aria-expanded="true"] .nav__chevron {
+  transform: rotate(180deg);
+}
+
+.nav__chevron--right,
+.nav__chevron--left {
+  transform: none;
+}
+
+/* ---- Actions ---- */
+
+.nav__actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  margin-left: auto;
+}
+
+.nav__signin {
+  font-size: 0.875rem;
+  color: var(--ink);
+  text-decoration: none;
+  padding: 0 8px;
+  white-space: nowrap;
+}
+
+.nav__signin:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.nav__link:focus-visible,
+.nav__signin:focus-visible {
+  outline: 3px solid var(--state-focus);
+  outline-offset: 2px;
+}
+
+/* ---- Mega panel ---- */
+
+.nav__mega {
+  position: absolute;
+  left: 0;
+  right: 0;
+  background: var(--paper);
+  border-bottom: 1px solid var(--line);
+  box-shadow: 0 24px 48px rgba(10, 14, 26, 0.08);
+}
+
+.nav__megainner {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: var(--space-8);
+  max-width: 82rem;
+  margin: 0 auto;
+  padding: var(--space-7) var(--space-6);
+}
+
+.nav__cols {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: var(--space-7);
+}
+
+.nav__col {
+  display: grid;
+  align-content: start;
+  gap: 2px;
+}
+
+.nav__eyebrow {
+  margin: 0 0 var(--space-3);
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: var(--ink-soft);
+}
+
+.nav__row {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+  padding: 0.5rem;
+  margin: 0 -0.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.nav__row:hover {
+  background: var(--white);
+}
+
+/**
+ * Not built yet — see the `href`-less case in NavBar's PanelItem. It reads as
+ * a preview of the section rather than as something you can click, so it drops
+ * the hover affordance and dims the glyph, but keeps full label contrast so it
+ * is still legible.
+ */
+.nav__row--pending {
+  cursor: default;
+}
+
+.nav__row--pending:hover {
+  background: transparent;
+}
+
+.nav__row--pending .nav__glyph {
+  color: var(--ink-soft);
+  opacity: 0.55;
+}
+
+.nav__row--pending .nav__rowlabel {
+  color: var(--ink-soft);
+}
+
+.nav__glyph {
+  display: grid;
+  place-items: center;
+  flex: 0 0 auto;
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  background: var(--white);
+  border: 1px solid var(--line);
+  color: var(--ui-blue);
+}
+
+.nav__row:hover .nav__glyph {
+  border-color: var(--ui-blue);
+}
+
+.nav__glyph svg {
+  width: 16px;
+  height: 16px;
+}
+
+.nav__rowtext {
+  display: grid;
+  gap: 1px;
+}
+
+.nav__rowlabel {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.nav__rowdesc {
+  font-size: 0.8125rem;
+  color: var(--ink-soft);
+  line-height: var(--leading-snug);
+}
+
+/* ---- Featured card ---- */
+
+.nav__featured {
+  width: 17rem;
+}
+
+.nav__featuredcard {
+  display: grid;
+  gap: 4px;
+  text-decoration: none;
+}
+
+.nav__featuredart {
+  display: block;
+  height: 7.5rem;
+  margin-bottom: var(--space-3);
+  border-radius: var(--radius-md, 12px);
+  background:
+    radial-gradient(120% 120% at 20% 10%, rgba(43, 182, 255, 0.35), transparent 60%),
+    linear-gradient(160deg, var(--ink), #14213b);
+}
+
+/* ---- Mobile ---- */
+
+.nav__toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 44px;
+  height: 44px;
+  margin-left: auto;
+  padding: 0;
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+
+.nav__togglebar {
+  display: block;
+  width: 20px;
+  height: 1.5px;
+  margin: 0 auto;
+  background: var(--ink);
+}
+
+.nav__mobile {
+  display: none;
+}
+
+.nav__back {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.5rem 0;
+  margin-bottom: var(--space-2);
+  background: none;
+  border: 0;
+  font: inherit;
+  font-size: 0.875rem;
+  color: var(--ink-soft);
+  cursor: pointer;
+}
+
+@media (max-width: 960px) {
+  .nav__links,
+  .nav__actions {
+    display: none;
+  }
+
+  .nav__toggle {
+    display: flex;
+  }
+
+  .nav__mobile {
+    display: grid;
+    gap: 2px;
+    max-height: calc(100vh - 72px);
+    overflow-y: auto;
+    padding: var(--space-4) var(--space-6) var(--space-8);
+    background: var(--white);
+    border-bottom: 1px solid var(--line);
+  }
+
+  .nav__mobilelink {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0.875rem 0;
+    background: none;
+    border: 0;
+    border-bottom: 1px solid var(--line);
+    font-family: var(--font-display);
+    font-size: 1.0625rem;
+    font-weight: 600;
+    color: var(--ink);
+    text-decoration: none;
+    text-align: left;
+    cursor: pointer;
+  }
+
+  .nav__mobilegroup {
+    padding: var(--space-4) 0 var(--space-2);
+  }
+
+  .nav__mobilesub {
+    display: block;
+    padding: 0.625rem 0;
+    font-size: 0.9375rem;
+    color: var(--ink-soft);
+    text-decoration: none;
+  }
+
+  .nav__mobileactions {
+    display: grid;
+    gap: var(--space-3);
+    padding-top: var(--space-5);
+  }
+
+  .nav__mobileactions .nav__signin {
+    padding: 0.5rem 0;
+  }
+}

@@ -1,0 +1,149 @@
+/**
+ * Site footer (src/components/layout/Footer.tsx).
+ *
+ * Six link columns plus a brand block.
+ *
+ * Unlike `.sec--muted` this needs no `100vw` breakout: the footer is a sibling
+ * of `<main class="container">`, not a child of it, so it is already full
+ * width. Using `100vw` here would overflow by the scrollbar's width.
+ */
+
+.foot {
+  margin-top: var(--space-9);
+  padding: var(--space-9) var(--space-6) var(--space-6);
+  background: var(--paper);
+  border-top: 1px solid var(--line);
+}
+
+.foot__inner {
+  max-width: 78rem;
+  margin: 0 auto;
+  display: grid;
+  gap: var(--space-8);
+}
+
+/* ---- Brand block ---- */
+
+.foot__brand {
+  max-width: 26rem;
+}
+
+.foot__tagline {
+  margin: var(--space-5) 0 var(--space-3);
+  font-family: var(--font-display);
+  font-size: var(--text-body-lg);
+  font-weight: 700;
+  line-height: var(--leading-tight);
+  letter-spacing: -0.02em;
+  color: var(--ink);
+}
+
+.foot__blurb {
+  margin: 0;
+  font-size: var(--text-body);
+  line-height: var(--leading-normal);
+  color: var(--ink-soft);
+}
+
+/* ---- Columns ---- */
+
+/**
+ * Explicit counts rather than `auto-fit`. There are exactly six columns, and
+ * auto-fit resolved to four of them at desktop width, leaving a ragged second
+ * row of two beside two empty cells. Fixing the count at three keeps the two
+ * rows balanced at every size.
+ */
+.foot__cols {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-6) var(--space-5);
+}
+
+@media (min-width: 768px) {
+  .foot__cols {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.foot__col {
+  min-width: 0;
+}
+
+.foot__coltitle {
+  margin: 0 0 var(--space-4);
+  font-size: var(--text-caption-sm);
+  font-weight: 600;
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+
+.foot__list {
+  display: grid;
+  gap: var(--space-2);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.foot__link {
+  display: inline-block;
+  font-size: var(--text-caption);
+  line-height: var(--leading-snug);
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.foot__link:hover {
+  color: var(--ui-blue);
+  text-decoration: underline;
+}
+
+/* Not built yet — see the `href`-less case in Footer. Dimmed so the footer
+   reads as a map of the site without implying every entry is clickable. */
+.foot__link--pending,
+.foot__link--pending:hover {
+  color: var(--ink-soft);
+  text-decoration: none;
+  cursor: default;
+}
+
+/* ---- Base row ---- */
+
+.foot__base {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3) var(--space-5);
+  padding-top: var(--space-5);
+  border-top: 1px solid var(--line);
+}
+
+.foot__copy {
+  margin: 0;
+  font-size: var(--text-caption-sm);
+  color: var(--ink-soft);
+}
+
+.foot__legal {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2) var(--space-5);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: var(--text-caption-sm);
+}
+
+@media (min-width: 1024px) {
+  /* The brand block sits beside the columns once there is room for both. */
+  .foot__inner {
+    grid-template-columns: minmax(0, 20rem) minmax(0, 1fr);
+    column-gap: var(--space-8);
+  }
+
+  .foot__base {
+    grid-column: 1 / -1;
+  }
+}

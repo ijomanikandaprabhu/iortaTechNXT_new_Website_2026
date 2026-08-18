@@ -1,0 +1,208 @@
+{
+  "insights": {
+    "meta": {
+      "title": "Insurance Technology Insights | Iorta TechNXT",
+      "description": "Explore Iorta TechNXT perspectives on core modernization, distribution, claims, data, automation, Takaful and Southeast Asian insurance technology."
+    },
+    "hero": {
+      "eyebrow": "Insights",
+      "title": "Ideas for what's next in insurance.",
+      "lede": "Perspectives on the technology, operating models and market shifts changing how insurance is distributed, serviced and managed.",
+      "primary": "Subscribe to the Newsletter",
+      "secondary": "Talk to Iorta TechNXT"
+    },
+    "filters": {
+      "label": "Topics",
+      "items": [
+        "Core modernization",
+        "Insurance distribution",
+        "Underwriting",
+        "Commercial & specialty",
+        "Bancassurance",
+        "Takaful",
+        "Customer experience",
+        "Claims",
+        "Data",
+        "Responsible automation",
+        "Cyber & fraud",
+        "Southeast Asia"
+      ]
+    },
+    "groups": [
+      {
+        "eyebrow": "Planned coverage",
+        "title": "The perspectives we are writing next.",
+        "body": [
+          "Articles are published as they clear review. Each will connect to a related solution, product and customer proof rather than ending as a market summary."
+        ],
+        "items": [
+          {
+            "category": "Core modernization",
+            "title": "Why Core Modernization Doesn't Always Start With Replacement",
+            "summary": "How progressive modernization can reduce constraints without forcing a high-risk full-platform program."
+          },
+          {
+            "category": "Distribution",
+            "title": "The Next Phase of Insurance Distribution",
+            "summary": "Why direct, advisor, broker, bank and partner channels need to work together rather than compete for ownership of the customer."
+          },
+          {
+            "category": "Customer experience",
+            "title": "From Self-Service to Proactive Policyholder Service",
+            "summary": "How digital service can move from access to timely action."
+          },
+          {
+            "category": "Responsible automation",
+            "title": "What Human-Governed Insurance Automation Looks Like",
+            "summary": "Where automation creates value, where judgement remains essential and how operational controls fit between the two."
+          },
+          {
+            "category": "Claims",
+            "title": "From Claims Processing to Claims Orchestration",
+            "summary": "How structured intake, triage, work management and communication can improve the claims operating model."
+          },
+          {
+            "category": "Open finance",
+            "title": "Open Finance and the Future of Connected Insurance",
+            "summary": "What consent-driven data exchange could mean for banking, insurance and partner distribution."
+          },
+          {
+            "category": "Southeast Asia",
+            "title": "Designing Insurance Technology Across Southeast Asian Markets",
+            "summary": "Why regional scale still requires local flexibility in workflows, distribution and integration."
+          }
+        ]
+      },
+      {
+        "eyebrow": "Emerging topics",
+        "title": "What we are watching.",
+        "items": [
+          { "title": "Climate & resilience" },
+          { "title": "Parametric insurance" },
+          { "title": "Protection gaps" },
+          { "title": "Open finance" },
+          { "title": "Digital identity" },
+          { "title": "Predict & prevent" },
+          { "title": "AI risk & liability" },
+          { "title": "Health affordability" },
+          { "title": "Future distribution models" }
+        ]
+      },
+      {
+        "eyebrow": "How we write",
+        "title": "Thought leadership should support a decision.",
+        "body": [
+          "Every article answers two questions: what is changing in insurance, and what should an insurer do differently because of it.",
+          "Each one connects onward to a related solution, product, customer proof and an appropriate next step: explore a related article or story, evaluate product features and architecture, or talk to us."
+        ]
+      }
+    ],
+    "cta": {
+      "title": "Useful insurance technology thinking, delivered selectively.",
+      "convert": "Subscribe to the Newsletter",
+      "evaluate": "Explore Customer Stories",
+      "explore": "News & Events"
+    }
+  },
+  "news-events": {
+    "meta": {
+      "title": "Iorta TechNXT News & Events",
+      "description": "Follow Iorta TechNXT company updates, product news, partnerships, customer announcements, events and industry participation."
+    },
+    "hero": {
+      "eyebrow": "News & events",
+      "title": "What's happening at Iorta TechNXT.",
+      "lede": "Company updates, product news and the events where our teams are discussing what is changing in insurance technology.",
+      "primary": "Subscribe",
+      "secondary": "Talk to Iorta TechNXT"
+    },
+    "filters": {
+      "label": "Categories",
+      "items": [
+        "Company",
+        "Products",
+        "Partnerships",
+        "Customers",
+        "Awards",
+        "Market expansion",
+        "Perspectives"
+      ]
+    },
+    "groups": [
+      {
+        "eyebrow": "Latest news",
+        "title": "No announcements published yet.",
+        "body": [
+          "News items are published from the content system rather than maintained by hand, so an announcement never lingers here after it is superseded. Each will carry its category, date, headline and a short summary."
+        ]
+      },
+      {
+        "eyebrow": "Events",
+        "title": "No events currently scheduled.",
+        "body": [
+          "Conferences, roundtables, webinars, speaking engagements and past appearances will be listed here. Each will show the date, city or virtual format, the event name and how Iorta is participating.",
+          "Nothing is listed in advance of confirmation: an event that quietly disappears costs more trust than one announced late."
+        ]
+      }
+    ],
+    "cta": {
+      "title": "Get selected updates without the noise.",
+      "convert": "Subscribe",
+      "evaluate": "Read Insights",
+      "explore": "About Iorta TechNXT"
+    }
+  },
+  "newsletter": {
+    "meta": {
+      "title": "Iorta TechNXT Insurance Technology Newsletter",
+      "description": "Subscribe for selected perspectives on insurance modernization, distribution, claims, data, automation and regional market developments."
+    },
+    "hero": {
+      "eyebrow": "Newsletter",
+      "title": "Better thinking for what's next in insurance.",
+      "lede": "Selected perspectives on the technology and operating changes shaping insurers, intermediaries and digital distribution."
+    },
+    "before": [
+      {
+        "eyebrow": "What you'll receive",
+        "title": "What lands in your inbox.",
+        "tags": [
+          "Insurance technology perspectives",
+          "Distribution trends",
+          "Core modernization ideas",
+          "Claims transformation",
+          "Customer experience",
+          "Responsible automation",
+          "Regional developments",
+          "New Iorta insights"
+        ]
+      }
+    ],
+    "form": {
+      "eyebrow": "Subscribe",
+      "title": "Join the list.",
+      "fields": [
+        { "name": "firstName", "label": "First name", "required": true },
+        { "name": "lastName", "label": "Last name", "required": true },
+        { "name": "email", "label": "Business email", "type": "email", "required": true },
+        { "name": "company", "label": "Company" },
+        { "name": "country", "label": "Country" }
+      ],
+      "submit": "Subscribe",
+      "submitting": "Subscribing…",
+      "success": "Thanks, you are on the list.",
+      "error": "Something went wrong. Please try again.",
+      "microcopy": "Useful perspectives. Relevant updates. No unnecessary noise."
+    },
+    "after": [
+      {
+        "eyebrow": "Privacy",
+        "title": "How we use your details.",
+        "body": [
+          "By subscribing you agree to receive Iorta TechNXT communications, and you can unsubscribe at any time.",
+          "The final consent wording is subject to legal review against the requirements of each target market, and will be published alongside the Privacy Policy."
+        ]
+      }
+    ]
+  }
+}

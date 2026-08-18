@@ -1,0 +1,76 @@
+{
+  "meta": {
+    "title": "Iorta TechNXT Customer Stories | Insurance Transformation in Practice",
+    "description": "Explore insurance transformation across distribution, core modernization, APIs, underwriting, Takaful, customer experience and operations."
+  },
+  "hero": {
+    "eyebrow": "Customer stories",
+    "title": "Built in the real world.",
+    "lede": "Explore how insurance organizations have modernized distribution, sales, underwriting, core technology and operations with Iorta TechNXT.",
+    "primary": "Talk to Iorta TechNXT",
+    "secondary": "Read Insights"
+  },
+  "filters": {
+    "label": "Filter by",
+    "items": [
+      "Sales & distribution",
+      "Agent transformation",
+      "Core modernization",
+      "API & integration",
+      "Takaful",
+      "Underwriting",
+      "Data & analytics",
+      "Claims",
+      "Customer experience"
+    ]
+  },
+  "groups": [
+    {
+      "eyebrow": "Launch stories",
+      "title": "Four engagements, awaiting publication approval.",
+      "body": [
+        "Each of these is real work. None is published in full yet, because customer names, logos, quotations and metrics may only appear once they are approved for external use."
+      ],
+      "items": [
+        {
+          "category": "Sales & distribution",
+          "title": "Field Sales Transformation",
+          "summary": "Modernizing offline field-sales operations with mobile-first advisor workflows, core integration, lead distribution and management visibility.",
+          "detail": ["Customer name and results pending approval."]
+        },
+        {
+          "category": "API & integration",
+          "title": "Legacy PAS API Modernization",
+          "summary": "Creating reusable APIs and modular integration around an established policy platform to support digital channels and partners.",
+          "detail": ["Customer name and results pending approval."]
+        },
+        {
+          "category": "Underwriting",
+          "title": "Underwriting Transformation",
+          "summary": "Structuring new-business review with configurable rules, decision workflows and straight-through processing for qualifying applications.",
+          "detail": ["Customer name and results pending approval."]
+        },
+        {
+          "category": "Takaful",
+          "title": "Takaful Core & Workflow Modernization",
+          "summary": "Improving product and workflow flexibility around an established Oracle policy environment with configurable Takaful business rules.",
+          "detail": ["Customer name and results pending approval."]
+        }
+      ]
+    },
+    {
+      "eyebrow": "Proof principle",
+      "title": "How we will publish these.",
+      "body": [
+        "Every published story shows the problem, what changed and the result together, with the baseline stated wherever a number appears.",
+        "Customer names, logos, quotations and metrics are published only when approved for external use. A story without that approval stays a capability description, not a claim."
+      ]
+    }
+  ],
+  "cta": {
+    "title": "What outcome are you trying to change?",
+    "convert": "Talk to Iorta TechNXT",
+    "evaluate": "Implementation & Customer Success",
+    "explore": "Read Insights"
+  }
+}

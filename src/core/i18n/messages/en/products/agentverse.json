@@ -1,0 +1,651 @@
+{
+  "name": "AgentVerse",
+  "overview": {
+    "meta": {
+      "title": "AgentVerse | Digital Platform for Insurance Agents & Advisors",
+      "description": "Onboard, activate and enable insurance agents with leads, customers, daily planning, sales support, renewals, performance and manager visibility."
+    },
+    "hero": {
+      "eyebrow": "AgentVerse: Insurance agent enablement",
+      "title": "Give every advisor a digital advantage.",
+      "lede": "AgentVerse helps insurance organizations onboard, activate, enable and manage their distribution force while giving advisors one focused place for customers, activities, sales and renewals.",
+      "primary": "Request Demo",
+      "secondary": "Explore Features"
+    },
+    "problem": {
+      "eyebrow": "The advisor is changing",
+      "title": "Combine human relationships with better digital support.",
+      "body": [
+        "Advisors create value through relationships, judgement and customer understanding.",
+        "Technology should reduce the administration around that work and make priorities easier to see."
+      ]
+    },
+    "journey": {
+      "eyebrow": "Advisor lifecycle",
+      "title": "From joining to growing the book.",
+      "steps": [
+        "Join",
+        "Activate",
+        "Plan",
+        "Engage",
+        "Sell",
+        "Serve",
+        "Renew",
+        "Grow"
+      ],
+      "body": "Join and complete onboarding. Activate against readiness requirements. Plan daily work. Engage customers. Progress sales. Continue servicing. Stay ahead of renewals. Track performance and development."
+    },
+    "builtFor": {
+      "eyebrow": "Built for",
+      "title": "One product, four ways of working.",
+      "items": [
+        {
+          "role": "Agents & advisors",
+          "description": "Customers, leads, activities and sales."
+        },
+        {
+          "role": "Agency managers",
+          "description": "Team pipeline, targets, productivity and coaching."
+        },
+        {
+          "role": "Distribution leaders",
+          "description": "Organization-level performance and activation."
+        },
+        {
+          "role": "Administrators",
+          "description": "Onboarding, structures, access and configuration."
+        }
+      ]
+    },
+    "intelligence": {
+      "eyebrow": "Daily experience",
+      "title": "Open the app and know what today looks like.",
+      "body": "Today's priorities, new leads, appointments, customer follow-ups, applications in progress, upcoming renewals, targets and personal performance, in one advisor workspace."
+    },
+    "integration": {
+      "eyebrow": "Works with your technology",
+      "title": "Connect the sales and policy systems already in place.",
+      "body": "AgentVerse can connect with the enterprise services that already run distribution and policy.",
+      "tags": [
+        "SalesVerse",
+        "Policy administration",
+        "CRM",
+        "Identity",
+        "Document services",
+        "Quotation and application services",
+        "Payments",
+        "Communications",
+        "Learning platforms",
+        "Data and reporting"
+      ]
+    },
+    "outcomes": {
+      "eyebrow": "What changes for the business",
+      "title": "Different leaders, different gains.",
+      "items": [
+        {
+          "role": "Distribution leaders",
+          "description": "Better visibility into activation, productivity and advisor performance."
+        },
+        {
+          "role": "Agency managers",
+          "description": "Clearer priorities, coaching signals and team activity."
+        },
+        {
+          "role": "Operations leaders",
+          "description": "More structured onboarding and advisor administration."
+        },
+        {
+          "role": "Technology leaders",
+          "description": "A focused advisor experience that can connect to existing sales and policy systems."
+        }
+      ]
+    },
+    "proof": {
+      "eyebrow": "Proof in practice",
+      "title": "Evidence, close to the claim.",
+      "body": "Advisor-transformation work covering adoption, productivity improvement and faster policy issuance is the most relevant evidence for this product.",
+      "pending": "Awaiting approval",
+      "pendingNote": "Publish only the customer name and metric set cleared for public use."
+    },
+    "faq": {
+      "eyebrow": "Questions",
+      "title": "Common questions about AgentVerse.",
+      "items": [
+        {
+          "question": "How is AgentVerse different from SalesVerse?",
+          "answer": "SalesVerse runs the sales and new-business process. AgentVerse focuses on enabling and developing the advisor workforce across onboarding, daily work, customer relationships, renewals and performance."
+        },
+        {
+          "question": "Can AgentVerse support Takaful advisors?",
+          "answer": "The agent lifecycle can be configured for Takaful distribution models where the required workflows and content are defined."
+        },
+        {
+          "question": "Is AgentVerse mobile-friendly?",
+          "answer": "The product is designed around field and advisor work, with responsive and mobile experiences as an important part of implementation."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Give advisors more time for the relationship.",
+      "convert": "Request an AgentVerse Demo",
+      "explore": "View AgentVerse Use Cases"
+    }
+  },
+  "features": {
+    "meta": {
+      "title": "AgentVerse Features | Advisor Onboarding, Leads, Customers & Performance",
+      "description": "Explore AgentVerse capabilities for advisor recruitment, onboarding, lead management, daily planning, customer work, sales support, renewals, performance and manager visibility."
+    },
+    "hero": {
+      "eyebrow": "AgentVerse features",
+      "title": "Everything an advisor needs between joining and growing the relationship.",
+      "lede": "AgentVerse is designed around the lifecycle of the insurance advisor and the distribution organization supporting them. It helps insurers recruit, activate, organize, enable, coach and retain advisors while giving each advisor a focused workspace for customers, sales activity and renewals.",
+      "primary": "Request Demo",
+      "secondary": "Explore the Overview"
+    },
+    "note": "Modules can vary by distribution model, market and integration scope.",
+    "groups": [
+      {
+        "number": "01",
+        "eyebrow": "Recruitment & candidate intake",
+        "title": "Bring prospective advisors into a structured journey.",
+        "items": [
+          {
+            "term": "Recruitment leads",
+            "description": "Capture potential advisor candidates from configured sources."
+          },
+          {
+            "term": "Candidate applications",
+            "description": "Collect structured information required to begin recruitment."
+          },
+          {
+            "term": "Digital forms",
+            "description": "Replace fragmented paper or email forms with guided digital capture."
+          },
+          {
+            "term": "Document collection",
+            "description": "Gather identification, qualifications or other required documents where applicable."
+          },
+          {
+            "term": "Application status",
+            "description": "Track candidate progress through recruitment steps."
+          },
+          {
+            "term": "Review workflow",
+            "description": "Route applications to the appropriate internal reviewers."
+          },
+          {
+            "term": "Local requirements",
+            "description": "This stage is configured around local licensing and distribution requirements rather than presented as a universal regulatory process."
+          }
+        ]
+      },
+      {
+        "number": "02",
+        "eyebrow": "Onboarding, readiness & activation",
+        "title": "Move new advisors from approved to ready to sell.",
+        "items": [
+          {
+            "term": "Advisor profile",
+            "description": "Maintain identity, contact, organizational and distribution information."
+          },
+          {
+            "term": "Onboarding checklist",
+            "description": "Track required internal steps before activation."
+          },
+          {
+            "term": "Training status",
+            "description": "Connect required learning or readiness information where supported."
+          },
+          {
+            "term": "Licensing and readiness status",
+            "description": "Record relevant readiness information according to market and implementation."
+          },
+          {
+            "term": "Documents",
+            "description": "Maintain required supporting evidence."
+          },
+          {
+            "term": "Activation status",
+            "description": "Make it clear whether the advisor is pending, active, inactive or restricted according to the configured model."
+          },
+          {
+            "term": "Access provisioning",
+            "description": "Connect advisor activation with user access where implementation design supports it."
+          }
+        ]
+      },
+      {
+        "number": "03",
+        "eyebrow": "Lead inbox & opportunity management",
+        "title": "Give advisors a clear view of what needs attention.",
+        "items": [
+          {
+            "term": "Assigned leads",
+            "description": "Show each advisor the opportunities that belong to them."
+          },
+          {
+            "term": "Lead source and status",
+            "description": "Understand where an opportunity came from and where it stands."
+          },
+          {
+            "term": "Priority",
+            "description": "Surface what should be worked first."
+          },
+          {
+            "term": "Customer context",
+            "description": "Bring relevant relationship information to the opportunity."
+          },
+          {
+            "term": "Opportunity stage and follow-up date",
+            "description": "Keep progress and the next contact visible."
+          },
+          {
+            "term": "Manager visibility and reassignment",
+            "description": "Let managers see and, where permitted, redirect work."
+          },
+          {
+            "term": "Intelligent prioritization",
+            "description": "Where implemented, advisors can receive summaries or signals that help focus attention while managers retain control over distribution rules."
+          }
+        ]
+      },
+      {
+        "number": "04",
+        "eyebrow": "Daily planner & field activity",
+        "title": "Turn a list of customers into an actionable day.",
+        "items": [
+          {
+            "term": "Daily planner",
+            "description": "Bring appointments, tasks and follow-ups together."
+          },
+          { "term": "Calendar", "description": "Organize scheduled activities." },
+          {
+            "term": "Appointments",
+            "description": "Connect customer meetings with relevant context."
+          },
+          {
+            "term": "Tasks",
+            "description": "Track actions required across leads, customers and applications."
+          },
+          {
+            "term": "Reminders and notifications",
+            "description": "Surface approaching or overdue work."
+          },
+          {
+            "term": "Field activity",
+            "description": "Support mobile and field work patterns. Geo-enabled capabilities are stated only where the actual release supports them."
+          },
+          {
+            "term": "Activity history",
+            "description": "Give both advisor and manager an appropriate record of completed work."
+          }
+        ]
+      },
+      {
+        "number": "05",
+        "eyebrow": "Customer book & relationship context",
+        "title": "Keep the advisor's book of business in one place.",
+        "items": [
+          {
+            "term": "Customer portfolio",
+            "description": "See assigned or owned customers."
+          },
+          {
+            "term": "Customer profile",
+            "description": "Access key identity and relationship information."
+          },
+          {
+            "term": "Policy context",
+            "description": "Surface available current-policy information through integrations."
+          },
+          {
+            "term": "Interaction history",
+            "description": "Understand previous activities and conversations."
+          },
+          {
+            "term": "Needs information",
+            "description": "Maintain relevant needs or relationship details captured during engagement."
+          },
+          {
+            "term": "Household and business relationships",
+            "description": "Support broader relationship structures where configured."
+          },
+          {
+            "term": "Customer tasks",
+            "description": "Keep service and follow-up actions connected to the customer."
+          }
+        ]
+      },
+      {
+        "number": "06",
+        "eyebrow": "Sales enablement",
+        "title": "Help advisors spend more time advising and less time searching.",
+        "items": [
+          {
+            "term": "Product information and approved content",
+            "description": "Make current material available inside the working experience."
+          },
+          {
+            "term": "Needs discovery",
+            "description": "Capture customer needs through structured questions."
+          },
+          {
+            "term": "Product comparison",
+            "description": "Support side-by-side review where the implementation allows."
+          },
+          {
+            "term": "Quotation and proposal access",
+            "description": "Reach pricing and proposal services in context."
+          },
+          {
+            "term": "Application capture and document upload",
+            "description": "Complete the case without leaving the advisor workspace."
+          },
+          {
+            "term": "Payment and digital-signature connectivity",
+            "description": "Connect the services required to complete a sale."
+          },
+          {
+            "term": "Relationship to SalesVerse",
+            "description": "AgentVerse can connect with SalesVerse or underlying sales services depending on product architecture, without duplicating SalesVerse ownership of enterprise sales orchestration."
+          }
+        ]
+      },
+      {
+        "number": "07",
+        "eyebrow": "Service, renewal & relationship growth",
+        "title": "Keep the advisor useful after the policy is issued.",
+        "items": [
+          {
+            "term": "Renewal alerts",
+            "description": "Surface upcoming policy events."
+          },
+          {
+            "term": "Customer follow-up",
+            "description": "Create tasks and activities around retention or service."
+          },
+          {
+            "term": "Service requests",
+            "description": "Initiate or track relevant servicing journeys where connected."
+          },
+          {
+            "term": "Collections and payment reminders",
+            "description": "Surface available premium information where implemented."
+          },
+          {
+            "term": "Cross-sell opportunities",
+            "description": "Use customer and policy context to identify relevant additional needs."
+          },
+          {
+            "term": "Portfolio reviews",
+            "description": "Help advisors maintain ongoing customer relationships."
+          }
+        ]
+      },
+      {
+        "number": "08",
+        "eyebrow": "Targets, commissions & motivation",
+        "title": "Make progress visible to the advisor.",
+        "items": [
+          {
+            "term": "Personal targets",
+            "description": "Show what the advisor is working toward."
+          },
+          {
+            "term": "Achievement progress",
+            "description": "Track movement against the goal."
+          },
+          {
+            "term": "Sales and renewal performance",
+            "description": "Separate new business from retention."
+          },
+          {
+            "term": "Commission visibility",
+            "description": "Surface earnings information where supported."
+          },
+          {
+            "term": "Incentive information",
+            "description": "Show the programs the advisor is part of."
+          },
+          {
+            "term": "Contests, leaderboards and recognition",
+            "description": "Support configured motivation programs."
+          },
+          {
+            "term": "Local requirements",
+            "description": "These capabilities are configured according to local compensation, conduct and regulatory requirements."
+          }
+        ]
+      },
+      {
+        "number": "09",
+        "eyebrow": "Learning, coaching & development",
+        "title": "Turn performance information into advisor development.",
+        "items": [
+          {
+            "term": "Learning content",
+            "description": "Give advisors access to required and optional material."
+          },
+          {
+            "term": "Product updates",
+            "description": "Keep the field current on what they can sell."
+          },
+          {
+            "term": "Required training",
+            "description": "Track completion against readiness requirements."
+          },
+          {
+            "term": "Coaching notes",
+            "description": "Record manager observations where supported."
+          },
+          {
+            "term": "Development goals",
+            "description": "Connect performance information to a growth plan."
+          },
+          {
+            "term": "Achievement history",
+            "description": "Retain the record of what the advisor has completed."
+          },
+          {
+            "term": "Why this matters",
+            "description": "This is the AgentVerse distinction: it is not only a selling tool, it supports the advisor as a member of the distribution workforce."
+          }
+        ]
+      },
+      {
+        "number": "10",
+        "eyebrow": "Manager & distribution controls",
+        "title": "Give managers the information required to build a stronger team.",
+        "items": [
+          {
+            "term": "Advisor hierarchy and team structure",
+            "description": "Represent how the distribution organization is arranged."
+          },
+          {
+            "term": "Activation status",
+            "description": "See who is ready to produce."
+          },
+          {
+            "term": "Lead allocation",
+            "description": "Control how opportunities are distributed."
+          },
+          {
+            "term": "Activity and pipeline visibility",
+            "description": "Understand the work behind the numbers."
+          },
+          {
+            "term": "Targets and performance dashboards",
+            "description": "Track the team against its goals."
+          },
+          {
+            "term": "Renewal workload and coaching opportunities",
+            "description": "See where support is needed next."
+          },
+          {
+            "term": "Proportionate visibility",
+            "description": "Managers should see what is appropriate for their role without turning the product into surveillance-heavy activity tracking."
+          }
+        ]
+      },
+      {
+        "number": "11",
+        "eyebrow": "Mobile experience & assisted intelligence",
+        "title": "Support the advisor who is rarely at a desk.",
+        "items": [
+          {
+            "term": "Responsive and mobile experience",
+            "description": "Work from the device the advisor actually carries."
+          },
+          {
+            "term": "Notifications",
+            "description": "Surface time-sensitive work."
+          },
+          {
+            "term": "Lead and customer summaries",
+            "description": "Give context quickly before a conversation."
+          },
+          {
+            "term": "Next-action and task suggestions",
+            "description": "Help the advisor decide what to do next."
+          },
+          {
+            "term": "Knowledge assistance",
+            "description": "Answer product questions inside the workflow."
+          },
+          {
+            "term": "Human responsibility",
+            "description": "Intelligent language is used only around actual capabilities, and human responsibility stays explicit for advice, recommendations and regulated decisions."
+          }
+        ]
+      },
+      {
+        "number": "12",
+        "eyebrow": "Integration, administration & controls",
+        "title": "Fit the distribution organization and keep it governed.",
+        "items": [
+          {
+            "term": "Integration areas",
+            "description": "SalesVerse, policy administration, CRM, identity, document services, quotation and application services, payments, communications, learning platforms and data environments."
+          },
+          {
+            "term": "User roles",
+            "description": "Define what each kind of user can reach."
+          },
+          {
+            "term": "Advisor status",
+            "description": "Gate access on readiness and activation."
+          },
+          {
+            "term": "Hierarchies and permissions",
+            "description": "Reflect responsibility in the access model."
+          },
+          {
+            "term": "Business rules",
+            "description": "Adapt process logic to products, channels and markets."
+          },
+          {
+            "term": "Audit history and market configuration",
+            "description": "Retain evidence and support regional variation."
+          }
+        ]
+      }
+    ],
+    "cta": {
+      "title": "Give every advisor a better way to work.",
+      "convert": "Request an AgentVerse Demo",
+      "evaluate": "Explore the AgentVerse Overview",
+      "explore": "View AgentVerse Use Cases"
+    }
+  },
+  "useCases": {
+    "meta": {
+      "title": "AgentVerse Use Cases | Field Sales, Agency Distribution & Advisor Growth",
+      "description": "See how AgentVerse supports advisor recruitment, onboarding, field sales, customer portfolios, coaching, renewals and distribution performance."
+    },
+    "hero": {
+      "eyebrow": "AgentVerse use cases",
+      "title": "Built for every stage of advisor productivity.",
+      "lede": "AgentVerse supports the insurance distribution workforce from recruitment and activation through daily customer work, renewal activity, performance and development.",
+      "primary": "Request Demo",
+      "secondary": "Review Features"
+    },
+    "labels": {
+      "situation": "Business situation",
+      "usage": "How AgentVerse is used",
+      "change": "What changes"
+    },
+    "cases": [
+      {
+        "number": "01",
+        "title": "New-advisor onboarding",
+        "situation": "Recruiting an advisor is only the beginning. Internal reviews, documents, training, readiness and access can be spread across several teams and systems.",
+        "usage": "Candidate information, documents, onboarding steps and activation status are organized into a structured journey appropriate to the market.",
+        "change": "Clearer onboarding progress. Less manual follow-up. Better visibility into who is ready to become productive."
+      },
+      {
+        "number": "02",
+        "title": "Field-sales organization",
+        "situation": "Field advisors spend much of the day away from the office and need a simple way to understand customers, appointments and follow-up.",
+        "usage": "A mobile-oriented workspace brings leads, planner, appointments, customer information, tasks and relevant sales tools closer to the advisor.",
+        "change": "Less administrative switching. Better daily organization. More customer-facing time."
+      },
+      {
+        "number": "03",
+        "title": "Agency lead distribution",
+        "situation": "Large agency organizations receive leads from campaigns, branches, digital channels or service events and need to distribute them fairly and effectively.",
+        "usage": "Leads are assigned according to configured rules, appear in the advisor inbox and remain visible to managers as they progress.",
+        "change": "Clearer ownership. Faster follow-up. Better management visibility into lead activity."
+      },
+      {
+        "number": "04",
+        "title": "Life insurance and Takaful advisors",
+        "situation": "Advice-led protection products often require needs conversations, product explanation, documentation and sustained customer follow-up.",
+        "usage": "Advisors can access customer context, needs information, sales content, quotation and application services and relevant learning resources in one workflow.",
+        "change": "More consistent advice support. Easier access to approved content. Better continuity from conversation through application."
+      },
+      {
+        "number": "05",
+        "title": "Branch or relationship-manager enablement",
+        "situation": "Relationship managers may sell protection alongside banking or other financial products, but insurance is not their only responsibility.",
+        "usage": "The experience can be simplified around assigned opportunities, customer information, product guidance, activities and application access.",
+        "change": "A clearer insurance workflow for non-specialist distribution users. Less process dependence on email or paper."
+      },
+      {
+        "number": "06",
+        "title": "Manager coaching",
+        "situation": "Agency managers often see final sales numbers but have limited insight into the behaviours and bottlenecks behind them.",
+        "usage": "Managers can review advisor activity, pipeline, lead follow-up, targets, renewals and development information appropriate to their role.",
+        "change": "More targeted coaching. Earlier intervention. Better visibility into where advisors need support."
+      },
+      {
+        "number": "07",
+        "title": "Renewal and retention activity",
+        "situation": "Advisors manage large customer books and can easily miss policy events if renewal information is separated from daily work.",
+        "usage": "Renewal alerts can create prioritized follow-up alongside customer and policy context.",
+        "change": "Earlier customer contact. Better retention discipline. More structured portfolio management."
+      },
+      {
+        "number": "08",
+        "title": "Cross-sell and relationship growth",
+        "situation": "Existing customers may have additional protection needs, but advisors need context before starting another conversation.",
+        "usage": "Customer profile, existing-policy information and relevant signals can support portfolio review and appropriate additional conversations.",
+        "change": "More relevant engagement. Better use of existing relationships. Less generic campaign outreach."
+      },
+      {
+        "number": "09",
+        "title": "Advisor activation and performance programs",
+        "situation": "Distribution leaders need to improve productivity across a large and diverse advisor population.",
+        "usage": "Activation status, learning, targets, achievements, commissions where supported, contests and coaching can be brought into one advisor-performance experience.",
+        "change": "Clearer performance expectations. Better advisor engagement. More consistent manager support."
+      }
+    ],
+    "cta": {
+      "title": "Build a stronger distribution force around better advisor experiences.",
+      "convert": "Request an AgentVerse Demo",
+      "evaluate": "Review AgentVerse Features",
+      "explore": "Explore the AgentVerse Overview"
+    }
+  }
+}

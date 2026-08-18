@@ -1,0 +1,351 @@
+/**
+ * LogoCloud — replaces the Tailwind utilities the upstream component assumed
+ * (`mx-auto grid max-w-3xl grid-cols-2 rounded-lg bg-border shadow
+ * md:grid-cols-4`, and the cell/image classes).
+ *
+ * The 1px grid gap lets the container's background show through, which is what
+ * draws the hairline rule between cells — same trick as the original.
+ */
+
+.logocloud {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1px;
+  max-width: 48rem;
+  margin: 0 auto;
+  background: var(--line);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-neutral);
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .logocloud {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.logocloud__cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-4) var(--space-3);
+  min-height: 5.25rem;
+  background: var(--white);
+}
+
+/**
+ * Bounded by both axes rather than a fixed height: the set mixes wide
+ * wordmarks (Chubb, PGA Sompo) with square marks (Tata AIG, Takaful), and a
+ * fixed height renders the squares tiny beside the wordmarks.
+ *
+ * Each swap fades in — the cell remounts when its logo changes.
+ */
+.logocloud__img {
+  display: block;
+  max-height: 2rem;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  pointer-events: none;
+  user-select: none;
+  animation: logo-fade 420ms ease;
+}
+
+@media (min-width: 768px) {
+  .logocloud__img {
+    max-height: 2.25rem;
+  }
+}
+
+/**
+ * `opacity` is deliberately absent from the `to` frame, and there is no
+ * fill-mode. An absent property animates toward the element's own computed
+ * value, so the fade lands on whatever opacity the context sets (0.55 muted in
+ * the partner wall, 1 elsewhere) instead of forcing 1.
+ *
+ * Both details matter: with `both`, a cell whose animation never ran — created
+ * while the tab was throttled — stayed frozen on the `from` frame at opacity 0
+ * and the logo was invisible for good.
+ */
+@keyframes logo-fade {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .logocloud__img {
+    animation: none;
+  }
+}
+
+/* ---- Section wrapper ---- */
+
+/**
+ * Breaks out of the page's 72rem container. Inside it, the wall was only
+ * ~117px per cell, which rendered wide wordmarks (Chubb, PGA Sompo) at 8–9px
+ * tall — present but unreadable.
+ */
+.partners {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  padding: var(--space-9) var(--space-6);
+  background: var(--paper);
+}
+
+/**
+ * Logo wall beside a featured card, per the ramp.com layout. The card is a
+ * fixed column; the logo grid takes the rest.
+ */
+.partners__row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 18rem;
+  gap: var(--space-4);
+  align-items: stretch;
+  max-width: 84rem;
+  margin: 0 auto;
+}
+
+/**
+ * Separated tiles rather than the base component's hairline grid: each cell is
+ * its own rounded panel with a small gap, and a four-point star marks every
+ * interior intersection — the ramp.com treatment.
+ *
+ * Column count is driven by how wide a cell needs to be, not by the reference
+ * layout: these marks run to 10:1 (Chubb is 689x69), so a narrow cell makes
+ * them unreadable. Six across only once there is room for it.
+ */
+.partners__logos {
+  --tile-gap: 8px;
+  max-width: none;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--tile-gap);
+  background: none;
+  box-shadow: none;
+  border-radius: 0;
+  overflow: visible;
+}
+
+/**
+ * The edge is a neutral wash rather than `--line`: that token is blue-tinted
+ * and, drawn on all four sides of every tile, two adjacent strokes across an
+ * 8px gap read as a heavy double rule. This is roughly half its weight, so the
+ * tiles separate without the wall looking ruled.
+ */
+.partners__logos .logocloud__cell {
+  position: relative;
+  border: 1px solid rgba(15, 23, 42, 0.06);
+  border-radius: 12px;
+  min-height: 7.5rem;
+}
+
+@media (min-width: 1280px) {
+  .partners__logos .logocloud__cell {
+    min-height: 8.5rem;
+  }
+}
+
+/**
+ * The star is centred on the gap crossing at the cell's top-left corner, so it
+ * is drawn once per intersection. Cells in the first row or first column have
+ * no interior crossing there and opt out per breakpoint below.
+ *
+ * Masked rather than an <img>: it inherits a token colour and stays decorative.
+ */
+.partners__logos .logocloud__cell::after {
+  content: "";
+  position: absolute;
+  top: calc(var(--tile-gap) / -2);
+  left: calc(var(--tile-gap) / -2);
+  width: 9px;
+  height: 9px;
+  transform: translate(-50%, -50%);
+  /* Reads a little stronger than the tile edge — it is the accent, not the
+     structure, and at 9px a border-weight grey disappears. */
+  background: rgba(15, 23, 42, 0.16);
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M8 0c.4 4.6 3 7.2 8 8-5 .8-7.6 3.4-8 8-.4-4.6-3-7.2-8-8 5-.8 7.6-3.4 8-8z'/%3E%3C/svg%3E")
+    center / contain no-repeat;
+  pointer-events: none;
+}
+
+/**
+ * Each tier's edge rules are bounded on both sides rather than stacked.
+ * A wider tier cannot simply re-show what a narrower one hid: the hide rules
+ * carry an extra `:nth-child`, so they outrank any plain reset no matter the
+ * source order. Exclusive ranges sidestep specificity entirely.
+ */
+
+/**
+ * Two across on the narrowest phones. Three fits, but at 375px that is a 100px
+ * cell, which renders Chubb about 8px tall — present but unreadable.
+ * No star along the top edge or the left edge.
+ */
+@media (max-width: 479.98px) {
+  .partners__logos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .partners__logos .logocloud__cell:nth-child(-n + 2)::after,
+  .partners__logos .logocloud__cell:nth-child(2n + 1)::after {
+    display: none;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 639.98px) {
+  .partners__logos .logocloud__cell:nth-child(-n + 3)::after,
+  .partners__logos .logocloud__cell:nth-child(3n + 1)::after {
+    display: none;
+  }
+}
+
+@media (min-width: 640px) {
+  .partners__logos {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 640px) and (max-width: 1279.98px) {
+  .partners__logos .logocloud__cell:nth-child(-n + 4)::after,
+  .partners__logos .logocloud__cell:nth-child(4n + 1)::after {
+    display: none;
+  }
+}
+
+@media (min-width: 1280px) {
+  .partners__logos {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .partners__logos .logocloud__cell:nth-child(-n + 6)::after,
+  .partners__logos .logocloud__cell:nth-child(6n + 1)::after {
+    display: none;
+  }
+}
+
+/* Marks are muted so the wall reads as one texture, and lift on hover. */
+.partners__logos .logocloud__img {
+  filter: grayscale(1);
+  opacity: 0.55;
+  transition:
+    filter 200ms ease,
+    opacity 200ms ease;
+}
+
+.partners__logos .logocloud__cell:hover .logocloud__img {
+  filter: none;
+  opacity: 1;
+}
+
+/* ---- Featured case-study card ---- */
+
+.casecard {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: 16rem;
+  padding: var(--space-5);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  text-decoration: none;
+  color: var(--white);
+  background: var(--ink);
+  box-shadow: var(--shadow-neutral);
+}
+
+.casecard__art {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(120% 110% at 25% 15%, rgba(43, 182, 255, 0.4), transparent 60%),
+    linear-gradient(165deg, #16233d, var(--ink));
+}
+
+.casecard__body {
+  position: relative;
+  display: grid;
+  gap: 2px;
+}
+
+.casecard__brand {
+  font-family: var(--font-display);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.casecard__stat {
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 4vw, 3.5rem);
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+}
+
+.casecard__caption {
+  font-size: 0.9375rem;
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.casecard__arrow {
+  position: absolute;
+  top: var(--space-4);
+  right: var(--space-4);
+  display: grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  border-radius: var(--radius-full);
+  background: rgba(255, 255, 255, 0.16);
+  font-size: 0.875rem;
+  transition: transform 180ms ease;
+}
+
+.casecard:hover .casecard__arrow {
+  transform: translate(2px, -2px);
+}
+
+.casecard:focus-visible {
+  outline: 3px solid var(--state-focus);
+  outline-offset: 2px;
+}
+
+@media (max-width: 900px) {
+  .partners__row {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+.partners__title {
+  margin: 0 auto var(--space-6);
+  max-width: 40rem;
+  font-family: var(--font-display);
+  font-size: clamp(1.125rem, 2vw, 1.5rem);
+  font-weight: 600;
+  line-height: var(--leading-snug);
+  letter-spacing: -0.015em;
+  text-align: center;
+  color: var(--ink-soft);
+}
+
+.partners__accent {
+  color: var(--ink);
+}
+
+/* Dev-only marker: these are placeholder marks, not real partners. */
+.partners__placeholder {
+  display: block;
+  max-width: 48rem;
+  margin: var(--space-4) auto 0;
+  text-align: center;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--state-warning);
+}

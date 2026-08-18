@@ -1,0 +1,22 @@
+{
+  "extends": ["next/core-web-vitals", "eslint-config-prettier"],
+  "rules": {
+    "no-restricted-imports": [
+      "error",
+      {
+        "patterns": [
+          {
+            "group": ["@/services/crm/*"],
+            "message": "UI and features must go through @/features/crm/api/crmGateway, never a CRM client directly."
+          }
+        ]
+      }
+    ]
+  },
+  "overrides": [
+    {
+      "files": ["src/features/crm/api/*.ts"],
+      "rules": { "no-restricted-imports": "off" }
+    }
+  ]
+}

@@ -1,0 +1,777 @@
+{
+  "name": "ClaimVerse",
+  "overview": {
+    "meta": {
+      "title": "ClaimVerse | Digital Insurance Claims Management Platform",
+      "description": "Orchestrate digital FNOL, triage, assessment, claim work, decisions, communication and settlement with ClaimVerse."
+    },
+    "hero": {
+      "eyebrow": "ClaimVerse: Digital claims operations",
+      "title": "Know what happened. Know what happens next.",
+      "lede": "ClaimVerse brings notification, evidence, triage, assessment, workflow, decisions, communication and settlement into one structured claims journey.",
+      "primary": "Request Demo",
+      "secondary": "Explore Features"
+    },
+    "problem": {
+      "eyebrow": "Claims are where insurance becomes real",
+      "title": "Three audiences, one moment that matters.",
+      "body": [
+        "Customers need clarity. Handlers need context. Managers need visibility.",
+        "ClaimVerse creates a structured working environment around all three."
+      ]
+    },
+    "journey": {
+      "eyebrow": "Claim journey",
+      "title": "Notify. Triage. Assess. Decide. Settle.",
+      "steps": ["Notify", "Triage", "Assess", "Decide", "Settle"],
+      "body": "Capture claim information. Determine the appropriate path. Bring evidence, tasks and assessment together. Support review and approval. Progress settlement and communication."
+    },
+    "builtFor": {
+      "eyebrow": "Built for",
+      "title": "One product, six ways of working.",
+      "items": [
+        {
+          "role": "Policyholders",
+          "description": "Submit information and understand progress."
+        },
+        {
+          "role": "Claim handlers",
+          "description": "Manage cases, documents, tasks and decisions."
+        },
+        {
+          "role": "Assessors & specialists",
+          "description": "Review claims requiring expertise."
+        },
+        {
+          "role": "Operations managers",
+          "description": "Monitor workloads, ageing and turnaround."
+        },
+        {
+          "role": "Administrators",
+          "description": "Configure roles, workflows and controls."
+        },
+        {
+          "role": "Service providers",
+          "description": "Participate in selected claim activities where applicable."
+        }
+      ]
+    },
+    "intelligence": {
+      "eyebrow": "Intelligent claims operations",
+      "title": "Let routine work move. Surface the exception.",
+      "body": "Document understanding, initial completeness checks, rules-based triage, case prioritization, automated routing, straight-through processing for eligible cases, exception escalation and fraud or anomaly indicators where supported."
+    },
+    "integration": {
+      "eyebrow": "Works with your technology",
+      "title": "Connect the systems a claim depends on.",
+      "body": "Integration capabilities depend on target-system interfaces and implementation scope.",
+      "tags": [
+        "Policy administration",
+        "Customer platforms",
+        "Identity",
+        "Documents",
+        "Payments",
+        "Provider systems",
+        "Communication",
+        "Fraud and risk services",
+        "Data platforms",
+        "External claims services"
+      ]
+    },
+    "outcomes": {
+      "eyebrow": "What changes for the business",
+      "title": "Different leaders, different gains.",
+      "items": [
+        {
+          "role": "Claims leaders",
+          "description": "Better visibility into workload, ageing, turnaround and exceptions."
+        },
+        {
+          "role": "Handlers",
+          "description": "More complete case context with fewer avoidable administrative steps."
+        },
+        {
+          "role": "Customer leaders",
+          "description": "Clearer status and communication through the claim journey."
+        },
+        {
+          "role": "Technology leaders",
+          "description": "A configurable claims workflow and experience layer that can coexist with established claims technology."
+        }
+      ]
+    },
+    "proof": {
+      "eyebrow": "Proof in practice",
+      "title": "Evidence, close to the claim.",
+      "body": "Until an approved claims story is available, outcome statements on this product stay capability-based. Metrics from underwriting or sales programs do not transfer to claims.",
+      "pending": "Awaiting approval",
+      "pendingNote": "Do not attach metrics from underwriting or sales programs to claims."
+    },
+    "faq": {
+      "eyebrow": "Questions",
+      "title": "Common questions about ClaimVerse.",
+      "items": [
+        {
+          "question": "Can ClaimVerse support straight-through processing?",
+          "answer": "Yes, for claim journeys and scenarios that meet configured eligibility and decision rules."
+        },
+        {
+          "question": "Does ClaimVerse replace an insurer's existing claims core?",
+          "answer": "It can operate as a modern claims workflow and experience layer or as part of a wider claims transformation, depending on the target architecture."
+        },
+        {
+          "question": "Can policyholders track claim progress?",
+          "answer": "Claim status and customer communication can be exposed through appropriate digital experiences and integrations."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Move every claim forward with clearer control.",
+      "convert": "Request a ClaimVerse Demo",
+      "explore": "View ClaimVerse Use Cases"
+    }
+  },
+  "features": {
+    "meta": {
+      "title": "ClaimVerse Features | FNOL, Triage, Claims Workflow, Assessment & Settlement",
+      "description": "Explore ClaimVerse capabilities across digital FNOL, triage, workbench, documents, assessment, provider coordination, controls, STP, settlement, communication and analytics."
+    },
+    "hero": {
+      "eyebrow": "ClaimVerse features",
+      "title": "Everything required to orchestrate the digital claims lifecycle.",
+      "lede": "ClaimVerse is designed around the work required to move a claim from notification through assessment, decision and settlement. It combines customer intake, handler work, workflow, evidence, controls and operational visibility while allowing straightforward and complex claims to follow different paths.",
+      "primary": "Request Demo",
+      "secondary": "Explore the Overview"
+    },
+    "note": "Configured product, line-of-business, provider and settlement capabilities vary by implementation.",
+    "groups": [
+      {
+        "number": "01",
+        "eyebrow": "Digital FNOL",
+        "title": "Make the first step easier for the customer and cleaner for operations.",
+        "items": [
+          {
+            "term": "Digital claim notification",
+            "description": "Let the customer report a loss without a phone call."
+          },
+          {
+            "term": "Guided intake",
+            "description": "Ask for what this claim type actually needs."
+          },
+          {
+            "term": "Policy and claimant information",
+            "description": "Identify who is claiming and under what cover."
+          },
+          {
+            "term": "Incident information",
+            "description": "Capture what happened, where and when."
+          },
+          {
+            "term": "Claim reference and confirmation",
+            "description": "Give the customer something to track immediately."
+          },
+          {
+            "term": "Assisted FNOL hand-off",
+            "description": "Move to a person where the situation requires it."
+          },
+          {
+            "term": "Design principle",
+            "description": "Collect enough information to start the process without asking the customer for everything at once."
+          }
+        ]
+      },
+      {
+        "number": "02",
+        "eyebrow": "Dynamic intake & validation",
+        "title": "Ask for the information relevant to the claim.",
+        "items": [
+          {
+            "term": "Dynamic and conditional questions",
+            "description": "Adapt the form to the answers already given."
+          },
+          {
+            "term": "Product-specific fields",
+            "description": "Reflect what each line of business needs."
+          },
+          {
+            "term": "Policy and coverage checks",
+            "description": "Confirm the claim sits within cover where connected."
+          },
+          {
+            "term": "Duplicate and existing-claim checks",
+            "description": "Catch repeat notifications where supported."
+          },
+          {
+            "term": "Data validation",
+            "description": "Reject inconsistent information at the point of entry."
+          },
+          {
+            "term": "Completeness checks",
+            "description": "Identify what is missing before the case moves on."
+          },
+          {
+            "term": "Routing rules",
+            "description": "Send different claim types into appropriate journeys."
+          }
+        ]
+      },
+      {
+        "number": "03",
+        "eyebrow": "Documents, images & evidence",
+        "title": "Keep evidence with the claim, not in an inbox.",
+        "items": [
+          {
+            "term": "Document and image upload",
+            "description": "Capture evidence from the customer's device."
+          },
+          {
+            "term": "Evidence categorization",
+            "description": "Organize what has been supplied."
+          },
+          {
+            "term": "Document status",
+            "description": "Show what is received, pending or rejected."
+          },
+          {
+            "term": "Missing-document requests",
+            "description": "Ask the customer clearly and once."
+          },
+          {
+            "term": "Version and history",
+            "description": "Track what changed where supported."
+          },
+          {
+            "term": "Document review tasks",
+            "description": "Assign the work of checking evidence."
+          },
+          {
+            "term": "Extracted information",
+            "description": "Surface data pulled from documents where document-understanding capabilities are implemented."
+          }
+        ]
+      },
+      {
+        "number": "04",
+        "eyebrow": "Claims workbench",
+        "title": "Give handlers one operational view of the case.",
+        "items": [
+          {
+            "term": "Claim summary",
+            "description": "Understand the case without opening ten screens."
+          },
+          {
+            "term": "Policy and customer context",
+            "description": "See who the claimant is and what they hold."
+          },
+          {
+            "term": "Timeline",
+            "description": "Follow what has happened so far."
+          },
+          {
+            "term": "Documents, tasks and notes",
+            "description": "Keep the working material in one place."
+          },
+          {
+            "term": "Communication",
+            "description": "See what the customer has been told."
+          },
+          {
+            "term": "Assessment, decisions and provider activity",
+            "description": "Bring specialist work into the case view."
+          },
+          {
+            "term": "Payment and related cases",
+            "description": "Show settlement status where connected and link related claims where supported."
+          }
+        ]
+      },
+      {
+        "number": "05",
+        "eyebrow": "Workflow, tasks & queues",
+        "title": "Move each claim through the right process.",
+        "items": [
+          {
+            "term": "Configurable workflow",
+            "description": "Represent how this insurer actually handles claims."
+          },
+          {
+            "term": "Work queues",
+            "description": "Organize claims waiting on action."
+          },
+          {
+            "term": "Assignment and reassignment",
+            "description": "Give every claim an owner."
+          },
+          {
+            "term": "Task creation and priority",
+            "description": "Make the next action explicit."
+          },
+          {
+            "term": "SLA and ageing",
+            "description": "See how long a claim has waited at each stage."
+          },
+          {
+            "term": "Escalation and referral",
+            "description": "Move claims that need more authority or expertise."
+          },
+          {
+            "term": "Manager review",
+            "description": "Simple claims follow a short path; complex claims introduce specialist and approval stages."
+          }
+        ]
+      },
+      {
+        "number": "06",
+        "eyebrow": "Triage & prioritization",
+        "title": "Decide early which path the claim should take.",
+        "items": [
+          {
+            "term": "Rules-based triage",
+            "description": "Route on configured criteria rather than by hand."
+          },
+          {
+            "term": "Severity indicators",
+            "description": "Surface the claims that need attention first."
+          },
+          {
+            "term": "Claim type and complexity",
+            "description": "Separate routine from difficult."
+          },
+          {
+            "term": "Required specialist",
+            "description": "Identify who needs to be involved."
+          },
+          {
+            "term": "Fraud and referral signals",
+            "description": "Flag cases for deeper review."
+          },
+          {
+            "term": "Vulnerability and priority flags",
+            "description": "Handle sensitive cases appropriately where configured."
+          },
+          {
+            "term": "Catastrophe and event tagging",
+            "description": "Group claims from one event where supported. Triage supports routing and prioritization, it does not replace professional assessment."
+          }
+        ]
+      },
+      {
+        "number": "07",
+        "eyebrow": "Assessment & investigation",
+        "title": "Put evidence and judgement into one controlled workflow.",
+        "items": [
+          {
+            "term": "Assessment tasks",
+            "description": "Structure the work of evaluating a claim."
+          },
+          {
+            "term": "Specialist referral",
+            "description": "Bring in expertise where the claim requires it."
+          },
+          {
+            "term": "Investigation notes",
+            "description": "Record what was examined and concluded."
+          },
+          {
+            "term": "Additional-information requests",
+            "description": "Ask for what assessment still needs."
+          },
+          {
+            "term": "Estimate and loss information",
+            "description": "Capture quantum where supported."
+          },
+          {
+            "term": "Liability and coverage review",
+            "description": "Record the coverage position."
+          },
+          {
+            "term": "Expert reports and review checklists",
+            "description": "Support the assessment patterns each line of business uses."
+          }
+        ]
+      },
+      {
+        "number": "08",
+        "eyebrow": "Provider & network coordination",
+        "title": "Coordinate the parties outside the insurer.",
+        "items": [
+          {
+            "term": "Provider assignment",
+            "description": "Allocate repairers, medical providers, assessors, surveyors, investigators or assistance companies to the claim."
+          },
+          {
+            "term": "Provider status",
+            "description": "See where external work has reached."
+          },
+          {
+            "term": "Documents and estimates",
+            "description": "Receive and hold what the provider supplies."
+          },
+          {
+            "term": "Communication",
+            "description": "Keep provider correspondence with the claim."
+          },
+          {
+            "term": "Provider tasks",
+            "description": "Track what each party still owes."
+          },
+          {
+            "term": "Service-level tracking",
+            "description": "Monitor provider turnaround."
+          },
+          {
+            "term": "Scope of this module",
+            "description": "This is provider coordination, not a built-in provider marketplace, unless that is confirmed."
+          }
+        ]
+      },
+      {
+        "number": "09",
+        "eyebrow": "Fraud, anomaly & control signals",
+        "title": "Surface claims that need deeper review.",
+        "items": [
+          {
+            "term": "Configured fraud rules",
+            "description": "Apply the insurer's own criteria."
+          },
+          {
+            "term": "Duplicate indicators",
+            "description": "Detect repeated or overlapping claims."
+          },
+          {
+            "term": "Document anomalies",
+            "description": "Flag inconsistent evidence where supported."
+          },
+          {
+            "term": "Identity inconsistencies",
+            "description": "Highlight mismatches worth checking."
+          },
+          {
+            "term": "Referral score",
+            "description": "Prioritize investigation where available."
+          },
+          {
+            "term": "Investigation queue and manual referral",
+            "description": "Route cases to specialists, with override controls and a recorded outcome."
+          },
+          {
+            "term": "How signals are used",
+            "description": "Fraud indicators guide specialist review. They are not automatic accusations."
+          }
+        ]
+      },
+      {
+        "number": "10",
+        "eyebrow": "Straight-through processing",
+        "title": "Let eligible routine claims progress without unnecessary handling.",
+        "items": [
+          {
+            "term": "Eligibility criteria",
+            "description": "Define which claims may progress automatically."
+          },
+          {
+            "term": "Product and claim type",
+            "description": "Restrict automation to where it is appropriate."
+          },
+          {
+            "term": "Amount and threshold",
+            "description": "Cap automated progression by value."
+          },
+          {
+            "term": "Required evidence",
+            "description": "Require completeness before automatic progression."
+          },
+          {
+            "term": "Verification results",
+            "description": "Depend on checks having passed."
+          },
+          {
+            "term": "Risk and fraud conditions",
+            "description": "Stop automation where signals are present."
+          },
+          {
+            "term": "Exception return",
+            "description": "Anything outside the rules returns to human review with the reason visible."
+          }
+        ]
+      },
+      {
+        "number": "11",
+        "eyebrow": "Approval & authority controls",
+        "title": "Create a clear control structure around settlement decisions.",
+        "items": [
+          {
+            "term": "Decision workflow",
+            "description": "Move approvals through defined steps."
+          },
+          {
+            "term": "Authority limits",
+            "description": "Match the decision to the person's mandate."
+          },
+          {
+            "term": "Referral thresholds",
+            "description": "Escalate above defined values."
+          },
+          {
+            "term": "Multi-level and exception approval",
+            "description": "Support more than one approver where required."
+          },
+          {
+            "term": "Decision reason",
+            "description": "Record why the outcome was reached."
+          },
+          {
+            "term": "Override controls",
+            "description": "Allow departure from the rule, visibly."
+          },
+          {
+            "term": "Audit history and required notes",
+            "description": "Retain evidence for every decision, with human review preserved."
+          }
+        ]
+      },
+      {
+        "number": "12",
+        "eyebrow": "Settlement & payment connectivity",
+        "title": "Close the claim with the customer paid.",
+        "items": [
+          {
+            "term": "Settlement information",
+            "description": "Record what is being paid and why, where supported."
+          },
+          {
+            "term": "Approved amount",
+            "description": "Carry the decision into payment."
+          },
+          {
+            "term": "Payee information",
+            "description": "Direct the payment correctly."
+          },
+          {
+            "term": "Payment instruction connectivity",
+            "description": "Connect to the insurer's payment services."
+          },
+          {
+            "term": "Payment status",
+            "description": "Confirm the money has moved."
+          },
+          {
+            "term": "Settlement documents and notification",
+            "description": "Give the customer confirmation and evidence."
+          },
+          {
+            "term": "System of record",
+            "description": "ClaimVerse connects with insurer finance and payment systems. It is not the bank or the ledger."
+          }
+        ]
+      },
+      {
+        "number": "13",
+        "eyebrow": "Customer communication",
+        "title": "Keep the claimant informed in their language, not yours.",
+        "items": [
+          {
+            "term": "Claim acknowledgement and reference",
+            "description": "Confirm the claim was received."
+          },
+          {
+            "term": "Missing-information requests",
+            "description": "Ask clearly for what is outstanding."
+          },
+          {
+            "term": "Appointment and provider information",
+            "description": "Tell the customer who will contact them."
+          },
+          {
+            "term": "Status updates",
+            "description": "Reduce the need to call for progress."
+          },
+          {
+            "term": "Decision and settlement communication",
+            "description": "Explain the outcome."
+          },
+          {
+            "term": "Secure messaging and CustomerVerse integration",
+            "description": "Communicate through the channel the customer already uses."
+          },
+          {
+            "term": "Language",
+            "description": "Use clear customer language rather than exposing internal workflow codes."
+          }
+        ]
+      },
+      {
+        "number": "14",
+        "eyebrow": "Monitoring, analytics & management",
+        "title": "Know where claims are slowing down.",
+        "items": [
+          {
+            "term": "Claim volumes and open inventory",
+            "description": "Understand the size of the book of work."
+          },
+          {
+            "term": "Ageing and SLA",
+            "description": "See what has waited too long."
+          },
+          {
+            "term": "Queue and handler workload",
+            "description": "Balance work across the team."
+          },
+          {
+            "term": "Claim stage",
+            "description": "Find the stage where cases accumulate."
+          },
+          {
+            "term": "Exceptions and referral volume",
+            "description": "Track what falls outside the standard path."
+          },
+          {
+            "term": "Straight-through rates and settlement progress",
+            "description": "Measure automation and completion where applicable."
+          },
+          {
+            "term": "Advanced models",
+            "description": "Fraud, reserving or predictive models are claimed only where implemented."
+          }
+        ]
+      },
+      {
+        "number": "15",
+        "eyebrow": "Administration & configuration",
+        "title": "Change the process without changing the code.",
+        "items": [
+          {
+            "term": "Products and claim types",
+            "description": "Define what the platform handles."
+          },
+          {
+            "term": "Workflows and queues",
+            "description": "Represent how work should move."
+          },
+          {
+            "term": "Roles and authority limits",
+            "description": "Define who can decide what."
+          },
+          {
+            "term": "Business rules",
+            "description": "Configure triage, validation and progression."
+          },
+          {
+            "term": "Required documents and notifications",
+            "description": "Set what each journey demands and communicates."
+          },
+          {
+            "term": "SLA and provider categories",
+            "description": "Define expectations for internal and external parties."
+          },
+          {
+            "term": "Permissions, audit history and market configuration",
+            "description": "Govern access and support regional variation."
+          }
+        ]
+      }
+    ],
+    "cta": {
+      "title": "Orchestrate the claim around the customer, handler and decision.",
+      "convert": "Request a ClaimVerse Demo",
+      "evaluate": "Explore the ClaimVerse Overview",
+      "explore": "View ClaimVerse Use Cases"
+    }
+  },
+  "useCases": {
+    "meta": {
+      "title": "ClaimVerse Use Cases | Digital FNOL, Claims Automation & Complex Case Management",
+      "description": "See how ClaimVerse supports digital FNOL, simple claims, complex case management, provider workflows, investigation, catastrophe intake and settlement."
+    },
+    "hero": {
+      "eyebrow": "ClaimVerse use cases",
+      "title": "Different claims need different paths.",
+      "lede": "ClaimVerse can support low-complexity digital journeys, specialist claim handling and high-volume operational scenarios through configurable workflows rather than forcing every claim through the same process. Only lines of business confirmed by the product and implementation teams are described here.",
+      "primary": "Request Demo",
+      "secondary": "Review Features"
+    },
+    "labels": {
+      "situation": "Business situation",
+      "usage": "How ClaimVerse is used",
+      "change": "What changes"
+    },
+    "cases": [
+      {
+        "number": "01",
+        "title": "Digital FNOL",
+        "situation": "Customers need to report a claim quickly but may not understand which information or evidence is required.",
+        "usage": "A guided digital journey captures the initial event, claimant and policy information, documents or images and creates a claim reference before routing the case.",
+        "change": "Cleaner intake. Faster acknowledgement. Less manual re-keying. Better customer clarity."
+      },
+      {
+        "number": "02",
+        "title": "Low-complexity retail claims",
+        "situation": "A high volume of straightforward claims consume handler time even when the required information is complete and the claim meets known criteria.",
+        "usage": "Configured validation, document checks, triage and straight-through rules can allow eligible cases to progress with minimal handling, while exceptions move to a claims specialist.",
+        "change": "More operational capacity. Faster routine claims. Specialists spend more time on exceptions."
+      },
+      {
+        "number": "03",
+        "title": "Motor claims",
+        "situation": "Motor claims can involve customer evidence, vehicle details, repairers, assessors, estimates and multiple status updates.",
+        "usage": "The claim journey can coordinate FNOL, documents and images, assessment, provider activity, approval and customer communication.",
+        "change": "Better coordination. Clearer repair and assessment status. More consistent customer updates."
+      },
+      {
+        "number": "04",
+        "title": "Travel claims",
+        "situation": "Travel claims are often document-heavy and customers may be remote or in another market.",
+        "usage": "Digital intake, supporting-document collection, claim queues, assessment and communication can be managed in a remote-friendly workflow.",
+        "change": "Less paper. Better document visibility. Easier customer follow-up."
+      },
+      {
+        "number": "05",
+        "title": "Property and catastrophe-related claims",
+        "situation": "A weather or catastrophe event can create a sudden increase in claim volume and customer enquiries.",
+        "usage": "Event tagging, digital intake, priority queues, additional work assignment and operational dashboards can help the claim organization manage the surge where scale has been validated.",
+        "change": "Better event visibility. Faster prioritization. More coordinated customer communication. Catastrophe-scale claims handling is not published until performance and operational capability have been validated."
+      },
+      {
+        "number": "06",
+        "title": "Health or provider-involved claims",
+        "situation": "Health or provider-related claims can require medical and provider documents, authorizations, specialist review and external communication.",
+        "usage": "Configured workflows can collect documents, manage provider interaction, route specialist review and maintain status.",
+        "change": "More structured provider coordination. Better documentation. Clearer workflow ownership."
+      },
+      {
+        "number": "07",
+        "title": "Complex claims case management",
+        "situation": "Some claims require investigation, multiple specialists, repeated evidence collection and senior authority.",
+        "usage": "The claim workbench coordinates tasks, documents, investigation activity, referrals, approvals and communication over a longer lifecycle.",
+        "change": "One clearer case history. Better accountability. Stronger control over referrals and decisions."
+      },
+      {
+        "number": "08",
+        "title": "Fraud or investigation referral",
+        "situation": "Claims teams need to identify cases that require deeper review without slowing every claim.",
+        "usage": "Configured rules and available anomaly signals route selected claims into investigation queues with additional tasks and authority controls.",
+        "change": "More targeted investigation. Less unnecessary friction on routine claims. Better referral traceability."
+      },
+      {
+        "number": "09",
+        "title": "Provider and repair network workflows",
+        "situation": "The insurer depends on external service providers but lacks visibility into assignments, documents and completion status.",
+        "usage": "Provider tasks, documents, estimates and status and internal approvals are connected to the claim where the provider model is supported.",
+        "change": "Clearer external-party coordination. Better handler visibility. Easier customer updates."
+      },
+      {
+        "number": "10",
+        "title": "Settlement and closure",
+        "situation": "Approved claims can still be delayed by payment preparation, communication or missing closure information.",
+        "usage": "Decision, settlement information, payment connectivity, customer communication and closure tasks are coordinated in one final workflow.",
+        "change": "Fewer end-of-process gaps. Better settlement visibility. Cleaner closure."
+      }
+    ],
+    "cta": {
+      "title": "Design claim journeys around complexity, not one-size-fits-all processing.",
+      "convert": "Request a ClaimVerse Demo",
+      "evaluate": "Review ClaimVerse Features",
+      "explore": "Explore the ClaimVerse Overview"
+    }
+  }
+}

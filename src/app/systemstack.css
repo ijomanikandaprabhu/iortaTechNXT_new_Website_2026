@@ -1,0 +1,371 @@
+/**
+ * Stacking folder cards, one per journey stage.
+ *
+ * Pinning is `position: sticky` with a per-card offset: card N sticks
+ * --tab-h lower than card N-1, so each one covers the previous body while
+ * leaving its tab showing. The depth shrink is driven from the component (see
+ * SystemStack.tsx); everything else here is plain CSS.
+ *
+ * Each card's body is a grid of placeholder tiles, one per item that stage
+ * will eventually hold, standing in for content that isn't built yet.
+ */
+
+/**
+ * Geometry measured off the reference cards, as ratios of the card width so it
+ * holds at any viewport:
+ *   tab width  ≈ 31%      tab inset ≈ 10%      tab step ≈ 24.5%
+ *   tab height ≈ 7.2% of the card width
+ *   row step    = tab height + 2px, so rows sit clear of each other
+ *
+ * Adjacent tabs overlap by ~6.5%: each tab's left flare tucks under the
+ * previous tab's right edge, which is what makes the run read as one strip of
+ * folder tabs rather than separate chips. Later cards carry a higher z-index,
+ * so the overlap resolves in the right direction on its own.
+ */
+.sysstack {
+  --card-radius: 32px;
+  --tab-h: 46px;
+  --tab-w: 31%;
+  /**
+   * Never less than the corner radius plus a flare. The flare has to land on
+   * the card's straight top edge: over the rounded corner the edge is curving
+   * away beneath it, so the flare's white has nothing to meet and the join
+   * shows as a seam. On a wide card the percentage already clears it; on a
+   * narrow one it does not, which is what the max() is for.
+   */
+  --tab-inset: max(10%, calc(var(--card-radius) + var(--tab-flare)));
+  --tab-step: 24.5%;
+  --tab-row-step: 48px;
+  --tab-flare: 16px;
+  /* Cards clear the fixed header as they pin. */
+  --stack-top: calc(var(--nav-h, 112px) + var(--space-4));
+
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  padding: var(--space-9) var(--space-6);
+  background: var(--paper);
+}
+
+.sysstack__inner {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-7);
+  max-width: 76rem;
+  margin: 0 auto;
+}
+
+@media (min-width: 1024px) {
+  .sysstack__inner {
+    grid-template-columns: 38% 1fr;
+    gap: var(--space-8);
+    align-items: start;
+  }
+
+  /* Holds while the card stack scrolls past. */
+  .sysstack__lead {
+    position: sticky;
+    top: var(--stack-top);
+  }
+}
+
+/* ---- Lead column ---- */
+
+/**
+ * Matches the bento section's lead treatment: a plain uppercase eyebrow (no
+ * pill chrome) above a two-tone heading — first line full ink, second line
+ * --ink-soft — so the pair reads as one statement rather than a title with a
+ * caption bolted under it.
+ */
+.sysstack__eyebrow {
+  margin: 0 0 var(--space-4);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+
+.sysstack__headline {
+  margin: 0;
+  max-width: 18ch;
+  font-family: var(--font-display);
+  font-size: clamp(1.75rem, 3.2vw, 2.5rem);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  color: var(--ink);
+}
+
+.sysstack__headlinerest {
+  color: var(--ink-soft);
+}
+
+/* ---- Card stack ---- */
+
+.sysstack__cards {
+  display: grid;
+  /* The gap sets how much of the next card peeks before it pins. */
+  gap: var(--space-7);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/**
+ * A card pins one row lower for every three cards, so its tab lands on a fresh
+ * row rather than every card claiming its own line.
+ */
+/**
+ * `--depth` is written by the scroll handler: 0 while the card is the one being
+ * read, rising to 1 once the next card has covered it.
+ *
+ * The scale sits on the whole card, tab included, so the folder shrinks as one
+ * piece and the tab stays fitted to the card it belongs to. Deeper cards end up
+ * slightly smaller with their tabs drawn in, which is how a stack of folders
+ * actually reads.
+ *
+ * `transform-origin: top` matters twice over. It shrinks the card toward the
+ * tab, and it leaves the card's top edge exactly where it was — which is what
+ * the handler measures against, so the scale can never feed back into its own
+ * input.
+ */
+.sysstack__card {
+  /* Three tab columns by default; the mobile block swaps in the two-column
+     pair. Both come from the markup. */
+  --tab-col: var(--col-3);
+  --tab-row: var(--row-3);
+
+  position: sticky;
+  top: calc(var(--stack-top) + var(--tab-row) * var(--tab-row-step));
+  /* Later cards paint over earlier ones as they ride up. */
+  z-index: calc(var(--i) + 1);
+  padding-top: var(--tab-h);
+
+  scale: calc(1 - (1 - var(--min-scale, 0.93)) * var(--depth, 0));
+  transform-origin: top center;
+}
+
+/**
+ * Folder tab: rounded across the top with the sides flaring out into concave
+ * curves that meet the card's edge, rather than a plain rounded rectangle.
+ * The flares are pseudo-elements — a transparent box with a rounded corner and
+ * a solid box-shadow, which paints the *outside* of the curve.
+ */
+.sysstack__tab {
+  position: absolute;
+  top: 0;
+  /* Percentages resolve against the card, so the strip scales with it. */
+  left: calc(var(--tab-inset) + var(--tab-col) * var(--tab-step));
+  width: var(--tab-w);
+  z-index: 1;
+  margin: 0;
+  height: var(--tab-h);
+  display: grid;
+  place-items: center;
+  padding: 0 0.75rem;
+  border-radius: 14px 14px 0 0;
+  background: var(--white);
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 600;
+  white-space: nowrap;
+  color: var(--ink);
+  /**
+   * Outlines the flared silhouette rather than the box. A border cannot follow
+   * the concave corners, which are painted by the pseudo-elements below, but
+   * `drop-shadow` works off rendered alpha and so traces the whole tab shape,
+   * including the notch where two tabs meet.
+   */
+  filter: drop-shadow(0 -1px 0 color-mix(in srgb, var(--ink) 10%, transparent))
+    drop-shadow(-1px 0 0 color-mix(in srgb, var(--ink) 7%, transparent));
+}
+
+/**
+ * The concave fillets that join the tab down into the card's top edge.
+ *
+ * Painted as a radial gradient rather than the usual offset-box-shadow trick:
+ * a box-shadow reproduces the element's own rounded *rectangle*, just displaced,
+ * so it lays a white blob across the tab's edge instead of carving a curve. The
+ * gradient fills everything beyond one radius of the outer corner, which is
+ * exactly the fillet and nothing else.
+ *
+ * The half-pixel before the colour stop is anti-aliasing headroom; a hard stop
+ * leaves the curve visibly stepped.
+ */
+.sysstack__tab::before,
+.sysstack__tab::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: var(--tab-flare);
+  height: var(--tab-flare);
+}
+
+.sysstack__tab::before {
+  left: calc(var(--tab-flare) * -1);
+  background: radial-gradient(
+    circle at 0 0,
+    transparent calc(var(--tab-flare) - 0.5px),
+    var(--white) var(--tab-flare)
+  );
+}
+
+.sysstack__tab::after {
+  right: calc(var(--tab-flare) * -1);
+  background: radial-gradient(
+    circle at 100% 0,
+    transparent calc(var(--tab-flare) - 0.5px),
+    var(--white) var(--tab-flare)
+  );
+}
+
+/**
+ * No border in the reference — the card is held by its shadow alone, with a
+ * generous radius on every corner including the one under the tab.
+ *
+ * The body is a fixed height — `--card-body-h`, set once below — so all six
+ * cards stand the same height regardless of how many tiles each one holds.
+ * Tiles do not set their own height; they stretch to fill whatever row the
+ * grid gives them, so a single tile fills the whole body and four tiles each
+ * take a quarter of it. `box-sizing: border-box` (set globally) means the
+ * padding is inside that fixed height rather than adding to it.
+ *
+ * Column count comes from `data-count`, set by the component to how many
+ * tiles that stage holds: single-item stages (Discover, Engage, Claim, Grow)
+ * get one full tile, Service's three sit in a row, Distribute's four run 2×2.
+ */
+.sysstack__body {
+  --card-body-h: 22rem;
+
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  gap: var(--space-4);
+  height: var(--card-body-h);
+  /* ~8% of the card width, matching the reference's generous inset. */
+  padding: var(--space-7) var(--space-7) calc(var(--space-7) + var(--space-2));
+  /* Shared with the tab inset, which has to clear this corner. */
+  border-radius: var(--card-radius);
+  background: var(--white);
+  box-shadow:
+    0 1px 2px color-mix(in srgb, var(--ink) 5%, transparent),
+    0 18px 44px color-mix(in srgb, var(--ink) 8%, transparent);
+}
+
+.sysstack__body[data-count="3"] {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.sysstack__body[data-count="4"] {
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+/**
+ * Same dashed-slot language as the hero's video placeholder: a bordered box
+ * standing in for content that isn't built yet, rather than inventing copy
+ * for stages that have none. No height of its own — the grid cell it sits in
+ * is what fixes its size.
+ */
+.sysstack__placeholder {
+  display: grid;
+  place-items: center;
+  border: 1px dashed var(--line);
+  border-radius: var(--radius-md);
+  background: var(--paper);
+}
+
+.sysstack__placeholdertext {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--ink-soft);
+}
+
+/**
+ * Narrow screens keep the same stacking behaviour, re-proportioned onto two tab
+ * columns rather than three: at 31% of a ~311px card a tab is 96px wide, which
+ * cannot hold "Spreadsheets" at a readable size. Two columns give a 45% tab and
+ * three rows of tabs instead of two.
+ *
+ * The card stays `position: sticky` here — this is the same effect at a
+ * different scale, not a fallback.
+ */
+@media (max-width: 1023px) {
+  .sysstack {
+    --tab-h: 40px;
+    /**
+     * Narrower than the 45% the reference proportion would give. The whole
+     * strip — inset, both tabs and both flares — has to finish before the
+     * card's top-right corner starts curving, and on a ~311px card 45% ran
+     * 7px past it.
+     */
+    --tab-w: 40%;
+    --tab-inset: max(8%, calc(var(--card-radius) + var(--tab-flare)));
+    /**
+     * Only a 4% overlap here, against the reference's 6.5%. The overlap is a
+     * fraction of the card either way, but on a phone-width card that fraction
+     * is a larger share of the tab itself — at 32% it swallowed 29px and cut
+     * the tail off "Policy admin".
+     */
+    --tab-step: 36%;
+    --tab-row-step: 42px;
+    --tab-flare: 12px;
+    /* The mobile header is shorter than the desktop one. */
+    --stack-top: calc(var(--nav-h, 72px) + var(--space-3));
+  }
+
+  .sysstack__card {
+    --tab-col: var(--col-2);
+    --tab-row: var(--row-2);
+  }
+
+  .sysstack__tab {
+    font-size: 0.875rem;
+  }
+
+  .sysstack__cards {
+    gap: var(--space-6);
+  }
+}
+
+@media (max-width: 640px) {
+  /* A 32px corner eats too much of a phone-width card's top edge for the tab
+     strip to fit inside it. */
+  .sysstack {
+    --card-radius: 20px;
+  }
+
+  .sysstack__body {
+    --card-body-h: 16rem;
+    padding: var(--space-5);
+  }
+
+  /* Two columns, not the three the wider grid uses — a phone-width tile under
+     three columns runs too narrow to read as a real slot. Two rows follow, so
+     the third tile spans the width below the first two rather than sitting
+     alone in a half-empty row. */
+  .sysstack__body[data-count="3"] {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .sysstack__body[data-count="3"] .sysstack__placeholder:last-child {
+    grid-column: 1 / -1;
+  }
+}
+
+/* Sticky is motion tied to scrolling rather than an animation, but a reader who
+   has asked for less movement should not have cards sliding over each other. */
+@media (prefers-reduced-motion: reduce) {
+  .sysstack__card {
+    position: relative;
+    top: auto;
+  }
+
+  /* The handler bails out under reduced motion, so --depth is never written;
+     this pins the scale regardless of any stale value. */
+  .sysstack__card {
+    scale: 1;
+  }
+}

@@ -1,0 +1,838 @@
+{
+  "foundation": {
+    "meta": {
+      "title": "Insurance Technology Foundation | Architecture, Workflow, Data & APIs",
+      "description": "Build insurance products and digital journeys on configurable workflows, APIs, identity, data, documents and integration that work with established enterprise systems."
+    },
+    "hero": {
+      "eyebrow": "Technology foundation",
+      "title": "Built to work with the insurance technology you already have.",
+      "lede": "Iorta TechNXT products are designed for enterprise insurance environments where new digital journeys have to coexist with policy administration, CRM, claims, billing, identity, document and data platforms. The foundation is not one mandatory technology stack. It is a set of architecture principles that help new experiences connect safely, change faster and remain governable.",
+      "primary": "Talk to Iorta TechNXT",
+      "secondary": "Explore Integrations"
+    },
+    "sections": [
+      {
+        "number": "01",
+        "eyebrow": "Experience layer",
+        "title": "Let the interface change at its own pace.",
+        "body": [
+          "Customer, advisor, broker, partner and employee interfaces should be separated from the constraints of the systems underneath where that creates value.",
+          "This allows experience change to move at a different pace from policy or core-system change."
+        ],
+        "tags": [
+          "Responsive web",
+          "Mobile",
+          "Workbenches",
+          "Dashboards",
+          "Forms",
+          "Design systems",
+          "Role-specific experiences"
+        ]
+      },
+      {
+        "number": "02",
+        "eyebrow": "Workflow & business rules",
+        "title": "Put process change into configuration where it belongs.",
+        "body": [
+          "Workflow should represent business progression without hard-coding every market and product variation into application code."
+        ],
+        "tags": [
+          "Configurable workflow",
+          "Business rules",
+          "Queues",
+          "Tasks",
+          "SLAs",
+          "Exceptions",
+          "Approvals",
+          "Authority",
+          "Notifications",
+          "Required documents"
+        ]
+      },
+      {
+        "number": "03",
+        "eyebrow": "API & service layer",
+        "title": "Expose insurance capabilities once.",
+        "body": [
+          "Expose insurance capabilities once so sales, customer, partner and operational applications can reuse them."
+        ],
+        "tags": [
+          "Reusable APIs",
+          "Integration services",
+          "Microservices where appropriate",
+          "Event and message patterns",
+          "API gateway",
+          "Legacy facades"
+        ]
+      },
+      {
+        "number": "04",
+        "eyebrow": "Data layer",
+        "title": "Define ownership before copying the data.",
+        "body": [
+          "Not every product should create its own copy of enterprise data. Define ownership and freshness according to the use case."
+        ],
+        "tags": [
+          "Operational data",
+          "Reporting",
+          "Data services",
+          "Customer and policy context",
+          "Event data",
+          "Analytics",
+          "Data quality",
+          "Governance"
+        ]
+      },
+      {
+        "number": "05",
+        "eyebrow": "Identity, consent & access",
+        "title": "Follow the enterprise identity model.",
+        "body": [
+          "Identity architecture is market-specific and enterprise-specific, so integrations should follow the customer's chosen identity model."
+        ],
+        "tags": [
+          "Customer authentication",
+          "Employee and advisor access",
+          "Partner access",
+          "Role-based authorization",
+          "eKYC connectivity",
+          "Consent",
+          "Digital signatures",
+          "Federation and SSO where appropriate"
+        ]
+      },
+      {
+        "number": "06",
+        "eyebrow": "Documents & communications",
+        "title": "Keep the evidence attached to the journey.",
+        "body": [
+          "Keep communications and documents linked to the business journey rather than scattered across channels."
+        ],
+        "tags": [
+          "Document generation",
+          "Document storage",
+          "Upload",
+          "Evidence",
+          "Digital signatures",
+          "Email",
+          "SMS",
+          "Push and notifications",
+          "Secure messaging"
+        ]
+      },
+      {
+        "number": "07",
+        "eyebrow": "Enterprise connectivity",
+        "title": "Match the pattern to the requirement.",
+        "body": [
+          "Use APIs, events, real-time synchronization or batch according to the business requirement and source-system capability."
+        ],
+        "tags": [
+          "Policy administration",
+          "CRM",
+          "Claims",
+          "Billing",
+          "Payments",
+          "Identity",
+          "Documents",
+          "Data platforms",
+          "Partner systems",
+          "External providers"
+        ]
+      },
+      {
+        "number": "08",
+        "eyebrow": "Configuration for different markets",
+        "title": "Regional variation without a rewrite.",
+        "body": [
+          "Configuration can support regional variation without implying every regulatory requirement is solved automatically."
+        ],
+        "tags": [
+          "Country",
+          "Language",
+          "Currency",
+          "Products",
+          "Workflows",
+          "Roles",
+          "Hierarchies",
+          "Business rules",
+          "Required documents",
+          "Notifications",
+          "SLAs"
+        ]
+      },
+      {
+        "number": "09",
+        "eyebrow": "Security & governance",
+        "title": "Controls that travel with the capability.",
+        "tags": [
+          "Role-based access",
+          "API security",
+          "Auditability",
+          "Workflow controls",
+          "Data access",
+          "Human review",
+          "Monitoring",
+          "Environment controls",
+          "Secure engineering"
+        ]
+      },
+      {
+        "number": "10",
+        "eyebrow": "Observability & resilience",
+        "title": "Make failures visible and recoverable.",
+        "body": [
+          "The foundation should make failures visible and recoverable, not only optimize the happy path."
+        ],
+        "tags": [
+          "Application monitoring",
+          "API monitoring",
+          "Logs",
+          "Metrics",
+          "Alerts",
+          "Dependency visibility",
+          "Failure handling",
+          "Retry",
+          "Recovery",
+          "Incident context"
+        ]
+      },
+      {
+        "number": "11",
+        "eyebrow": "Progressive modernization",
+        "title": "Add new journeys without rebuilding everything underneath.",
+        "body": [
+          "Modern interfaces and services can be introduced around existing systems first. Higher-change components can move out gradually. Core replacement can happen later where business value justifies it."
+        ]
+      }
+    ],
+    "cta": {
+      "title": "Build a modern insurance layer around enterprise reality.",
+      "convert": "Talk to Iorta TechNXT",
+      "evaluate": "Trust, Security & Operational Resilience",
+      "explore": "Explore Integrations"
+    }
+  },
+  "integrations": {
+    "meta": {
+      "title": "Insurance Integrations | Core, Payments, Identity, Data & Partner APIs",
+      "description": "Connect insurance products with policy, CRM, claims, payments, identity, documents, data, communication and partner systems through appropriate integration patterns."
+    },
+    "hero": {
+      "eyebrow": "Integrations",
+      "title": "Connect insurance without creating another silo.",
+      "lede": "A new digital product creates little value if teams still re-key information into the systems that run policy, claims, payments and customer operations. Iorta TechNXT integration work is designed around the business transaction: what information is needed, which system owns it, how quickly it must move and what should happen when a dependency is unavailable.",
+      "primary": "Talk to Iorta TechNXT",
+      "secondary": "Technology Foundation"
+    },
+    "sections": [
+      {
+        "number": "01",
+        "eyebrow": "Core insurance systems",
+        "title": "Reach the systems that run the business.",
+        "body": [
+          "Integration can expose or synchronize the capability required by SalesVerse, BrokerVerse, AgentVerse, CustomerVerse, MerchantVerse or ClaimVerse."
+        ],
+        "tags": [
+          "Policy administration",
+          "Product engines",
+          "Billing",
+          "Claims",
+          "Underwriting and rules services",
+          "Customer records",
+          "Commission and finance systems where applicable"
+        ]
+      },
+      {
+        "number": "02",
+        "eyebrow": "Identity & verification",
+        "title": "One source of truth for who someone is.",
+        "body": [
+          "Use the enterprise identity provider as the source of truth where appropriate instead of recreating identity inside every product."
+        ],
+        "tags": [
+          "Authentication",
+          "SSO and federation",
+          "Customer identity",
+          "Advisor and employee identity",
+          "Partner identity",
+          "eKYC",
+          "Business verification",
+          "MFA",
+          "Authorization"
+        ]
+      },
+      {
+        "number": "03",
+        "eyebrow": "Payments & financial services",
+        "title": "Connect money movement to the journey.",
+        "body": [
+          "Payment providers and compliance requirements differ by market, so specific providers are named only where supported."
+        ],
+        "tags": [
+          "Payment gateways",
+          "Bank transfer services",
+          "Recurring payment services",
+          "Billing",
+          "Receipts",
+          "Payment status",
+          "Payout and settlement connectivity"
+        ]
+      },
+      {
+        "number": "04",
+        "eyebrow": "Documents & signatures",
+        "title": "Keep the paperwork inside the process.",
+        "tags": [
+          "Document management",
+          "Document generation",
+          "Upload and evidence",
+          "OCR and document processing where implemented",
+          "Digital signature",
+          "Archiving",
+          "Retrieval"
+        ]
+      },
+      {
+        "number": "05",
+        "eyebrow": "Communication",
+        "title": "Reach the customer the way they agreed to.",
+        "body": [
+          "Communication should follow consent, preference and security requirements."
+        ],
+        "tags": [
+          "Email",
+          "SMS",
+          "Push notifications",
+          "Messaging services",
+          "Contact-centre platforms",
+          "Telephony where relevant"
+        ]
+      },
+      {
+        "number": "06",
+        "eyebrow": "Data & analytics",
+        "title": "Move information to where it gets used.",
+        "tags": [
+          "Data warehouses and lakes",
+          "BI platforms",
+          "Streaming and event platforms",
+          "Master data",
+          "Operational data stores",
+          "Reporting environments",
+          "External data"
+        ]
+      },
+      {
+        "number": "07",
+        "eyebrow": "Partner & external services",
+        "title": "The organizations outside your walls.",
+        "tags": [
+          "Banks",
+          "Brokers",
+          "Travel and commerce platforms",
+          "Fintechs",
+          "Medical and provider systems",
+          "Repair networks",
+          "Risk and fraud services",
+          "Weather and geospatial services",
+          "Verification providers"
+        ]
+      },
+      {
+        "number": "08",
+        "eyebrow": "Integration patterns",
+        "title": "Use the pattern that fits the transaction.",
+        "roles": [
+          {
+            "role": "Synchronous APIs",
+            "description": "When the caller needs an immediate response."
+          },
+          {
+            "role": "Events and messages",
+            "description": "When work can continue asynchronously."
+          },
+          {
+            "role": "Real-time synchronization",
+            "description": "When selected state changes must remain closely aligned."
+          },
+          {
+            "role": "Batch and file",
+            "description": "When source limitations or business timing make scheduled exchange appropriate."
+          },
+          {
+            "role": "Manual or assisted fallback",
+            "description": "When an external dependency is unavailable and the business cannot stop completely."
+          }
+        ]
+      },
+      {
+        "number": "09",
+        "eyebrow": "Consent-driven data sharing",
+        "title": "Share on the customer's terms.",
+        "body": [
+          "Open Finance and consent-based integration should follow the relevant market and institutional framework rather than being presented as one global standard."
+        ],
+        "tags": [
+          "Customer permission",
+          "Purpose and scope",
+          "Data access",
+          "Revocation and expiry where applicable",
+          "Traceability",
+          "Secure exchange"
+        ]
+      },
+      {
+        "number": "10",
+        "eyebrow": "Integration engineering",
+        "title": "Build for the day the dependency is down.",
+        "tags": [
+          "Contract definition",
+          "Mapping",
+          "Validation",
+          "Error handling",
+          "Retry",
+          "Idempotency",
+          "Monitoring",
+          "Reconciliation",
+          "Security",
+          "Performance",
+          "Test environments",
+          "Release coordination"
+        ]
+      },
+      {
+        "number": "11",
+        "eyebrow": "Operational visibility",
+        "title": "Know which journey is affected, not just which service is down.",
+        "tags": [
+          "API health",
+          "Error rate",
+          "Dependency status",
+          "Message backlog",
+          "Failed transactions",
+          "Reconciliation issues",
+          "Response time",
+          "Business transaction tracing where possible"
+        ]
+      }
+    ],
+    "cta": {
+      "title": "Make integration reusable, observable and owned.",
+      "convert": "Talk to Iorta TechNXT",
+      "evaluate": "Technology Foundation",
+      "explore": "API & Microservices"
+    }
+  },
+  "trust-security-operational-resilience": {
+    "meta": {
+      "title": "Insurance Trust, Security & Operational Resilience | Iorta TechNXT",
+      "description": "Understand Iorta TechNXT's approach to access controls, secure engineering, auditability, responsible automation, monitoring and operational resilience."
+    },
+    "hero": {
+      "eyebrow": "Trust, security & operational resilience",
+      "title": "Trust built into the technology.",
+      "lede": "Insurance technology handles customer identity, financial information, policy data and business-critical operations. Buyers need more than a security paragraph: they need to understand how access, change, automation and operational failure are controlled.",
+      "primary": "Request Security or Architecture Information",
+      "secondary": "Responsible Disclosure"
+    },
+    "sections": [
+      {
+        "number": "01",
+        "eyebrow": "Identity & access",
+        "title": "Access should reflect responsibility.",
+        "body": [
+          "Access should reflect role and business responsibility rather than one broad internal-user permission."
+        ],
+        "tags": [
+          "Role-based access",
+          "User lifecycle",
+          "Authentication integration",
+          "MFA and SSO where applicable",
+          "Privileged access",
+          "Customer, advisor and partner identity",
+          "Authorization boundaries"
+        ]
+      },
+      {
+        "number": "02",
+        "eyebrow": "Application & API security",
+        "title": "Security inside engineering, not after it.",
+        "tags": [
+          "Secure design",
+          "Threat modelling",
+          "Code review",
+          "Vulnerability testing",
+          "Dependency management",
+          "API authentication and authorization",
+          "Validation",
+          "Rate limiting where applicable",
+          "Secrets handling",
+          "Encryption"
+        ]
+      },
+      {
+        "number": "03",
+        "eyebrow": "Data protection",
+        "title": "Protect the data and say only what is documented.",
+        "body": [
+          "Specific hosting, residency and retention commitments are published only when formally documented."
+        ],
+        "tags": [
+          "Data classification",
+          "Access control",
+          "Encryption in transit and at rest where implemented",
+          "Logging",
+          "Retention",
+          "Secure transfer",
+          "Non-production data controls",
+          "Privacy requirements"
+        ]
+      },
+      {
+        "number": "04",
+        "eyebrow": "Auditability & governance",
+        "title": "Reconstruct what happened.",
+        "body": [
+          "Audit history should help operations and compliance teams reconstruct important business actions."
+        ],
+        "tags": [
+          "User actions",
+          "Workflow changes",
+          "Decisions",
+          "Approvals",
+          "Overrides",
+          "Role changes",
+          "Administrative configuration",
+          "Integration events where appropriate"
+        ]
+      },
+      {
+        "number": "05",
+        "eyebrow": "Responsible automation",
+        "title": "Automate with accountability.",
+        "body": [
+          "For intelligent and AI-supported functions, the level of control should increase with the impact of the decision."
+        ],
+        "tags": [
+          "Defined use case",
+          "Approved data",
+          "Business rules",
+          "Human review",
+          "Authority boundaries",
+          "Decision traceability",
+          "Override",
+          "Exceptions",
+          "Monitoring",
+          "Change governance"
+        ]
+      },
+      {
+        "number": "06",
+        "eyebrow": "Secure delivery",
+        "title": "Controls in the pipeline.",
+        "tags": [
+          "DevSecOps",
+          "Code scanning",
+          "Dependency scanning",
+          "Secrets controls",
+          "Environment separation",
+          "Release gates",
+          "Vulnerability remediation",
+          "Change evidence"
+        ]
+      },
+      {
+        "number": "07",
+        "eyebrow": "Operational resilience",
+        "title": "Degrade predictably.",
+        "body": [
+          "The application should degrade predictably when a dependent service is unavailable rather than leave business transactions in an unknown state."
+        ],
+        "tags": [
+          "Availability design",
+          "Dependency failure handling",
+          "Retry",
+          "Timeout",
+          "Circuit-breaker patterns where appropriate",
+          "Backup and recovery",
+          "Incident response",
+          "Business-continuity considerations"
+        ]
+      },
+      {
+        "number": "08",
+        "eyebrow": "Monitoring & incident visibility",
+        "title": "See the user impact, not only the alert.",
+        "tags": [
+          "Logs",
+          "Metrics",
+          "Application health",
+          "API health",
+          "Security alerts",
+          "Failed transactions",
+          "Queue backlogs",
+          "Performance",
+          "User-impact context"
+        ]
+      },
+      {
+        "number": "09",
+        "eyebrow": "Third-party dependencies",
+        "title": "Know what can interrupt the journey.",
+        "body": [
+          "Maintain visibility into the dependencies that can interrupt a customer or operational journey."
+        ],
+        "tags": [
+          "Identity providers",
+          "Payment services",
+          "Communication",
+          "Cloud providers",
+          "Verification services",
+          "External data"
+        ]
+      },
+      {
+        "number": "10",
+        "eyebrow": "Enterprise assurance",
+        "title": "This page should become a Trust Center.",
+        "body": [
+          "As verified material becomes available, this page will publish a security overview, privacy practices, responsible automation principles, data-processing information, subprocessor information where applicable, the business-continuity approach, a security contact, responsible disclosure and an architecture and security FAQ.",
+          "Certifications and attestations will appear only when actually held."
+        ]
+      },
+      {
+        "number": "11",
+        "eyebrow": "What we do not claim",
+        "title": "No assurance without evidence.",
+        "body": [
+          "We do not publish unsupported certifications, guaranteed uptime, recovery objectives, hosting regions, data-residency commitments, penetration-test results or regulatory compliance statements."
+        ],
+        "tone": "muted"
+      }
+    ],
+    "cta": {
+      "title": "Move faster without giving up control.",
+      "convert": "Talk to Iorta TechNXT",
+      "evaluate": "Request Security or Architecture Information",
+      "explore": "Cybersecurity"
+    }
+  },
+  "implementation-customer-success": {
+    "meta": {
+      "title": "Insurance Software Implementation & Customer Success | Iorta TechNXT",
+      "description": "Move from insurance business challenge to production through discovery, design, configuration, integration, testing, launch, adoption and continuous improvement."
+    },
+    "hero": {
+      "eyebrow": "Implementation & customer success",
+      "title": "From business challenge to production.",
+      "lede": "Enterprise insurance products do not succeed because the software is installed. They succeed when the business journey is clear, required systems are connected, users adopt the new way of working and operations can support it after go-live.",
+      "primary": "Discuss an Implementation Approach",
+      "secondary": "Explore Customer Stories"
+    },
+    "sections": [
+      {
+        "number": "01",
+        "eyebrow": "Discover",
+        "title": "Confirm what should change and what should stay.",
+        "body": [
+          "Confirm what should change and what should remain before solution design begins."
+        ],
+        "tags": [
+          "Business objectives",
+          "User groups",
+          "Current journey",
+          "Systems",
+          "Data",
+          "Pain points",
+          "Constraints",
+          "Regulatory and security requirements",
+          "Success measures"
+        ]
+      },
+      {
+        "number": "02",
+        "eyebrow": "Define scope & success",
+        "title": "Agree the measure before the build.",
+        "body": [
+          "Define measurable outcomes such as turnaround, adoption, workload or change speed where baselines are available."
+        ],
+        "tags": [
+          "Prioritized journeys",
+          "Release scope",
+          "Product modules",
+          "Configuration",
+          "Integrations",
+          "Data",
+          "Environments",
+          "Migration",
+          "Reporting",
+          "Adoption",
+          "Support"
+        ]
+      },
+      {
+        "number": "03",
+        "eyebrow": "Design",
+        "title": "Validate assumptions before they become code.",
+        "body": [
+          "Use prototypes and journey walkthroughs to validate important assumptions early."
+        ],
+        "tags": [
+          "Experience design",
+          "Workflow",
+          "Business rules",
+          "Architecture",
+          "Integration contracts",
+          "Data",
+          "Security",
+          "Roles",
+          "Reporting",
+          "Operational model"
+        ]
+      },
+      {
+        "number": "04",
+        "eyebrow": "Configure & build",
+        "title": "Keep standard, configured and bespoke visible.",
+        "body": [
+          "Keep custom work explicit so the customer understands what is standard, what is configured and what is bespoke."
+        ],
+        "tags": [
+          "Product configuration",
+          "Custom extensions",
+          "Integration services",
+          "APIs",
+          "Data pipelines",
+          "UI components",
+          "Reports",
+          "Notifications"
+        ]
+      },
+      {
+        "number": "05",
+        "eyebrow": "Integrate",
+        "title": "Test the failure path too.",
+        "body": [
+          "Test failure paths as well as successful transactions."
+        ],
+        "tags": [
+          "Core and policy systems",
+          "CRM",
+          "Claims",
+          "Billing",
+          "Identity",
+          "Payments",
+          "Documents",
+          "Communication",
+          "Data",
+          "Partners"
+        ]
+      },
+      {
+        "number": "06",
+        "eyebrow": "Validate",
+        "title": "Prove it against the real journey.",
+        "tags": [
+          "Functional testing",
+          "Integration testing",
+          "End-to-end journeys",
+          "Performance",
+          "Security",
+          "Regression",
+          "Business acceptance",
+          "Data reconciliation",
+          "Operational readiness"
+        ]
+      },
+      {
+        "number": "07",
+        "eyebrow": "Migrate where required",
+        "title": "Only migrate what has to move.",
+        "body": [
+          "Not every implementation requires data migration. Avoid adding it when system-of-record data remains in the existing platform."
+        ],
+        "tags": [
+          "Data extraction",
+          "Cleansing",
+          "Mapping",
+          "Trial migration",
+          "Reconciliation",
+          "Cutover planning",
+          "Fallback",
+          "Archive and access strategy"
+        ]
+      },
+      {
+        "number": "08",
+        "eyebrow": "Launch",
+        "title": "Go live with support already in place.",
+        "tags": [
+          "Production deployment",
+          "Cutover",
+          "Training",
+          "Communications",
+          "Support readiness",
+          "Monitoring",
+          "Hypercare and stabilization",
+          "Incident escalation"
+        ]
+      },
+      {
+        "number": "09",
+        "eyebrow": "Adoption",
+        "title": "A working deployment is not yet a working change.",
+        "body": [
+          "A technically successful deployment can still fail if teams continue using the old spreadsheet or email process."
+        ],
+        "tags": [
+          "Role-based training",
+          "Manager enablement",
+          "User support",
+          "Usage feedback",
+          "Adoption metrics",
+          "Process reinforcement"
+        ]
+      },
+      {
+        "number": "10",
+        "eyebrow": "Improve",
+        "title": "Keep changing after go-live.",
+        "tags": [
+          "Production analytics",
+          "User feedback",
+          "Backlog",
+          "Workflow optimization",
+          "New integrations",
+          "Feature releases",
+          "Performance",
+          "Quality",
+          "Automation"
+        ]
+      },
+      {
+        "number": "11",
+        "eyebrow": "Customer-success measures",
+        "title": "What we watch after launch.",
+        "tags": [
+          "Adoption",
+          "Active users",
+          "Process completion",
+          "Turnaround",
+          "Queue ageing",
+          "Digital-service usage",
+          "Support volumes",
+          "Release and change speed",
+          "Business outcomes relevant to the implementation"
+        ]
+      }
+    ],
+    "cta": {
+      "title": "Transformation does not end at go-live.",
+      "convert": "Talk to Iorta TechNXT",
+      "evaluate": "Discuss an Implementation Approach",
+      "explore": "Explore Customer Stories"
+    }
+  }
+}

@@ -1,0 +1,638 @@
+/**
+ * Shared page-section primitives (src/components/sections/).
+ *
+ * These back every content page — products, solutions, industries,
+ * capabilities, technology — so the page templates hold structure and copy
+ * only, and no page invents its own spacing or type scale.
+ *
+ * Every value resolves to a token from tokens.css. Buttons reuse `.btn` from
+ * components.css rather than restyling links.
+ */
+
+/* ---- Page hero ---- */
+
+/**
+ * Clears the fixed header explicitly.
+ *
+ * The home page gets away without this because its hero canvas positions
+ * itself; an ordinary content page does not, and a flat `--space-9` put the
+ * eyebrow at 96px underneath a header whose bottom edge is at 112px. `--nav-h`
+ * is published by NavBar via ResizeObserver, so this tracks the real height
+ * including the announcement bar rather than assuming one.
+ */
+.phero {
+  max-width: 46rem;
+  padding: calc(var(--nav-h, 112px) + var(--space-7)) 0 var(--space-7);
+}
+
+.phero__eyebrow {
+  margin: 0 0 var(--space-4);
+  font-size: var(--text-caption-sm);
+  font-weight: 600;
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+
+.phero__title {
+  margin: 0 0 var(--space-5);
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4.6vw, 3.25rem);
+  font-weight: 700;
+  line-height: var(--leading-tight);
+  letter-spacing: -0.03em;
+  text-wrap: balance;
+  color: var(--ink);
+}
+
+.phero__lede {
+  margin: 0 0 var(--space-6);
+  max-width: 40rem;
+  font-size: var(--text-body-lg);
+  line-height: var(--leading-snug);
+  color: var(--ink-soft);
+}
+
+.phero__ctas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  margin: 0;
+}
+
+/* ---- Section band ---- */
+
+.sec {
+  padding: var(--space-8) 0;
+}
+
+/**
+ * Tinted and inverted bands run the full viewport width, breaking out of the
+ * layout's `.container`, so the colour reaches the edges of the screen rather
+ * than stopping at the text column.
+ */
+.sec--muted,
+.sec--dark {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  padding: var(--space-9) var(--space-6);
+}
+
+.sec--muted {
+  background: var(--paper);
+}
+
+.sec--dark {
+  background: var(--ink);
+  color: var(--white);
+}
+
+.sec--muted .sec__inner,
+.sec--dark .sec__inner {
+  max-width: 72rem;
+  margin: 0 auto;
+}
+
+.sec__label {
+  margin: 0 0 var(--space-4);
+  font-size: var(--text-caption-sm);
+  font-weight: 600;
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+
+.sec--dark .sec__label {
+  color: rgba(255, 255, 255, 0.62);
+}
+
+.sec__title {
+  margin: 0 0 var(--space-4);
+  max-width: 30ch;
+  font-family: var(--font-display);
+  font-size: clamp(1.5rem, 2.8vw, 2.125rem);
+  font-weight: 700;
+  line-height: var(--leading-tight);
+  letter-spacing: -0.025em;
+  color: var(--ink);
+}
+
+.sec--dark .sec__title {
+  color: var(--white);
+}
+
+.sec__lede {
+  margin: 0;
+  max-width: 46rem;
+  font-size: var(--text-body-lg);
+  line-height: var(--leading-snug);
+  color: var(--ink-soft);
+}
+
+.sec--dark .sec__lede {
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.sec__body {
+  margin-top: var(--space-6);
+}
+
+/* ---- Prose ---- */
+
+.prose {
+  display: grid;
+  gap: var(--space-4);
+  max-width: 46rem;
+}
+
+.prose__p {
+  margin: 0;
+  font-size: var(--text-body);
+  line-height: var(--leading-normal);
+  color: var(--ink-soft);
+}
+
+/* ---- Feature list ---- */
+
+.featlist {
+  display: grid;
+  gap: var(--space-5);
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .featlist {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-5) var(--space-7);
+  }
+}
+
+.featlist__row {
+  border-top: 1px solid var(--line);
+  padding-top: var(--space-4);
+}
+
+.featlist__term {
+  margin: 0 0 var(--space-2);
+  font-family: var(--font-display);
+  font-size: var(--text-body);
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.featlist__desc {
+  margin: 0;
+  font-size: var(--text-body);
+  line-height: var(--leading-normal);
+  color: var(--ink-soft);
+}
+
+/* ---- Tag list ---- */
+
+.taglist {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.taglist__item {
+  padding: 0.4rem 0.8rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-full);
+  background: var(--white);
+  font-size: var(--text-caption);
+  font-weight: 500;
+  color: var(--ink-soft);
+}
+
+/* ---- Journey ---- */
+
+.journey {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-2) var(--space-3);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: journey;
+}
+
+.journey__step {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-3);
+  font-family: var(--font-display);
+  font-size: var(--text-body);
+  font-weight: 600;
+  color: var(--ink);
+}
+
+/* Decorative connector — the list order carries the meaning for assistive
+   tech, so the arrow is generated rather than written into the copy. */
+.journey__step:not(:last-child)::after {
+  content: "→";
+  color: var(--ui-blue);
+  font-weight: 400;
+}
+
+.sec--dark .journey__step {
+  color: var(--white);
+}
+
+/* ---- Role grid ---- */
+
+.rolegrid {
+  display: grid;
+  gap: var(--space-5);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@media (min-width: 640px) {
+  .rolegrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .rolegrid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.rolegrid__item {
+  padding: var(--space-5);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  background: var(--white);
+  box-shadow: var(--shadow-neutral);
+}
+
+.rolegrid__role {
+  margin: 0 0 var(--space-2);
+  font-family: var(--font-display);
+  font-size: var(--text-body);
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.rolegrid__desc {
+  margin: 0;
+  font-size: var(--text-body);
+  line-height: var(--leading-snug);
+  color: var(--ink-soft);
+}
+
+/* ---- FAQ ---- */
+
+.faq {
+  display: grid;
+  gap: var(--space-3);
+  max-width: 46rem;
+}
+
+.faq__item {
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  background: var(--white);
+}
+
+.faq__q {
+  padding: var(--space-4) var(--space-5);
+  font-family: var(--font-display);
+  font-size: var(--text-body);
+  font-weight: 600;
+  color: var(--ink);
+  cursor: pointer;
+}
+
+.faq__q:focus-visible {
+  outline: var(--state-focus-width) solid var(--state-focus);
+  outline-offset: var(--state-focus-offset);
+  border-radius: var(--radius-md);
+}
+
+.faq__a {
+  margin: 0;
+  padding: 0 var(--space-5) var(--space-5);
+  font-size: var(--text-body);
+  line-height: var(--leading-normal);
+  color: var(--ink-soft);
+}
+
+/* ---- Proof ---- */
+
+.proof {
+  max-width: 46rem;
+  padding: var(--space-5);
+  border-left: 3px solid var(--ui-blue);
+  background: var(--paper);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+}
+
+.proof__body {
+  margin: 0;
+  font-size: var(--text-body);
+  line-height: var(--leading-normal);
+  color: var(--ink-soft);
+}
+
+/* Dev/authoring marker so unapproved proof is never mistaken for a published
+   result. Mirrors the SAMPLE DATA badge on the hero ticker. */
+.proof__pending {
+  display: inline-block;
+  margin: var(--space-3) 0 0;
+  padding: 0.15rem 0.45rem;
+  border-radius: 4px;
+  background: var(--state-warning-bg);
+  color: var(--state-warning);
+  font-size: var(--text-caption-sm);
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.proof__cta {
+  display: inline-block;
+  margin-top: var(--space-3);
+  font-family: var(--font-display);
+  font-size: var(--text-body);
+  font-weight: 600;
+  color: var(--ui-blue);
+  text-decoration: none;
+}
+
+/* ---- CTA band ---- */
+
+.ctaband {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  padding: var(--space-9) var(--space-6);
+  background: var(--paper);
+  border-top: 1px solid var(--line);
+}
+
+.ctaband__inner {
+  max-width: 72rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.ctaband__title {
+  margin: 0 0 var(--space-6);
+  font-family: var(--font-display);
+  font-size: clamp(1.625rem, 3.2vw, 2.5rem);
+  font-weight: 700;
+  line-height: var(--leading-tight);
+  letter-spacing: -0.03em;
+  text-wrap: balance;
+  color: var(--ink);
+}
+
+.ctaband__actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-3) var(--space-5);
+  margin: 0;
+}
+
+.ctaband__explore {
+  font-family: var(--font-display);
+  font-size: var(--text-body);
+  font-weight: 600;
+  color: var(--ui-blue);
+  text-decoration: none;
+}
+
+/* ---- Use case ---- */
+
+/**
+ * Situation / usage / outcome. A description list because each label genuinely
+ * names the paragraph under it, and the "what changes" row is accented so the
+ * outcome is findable when scanning a page of nine cases.
+ */
+.usecase {
+  display: grid;
+  gap: var(--space-5);
+  margin: 0;
+  max-width: 52rem;
+}
+
+.usecase__row {
+  border-left: 2px solid var(--line);
+  padding-left: var(--space-5);
+}
+
+.usecase__row--change {
+  border-left-color: var(--ui-blue);
+}
+
+.usecase__label {
+  margin: 0 0 var(--space-2);
+  font-family: var(--font-display);
+  font-size: var(--text-caption);
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  color: var(--ink-soft);
+}
+
+.usecase__row--change .usecase__label {
+  color: var(--ui-blue);
+}
+
+.usecase__text {
+  margin: 0;
+  font-size: var(--text-body);
+  line-height: var(--leading-normal);
+  color: var(--ink-soft);
+}
+
+/* The outcome carries full ink so it reads as the answer, matching the
+   before/after contrast used on the home page's stacking cards. */
+.usecase__row--change .usecase__text {
+  color: var(--ink);
+}
+
+/* ---- Related links ---- */
+
+.related {
+  display: grid;
+  gap: var(--space-3);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  max-width: 46rem;
+}
+
+.related__item {
+  border-top: 1px solid var(--line);
+  padding-top: var(--space-3);
+}
+
+.related__link {
+  font-family: var(--font-display);
+  font-size: var(--text-body);
+  font-weight: 600;
+  color: var(--ui-blue);
+  text-decoration: none;
+}
+
+/* Not yet built — see the `href`-less case in RelatedLinks. */
+.related__pending {
+  font-family: var(--font-display);
+  font-size: var(--text-body);
+  font-weight: 600;
+  color: var(--ink-soft);
+}
+
+/* ---- Card grid ---- */
+
+/**
+ * Insights, News & Events and Customer Stories.
+ *
+ * `auto-fit` with a 17rem floor gives three columns on a wide screen, two on a
+ * tablet and one on a phone without a media query per breakpoint. Cards stretch
+ * to equal height so a short summary does not leave a ragged row.
+ */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+  gap: var(--space-5);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.cards__item {
+  display: flex;
+}
+
+.cards__link {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  width: 100%;
+  padding: var(--space-5);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  background: var(--white);
+  box-shadow: var(--shadow-neutral);
+  text-decoration: none;
+  transition: border-color 120ms ease, transform 120ms ease;
+}
+
+a.cards__link:hover {
+  border-color: var(--ui-blue);
+  transform: translateY(-2px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  a.cards__link:hover {
+    transform: none;
+  }
+}
+
+/* Not published yet. Reads as planned coverage rather than a broken link. */
+.cards__link--pending {
+  background: var(--paper);
+  box-shadow: none;
+}
+
+.cards__category {
+  margin: 0;
+  font-size: var(--text-caption-sm);
+  font-weight: 600;
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+
+.cards__title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: var(--text-body-lg);
+  font-weight: 700;
+  line-height: var(--leading-tight);
+  letter-spacing: -0.015em;
+  color: var(--ink);
+}
+
+.cards__summary,
+.cards__detail {
+  margin: 0;
+  font-size: var(--text-body);
+  line-height: var(--leading-snug);
+  color: var(--ink-soft);
+}
+
+/* The outcome line on a customer-story card, weighted like the use-case
+   "what changes" row so it reads as the answer. */
+.cards__detail:last-of-type {
+  color: var(--ink);
+}
+
+.cards__cta {
+  margin-top: auto;
+  padding-top: var(--space-3);
+  font-family: var(--font-display);
+  font-size: var(--text-body);
+  font-weight: 600;
+  color: var(--ui-blue);
+}
+
+/* ---- Filters ---- */
+
+/* Static labels, not controls — see FilterList in Cards.tsx for why. */
+.filters {
+  display: grid;
+  gap: var(--space-3);
+}
+
+.filters__label {
+  margin: 0;
+  font-size: var(--text-caption-sm);
+  font-weight: 600;
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+
+.filters__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.filters__item {
+  padding: 0.4rem 0.8rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-full);
+  background: var(--white);
+  font-size: var(--text-caption);
+  font-weight: 500;
+  color: var(--ink-soft);
+}
+
+/* ---- Lead form ---- */
+
+.leadform {
+  max-width: 34rem;
+}
+
+.leadform__microcopy {
+  margin: var(--space-4) 0 0;
+  max-width: 34rem;
+  font-size: var(--text-caption);
+  line-height: var(--leading-snug);
+  color: var(--ink-soft);
+}

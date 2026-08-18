@@ -1,0 +1,93 @@
+{
+  "nav": {
+    "home": "Trang chủ",
+    "contact": "Liên hệ",
+    "dashboard": "Bảng điều khiển",
+    "language": "Ngôn ngữ"
+  },
+  "home": {
+    "meta": {
+      "title": "Phần mềm doanh nghiệp, xây dựng để mở rộng",
+      "description": "Iorta Technxt xây dựng nền tảng đa người thuê, đa ngôn ngữ cho doanh nghiệp."
+    },
+    "hero": {
+      "title": "Phần mềm doanh nghiệp, xây dựng để mở rộng",
+      "subtitle": "Nền tảng đa người thuê, đa ngôn ngữ được thiết kế để tăng trưởng.",
+      "cta": "Trao đổi với chúng tôi"
+    },
+    "sequence": {
+      "label": "Phim nền tảng doanh nghiệp",
+      "loading": "Đang tải chuỗi hình",
+      "ch1": {
+        "label": "Nền tảng doanh nghiệp",
+        "title": "Xây dựng vượt lên sự phức tạp",
+        "body": "Kiến trúc đa người thuê giữ mỗi khách hàng tách biệt, trên một mã nguồn duy nhất."
+      },
+      "ch2": {
+        "label": "Một hệ thống",
+        "title": "Mọi đội nhóm, một nguồn dữ liệu",
+        "body": "Tiếp thị, bán hàng và vận hành cùng làm việc trên một nền tảng."
+      },
+      "ch3": {
+        "label": "Tích hợp",
+        "title": "CRM của bạn, đã được kết nối",
+        "body": "HubSpot, Salesforce hay Zoho — đổi nhà cung cấp mà không chạm vào giao diện."
+      },
+      "ch4": {
+        "label": "Phạm vi",
+        "title": "Nói ngôn ngữ của khách hàng bạn",
+        "body": "Định tuyến, siêu dữ liệu và nội dung bản địa hoá cho mọi thị trường bạn phục vụ."
+      },
+      "capabilities": {
+        "core-insurance": "Bảo hiểm lõi",
+        "customer-agent": "Khách hàng & đại lý",
+        "sales-distribution": "Bán hàng & phân phối",
+        "claims-management": "Quản lý bồi thường",
+        "payments-finance": "Thanh toán & tài chính",
+        "digital-insurtech": "Bảo hiểm số & InsurTech",
+        "data-analytics": "Dữ liệu & phân tích",
+        "security-compliance": "Bảo mật & tuân thủ",
+        "communication-support": "Giao tiếp & hỗ trợ",
+        "insurance-categories": "Danh mục bảo hiểm",
+        "system-ui": "Hệ thống & giao diện",
+        "ai-automation": "AI và tự động hoá"
+      }
+    },
+    "scenes": {
+      "s1": "Bảo hiểm được xây trên các quy trình.\nRồi các quy trình nhân lên.",
+      "s2": "Nhiều hệ thống hơn. Nhiều bàn giao hơn.\nNhiều phức tạp hơn.",
+      "s3": "Nhưng bảo hiểm\nkhông nhất thiết phải vận hành như vậy.",
+      "s4": "Nó có thể nhanh hơn. Kết nối tốt hơn.\nVận hành thông minh hơn.",
+      "s5": "Công nghệ được xây dựng cho\nkỷ nguyên tiếp theo của bảo hiểm."
+    }
+  },
+  "contact": {
+    "meta": {
+      "title": "Liên hệ",
+      "description": "Liên hệ với đội ngũ Iorta Technxt."
+    },
+    "title": "Liên hệ",
+    "intro": "Hãy cho chúng tôi biết về dự án của bạn, chúng tôi sẽ phản hồi.",
+    "form": {
+      "firstName": "Tên",
+      "lastName": "Họ",
+      "email": "Email",
+      "company": "Công ty",
+      "message": "Nội dung",
+      "submit": "Gửi tin nhắn",
+      "submitting": "Đang gửi…",
+      "success": "Cảm ơn — chúng tôi đã nhận được tin nhắn của bạn.",
+      "error": "Đã có lỗi xảy ra. Vui lòng thử lại."
+    }
+  },
+  "dashboard": {
+    "title": "Bảng điều khiển",
+    "welcome": "Chào mừng trở lại."
+  },
+  "appearance": {
+    "title": "Giao diện",
+    "description": "Chọn cách hiển thị của giao diện.",
+    "light": "Sáng",
+    "dark": "Tối"
+  }
+}

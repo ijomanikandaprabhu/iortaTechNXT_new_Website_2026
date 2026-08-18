@@ -1,0 +1,624 @@
+{
+  "name": "BrokerVerse",
+  "overview": {
+    "meta": {
+      "title": "BrokerVerse | Insurance Broker Management Platform",
+      "description": "Run client, placement, policy, renewal, claims support, commission and brokerage operations in one insurance-first platform."
+    },
+    "hero": {
+      "eyebrow": "BrokerVerse: Insurance broker operations",
+      "title": "The operating platform for modern insurance brokers.",
+      "lede": "Bring clients, insurers, placements, policies, renewals, claims support, commissions, financial activity and documentation into one insurance-first workspace.",
+      "primary": "Request Demo",
+      "secondary": "Explore Features"
+    },
+    "problem": {
+      "eyebrow": "More than CRM",
+      "title": "A broker platform should understand the business behind the relationship.",
+      "body": [
+        "A brokerage sits between customers, insurers and service providers while managing policy, placement, servicing and financial complexity. Generic CRM tools rarely understand that operating model.",
+        "BrokerVerse is designed around brokerage work itself."
+      ]
+    },
+    "journey": {
+      "eyebrow": "Brokerage lifecycle",
+      "title": "Win. Place. Service. Renew. Reconcile.",
+      "steps": ["Win", "Place", "Service", "Renew", "Reconcile"],
+      "body": "Manage prospects, clients and opportunities. Coordinate requirements, carrier responses and placement. Manage policy and customer activity. Turn expiries into assigned work. Connect policy activity with premiums and commissions."
+    },
+    "builtFor": {
+      "eyebrow": "Built for",
+      "title": "One platform, six kinds of brokerage work.",
+      "items": [
+        {
+          "role": "Brokers & account executives",
+          "description": "Clients, opportunities, placement and servicing."
+        },
+        {
+          "role": "Placement teams",
+          "description": "Carrier relationships, quotations and placement workflows."
+        },
+        {
+          "role": "Operations teams",
+          "description": "Policies, endorsements, documents and renewals."
+        },
+        {
+          "role": "Finance teams",
+          "description": "Premiums, commissions, receipts and reconciliation."
+        },
+        {
+          "role": "Brokerage leaders",
+          "description": "Portfolio, revenue and operational visibility."
+        },
+        { "role": "Administrators", "description": "Roles, access and controls." }
+      ]
+    },
+    "intelligence": {
+      "eyebrow": "One view of the brokerage",
+      "title": "See the whole book, not one account at a time.",
+      "body": "Client portfolio, policy portfolio, renewal pipeline, carrier relationships, premiums, commissions, claims support, operational workload and management reporting, brought into a single operating view."
+    },
+    "integration": {
+      "eyebrow": "Works with your technology",
+      "title": "Connect the carrier and enterprise systems around the brokerage.",
+      "body": "Integration can be designed around carrier, policy, finance and other enterprise systems as required.",
+      "tags": [
+        "Carrier systems",
+        "Policy administration",
+        "Finance and accounting",
+        "CRM",
+        "Documents",
+        "Digital signatures",
+        "Payments",
+        "Communications",
+        "Data platforms",
+        "Reporting"
+      ]
+    },
+    "outcomes": {
+      "eyebrow": "What changes for the business",
+      "title": "Different leaders, different gains.",
+      "items": [
+        {
+          "role": "Brokerage leaders",
+          "description": "Better visibility across clients, renewals, carrier relationships and revenue-related activity."
+        },
+        {
+          "role": "Operations leaders",
+          "description": "More structured placement, servicing and renewal work."
+        },
+        {
+          "role": "Finance leaders",
+          "description": "Clearer links between policy activity, premiums and commissions where configured."
+        },
+        {
+          "role": "Technology leaders",
+          "description": "An insurance-first operating layer that can connect with carrier and enterprise systems."
+        }
+      ]
+    },
+    "proof": {
+      "eyebrow": "Proof in practice",
+      "title": "Evidence, close to the claim.",
+      "body": "A brokerage, API or intermediary-transformation engagement demonstrating reduced operating friction or faster connectivity is the most relevant evidence for this product.",
+      "pending": "Awaiting approval",
+      "pendingNote": "Publish only the customer name and metric set cleared for public use."
+    },
+    "faq": {
+      "eyebrow": "Questions",
+      "title": "Common questions about BrokerVerse.",
+      "items": [
+        {
+          "question": "Is BrokerVerse only for large brokers?",
+          "answer": "No. It can support growing brokerages as well as multi-branch and more complex brokerage operating models."
+        },
+        {
+          "question": "Can it manage commissions?",
+          "answer": "Commission calculation and finance-related brokerage workflows are part of the broader BrokerVerse operating model where configured."
+        },
+        {
+          "question": "Can BrokerVerse connect to insurer systems?",
+          "answer": "Yes. Integration can be designed around carrier, policy, finance and other enterprise systems as required."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Run more of the brokerage from one insurance-first workspace.",
+      "convert": "Request a BrokerVerse Demo",
+      "explore": "View BrokerVerse Use Cases"
+    }
+  },
+  "features": {
+    "meta": {
+      "title": "BrokerVerse Features | Client, Policy, Placement & Commission Operations",
+      "description": "Explore BrokerVerse capabilities for client management, placement, policies, renewals, claims support, premiums, commissions, finance, documents and broker controls."
+    },
+    "hero": {
+      "eyebrow": "BrokerVerse features",
+      "title": "Run the business behind the broker relationship.",
+      "lede": "BrokerVerse is designed around brokerage operations rather than generic contact management. It brings client, insurer, policy, placement, service, renewal, claims-support and financial activity into a more structured broker operating environment.",
+      "primary": "Request Demo",
+      "secondary": "Explore the Overview"
+    },
+    "note": "Exact finance, accounting, carrier-connectivity and line-of-business modules should be confirmed against the deployed product scope.",
+    "groups": [
+      {
+        "number": "01",
+        "eyebrow": "Client & account management",
+        "title": "Keep the complete relationship visible.",
+        "items": [
+          {
+            "term": "Client records",
+            "description": "Maintain personal or business client information in an insurance-oriented structure."
+          },
+          {
+            "term": "Contacts and stakeholders",
+            "description": "Record the people associated with an account and their roles."
+          },
+          {
+            "term": "Relationship history",
+            "description": "Retain activities, communication and key account information."
+          },
+          {
+            "term": "Client portfolio",
+            "description": "See policies and relevant service activity connected to the customer."
+          },
+          {
+            "term": "Prospects and opportunities",
+            "description": "Track potential new business before placement begins."
+          },
+          {
+            "term": "Account ownership",
+            "description": "Maintain responsibility across brokers, account executives or teams."
+          },
+          {
+            "term": "Cases and service items",
+            "description": "Track structured client work rather than relying on email alone."
+          }
+        ]
+      },
+      {
+        "number": "02",
+        "eyebrow": "Sales, opportunity & case management",
+        "title": "Move opportunities into broker operations without losing context.",
+        "items": [
+          {
+            "term": "Lead and prospect management",
+            "description": "Track potential business before it becomes a placement."
+          },
+          {
+            "term": "Opportunity stages",
+            "description": "Represent how commercial conversations actually progress."
+          },
+          {
+            "term": "Activities and tasks",
+            "description": "Record the work required to move an account forward."
+          },
+          {
+            "term": "Follow-ups and meetings",
+            "description": "Keep client contact planned rather than reactive."
+          },
+          {
+            "term": "Assigned cases",
+            "description": "Give each item of client work an owner."
+          },
+          {
+            "term": "Sales pipeline",
+            "description": "Understand what is in progress across the brokerage."
+          },
+          {
+            "term": "Notes, communications and documents",
+            "description": "Bridge commercial activity and the operational work required to place and service insurance."
+          }
+        ]
+      },
+      {
+        "number": "03",
+        "eyebrow": "Requirements, quotation & placement",
+        "title": "Keep placement activity organized across client and carrier.",
+        "items": [
+          {
+            "term": "Requirement capture",
+            "description": "Record the client's insurance requirement and supporting information."
+          },
+          {
+            "term": "Quote requests",
+            "description": "Prepare or track requests sent to insurers where the implementation supports that workflow."
+          },
+          {
+            "term": "Carrier responses",
+            "description": "Record quotations, terms or responses received from insurers."
+          },
+          {
+            "term": "Comparison and selection support",
+            "description": "Organize available carrier options for broker review."
+          },
+          {
+            "term": "Placement workflow",
+            "description": "Track progress from requirement through insurer selection and binding steps appropriate to the operating model."
+          },
+          {
+            "term": "Status visibility",
+            "description": "Make it clear which carrier or internal team is waiting on the next action."
+          },
+          {
+            "term": "Placement documents",
+            "description": "Keep supporting documents connected to the account and transaction."
+          }
+        ]
+      },
+      {
+        "number": "04",
+        "eyebrow": "Policy administration & servicing",
+        "title": "Keep the policy relationship active after placement.",
+        "items": [
+          {
+            "term": "Policy records",
+            "description": "Maintain the brokerage-side policy record with coverage and key policy information."
+          },
+          {
+            "term": "Insurer association",
+            "description": "Connect each policy to the carrier that issued it."
+          },
+          {
+            "term": "Endorsements and mid-term changes",
+            "description": "Track changes across the policy term."
+          },
+          {
+            "term": "Cancellations",
+            "description": "Record policy cancellation where supported."
+          },
+          {
+            "term": "Policy documents",
+            "description": "Keep schedules, certificates and correspondence with the record."
+          },
+          {
+            "term": "Service requests",
+            "description": "Turn client requests into tracked work with an owner."
+          },
+          {
+            "term": "System of record",
+            "description": "The insurer's policy administration system remains the source of truth where the integration architecture defines it that way."
+          }
+        ]
+      },
+      {
+        "number": "05",
+        "eyebrow": "Renewal management",
+        "title": "Turn expiries into controlled work.",
+        "items": [
+          {
+            "term": "Renewal diary",
+            "description": "Surface policies approaching expiry."
+          },
+          { "term": "Responsibility", "description": "Assign renewal ownership." },
+          {
+            "term": "Client engagement",
+            "description": "Track discussions, requirements and follow-up."
+          },
+          {
+            "term": "Carrier engagement",
+            "description": "Coordinate remarketing or renewal quotation activity."
+          },
+          {
+            "term": "Document tracking",
+            "description": "Keep relevant renewal information together."
+          },
+          {
+            "term": "Renewal status",
+            "description": "Understand which accounts are pending, quoted, renewed, lost or require escalation."
+          },
+          {
+            "term": "Management visibility",
+            "description": "Give leaders a forward view of renewal workload and potential retention risk."
+          }
+        ]
+      },
+      {
+        "number": "06",
+        "eyebrow": "Claims support & client advocacy",
+        "title": "Keep the broker informed when the customer needs help most.",
+        "items": [
+          {
+            "term": "Claim notification details",
+            "description": "Record what the client has reported and when."
+          },
+          {
+            "term": "Policy reference",
+            "description": "Connect the claim to the placed policy."
+          },
+          {
+            "term": "Client communication",
+            "description": "Track what the client has been told and what they still need."
+          },
+          {
+            "term": "Insurer and provider communication",
+            "description": "Record the broker's follow-up with the carrier or service provider."
+          },
+          {
+            "term": "Supporting documents",
+            "description": "Keep claim evidence attached to the account."
+          },
+          {
+            "term": "Claim status",
+            "description": "Track where the claim sits without reconstructing it from email."
+          },
+          {
+            "term": "Scope of this module",
+            "description": "This supports brokerage-side claims servicing and advocacy. Formal insurer claim adjudication belongs in the carrier claims environment or ClaimVerse where configured."
+          }
+        ]
+      },
+      {
+        "number": "07",
+        "eyebrow": "Premium & commission management",
+        "title": "Connect policy activity with broker revenue.",
+        "items": [
+          {
+            "term": "Premium information",
+            "description": "Maintain premium values associated with placed business."
+          },
+          {
+            "term": "Commission calculation",
+            "description": "Calculate or record expected commissions according to configured rules where supported."
+          },
+          {
+            "term": "Commission tracking",
+            "description": "Compare expected and received commission information."
+          },
+          {
+            "term": "Producer or internal sharing",
+            "description": "Support configured splits or allocation where available."
+          },
+          {
+            "term": "Receivables visibility",
+            "description": "Surface outstanding financial items associated with clients or insurers."
+          },
+          {
+            "term": "Reconciliation support",
+            "description": "Help teams investigate differences between expected and actual values."
+          },
+          {
+            "term": "Financial control",
+            "description": "All financial calculations and accounting treatment must reflect the implemented product and local financial-control requirements."
+          }
+        ]
+      },
+      {
+        "number": "08",
+        "eyebrow": "Finance & accounting operations",
+        "title": "Reduce the gap between brokerage operations and finance.",
+        "items": [
+          {
+            "term": "Receipts and payment vouchers",
+            "description": "Record money received and paid where the deployed scope supports it."
+          },
+          {
+            "term": "Journal transactions",
+            "description": "Maintain financial entries connected to brokerage activity."
+          },
+          {
+            "term": "Outstanding balances",
+            "description": "Surface what remains unsettled across clients and insurers."
+          },
+          {
+            "term": "Transaction history",
+            "description": "Retain the financial record behind an account."
+          },
+          {
+            "term": "Bank and finance references",
+            "description": "Connect entries to the underlying financial instruction."
+          },
+          {
+            "term": "Reconciliation and reporting",
+            "description": "Compare expected and actual financial positions."
+          },
+          {
+            "term": "Scope of this module",
+            "description": "BrokerVerse is not a full statutory accounting platform unless the actual implementation supports that scope."
+          }
+        ]
+      },
+      {
+        "number": "09",
+        "eyebrow": "Documents, compliance & audit",
+        "title": "Keep evidence attached to the work.",
+        "items": [
+          {
+            "term": "Client and policy documents",
+            "description": "Keep the paperwork with the account it belongs to."
+          },
+          {
+            "term": "Quote and placement documents",
+            "description": "Retain what was requested and what the carrier returned."
+          },
+          {
+            "term": "Claims-related documents",
+            "description": "Hold claim evidence alongside the policy."
+          },
+          {
+            "term": "Version history",
+            "description": "Understand what changed and when, where supported."
+          },
+          {
+            "term": "Signed documents",
+            "description": "Retain executed agreements and confirmations."
+          },
+          {
+            "term": "Required-document checklists",
+            "description": "Make missing evidence visible before it becomes a problem."
+          },
+          {
+            "term": "Activity and audit history",
+            "description": "Respond to internal control, customer-service and compliance requirements without reconstructing history from multiple inboxes."
+          }
+        ]
+      },
+      {
+        "number": "10",
+        "eyebrow": "Broker and carrier connectivity",
+        "title": "Reduce friction between placement and execution.",
+        "items": [
+          {
+            "term": "Submission exchange",
+            "description": "Send requirements to the carrier in a structured form."
+          },
+          {
+            "term": "Quotation requests and responses",
+            "description": "Track what was asked and what came back."
+          },
+          {
+            "term": "Documents",
+            "description": "Exchange supporting evidence with the carrier."
+          },
+          {
+            "term": "Placement and policy information",
+            "description": "Keep the brokerage record aligned with the carrier position."
+          },
+          {
+            "term": "Renewal information",
+            "description": "Receive expiry and renewal data ahead of the event."
+          },
+          {
+            "term": "Claims-related status",
+            "description": "Follow the carrier's progress on a client's claim."
+          },
+          {
+            "term": "Connectivity approach",
+            "description": "API connectivity where available, structured integration where direct APIs are not. BrokerVerse is not a universal electronic trading network unless the product team confirms that capability."
+          }
+        ]
+      },
+      {
+        "number": "11",
+        "eyebrow": "Reporting, roles & administration",
+        "title": "Govern the brokerage as it grows.",
+        "items": [
+          {
+            "term": "Client portfolio dashboards",
+            "description": "Understand the shape of the book."
+          },
+          {
+            "term": "Renewal pipeline",
+            "description": "See the forward workload and retention exposure."
+          },
+          {
+            "term": "Carrier mix and business pipeline",
+            "description": "Understand where business is placed and what is in progress."
+          },
+          {
+            "term": "Premium and commission reporting",
+            "description": "Connect activity to revenue."
+          },
+          {
+            "term": "Operational workload",
+            "description": "See where teams are under pressure."
+          },
+          {
+            "term": "Roles, teams and permissions",
+            "description": "Control who can see and do what."
+          },
+          {
+            "term": "Configurable fields and workflows",
+            "description": "Adapt the platform to the brokerage where supported."
+          }
+        ]
+      }
+    ],
+    "cta": {
+      "title": "Give brokerage teams one place to run the work.",
+      "convert": "Request a BrokerVerse Demo",
+      "evaluate": "Explore the BrokerVerse Overview",
+      "explore": "View BrokerVerse Use Cases"
+    }
+  },
+  "useCases": {
+    "meta": {
+      "title": "BrokerVerse Use Cases | Retail, SME & Commercial Brokerage",
+      "description": "See how BrokerVerse supports retail, SME, commercial, renewal, claims-support, premium, commission and multi-branch workflows for insurance brokers."
+    },
+    "hero": {
+      "eyebrow": "BrokerVerse use cases",
+      "title": "Built for brokerage work, not generic CRM.",
+      "lede": "BrokerVerse supports the operational relationship between client, broker and insurer across new business, policy service, renewal, claims support and financial administration.",
+      "primary": "Request Demo",
+      "secondary": "Review Features"
+    },
+    "labels": {
+      "situation": "Business situation",
+      "usage": "How BrokerVerse is used",
+      "change": "What changes"
+    },
+    "cases": [
+      {
+        "number": "01",
+        "title": "Retail brokerage",
+        "situation": "A broker manages a large number of personal customers across multiple products and insurers. Service requests, renewals and documents generate a high volume of routine work.",
+        "usage": "Client records, policy portfolios, service activity, renewals, documents and claims-support information are brought into one working environment. Tasks and cases help staff organize work by customer rather than inbox.",
+        "change": "Faster access to customer context. Better renewal discipline. Less time searching for policy and service information."
+      },
+      {
+        "number": "02",
+        "title": "SME account management",
+        "situation": "SME clients may hold several policies and need regular changes, renewals and advice, but the brokerage cannot dedicate a large commercial team to every account.",
+        "usage": "The broker maintains the business account, contacts, policy portfolio, open opportunities, service cases and renewal activity together. Structured tasks help teams manage multiple client requirements efficiently.",
+        "change": "More consistent account servicing. Better visibility across policies. Reduced dependence on individual staff knowledge."
+      },
+      {
+        "number": "03",
+        "title": "Commercial and complex placement",
+        "situation": "A commercial requirement may need information from the client, submissions to several insurers, multiple responses, specialist review and extensive documentation.",
+        "usage": "Requirements, insurer interactions, quote responses, placement status, documents and broker activities are organized around the account and placement process. Carrier connectivity can be added according to the target environment.",
+        "change": "Better placement control. Clearer status across insurers. Less fragmented documentation and communication."
+      },
+      {
+        "number": "04",
+        "title": "Renewal operations",
+        "situation": "Upcoming expiries can create operational peaks. Without a structured renewal workbench, valuable accounts may receive late attention.",
+        "usage": "Renewals are surfaced in advance, assigned to owners and tracked through client engagement, insurer quotation, document collection and outcome.",
+        "change": "Earlier renewal action. Better retention visibility. More predictable workload. Stronger management oversight."
+      },
+      {
+        "number": "05",
+        "title": "Client servicing and endorsements",
+        "situation": "Clients need certificates, policy changes, endorsements, documents and status updates throughout the policy term.",
+        "usage": "Service requests can be recorded as structured cases with ownership, tasks, documents and insurer interaction attached.",
+        "change": "Less service work hidden in email. Clearer accountability. Better response history."
+      },
+      {
+        "number": "06",
+        "title": "Claims advocacy",
+        "situation": "Clients often turn to their broker for help after a loss even though the insurer owns claim adjudication.",
+        "usage": "The broker records claim-related information, tracks communication, follows insurer and provider status and keeps client support activity connected to the policy.",
+        "change": "Better customer communication. Clearer broker-side follow-up. Less manual reconstruction of claim history."
+      },
+      {
+        "number": "07",
+        "title": "Commission reconciliation",
+        "situation": "Broker teams need to compare expected commissions with insurer statements or received values and investigate differences.",
+        "usage": "Policy, premium and commission records can be linked with financial transactions and reconciliation workflows where supported.",
+        "change": "Improved commission visibility. Faster identification of mismatches. Better finance and operating alignment."
+      },
+      {
+        "number": "08",
+        "title": "Multi-branch brokerage",
+        "situation": "A brokerage operates across locations or teams with different portfolios but needs common governance and management reporting.",
+        "usage": "Role, hierarchy, branch, access and workflow structures can represent the organization while client and business data remain controlled according to responsibility.",
+        "change": "More consistent operating practices. Better enterprise reporting. Clearer access control."
+      },
+      {
+        "number": "09",
+        "title": "Compliance and audit readiness",
+        "situation": "The brokerage needs evidence of documents, activities, approvals and user actions during internal review or regulatory examination.",
+        "usage": "Documents, cases, communications, activity history, permissions and audit records are kept closer to the related business transaction.",
+        "change": "Faster evidence retrieval. Better traceability. Reduced reliance on personal inboxes and shared drives."
+      }
+    ],
+    "cta": {
+      "title": "Run brokerage operations around the client, policy and placement.",
+      "convert": "Request a BrokerVerse Demo",
+      "evaluate": "Review BrokerVerse Features",
+      "explore": "Explore the BrokerVerse Overview"
+    }
+  }
+}

@@ -1,0 +1,646 @@
+{
+  "name": "CustomerVerse",
+  "overview": {
+    "meta": {
+      "title": "CustomerVerse | Insurance Policyholder Experience Platform",
+      "description": "Give policyholders one digital destination for policies, payments, service requests, renewals and claims with CustomerVerse."
+    },
+    "hero": {
+      "eyebrow": "CustomerVerse: Policyholder experience",
+      "title": "Don't just give customers access. Give them direction.",
+      "lede": "CustomerVerse gives policyholders a clear digital destination for policies, payments, service, renewals and claims while surfacing the actions that need attention.",
+      "primary": "Request Demo",
+      "secondary": "Explore Features"
+    },
+    "problem": {
+      "eyebrow": "From self-service to proactive service",
+      "title": "Make the next action obvious.",
+      "body": [
+        "Customers should not have to remember every action required during the policy relationship.",
+        "CustomerVerse can surface moments such as an upcoming payment, renewal, outstanding document, service request update or claim action."
+      ]
+    },
+    "journey": {
+      "eyebrow": "Experience model",
+      "title": "Access. Act. Serve. Resolve. Continue.",
+      "steps": ["Access", "Act", "Service", "Resolve", "Continue"],
+      "body": "Policies, documents and coverage information. Payments, renewals and outstanding requirements. Policy-related requests and updates. Claims and customer support. Move into assisted support when human help is appropriate."
+    },
+    "builtFor": {
+      "eyebrow": "Built for",
+      "title": "The teams a policyholder experience touches.",
+      "items": [
+        {
+          "role": "Policyholders",
+          "description": "Understand what they own and what needs attention."
+        },
+        {
+          "role": "Customer leaders",
+          "description": "More digital service with clearer next actions."
+        },
+        {
+          "role": "Service operations",
+          "description": "Structured request intake instead of email and phone."
+        },
+        {
+          "role": "Retention teams",
+          "description": "Renewal and engagement moments that can be acted on."
+        },
+        {
+          "role": "Claims teams",
+          "description": "Cleaner digital intake and fewer status enquiries."
+        },
+        {
+          "role": "Technology leaders",
+          "description": "An experience layer over existing policy, payment and claims services."
+        }
+      ]
+    },
+    "intelligence": {
+      "eyebrow": "Digital trust",
+      "title": "Access people can rely on.",
+      "body": "Secure access, identity controls, communication preferences, consent management where applicable, data permissions and auditability sit behind every customer interaction."
+    },
+    "integration": {
+      "eyebrow": "Works with your technology",
+      "title": "A digital layer over the systems of record.",
+      "body": "CustomerVerse can be implemented as a digital experience layer connected to established policy, payment, document and claims systems.",
+      "tags": [
+        "Policy administration",
+        "Billing",
+        "Payments",
+        "Identity",
+        "Documents",
+        "Claims",
+        "CRM and service platforms",
+        "Communication",
+        "Data and analytics",
+        "Partner applications"
+      ]
+    },
+    "outcomes": {
+      "eyebrow": "What changes for the business",
+      "title": "Different leaders, different gains.",
+      "items": [
+        {
+          "role": "Customer leaders",
+          "description": "More digital service with clearer next actions for policyholders."
+        },
+        {
+          "role": "Operations leaders",
+          "description": "Lower routine servicing effort and better request visibility."
+        },
+        {
+          "role": "Retention teams",
+          "description": "More structured renewal and engagement moments."
+        },
+        {
+          "role": "Technology leaders",
+          "description": "A modern experience layer that can connect to existing policy, payment, document and claims services."
+        }
+      ]
+    },
+    "proof": {
+      "eyebrow": "Proof in practice",
+      "title": "Evidence, close to the claim.",
+      "body": "A digital-servicing or policyholder-experience engagement where customer adoption, service turnaround or operational outcomes can be substantiated is the most relevant evidence here.",
+      "pending": "Awaiting approval",
+      "pendingNote": "Publish only the customer name and metric set cleared for public use."
+    },
+    "faq": {
+      "eyebrow": "Questions",
+      "title": "Common questions about CustomerVerse.",
+      "items": [
+        {
+          "question": "Is CustomerVerse only a self-service portal?",
+          "answer": "No. It is positioned around the wider policyholder relationship, including proactive actions, servicing, renewals and claim visibility."
+        },
+        {
+          "question": "Can customers move from digital to human support?",
+          "answer": "Yes. The experience allows assisted service where the situation requires a person."
+        },
+        {
+          "question": "Can CustomerVerse connect to existing policy systems?",
+          "answer": "Yes. It can be implemented as a digital experience layer connected to established policy, payment, document and claims systems."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Make every policyholder interaction easier to continue.",
+      "convert": "Request a CustomerVerse Demo",
+      "explore": "View CustomerVerse Use Cases"
+    }
+  },
+  "features": {
+    "meta": {
+      "title": "CustomerVerse Features | Policy, Payment, Service, Renewal & Claims Experience",
+      "description": "Explore CustomerVerse capabilities for secure access, policy information, documents, payments, renewals, service requests, claims and proactive customer communication."
+    },
+    "hero": {
+      "eyebrow": "CustomerVerse features",
+      "title": "Give policyholders more than a portal.",
+      "lede": "CustomerVerse is designed to make insurance easier to understand and manage throughout the policy relationship. It combines secure access, policy context, customer actions, servicing and claims visibility while supporting a transition from basic self-service toward more proactive digital service.",
+      "primary": "Request Demo",
+      "secondary": "Explore the Overview"
+    },
+    "note": "Identity, payment and claims capabilities depend on the insurer's selected architecture and market requirements.",
+    "groups": [
+      {
+        "number": "01",
+        "eyebrow": "Secure access, identity & preferences",
+        "title": "Start with trusted access.",
+        "items": [
+          {
+            "term": "Secure login",
+            "description": "Authenticate the customer through the insurer's chosen method."
+          },
+          {
+            "term": "Authentication integration",
+            "description": "Connect to the enterprise identity provider rather than creating another credential store."
+          },
+          {
+            "term": "Profile information",
+            "description": "Let customers see and maintain their own details."
+          },
+          {
+            "term": "Identity verification connectivity",
+            "description": "Connect verification services where required."
+          },
+          {
+            "term": "Account recovery",
+            "description": "Support password and access recovery according to implementation."
+          },
+          {
+            "term": "Communication and language preferences",
+            "description": "Let customers choose how and in what language they are contacted."
+          },
+          {
+            "term": "Consent preferences",
+            "description": "Capture and maintain consent where applicable, including authorized-user relationships where supported."
+          }
+        ]
+      },
+      {
+        "number": "02",
+        "eyebrow": "Customer home & policy overview",
+        "title": "Make the customer's insurance position easy to understand.",
+        "items": [
+          {
+            "term": "Dashboard",
+            "description": "Surface policies, important actions and recent activity."
+          },
+          {
+            "term": "Policy wallet",
+            "description": "Bring multiple active policies into one view."
+          },
+          {
+            "term": "Policy details",
+            "description": "Show relevant product, coverage, premium and term information."
+          },
+          {
+            "term": "Coverage information",
+            "description": "Present customer-friendly coverage information based on available policy data."
+          },
+          {
+            "term": "Documents",
+            "description": "Provide access to policy schedules, certificates, notices and other digital documents where available."
+          },
+          {
+            "term": "Upcoming actions",
+            "description": "Surface payment, renewal, document or service items that require attention."
+          }
+        ]
+      },
+      {
+        "number": "03",
+        "eyebrow": "Product discovery & quotation",
+        "title": "Help existing or prospective customers explore protection.",
+        "items": [
+          {
+            "term": "Product information",
+            "description": "Explain what is available in customer language."
+          },
+          {
+            "term": "Product discovery",
+            "description": "Help customers find cover relevant to their situation."
+          },
+          {
+            "term": "Calculators",
+            "description": "Support simple self-directed exploration where configured."
+          },
+          {
+            "term": "Promotions and offers",
+            "description": "Surface approved campaign content."
+          },
+          {
+            "term": "Quotation entry points",
+            "description": "Connect into pricing services where available."
+          },
+          {
+            "term": "Assisted-sales continuation",
+            "description": "Hand the customer to a person when the product needs one."
+          },
+          {
+            "term": "Scope of this module",
+            "description": "CustomerVerse is not a full direct-to-consumer sales engine unless the relevant SalesVerse capabilities are part of the implementation."
+          }
+        ]
+      },
+      {
+        "number": "04",
+        "eyebrow": "Digital application & onboarding",
+        "title": "Complete the purchase without leaving the experience.",
+        "items": [
+          {
+            "term": "Customer information capture",
+            "description": "Collect what the product requires, once."
+          },
+          {
+            "term": "Application forms",
+            "description": "Guide the customer through structured questions."
+          },
+          {
+            "term": "Document upload",
+            "description": "Attach supporting evidence digitally."
+          },
+          {
+            "term": "Application progress",
+            "description": "Show the customer where the case has reached."
+          },
+          {
+            "term": "Identity and eKYC integration",
+            "description": "Verify the customer through connected services."
+          },
+          {
+            "term": "Digital signature and payment connectivity",
+            "description": "Complete the steps required to bind cover."
+          },
+          {
+            "term": "Confirmation and onboarding communication",
+            "description": "Confirm what was purchased and what happens next. This can serve direct journeys or continue a SalesVerse or partner journey."
+          }
+        ]
+      },
+      {
+        "number": "05",
+        "eyebrow": "Policy servicing",
+        "title": "Turn common service requests into clear digital actions.",
+        "items": [
+          {
+            "term": "Profile and contact changes",
+            "description": "Let customers keep their own details current."
+          },
+          {
+            "term": "Policy-information and document requests",
+            "description": "Answer routine questions without a phone call."
+          },
+          {
+            "term": "Endorsement or change requests",
+            "description": "Support policy changes where the implementation allows."
+          },
+          {
+            "term": "Beneficiary and nominee requests",
+            "description": "Handle sensitive changes through a controlled path where relevant and configured."
+          },
+          {
+            "term": "Service forms and supporting documents",
+            "description": "Collect what is needed to action the request."
+          },
+          {
+            "term": "Request status",
+            "description": "Show progress instead of leaving the customer waiting."
+          },
+          {
+            "term": "Assisted continuation",
+            "description": "Complex changes move into assisted workflows instead of forcing customers through unsuitable self-service."
+          }
+        ]
+      },
+      {
+        "number": "06",
+        "eyebrow": "Payments, billing & collections",
+        "title": "Make paying straightforward.",
+        "items": [
+          {
+            "term": "Premium information and due dates",
+            "description": "Show what is owed and when."
+          },
+          {
+            "term": "Payment history",
+            "description": "Provide the record where available."
+          },
+          {
+            "term": "Payment links and gateway connectivity",
+            "description": "Let the customer pay in the channel they are already in."
+          },
+          {
+            "term": "Recurring-payment information",
+            "description": "Show auto-debit arrangements where integrated."
+          },
+          {
+            "term": "Receipt access",
+            "description": "Provide proof of payment digitally."
+          },
+          {
+            "term": "Failed-payment notification and reminders",
+            "description": "Alert the customer before the policy is affected."
+          },
+          {
+            "term": "System of record",
+            "description": "CustomerVerse shows payment information supplied by the relevant billing or payment source rather than becoming the financial system of record."
+          }
+        ]
+      },
+      {
+        "number": "07",
+        "eyebrow": "Renewals",
+        "title": "Make renewal a guided customer moment.",
+        "items": [
+          {
+            "term": "Renewal alerts",
+            "description": "Give the customer notice before the deadline."
+          },
+          {
+            "term": "Renewal information",
+            "description": "Explain what is changing and what stays the same."
+          },
+          {
+            "term": "Premium or coverage updates",
+            "description": "Show revised terms where supplied."
+          },
+          {
+            "term": "Digital renewal action",
+            "description": "Let the customer complete renewal without a call."
+          },
+          {
+            "term": "Required documents",
+            "description": "Collect anything outstanding before the date."
+          },
+          {
+            "term": "Payment continuation and confirmation",
+            "description": "Close the loop with proof the policy continues."
+          },
+          {
+            "term": "Design principle",
+            "description": "Renewal design should support clarity and retention without using dark patterns or pressure-based interfaces."
+          }
+        ]
+      },
+      {
+        "number": "08",
+        "eyebrow": "Claims",
+        "title": "Keep the customer informed after something goes wrong.",
+        "items": [
+          {
+            "term": "Digital FNOL",
+            "description": "Let the customer start a claim where connected."
+          },
+          {
+            "term": "Guided claim forms",
+            "description": "Ask for the information the claim type actually needs."
+          },
+          {
+            "term": "Document and image upload",
+            "description": "Capture evidence from the customer's device."
+          },
+          {
+            "term": "Claim reference and status",
+            "description": "Give the customer something to track."
+          },
+          {
+            "term": "Additional-information requests",
+            "description": "Ask clearly for what is still missing."
+          },
+          {
+            "term": "Settlement and status updates",
+            "description": "Communicate the outcome where available."
+          },
+          {
+            "term": "Scope of this module",
+            "description": "Formal claim processing and adjudication remain in ClaimVerse or the carrier claims platform."
+          }
+        ]
+      },
+      {
+        "number": "09",
+        "eyebrow": "Proactive service & notifications",
+        "title": "Tell customers what needs attention before they have to ask.",
+        "items": [
+          {
+            "term": "Payment and renewal reminders",
+            "description": "Prevent avoidable lapses."
+          },
+          {
+            "term": "Document requests",
+            "description": "Chase outstanding evidence politely and once."
+          },
+          {
+            "term": "Service-request progress",
+            "description": "Update the customer as the case moves."
+          },
+          {
+            "term": "Claim progress",
+            "description": "Reduce the need to call for status."
+          },
+          {
+            "term": "Policy changes and important notices",
+            "description": "Communicate what the customer must know."
+          },
+          {
+            "term": "Personalized actions",
+            "description": "Surface what is relevant to this customer where supported, according to preferences, consent and regulatory requirements."
+          }
+        ]
+      },
+      {
+        "number": "10",
+        "eyebrow": "Support & assisted continuation",
+        "title": "Reserve human support for where it adds value.",
+        "items": [
+          {
+            "term": "FAQs and knowledge content",
+            "description": "Answer the common question in place."
+          },
+          { "term": "Search", "description": "Help customers find the answer themselves." },
+          {
+            "term": "Secure messaging",
+            "description": "Let customers ask without exposing personal data over email."
+          },
+          {
+            "term": "Chat or conversational support",
+            "description": "Provide immediate help where implemented."
+          },
+          {
+            "term": "Contact-centre continuation",
+            "description": "Carry the context into the call."
+          },
+          {
+            "term": "Advisor or agent escalation",
+            "description": "Reconnect the customer with their relationship owner."
+          },
+          {
+            "term": "Service-case creation",
+            "description": "Turn the conversation into tracked work."
+          }
+        ]
+      },
+      {
+        "number": "11",
+        "eyebrow": "Localization, accessibility & responsive experience",
+        "title": "Work for the customer in front of you.",
+        "items": [
+          {
+            "term": "Responsive web and mobile",
+            "description": "Serve the device the customer has."
+          },
+          {
+            "term": "Multi-language content",
+            "description": "Support the languages of the market where configured."
+          },
+          {
+            "term": "Market-specific journeys",
+            "description": "Reflect local process and product differences."
+          },
+          {
+            "term": "Accessible design practices",
+            "description": "Make the journey usable by as many people as possible."
+          },
+          {
+            "term": "Local formats",
+            "description": "Use local date, currency and document conventions."
+          },
+          {
+            "term": "Customer-friendly terminology",
+            "description": "Avoid exposing internal workflow codes to the policyholder."
+          }
+        ]
+      },
+      {
+        "number": "12",
+        "eyebrow": "Integrations, security & control",
+        "title": "A digital front with enterprise controls.",
+        "items": [
+          {
+            "term": "Integration areas",
+            "description": "Policy administration, billing, payments, identity, documents, claims, CRM and service platforms, communication, data and partner applications."
+          },
+          {
+            "term": "Authentication controls",
+            "description": "Protect the customer's account."
+          },
+          {
+            "term": "Role-based access",
+            "description": "Apply permissions where multiple parties can act."
+          },
+          {
+            "term": "Consent",
+            "description": "Record and honour what the customer agreed to."
+          },
+          {
+            "term": "Auditability",
+            "description": "Retain evidence of what happened and when."
+          },
+          {
+            "term": "Secure APIs and monitoring",
+            "description": "Protect and observe the connections behind the experience."
+          }
+        ]
+      }
+    ],
+    "cta": {
+      "title": "Move from customer access to customer action.",
+      "convert": "Request a CustomerVerse Demo",
+      "evaluate": "Explore the CustomerVerse Overview",
+      "explore": "View CustomerVerse Use Cases"
+    }
+  },
+  "useCases": {
+    "meta": {
+      "title": "CustomerVerse Use Cases | Policy Servicing, Payments, Renewals & Claims",
+      "description": "See how CustomerVerse supports digital policy access, service requests, payments, renewals, claims updates, proactive communication and assisted service."
+    },
+    "hero": {
+      "eyebrow": "CustomerVerse use cases",
+      "title": "Digital service that continues throughout the policy relationship.",
+      "lede": "CustomerVerse supports the everyday moments that determine whether insurance feels easy or difficult after a policy is purchased.",
+      "primary": "Request Demo",
+      "secondary": "Review Features"
+    },
+    "labels": {
+      "situation": "Business situation",
+      "usage": "How CustomerVerse is used",
+      "change": "What changes"
+    },
+    "cases": [
+      {
+        "number": "01",
+        "title": "Policy self-service",
+        "situation": "Customers call or email simply to understand what they own, find documents or confirm basic policy information.",
+        "usage": "A secure customer home provides policy information, coverage details, documents and relevant customer data from connected systems.",
+        "change": "Fewer routine enquiries. Faster access to information. A clearer policyholder experience."
+      },
+      {
+        "number": "02",
+        "title": "Digital service requests",
+        "situation": "Policy changes and servicing often depend on forms, email attachments and repeated follow-up.",
+        "usage": "Customers can initiate configured requests, provide supporting information and track progress. Complex requests can move to assisted service.",
+        "change": "More structured intake. Better status transparency. Less uncertainty for the customer."
+      },
+      {
+        "number": "03",
+        "title": "Premium payment and collection",
+        "situation": "Customers miss payments or need help finding the correct payment channel.",
+        "usage": "Due dates, premium information and payment links can be surfaced from connected billing and payment systems, supported by reminders and confirmation.",
+        "change": "Clearer payment journeys. Fewer payment-related service contacts. Better digital completion."
+      },
+      {
+        "number": "04",
+        "title": "Renewal",
+        "situation": "Renewal information arrives through different channels and customers may not understand what action is required.",
+        "usage": "The portal or app surfaces upcoming renewal, relevant documents, updated information, required actions and payment continuation.",
+        "change": "Earlier engagement. Clearer renewal action. Better continuity between digital and assisted support."
+      },
+      {
+        "number": "05",
+        "title": "Digital claims initiation",
+        "situation": "Immediately after a loss, customers need to know what information to provide and what happens next.",
+        "usage": "Customers can begin FNOL, submit documents or images, receive a reference and continue into ClaimVerse or the insurer claims process.",
+        "change": "More complete digital intake. Less uncertainty. Faster transition into claims operations."
+      },
+      {
+        "number": "06",
+        "title": "Claim-status communication",
+        "situation": "Customers repeatedly contact call centres because they cannot see whether a claim has progressed.",
+        "usage": "Relevant claim status, information requests and communication are surfaced from the claims environment.",
+        "change": "Better transparency. Lower status-call volume. More confidence in the process."
+      },
+      {
+        "number": "07",
+        "title": "Proactive policyholder service",
+        "situation": "Traditional portals wait for customers to log in and search for information.",
+        "usage": "The experience can surface payments, renewals, missing documents, service updates or claims actions requiring attention.",
+        "change": "Customers know what to do next. The insurer can shift from reactive enquiry handling toward guided service."
+      },
+      {
+        "number": "08",
+        "title": "Digital-to-assisted support",
+        "situation": "Some requests are too complex, sensitive or judgement-intensive for pure self-service.",
+        "usage": "Customer context and the current journey can be transferred into a human-support channel where integrations permit.",
+        "change": "Less restarting. Better context for service teams. Human support focused on cases that need it."
+      },
+      {
+        "number": "09",
+        "title": "Multi-policy customer experience",
+        "situation": "Customers with several policies experience different portals or documents by product line.",
+        "usage": "Available policy information can be brought into one customer-level view with product-specific journeys behind it.",
+        "change": "A more coherent relationship with the insurer. Easier navigation across products."
+      }
+    ],
+    "cta": {
+      "title": "Make the next policyholder action obvious.",
+      "convert": "Request a CustomerVerse Demo",
+      "evaluate": "Review CustomerVerse Features",
+      "explore": "Explore the CustomerVerse Overview"
+    }
+  }
+}

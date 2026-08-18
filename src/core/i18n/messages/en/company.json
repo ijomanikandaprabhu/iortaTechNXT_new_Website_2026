@@ -1,0 +1,215 @@
+{
+  "about": {
+    "meta": {
+      "title": "About Iorta TechNXT | Insurance Technology & Modernization",
+      "description": "Learn how Iorta TechNXT builds insurance products and modernization capabilities across distribution, servicing, claims and enterprise technology."
+    },
+    "hero": {
+      "eyebrow": "About Iorta TechNXT",
+      "title": "Technology built for the business insurance is becoming.",
+      "lede": "Iorta TechNXT combines focused insurance products with modernization engineering to improve distribution, underwriting, servicing, claims and the technology foundations behind them.",
+      "primary": "Talk to Iorta TechNXT",
+      "secondary": "Explore Customer Stories"
+    },
+    "sections": [
+      {
+        "number": "01",
+        "eyebrow": "What we do",
+        "title": "Five things, done for insurance.",
+        "roles": [
+          { "role": "Build", "description": "Create focused insurance technology products." },
+          { "role": "Modernize", "description": "Transform established applications and technology." },
+          { "role": "Connect", "description": "Bring channels, systems and partners together." },
+          {
+            "role": "Simplify",
+            "description": "Turn complex journeys into clearer digital experiences."
+          },
+          {
+            "role": "Scale",
+            "description": "Support changing markets, channels and operating models."
+          }
+        ]
+      },
+      {
+        "number": "02",
+        "eyebrow": "Insurance first",
+        "title": "We work where insurance operations meet technology.",
+        "body": [
+          "Our work sits at the intersection of insurance operations and technology: sales, intermediary distribution, onboarding, customer service, underwriting, claims, core integration, data and application modernization."
+        ]
+      },
+      {
+        "number": "03",
+        "eyebrow": "Global ambition, regional understanding",
+        "title": "One operating model does not fit every market.",
+        "body": [
+          "Insurance markets differ in distribution, regulation, languages, Takaful requirements, core platforms and digital maturity.",
+          "We design for that reality instead of assuming one operating model fits every market."
+        ]
+      },
+      {
+        "number": "04",
+        "eyebrow": "How we think",
+        "title": "Six principles behind the work.",
+        "roles": [
+          {
+            "role": "Start with the journey",
+            "description": "Understand what customers and employees are trying to achieve."
+          },
+          {
+            "role": "Make complexity feel simple",
+            "description": "Hide avoidable operational and technology complexity from the user."
+          },
+          {
+            "role": "Design for change",
+            "description": "Products, channels, regulation and expectations will continue to evolve."
+          },
+          {
+            "role": "Build for real operations",
+            "description": "Technology must work with the reality of enterprise insurance."
+          },
+          {
+            "role": "Keep people in control",
+            "description": "Automation should support clear accountability."
+          },
+          {
+            "role": "Measure impact",
+            "description": "Technology matters when it changes a customer, operational or business outcome."
+          }
+        ]
+      },
+      {
+        "number": "05",
+        "eyebrow": "Experience and proof",
+        "title": "Company figures are published from one verified source.",
+        "body": [
+          "Corporate numbers, office locations, customer counts, market presence and awards are deliberately not stated on this page yet. They will be published only when current and verified, and maintained from a single source of truth so they stay consistent across the site.",
+          "Publishing an approximate headcount or client count here and a different one elsewhere is the fastest way to lose a reader's trust."
+        ],
+        "tone": "muted"
+      }
+    ],
+    "cta": {
+      "title": "Build the next chapter with us.",
+      "convert": "Talk to Iorta TechNXT",
+      "evaluate": "Explore Customer Stories",
+      "explore": "See What We Build"
+    }
+  },
+  "leadership": {
+    "meta": {
+      "title": "Iorta TechNXT Leadership",
+      "description": "Meet the leaders guiding Iorta TechNXT across insurance technology, product engineering, customer transformation and regional growth."
+    },
+    "hero": {
+      "eyebrow": "Leadership",
+      "title": "Experience across insurance, technology and transformation.",
+      "lede": "Our leadership brings together insurance-domain understanding, product thinking, engineering capability and transformation experience.",
+      "primary": "Talk to Iorta TechNXT",
+      "secondary": "About Iorta TechNXT"
+    },
+    "sections": [
+      {
+        "eyebrow": "Profiles",
+        "title": "Individual profiles are pending approval.",
+        "body": [
+          "Named biographies, photographs and LinkedIn links are published only with each person's approval. They are not listed here yet.",
+          "Each profile will follow one structure: name, current role, an 80 to 120 word biography covering insurance and technology experience, current responsibility and areas of expertise, and a LinkedIn link where approved."
+        ],
+        "tone": "muted"
+      },
+      {
+        "eyebrow": "Leadership philosophy",
+        "title": "Different expertise. One focus: moving insurance forward.",
+        "body": [
+          "Build technology around real industry problems. Keep customer outcomes visible. Create clear accountability. Invest in people and delivery discipline. Learn across markets."
+        ]
+      }
+    ],
+    "cta": {
+      "title": "Meet the team behind the platform.",
+      "convert": "Talk to Iorta TechNXT",
+      "evaluate": "About Iorta TechNXT"
+    }
+  },
+  "careers": {
+    "meta": {
+      "title": "Careers at Iorta TechNXT | Insurance Technology Jobs",
+      "description": "Explore careers in engineering, product, design, data, quality, consulting and delivery at Iorta TechNXT."
+    },
+    "hero": {
+      "eyebrow": "Careers",
+      "title": "Build what's next with us.",
+      "lede": "Work on technology that has to perform inside real insurance businesses, across real customers, users and markets.",
+      "primary": "Talk to Iorta TechNXT",
+      "secondary": "About Iorta TechNXT"
+    },
+    "sections": [
+      {
+        "number": "01",
+        "eyebrow": "Why Iorta",
+        "title": "What the work actually offers.",
+        "roles": [
+          {
+            "role": "Meaningful problems",
+            "description": "Work on distribution, claims, customer experience and modernization challenges that affect how insurance operates."
+          },
+          {
+            "role": "Product and engineering",
+            "description": "Build reusable products while solving complex enterprise requirements."
+          },
+          {
+            "role": "Cross-market learning",
+            "description": "Work across different insurance markets and operating models."
+          },
+          {
+            "role": "Ownership",
+            "description": "Take responsibility for outcomes, not only tasks."
+          },
+          {
+            "role": "Continuous learning",
+            "description": "Grow across insurance, technology and delivery."
+          }
+        ]
+      },
+      {
+        "number": "02",
+        "eyebrow": "Areas",
+        "title": "Where people work here.",
+        "tags": [
+          "Engineering",
+          "Product",
+          "Design",
+          "Data",
+          "Quality",
+          "Consulting",
+          "Delivery",
+          "Operations"
+        ]
+      },
+      {
+        "number": "03",
+        "eyebrow": "Open roles",
+        "title": "Live vacancies are not listed here yet.",
+        "body": [
+          "Open roles will be published from the recruitment system rather than maintained by hand, so that a role never appears here after it has been filled.",
+          "Each listing will carry the role, location, department, work model and a short summary. Each role detail page will carry the role purpose, responsibilities, required and preferred experience, location and work model, the hiring process and an application route."
+        ],
+        "tone": "muted"
+      },
+      {
+        "number": "04",
+        "eyebrow": "No matching role?",
+        "title": "Good people do not always arrive when a job title does.",
+        "body": [
+          "If nothing listed fits but you think you should be here, get in touch through the approved recruitment channel rather than waiting for a vacancy."
+        ]
+      }
+    ],
+    "cta": {
+      "title": "Tell us what you want to build.",
+      "convert": "Talk to Iorta TechNXT",
+      "evaluate": "About Iorta TechNXT"
+    }
+  }
+}

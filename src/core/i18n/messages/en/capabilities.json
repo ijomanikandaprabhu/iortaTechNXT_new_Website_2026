@@ -1,0 +1,1674 @@
+{
+  "experience-design": {
+    "meta": {
+      "title": "Insurance Experience Design & UI UX | Iorta TechNXT",
+      "description": "Design customer, advisor, broker, partner and employee insurance journeys through research, service design, UX, UI, prototyping and design systems."
+    },
+    "hero": {
+      "eyebrow": "Experience design",
+      "title": "Make complex insurance journeys feel simple.",
+      "lede": "Insurance journeys can be difficult because the underlying business is difficult: products, eligibility, documents, approvals, regulations, servicing and claims all shape what a user can do. Good experience design does not hide that reality with decoration. It organizes complexity so customers and employees can move through it with confidence.",
+      "primary": "Talk to Us",
+      "secondary": "See Relevant Products"
+    },
+    "sections": [
+      {
+        "number": "01",
+        "eyebrow": "Understand the journey",
+        "title": "Start with how people actually work.",
+        "features": [
+          {
+            "term": "User research",
+            "description": "Understand how customers, advisors, brokers, operations and specialists actually work."
+          },
+          {
+            "term": "Stakeholder interviews",
+            "description": "Align business, compliance, product, technology and operational requirements."
+          },
+          {
+            "term": "Journey mapping",
+            "description": "Map the end-to-end experience across channels rather than optimizing one screen in isolation."
+          },
+          {
+            "term": "Service blueprinting",
+            "description": "Connect front-stage customer interactions with the teams, systems and decisions behind them."
+          },
+          {
+            "term": "Pain-point analysis",
+            "description": "Identify where users repeat information, wait for hand-offs, lose context or require unnecessary support."
+          }
+        ]
+      },
+      {
+        "number": "02",
+        "eyebrow": "Define the experience",
+        "title": "Turn business rules into an understandable flow.",
+        "body": [
+          "Insurance design should account for what happens when a customer is not eligible, a document is missing, an application is referred or a claim requires human review, not only the happy path."
+        ],
+        "tags": [
+          "Experience strategy",
+          "Information architecture",
+          "Navigation",
+          "Content hierarchy",
+          "Task flows",
+          "Form strategy",
+          "Error and exception journeys",
+          "Assisted-to-digital transitions",
+          "Accessibility requirements",
+          "Mobile and responsive strategy"
+        ]
+      },
+      {
+        "number": "03",
+        "eyebrow": "Design interfaces",
+        "title": "Systems, not one-off screens.",
+        "body": [
+          "Design systems are especially valuable when insurers need consistent experiences across customer, agent, broker, partner and operational applications without redesigning every component for every product."
+        ],
+        "tags": [
+          "Wireframes",
+          "Interaction design",
+          "UI design",
+          "Responsive web",
+          "Mobile experiences",
+          "Dashboards",
+          "Workbenches",
+          "Forms",
+          "Design systems",
+          "Reusable components",
+          "Data visualization",
+          "Prototypes"
+        ]
+      },
+      {
+        "number": "04",
+        "eyebrow": "Design for insurance roles",
+        "title": "Each role needs a different kind of clarity.",
+        "tone": "muted",
+        "roles": [
+          {
+            "role": "Customers",
+            "description": "Make products, policies, actions and status easier to understand."
+          },
+          {
+            "role": "Advisors",
+            "description": "Put customer context, priorities and sales support close to the conversation."
+          },
+          {
+            "role": "Brokers",
+            "description": "Organize accounts, policies, placement and service activity around real brokerage work."
+          },
+          {
+            "role": "Underwriters and claims specialists",
+            "description": "Create decision workbenches that surface information without overwhelming the expert."
+          },
+          {
+            "role": "Operations",
+            "description": "Make queues, exceptions, ageing and required actions obvious."
+          }
+        ]
+      },
+      {
+        "number": "05",
+        "eyebrow": "Validate before building too much",
+        "title": "Test whether people can finish the task.",
+        "body": [
+          "Testing should focus on whether users can complete critical insurance tasks accurately, not simply whether they say the interface looks good."
+        ],
+        "tags": [
+          "Interactive prototypes",
+          "Usability testing",
+          "Journey walkthroughs",
+          "Design reviews",
+          "Stakeholder validation",
+          "Accessibility checks",
+          "Content testing",
+          "Iteration"
+        ]
+      },
+      {
+        "number": "06",
+        "eyebrow": "Work with engineering",
+        "title": "Design continues into implementation.",
+        "body": [
+          "Experience design continues into implementation through design specifications, component guidance, design-system governance, responsive behaviour, acceptance review and collaboration with product and engineering teams."
+        ]
+      },
+      {
+        "number": "07",
+        "eyebrow": "Insurance applications",
+        "title": "Where this work usually lands.",
+        "tags": [
+          "Sales and new business",
+          "Advisor applications",
+          "Broker workbenches",
+          "Customer portals",
+          "Partner onboarding",
+          "Underwriting workbenches",
+          "Claims journeys",
+          "Core-system modernization",
+          "Operations dashboards"
+        ]
+      }
+    ],
+    "cta": {
+      "title": "Design around the insurance journey, not the screen.",
+      "convert": "Talk to Iorta TechNXT",
+      "evaluate": "Explore SalesVerse",
+      "explore": "Explore Distribution Modernization"
+    }
+  },
+  "intelligent-operations-decisioning": {
+    "meta": {
+      "title": "Intelligent Insurance Operations & Decisioning | Iorta TechNXT",
+      "description": "Put document understanding, recommendations, workflow orchestration, decision support, STP, exception handling and fraud signals into insurance operations."
+    },
+    "hero": {
+      "eyebrow": "Intelligent operations & decisioning",
+      "title": "Put intelligence inside the work.",
+      "lede": "The most useful insurance automation is not a separate screen. It is intelligence placed inside the sales, underwriting, service and claims workflows where people already make decisions and complete work. Iorta TechNXT focuses on controlled operational use: understand information, identify what requires attention, coordinate approved actions and keep people accountable for judgement-intensive decisions.",
+      "primary": "Talk to Iorta TechNXT",
+      "secondary": "Underwriting Modernization"
+    },
+    "sections": [
+      {
+        "number": "01",
+        "eyebrow": "Understand incoming information",
+        "title": "Read the paperwork before a person has to.",
+        "body": [
+          "These capabilities can reduce the time teams spend reading, re-keying and organizing unstructured information before work can begin."
+        ],
+        "tags": [
+          "Document understanding",
+          "Data extraction",
+          "Classification",
+          "Information normalization",
+          "Submission summarization",
+          "Claim-document processing",
+          "Knowledge assistance",
+          "Missing-information detection"
+        ]
+      },
+      {
+        "number": "02",
+        "eyebrow": "Prioritize and recommend",
+        "title": "Help teams know what needs attention next.",
+        "body": [
+          "Recommendations are decision support where human judgement or regulatory responsibility remains required."
+        ],
+        "tags": [
+          "Lead prioritization",
+          "Case priority",
+          "Queue ordering",
+          "Next-action recommendations",
+          "Missing requirement suggestions",
+          "Renewal signals",
+          "Exception flags",
+          "Knowledge prompts"
+        ]
+      },
+      {
+        "number": "03",
+        "eyebrow": "Orchestrate multi-step work",
+        "title": "Controlled orchestration, not unrestricted autonomy.",
+        "body": [
+          "Understand the current state. Identify approved next actions. Retrieve relevant data. Apply business rules. Trigger connected services. Create tasks. Update workflow. Request human approval. Continue after approval."
+        ]
+      },
+      {
+        "number": "04",
+        "eyebrow": "Decision support",
+        "title": "Make the evidence inspectable.",
+        "body": [
+          "Bring customer, policy, submission, claims, external and rule information together in a decision-ready view. Applications include underwriting referrals, new-business validation, claims assessment support, service routing and operational exceptions.",
+          "Decision support should make evidence and reasoning easier to inspect. It should not hide material decisions behind an unexplained score."
+        ]
+      },
+      {
+        "number": "05",
+        "eyebrow": "Straight-through processing",
+        "title": "Design the stop conditions first.",
+        "body": [
+          "Where the product, rules, evidence and integration landscape permit, routine cases can progress automatically. STP should be designed with explicit stop conditions and review paths."
+        ],
+        "tags": [
+          "Eligibility rules",
+          "Required-information checks",
+          "Data validation",
+          "Risk and referral conditions",
+          "Authority thresholds",
+          "Automated task progression",
+          "Exception return to human queues"
+        ]
+      },
+      {
+        "number": "06",
+        "eyebrow": "Fraud & anomaly intelligence",
+        "title": "Route for review, do not accuse.",
+        "body": [
+          "These signals route work for further review rather than automatically labelling a customer or claim as fraudulent."
+        ],
+        "tags": [
+          "Application anomalies",
+          "Duplicate patterns",
+          "Document inconsistencies",
+          "Identity mismatches",
+          "Claims fraud indicators",
+          "Suspicious activity signals",
+          "Investigation prioritization"
+        ]
+      },
+      {
+        "number": "07",
+        "eyebrow": "Human-governed control",
+        "title": "Automate with accountability.",
+        "body": [
+          "For higher-risk use cases, maintain clear ownership for model and automation changes, data sources and production behaviour."
+        ],
+        "tags": [
+          "Permissions",
+          "Human review",
+          "Business rules",
+          "Authority limits",
+          "Audit history",
+          "Decision traceability",
+          "Override controls",
+          "Exception management",
+          "Monitoring",
+          "Approved-action boundaries"
+        ]
+      },
+      {
+        "number": "08",
+        "eyebrow": "Insurance applications",
+        "title": "Where this lands in the operating model.",
+        "roles": [
+          {
+            "role": "Sales",
+            "description": "Lead prioritization, next actions, application completeness."
+          },
+          {
+            "role": "Underwriting",
+            "description": "Submission understanding, referral support, straight-through processing."
+          },
+          {
+            "role": "Customer service",
+            "description": "Request classification, routing, knowledge assistance."
+          },
+          {
+            "role": "Claims",
+            "description": "Document processing, triage, anomaly signals, routine progression."
+          },
+          {
+            "role": "Operations",
+            "description": "Queue prioritization, exceptions, SLA risk and workload support."
+          }
+        ]
+      },
+      {
+        "number": "09",
+        "eyebrow": "How we deliver",
+        "title": "Start with one decision, not a platform.",
+        "body": [
+          "Start with a specific business decision or workload. Identify data and rules. Design the human and automation boundary. Connect required systems. Test against real exceptions. Introduce monitoring and controls. Measure operational impact."
+        ]
+      }
+    ],
+    "cta": {
+      "title": "Automate where the rules are clear. Escalate where judgement matters.",
+      "convert": "Talk to Iorta TechNXT",
+      "evaluate": "Trust & Responsible Automation Controls",
+      "explore": "Underwriting Modernization"
+    }
+  },
+  "data-analytics": {
+    "meta": {
+      "title": "Insurance Data & Analytics | Iorta TechNXT",
+      "description": "Build insurance data foundations, pipelines, quality, dashboards and decision-ready analytics across distribution, underwriting, customers, claims and operations."
+    },
+    "hero": {
+      "eyebrow": "Data & analytics",
+      "title": "Put data where decisions happen.",
+      "lede": "Insurance organizations rarely lack data. The problem is that important information is spread across policy, sales, claims, customer, finance and external systems and often reaches decision-makers too late.",
+      "primary": "Talk to Iorta TechNXT",
+      "secondary": "Intelligent Operations & Decisioning"
+    },
+    "sections": [
+      {
+        "number": "01",
+        "eyebrow": "Data strategy & architecture",
+        "title": "Design for how the information will be used.",
+        "body": [
+          "The architecture should reflect how the insurer intends to use information, not simply move every field into one large platform."
+        ],
+        "tags": [
+          "Data strategy",
+          "Domain models",
+          "Data architecture",
+          "Source-system assessment",
+          "Integration patterns",
+          "Data ownership",
+          "Master and reference data",
+          "Reporting architecture",
+          "Operational versus analytical separation"
+        ]
+      },
+      {
+        "number": "02",
+        "eyebrow": "Data engineering",
+        "title": "Not every decision requires real-time data.",
+        "body": [
+          "Use the integration pattern appropriate to the business need."
+        ],
+        "tags": [
+          "Batch and real-time pipelines",
+          "API and event ingestion",
+          "Data transformation",
+          "Data cleansing",
+          "Data enrichment",
+          "Data stores",
+          "Processing orchestration",
+          "Monitoring",
+          "Error handling"
+        ]
+      },
+      {
+        "number": "03",
+        "eyebrow": "Data quality & governance",
+        "title": "Quality is infrastructure, not a cleanup project.",
+        "body": [
+          "Automation and advanced analytics become harder to trust when source data is inconsistent, so data quality should be treated as operating infrastructure rather than a one-time exercise."
+        ],
+        "tags": [
+          "Completeness",
+          "Validity",
+          "Consistency",
+          "Duplicates",
+          "Reconciliation",
+          "Data lineage",
+          "Data definitions",
+          "Ownership",
+          "Access",
+          "Retention",
+          "Quality monitoring"
+        ]
+      },
+      {
+        "number": "04",
+        "eyebrow": "Business intelligence",
+        "title": "Different roles need different views.",
+        "body": [
+          "A sales manager needs pipeline movement. A claims manager needs inventory and ageing. An executive needs business outcomes and risk."
+        ],
+        "tags": [
+          "Dashboards",
+          "KPI definitions",
+          "Operational reports",
+          "Executive views",
+          "Drill-down analysis",
+          "Trend analysis",
+          "Exception reporting",
+          "Scheduled reporting"
+        ]
+      },
+      {
+        "number": "05",
+        "eyebrow": "Insurance applications",
+        "title": "What each part of the business needs to see.",
+        "roles": [
+          {
+            "role": "Distribution",
+            "description": "Lead funnel, conversion, channel mix, advisor productivity, partner performance, renewals, campaign response."
+          },
+          {
+            "role": "Underwriting",
+            "description": "Submission volume, completeness, referral volume, turnaround, decision outcomes, queue workload."
+          },
+          {
+            "role": "Customer",
+            "description": "Policy and service activity, renewal signals, digital adoption, request volumes, engagement."
+          },
+          {
+            "role": "Claims",
+            "description": "FNOL volume, open inventory, ageing, handler workload, STP, referral, settlement progress, exceptions."
+          },
+          {
+            "role": "Operations",
+            "description": "Queues, SLA, bottlenecks, productivity, turnaround, work allocation."
+          }
+        ]
+      },
+      {
+        "number": "06",
+        "eyebrow": "Predictive & decision analytics",
+        "title": "A prediction needs an owner and a process.",
+        "body": [
+          "Predictive outputs should be embedded into a clear business process with ownership, monitoring and human review where necessary."
+        ],
+        "tags": [
+          "Propensity",
+          "Forecasting",
+          "Prioritization",
+          "Risk indicators",
+          "Fraud and anomaly signals",
+          "Renewal likelihood",
+          "Operational workload prediction"
+        ]
+      },
+      {
+        "number": "07",
+        "eyebrow": "Connected & external data",
+        "title": "Operationalize what others already know.",
+        "body": [
+          "Iorta connects, processes and operationalizes external data. Proprietary risk models are claimed only where they exist."
+        ],
+        "tags": [
+          "Weather",
+          "Geospatial",
+          "Telematics",
+          "Health and provider",
+          "Identity",
+          "Business verification",
+          "Credit and financial data where permitted",
+          "Third-party risk data"
+        ]
+      },
+      {
+        "number": "08",
+        "eyebrow": "From report to action",
+        "title": "Put the insight back into the workflow.",
+        "body": [
+          "A dashboard alone does not change operations. Where appropriate, analytics can create alerts, prioritize queues, trigger workflows, recommend actions or support decisions inside SalesVerse, AgentVerse, ClaimVerse or operational applications."
+        ]
+      }
+    ],
+    "cta": {
+      "title": "Move from reporting what happened to understanding what needs attention.",
+      "convert": "Talk to Iorta TechNXT",
+      "evaluate": "Discuss Your Data Foundation",
+      "explore": "Intelligent Operations & Decisioning"
+    }
+  },
+  "agile-cloud-devops": {
+    "meta": {
+      "title": "Agile, Cloud & DevOps for Insurance | Iorta TechNXT",
+      "description": "Improve insurance software delivery through agile engineering, CI/CD, cloud operations, automation, observability, DevSecOps and controlled releases."
+    },
+    "hero": {
+      "eyebrow": "Agile, cloud & DevOps",
+      "title": "Move change from idea to production with less friction.",
+      "lede": "Insurance technology teams need to release more often without creating instability around policy, claims, customer and distribution systems. Agile, cloud and DevOps practices help shorten feedback loops while keeping deployment, security and operational control visible.",
+      "primary": "Talk to Iorta TechNXT",
+      "secondary": "Application Development & Support"
+    },
+    "sections": [
+      {
+        "number": "01",
+        "eyebrow": "Agile delivery",
+        "title": "Improve flow, not ceremony.",
+        "body": [
+          "Agile should improve learning and delivery flow. It should not become a ceremony layer over slow approvals and tightly coupled architecture."
+        ],
+        "tags": [
+          "Product and delivery planning",
+          "Backlog management",
+          "Iterative delivery",
+          "Cross-functional teams",
+          "Sprint and release planning",
+          "Demonstrations",
+          "Retrospectives",
+          "Risk and dependency management"
+        ]
+      },
+      {
+        "number": "02",
+        "eyebrow": "CI/CD",
+        "title": "Not every service deserves the same gate.",
+        "body": [
+          "For insurance platforms, pipelines should include the controls required for high-impact changes rather than treating every service identically."
+        ],
+        "tags": [
+          "Source-control practices",
+          "Automated build",
+          "Unit and integration tests",
+          "Artifact management",
+          "Deployment pipelines",
+          "Environment promotion",
+          "Release gates",
+          "Rollback procedures"
+        ]
+      },
+      {
+        "number": "03",
+        "eyebrow": "Cloud engineering",
+        "title": "Driven by workload, not by slogan.",
+        "body": [
+          "Cloud adoption should be driven by workload, resilience, security, scale and operating requirements, not by a blanket cloud-first policy."
+        ],
+        "tags": [
+          "Cloud architecture",
+          "Environment design",
+          "Infrastructure as code",
+          "Container and platform patterns",
+          "Network and security configuration",
+          "Managed services",
+          "Cost and usage visibility",
+          "Cloud migration support"
+        ]
+      },
+      {
+        "number": "04",
+        "eyebrow": "Environment & release management",
+        "title": "Coordinate systems that change at different speeds.",
+        "body": [
+          "This matters most where modern applications depend on established policy or claims platforms that change at a different cadence."
+        ],
+        "tags": [
+          "Development and test environments",
+          "Configuration management",
+          "Secrets handling",
+          "Release scheduling",
+          "Change coordination",
+          "Deployment windows",
+          "Release evidence",
+          "Rollback and recovery"
+        ]
+      },
+      {
+        "number": "05",
+        "eyebrow": "Observability & operations",
+        "title": "Know which journey is affected.",
+        "body": [
+          "Observability should make it possible to understand not just whether a service is up, but which customer or operational journey is being affected."
+        ],
+        "tags": [
+          "Logs",
+          "Metrics",
+          "Traces",
+          "Application monitoring",
+          "API monitoring",
+          "Infrastructure monitoring",
+          "Alerting",
+          "Incident dashboards",
+          "Performance telemetry"
+        ]
+      },
+      {
+        "number": "06",
+        "eyebrow": "DevSecOps",
+        "title": "One operating model for security and delivery.",
+        "body": [
+          "Security and delivery should share one operating model rather than relying on late-stage manual checks."
+        ],
+        "tags": [
+          "Security scanning",
+          "Dependency review",
+          "Secrets controls",
+          "Infrastructure-policy checks",
+          "Secure pipeline practices",
+          "Vulnerability remediation workflow",
+          "Risk-based security gates"
+        ]
+      },
+      {
+        "number": "07",
+        "eyebrow": "Insurance applications",
+        "title": "What this delivery model carries.",
+        "tags": [
+          "Policy and product releases",
+          "Sales and advisor applications",
+          "Customer portals",
+          "Claims services",
+          "New-business workflows",
+          "API platforms",
+          "Partner integrations",
+          "Data pipelines",
+          "Core-modernization layers"
+        ]
+      },
+      {
+        "number": "08",
+        "eyebrow": "How we deliver",
+        "title": "Measure the delivery system, not the ceremony.",
+        "body": [
+          "Assess delivery constraints. Identify high-friction hand-offs. Automate repeatable steps. Improve test coverage. Introduce release and operational telemetry. Adjust team and architecture boundaries where necessary.",
+          "Measure lead time, failure rate, recovery and production quality."
+        ]
+      }
+    ],
+    "cta": {
+      "title": "Release insurance technology with more confidence and less manual effort.",
+      "convert": "Talk to Iorta TechNXT",
+      "evaluate": "Discuss Delivery Modernization",
+      "explore": "Application Development & Support"
+    }
+  },
+  "api-microservices": {
+    "meta": {
+      "title": "Insurance API & Microservices Engineering | Iorta TechNXT",
+      "description": "Expose insurance capabilities through secure APIs, integration services, microservices and event-driven patterns for digital channels, partners and modernization."
+    },
+    "hero": {
+      "eyebrow": "API & microservices",
+      "title": "Turn insurance capabilities into reusable services.",
+      "lede": "Many insurers already have the business capability they need inside policy, claims or legacy applications. The challenge is exposing it safely to new channels without creating another point-to-point integration for every project.",
+      "primary": "Talk to Iorta TechNXT",
+      "secondary": "Core Modernization"
+    },
+    "sections": [
+      {
+        "number": "01",
+        "eyebrow": "API strategy",
+        "title": "Expose capabilities, not screens.",
+        "body": [
+          "Identify business capabilities worth exposing. Define consumer groups. Set ownership. Choose internal, partner or public exposure patterns. Define versioning, lifecycle and governance.",
+          "Start with reusable business capabilities such as customer lookup, quote, policy, payment, document and status, rather than wrapping every legacy screen in an API."
+        ]
+      },
+      {
+        "number": "02",
+        "eyebrow": "API design & development",
+        "title": "Design for the consumer, respect the boundary.",
+        "body": [
+          "Interfaces should be designed around consumer needs while preserving clear boundaries with core systems."
+        ],
+        "tags": [
+          "REST APIs",
+          "Service contracts",
+          "Request and response models",
+          "Error standards",
+          "Idempotency",
+          "Pagination",
+          "Versioning",
+          "Documentation",
+          "Test harnesses",
+          "Mock services"
+        ]
+      },
+      {
+        "number": "03",
+        "eyebrow": "Security & access",
+        "title": "Different consumers, different controls.",
+        "body": [
+          "Partner and customer-facing APIs require different controls from internal integration services."
+        ],
+        "tags": [
+          "Authentication",
+          "Authorization",
+          "OAuth and OIDC patterns",
+          "API keys for appropriate use cases",
+          "Rate limiting",
+          "Input validation",
+          "Encryption",
+          "Logging",
+          "Sensitive-data handling"
+        ]
+      },
+      {
+        "number": "04",
+        "eyebrow": "API management",
+        "title": "Operate the estate, not just the endpoint.",
+        "body": [
+          "Formal developer portals are claimed only where they are part of the delivered environment."
+        ],
+        "tags": [
+          "Gateway",
+          "Routing",
+          "Policies",
+          "Throttling",
+          "Analytics",
+          "Developer onboarding",
+          "Version management",
+          "Monitoring",
+          "Usage visibility"
+        ]
+      },
+      {
+        "number": "05",
+        "eyebrow": "Microservices & modular architecture",
+        "title": "Microservices are not automatically better.",
+        "body": [
+          "Use them when business or scale boundaries justify the operational complexity. A modular application is often the right answer."
+        ],
+        "tags": [
+          "Service decomposition",
+          "Domain boundaries",
+          "Independent deployment",
+          "Service-to-service communication",
+          "Data ownership",
+          "Resilience patterns",
+          "Container and runtime patterns"
+        ]
+      },
+      {
+        "number": "06",
+        "eyebrow": "Events & asynchronous integration",
+        "title": "Do not block on every downstream system.",
+        "body": [
+          "Use asynchronous patterns when a process should not block on every downstream system."
+        ],
+        "tags": [
+          "Event publication",
+          "Messaging",
+          "Queues",
+          "Event-driven workflows",
+          "Change-data patterns",
+          "Retry and dead-letter handling"
+        ]
+      },
+      {
+        "number": "07",
+        "eyebrow": "Legacy enablement",
+        "title": "Modernize access without replacing the core first.",
+        "body": [
+          "Service wrappers, integration layers, API facades, data transformation, synchronization, incremental decomposition and modern front ends over established systems.",
+          "This is a core part of Iorta's progressive-modernization proposition."
+        ]
+      },
+      {
+        "number": "08",
+        "eyebrow": "Insurance applications",
+        "title": "Who consumes these services.",
+        "tags": [
+          "Digital sales",
+          "Advisor apps",
+          "Broker platforms",
+          "Customer portals",
+          "Partner distribution",
+          "Claims",
+          "Underwriting workbenches",
+          "Open Finance and consent journeys",
+          "Data platforms"
+        ]
+      }
+    ],
+    "proof": {
+      "eyebrow": "Proof in practice",
+      "title": "Evidence, close to the claim.",
+      "body": "An API-modernization engagement demonstrating modern REST services, microservices and synchronization over an established policy platform is the most relevant evidence here.",
+      "pending": "Awaiting approval",
+      "pendingNote": "Customer identity and metrics require public-use approval."
+    },
+    "cta": {
+      "title": "Expose once. Reuse where the business needs it.",
+      "convert": "Talk to Iorta TechNXT",
+      "evaluate": "Explore Integrations",
+      "explore": "Core Modernization"
+    }
+  },
+  "oracle-coe": {
+    "meta": {
+      "title": "Oracle Center of Excellence for Insurance | Iorta TechNXT",
+      "description": "Modernize, integrate, optimize and support Oracle insurance and enterprise environments through architecture, development, databases, APIs and modern experiences."
+    },
+    "hero": {
+      "eyebrow": "Oracle centre of excellence",
+      "title": "Preserve valuable Oracle business logic. Modernize how the business uses it.",
+      "lede": "Many insurers depend on Oracle technology that has accumulated years of product, policy and operational knowledge. The question is often not whether Oracle must disappear, but how to improve performance, access, integration and user experience around it.",
+      "primary": "Talk to Iorta TechNXT",
+      "secondary": "Core Modernization"
+    },
+    "sections": [
+      {
+        "number": "01",
+        "eyebrow": "Oracle architecture & engineering",
+        "title": "Work with the stack the team actually supports.",
+        "body": [
+          "The exact Oracle product stack is stated only where the team currently supports it."
+        ],
+        "tags": [
+          "Architecture review",
+          "Application design",
+          "Oracle development",
+          "Database design",
+          "PL/SQL development services",
+          "Environment assessment",
+          "Integration architecture"
+        ]
+      },
+      {
+        "number": "02",
+        "eyebrow": "Database services",
+        "title": "Test against real transaction patterns.",
+        "body": [
+          "Business-critical insurance workloads require database changes to be tested against real transaction patterns and peak operating periods."
+        ],
+        "tags": [
+          "Database assessment",
+          "Performance tuning",
+          "Query optimization",
+          "Indexing",
+          "Capacity planning",
+          "Backup and recovery support",
+          "Data migration",
+          "Upgrade support",
+          "Monitoring"
+        ]
+      },
+      {
+        "number": "03",
+        "eyebrow": "Application modernization",
+        "title": "Modernize the experience without rewriting everything.",
+        "body": [
+          "Oracle Forms modernization, modern web front ends, API layers, workflow improvements, modular extensions, user-experience redesign and gradual functional replacement.",
+          "This can extend the useful life of established platforms while higher-change capabilities move into more flexible technology."
+        ]
+      },
+      {
+        "number": "04",
+        "eyebrow": "API & integration enablement",
+        "title": "Reach Oracle capability without direct database access.",
+        "body": [
+          "Expose Oracle-backed business capabilities through secure APIs and integration services. Connect modern customer, sales, broker, partner or operational applications without forcing direct database access."
+        ]
+      },
+      {
+        "number": "05",
+        "eyebrow": "Performance & reliability",
+        "title": "Keep the platform inside its operating window.",
+        "tags": [
+          "Application performance",
+          "Database performance",
+          "Batch-process optimization",
+          "Integration monitoring",
+          "Incident analysis",
+          "Capacity",
+          "Availability and recovery"
+        ]
+      },
+      {
+        "number": "06",
+        "eyebrow": "Migration & cloud readiness",
+        "title": "Evaluate before moving.",
+        "body": [
+          "Cloud migration should be evaluated against supportability, licensing, performance, security and operating requirements."
+        ],
+        "tags": [
+          "Version upgrades",
+          "Database and application migration",
+          "Infrastructure change",
+          "Cloud-readiness assessment",
+          "Managed database options",
+          "Data migration and validation"
+        ]
+      },
+      {
+        "number": "07",
+        "eyebrow": "Insurance applications",
+        "title": "What Oracle usually carries here.",
+        "tags": [
+          "Policy administration",
+          "Product configuration",
+          "Sales and new-business integration",
+          "Broker connectivity",
+          "Customer portals",
+          "Claims integration",
+          "Reporting and data access"
+        ]
+      }
+    ],
+    "proof": {
+      "eyebrow": "Proof in practice",
+      "title": "Evidence, close to the claim.",
+      "body": "Engagements involving Oracle policy administration optimization, modern front ends, REST APIs, workflow modernization and Takaful configuration are the most relevant evidence here.",
+      "pending": "Awaiting approval",
+      "pendingNote": "Customer identity and metrics require public-use approval."
+    },
+    "cta": {
+      "title": "Modernize Oracle around the business value that needs to change.",
+      "convert": "Talk to Iorta TechNXT",
+      "evaluate": "Discuss an Oracle Modernization Roadmap",
+      "explore": "Core Modernization"
+    }
+  },
+  "application-development-support": {
+    "meta": {
+      "title": "Insurance Application Development & Support | Iorta TechNXT",
+      "description": "Design, build, modernize, integrate and support web, mobile and enterprise applications for insurance customers, intermediaries and operations."
+    },
+    "hero": {
+      "eyebrow": "Application development & support",
+      "title": "Build applications that keep moving with the business.",
+      "lede": "Insurance applications must work across complex rules, integrations, roles and long-lived core platforms. Iorta TechNXT combines product engineering, enterprise application development and production support around insurance-specific operating needs.",
+      "primary": "Talk to Iorta TechNXT",
+      "secondary": "Implementation & Customer Success"
+    },
+    "sections": [
+      {
+        "number": "01",
+        "eyebrow": "Product & application engineering",
+        "title": "Start with the journey, then draw the boundaries.",
+        "body": [
+          "Start with the business journey, then define the application and service boundaries required to support it."
+        ],
+        "tags": [
+          "Web applications",
+          "Mobile applications",
+          "Enterprise applications",
+          "Customer experiences",
+          "Advisor applications",
+          "Broker applications",
+          "Operational workbenches",
+          "Partner applications"
+        ]
+      },
+      {
+        "number": "02",
+        "eyebrow": "Modern architecture",
+        "title": "Avoid complexity that creates no business value.",
+        "body": [
+          "Architecture complexity that does not create business value is a cost, not a capability."
+        ],
+        "tags": [
+          "Modular application design",
+          "API-first integration",
+          "Microservices where justified",
+          "Event-driven patterns",
+          "Cloud-native patterns where appropriate",
+          "Security architecture",
+          "Observability"
+        ]
+      },
+      {
+        "number": "03",
+        "eyebrow": "Application modernization",
+        "title": "Modernize around or inside, depending on the constraint.",
+        "body": [
+          "Legacy UI modernization, framework upgrades, functional decomposition, API enablement, database modernization, performance improvement, cloud migration and incremental replacement."
+        ]
+      },
+      {
+        "number": "04",
+        "eyebrow": "Integration",
+        "title": "Assume the dependency will be unavailable.",
+        "body": [
+          "Applications should be designed with integration failure and data ownership in mind rather than assuming every dependent system is always available."
+        ],
+        "tags": [
+          "Policy administration",
+          "Claims",
+          "CRM",
+          "Billing",
+          "Payments",
+          "Identity",
+          "Documents",
+          "Communications",
+          "Data",
+          "Partners",
+          "External providers"
+        ]
+      },
+      {
+        "number": "05",
+        "eyebrow": "Quality & security",
+        "title": "Validate before the release, not after.",
+        "tags": [
+          "Automated tests",
+          "Functional testing",
+          "Integration testing",
+          "Performance testing",
+          "Secure development",
+          "Code review",
+          "Vulnerability remediation",
+          "Release validation"
+        ]
+      },
+      {
+        "number": "06",
+        "eyebrow": "Production support",
+        "title": "Feed production reality back into engineering.",
+        "body": [
+          "Support should feed recurring production issues back into engineering priorities."
+        ],
+        "tags": [
+          "Incident triage",
+          "Root-cause analysis",
+          "Bug fixes",
+          "Monitoring",
+          "Performance support",
+          "Release support",
+          "Production changes",
+          "Service requests",
+          "Problem management"
+        ]
+      },
+      {
+        "number": "07",
+        "eyebrow": "Enhancement & continuous improvement",
+        "title": "Keep the application current.",
+        "tags": [
+          "Feature enhancement",
+          "UX improvement",
+          "Integration changes",
+          "Regulatory and business-rule updates",
+          "Performance optimization",
+          "Technology upgrades",
+          "Backlog management"
+        ]
+      },
+      {
+        "number": "08",
+        "eyebrow": "Engagement models",
+        "title": "Match the structure to the responsibility.",
+        "body": [
+          "Product and project engineering teams, modernization programs, managed application support, enhancement teams and mixed build-and-run models.",
+          "Engagement structure should be matched to ownership, business criticality and release cadence."
+        ]
+      }
+    ],
+    "cta": {
+      "title": "Build for launch. Engineer for change after launch.",
+      "convert": "Talk to Iorta TechNXT",
+      "evaluate": "Implementation & Customer Success",
+      "explore": "Experience Design"
+    }
+  },
+  "digital-consulting": {
+    "meta": {
+      "title": "Insurance Digital Consulting | Strategy, Modernization & Operating Model",
+      "description": "Turn insurance transformation goals into prioritized customer journeys, technology roadmaps, architecture choices and executable modernization programs."
+    },
+    "hero": {
+      "eyebrow": "Digital consulting",
+      "title": "Turn transformation ambition into an executable plan.",
+      "lede": "Insurance transformation programs often fail before engineering begins: priorities are unclear, journeys are defined by existing systems, every problem becomes a replacement program and success is measured by delivery rather than business change.",
+      "primary": "Talk to Iorta TechNXT",
+      "secondary": "Core Modernization"
+    },
+    "sections": [
+      {
+        "number": "01",
+        "eyebrow": "Business & technology assessment",
+        "title": "Understand the constraint before proposing the fix.",
+        "tags": [
+          "Business objectives",
+          "Customer and distribution journeys",
+          "Operational pain points",
+          "Application landscape",
+          "Integration constraints",
+          "Data maturity",
+          "Security and governance requirements",
+          "Delivery capability",
+          "Current costs and bottlenecks"
+        ]
+      },
+      {
+        "number": "02",
+        "eyebrow": "Journey & operating-model strategy",
+        "title": "Define what should work differently.",
+        "body": [
+          "Customer acquisition, advisor distribution, broker operations, underwriting, customer service, claims, partner distribution and operational workflows.",
+          "Map current-state work, identify unnecessary hand-offs and define the target operating experience before choosing technology."
+        ]
+      },
+      {
+        "number": "03",
+        "eyebrow": "Product & capability strategy",
+        "title": "Not everything is buy, and not everything is build.",
+        "body": [
+          "Determine where a Verse product fits, where configuration is sufficient, where integration is needed and where custom engineering or modernization is justified.",
+          "This prevents every requirement from becoming either buy the product or build everything."
+        ]
+      },
+      {
+        "number": "04",
+        "eyebrow": "Modernization roadmap",
+        "title": "Sequence by value, not by architecture layer.",
+        "body": [
+          "Prioritize applications and capabilities according to business value, change frequency, customer impact, operational risk and technology constraint.",
+          "Define stages such as experience modernization, API enablement, data access, workflow modernization, modular replacement and core transformation."
+        ]
+      },
+      {
+        "number": "05",
+        "eyebrow": "Architecture strategy",
+        "title": "Support the sequence, do not precede it.",
+        "body": [
+          "Architecture should support the transformation sequence rather than require a multi-year foundation program before any business value appears."
+        ],
+        "tags": [
+          "Target architecture",
+          "Integration strategy",
+          "API and service boundaries",
+          "Data architecture",
+          "Identity",
+          "Security",
+          "Cloud",
+          "Observability",
+          "Resilience"
+        ]
+      },
+      {
+        "number": "06",
+        "eyebrow": "Business case & prioritization",
+        "title": "Measurable outcomes beat maturity scores.",
+        "body": [
+          "Use measurable outcomes where possible rather than generic digital-maturity scores."
+        ],
+        "tags": [
+          "Value hypotheses",
+          "Productivity",
+          "Turnaround",
+          "Customer impact",
+          "Revenue opportunity",
+          "Risk reduction",
+          "Technical debt",
+          "Delivery complexity",
+          "Dependencies"
+        ]
+      },
+      {
+        "number": "07",
+        "eyebrow": "Delivery planning & governance",
+        "title": "Decide how decisions will be made.",
+        "tags": [
+          "Roadmap",
+          "Releases",
+          "Workstreams",
+          "Product ownership",
+          "Decision forums",
+          "Dependencies",
+          "Risks",
+          "Architecture governance",
+          "Quality",
+          "Change and adoption"
+        ]
+      },
+      {
+        "number": "08",
+        "eyebrow": "Insurance applications",
+        "title": "Where this work usually starts.",
+        "tags": [
+          "Distribution modernization",
+          "Underwriting modernization",
+          "Core modernization",
+          "Digital insurance and Takaful launches",
+          "Claims transformation",
+          "Customer servicing",
+          "Regional rollouts"
+        ]
+      }
+    ],
+    "cta": {
+      "title": "Define the change before committing to the technology.",
+      "convert": "Talk to Iorta TechNXT",
+      "evaluate": "Discuss a Transformation Roadmap",
+      "explore": "Core Modernization"
+    }
+  },
+  "talent-services": {
+    "meta": {
+      "title": "Insurance Technology Talent Services | Iorta TechNXT",
+      "description": "Extend insurance technology teams with engineering, cloud, data, QA, product, design and analysis specialists aligned to delivery needs."
+    },
+    "hero": {
+      "eyebrow": "Additional services",
+      "title": "Add specialist capability when your program needs it.",
+      "lede": "Some insurance technology programs do not need another project or product. They need specific skills, added delivery capacity or a specialist team that can work within an existing program.",
+      "primary": "Talk to Iorta TechNXT",
+      "secondary": "Discuss the Skills You Need"
+    },
+    "sections": [
+      {
+        "number": "01",
+        "eyebrow": "Engineering skills",
+        "title": "The build roles programs run short of.",
+        "tags": [
+          "Frontend",
+          "Backend",
+          "Full-stack",
+          "Mobile",
+          "Integration and API",
+          "Cloud",
+          "DevOps",
+          "Database",
+          "Platform engineering"
+        ]
+      },
+      {
+        "number": "02",
+        "eyebrow": "Data & intelligence",
+        "title": "The people behind the data foundation.",
+        "tags": [
+          "Data engineering",
+          "Analytics",
+          "BI",
+          "Data quality",
+          "Data architecture",
+          "ML and automation engineering where applicable"
+        ]
+      },
+      {
+        "number": "03",
+        "eyebrow": "Quality & security",
+        "title": "Confidence in the release.",
+        "tags": [
+          "Functional QA",
+          "Test automation",
+          "Performance testing",
+          "API testing",
+          "Quality engineering",
+          "Security engineering where the engagement model supports it"
+        ]
+      },
+      {
+        "number": "04",
+        "eyebrow": "Product, design & analysis",
+        "title": "The roles that shape what gets built.",
+        "tags": [
+          "Product management",
+          "Business analysis",
+          "Insurance-domain analysis",
+          "UX and UI",
+          "Delivery leadership",
+          "Architecture and technical leadership"
+        ]
+      },
+      {
+        "number": "05",
+        "eyebrow": "Engagement models",
+        "title": "Four ways to add capability.",
+        "body": [
+          "The commercial and employment model is described according to the actual country and contracting structure."
+        ],
+        "roles": [
+          {
+            "role": "Individual specialist",
+            "description": "Add a defined skill to an existing team."
+          },
+          {
+            "role": "Extended team",
+            "description": "Add several roles under the customer's delivery leadership."
+          },
+          {
+            "role": "Specialist pod",
+            "description": "Provide a focused cross-functional group for a defined capability."
+          },
+          {
+            "role": "Project augmentation",
+            "description": "Increase capacity during a release, migration or transformation phase."
+          }
+        ]
+      },
+      {
+        "number": "06",
+        "eyebrow": "Insurance context",
+        "title": "Domain familiarity, matched honestly.",
+        "body": [
+          "Where possible, specialists bring insurance-domain familiarity in policy administration, sales and distribution, brokers, underwriting, servicing, claims, data or core modernization.",
+          "Domain familiarity can reduce onboarding time, but specific expertise is matched to the person rather than claimed across every resource."
+        ]
+      },
+      {
+        "number": "07",
+        "eyebrow": "Quality & governance",
+        "title": "Capacity without losing discipline.",
+        "tags": [
+          "Role definition",
+          "Screening",
+          "Delivery expectations",
+          "Onboarding",
+          "Access and security requirements",
+          "Performance feedback",
+          "Knowledge transition"
+        ]
+      }
+    ],
+    "cta": {
+      "title": "Add capacity without losing delivery discipline.",
+      "convert": "Talk to Iorta TechNXT",
+      "evaluate": "Discuss the Skills You Need"
+    }
+  },
+  "cybersecurity": {
+    "meta": {
+      "title": "Insurance Cybersecurity & Secure Engineering | Iorta TechNXT",
+      "description": "Protect insurance applications, APIs, identities, cloud environments and delivery pipelines through secure architecture, engineering, testing and monitoring."
+    },
+    "hero": {
+      "eyebrow": "Cybersecurity",
+      "title": "Build trust into every digital interaction.",
+      "lede": "As insurers open more customer, advisor, broker and partner channels, the number of identities, APIs, third-party connections and data flows increases. Security has to become part of architecture and engineering rather than a final penetration test before release.",
+      "primary": "Talk to Iorta TechNXT",
+      "secondary": "Trust, Security & Operational Resilience"
+    },
+    "sections": [
+      {
+        "number": "01",
+        "eyebrow": "Secure architecture",
+        "title": "Spend the design effort where the risk is.",
+        "body": [
+          "Focus design effort on the journeys and systems carrying the greatest customer, financial or operational risk."
+        ],
+        "tags": [
+          "Threat modelling",
+          "Trust boundaries",
+          "Data-flow analysis",
+          "Security patterns",
+          "Network and application boundaries",
+          "Integration security",
+          "Secrets and key management",
+          "Resilience considerations"
+        ]
+      },
+      {
+        "number": "02",
+        "eyebrow": "Application security",
+        "title": "Security inside the codebase.",
+        "tags": [
+          "Secure coding",
+          "Code review",
+          "Dependency management",
+          "Security testing",
+          "Vulnerability remediation",
+          "OWASP-aligned controls where applicable",
+          "Session and access controls",
+          "Input and output handling"
+        ]
+      },
+      {
+        "number": "03",
+        "eyebrow": "API & integration security",
+        "title": "Stronger controls where the data is sensitive.",
+        "body": [
+          "APIs exposing policy, payment, claims or customer data require stronger controls than low-risk public content interfaces."
+        ],
+        "tags": [
+          "Authentication",
+          "Authorization",
+          "Token management",
+          "Rate limiting",
+          "Validation",
+          "Encryption",
+          "API gateway controls",
+          "Partner-access models",
+          "Monitoring",
+          "Sensitive-data handling"
+        ]
+      },
+      {
+        "number": "04",
+        "eyebrow": "Identity & access",
+        "title": "Every party needs its own access model.",
+        "tags": [
+          "Customer authentication",
+          "Employee access",
+          "Advisor and broker access",
+          "Partner access",
+          "Role-based authorization",
+          "Privileged access",
+          "Federation and SSO where applicable",
+          "MFA integration",
+          "Identity lifecycle"
+        ]
+      },
+      {
+        "number": "05",
+        "eyebrow": "Cloud & infrastructure security",
+        "title": "Configuration is where cloud breaks.",
+        "tags": [
+          "Configuration review",
+          "Network controls",
+          "Identity policies",
+          "Secrets",
+          "Logging",
+          "Vulnerability management",
+          "Workload security",
+          "Backup and recovery",
+          "Infrastructure-as-code controls"
+        ]
+      },
+      {
+        "number": "06",
+        "eyebrow": "DevSecOps",
+        "title": "Controls the pipeline enforces.",
+        "tags": [
+          "Static and dynamic testing",
+          "Dependency scanning",
+          "Container and image scanning where used",
+          "Secrets scanning",
+          "Pipeline controls",
+          "Security gates",
+          "Remediation workflow",
+          "Release evidence"
+        ]
+      },
+      {
+        "number": "07",
+        "eyebrow": "Security testing",
+        "title": "Scope agreed, authorization explicit.",
+        "body": [
+          "Testing scope is agreed explicitly and performed only with authorization."
+        ],
+        "tags": [
+          "Application assessment",
+          "API testing",
+          "Configuration review",
+          "Vulnerability assessment",
+          "Penetration testing where offered and authorized",
+          "Security regression",
+          "Remediation validation"
+        ]
+      },
+      {
+        "number": "08",
+        "eyebrow": "Insurance applications",
+        "title": "What needs protecting.",
+        "tags": [
+          "Policyholder portals",
+          "Advisor apps",
+          "Broker platforms",
+          "Partner APIs",
+          "Digital identity",
+          "Payments",
+          "Policy and claims data",
+          "Underwriting workbenches",
+          "Claims apps",
+          "Core-modernization layers"
+        ]
+      },
+      {
+        "number": "09",
+        "eyebrow": "Emerging digital risk",
+        "title": "Name only what the engagement supports.",
+        "body": [
+          "Deepfake and impersonation awareness, identity fraud, automated abuse, third-party compromise, API abuse, account takeover and model misuse where relevant.",
+          "Detection technology is claimed only where the product or engagement actually supports it."
+        ]
+      },
+      {
+        "number": "10",
+        "eyebrow": "Governance & evidence",
+        "title": "Show the work.",
+        "tags": [
+          "Security requirements",
+          "Risk register",
+          "Findings",
+          "Remediation status",
+          "Architecture evidence",
+          "Release evidence",
+          "Security contact",
+          "Responsible disclosure support"
+        ]
+      }
+    ],
+    "cta": {
+      "title": "Make security part of how insurance technology is built and operated.",
+      "convert": "Talk to Iorta TechNXT",
+      "evaluate": "Discuss a Security Review",
+      "explore": "Trust, Security & Operational Resilience"
+    }
+  },
+  "quality-engineering": {
+    "meta": {
+      "title": "Insurance Quality Engineering & Test Automation | Iorta TechNXT",
+      "description": "Validate insurance products, applications, APIs and core integrations through functional, automated, integration, performance and continuous testing."
+    },
+    "hero": {
+      "eyebrow": "Quality engineering",
+      "title": "Build confidence into every release.",
+      "lede": "Insurance software has a large failure surface: product rules, calculations, documents, integrations, permissions, workflow, customer experience and batch processes can all be affected by one change. Quality engineering brings testing earlier into design and delivery and focuses automation on business-critical journeys.",
+      "primary": "Talk to Iorta TechNXT",
+      "secondary": "Agile, Cloud & DevOps"
+    },
+    "sections": [
+      {
+        "number": "01",
+        "eyebrow": "Quality strategy",
+        "title": "Do not try to automate every test.",
+        "body": [
+          "Prioritize stable, repeatable, high-value scenarios."
+        ],
+        "tags": [
+          "Risk-based test strategy",
+          "Critical-journey identification",
+          "Coverage model",
+          "Environment and data strategy",
+          "Automation strategy",
+          "Release gates",
+          "Defect governance",
+          "Metrics"
+        ]
+      },
+      {
+        "number": "02",
+        "eyebrow": "Functional testing",
+        "title": "Test the exception path, not only the happy one.",
+        "tags": [
+          "Business rules",
+          "User journeys",
+          "Forms",
+          "Calculations",
+          "Documents",
+          "Permissions",
+          "Workflow",
+          "Error handling",
+          "Exception paths",
+          "Accessibility and usability checks where in scope"
+        ]
+      },
+      {
+        "number": "03",
+        "eyebrow": "API & integration testing",
+        "title": "Most important exactly when the core is changing.",
+        "body": [
+          "Integration tests matter most during core modernization, when new digital layers depend on legacy platforms."
+        ],
+        "tags": [
+          "API contracts",
+          "Authentication",
+          "Data transformation",
+          "Error handling",
+          "Retry behaviour",
+          "Downstream dependencies",
+          "Batch interfaces",
+          "Events",
+          "Data reconciliation"
+        ]
+      },
+      {
+        "number": "04",
+        "eyebrow": "Automation",
+        "title": "A brittle suite costs more than it saves.",
+        "body": [
+          "Automation should reduce release effort without creating a suite that requires constant repair."
+        ],
+        "tags": [
+          "UI automation",
+          "API automation",
+          "Regression suites",
+          "Test data",
+          "CI/CD integration",
+          "Parallel execution",
+          "Results reporting",
+          "Maintenance"
+        ]
+      },
+      {
+        "number": "05",
+        "eyebrow": "Performance & resilience testing",
+        "title": "Use realistic insurance events.",
+        "body": [
+          "Use realistic insurance events such as renewal peaks, campaign traffic, claim surges or partner onboarding volumes where the system profile requires it."
+        ],
+        "tags": [
+          "Load",
+          "Stress",
+          "Endurance",
+          "API performance",
+          "Batch windows",
+          "Peak-volume scenarios",
+          "Failover and resilience scenarios"
+        ]
+      },
+      {
+        "number": "06",
+        "eyebrow": "Mobile & cross-channel testing",
+        "title": "Test the conditions the field actually works in.",
+        "tags": [
+          "Responsive web",
+          "Mobile devices",
+          "Browsers",
+          "Network conditions",
+          "Notifications",
+          "Deep links",
+          "Digital-to-assisted continuation"
+        ]
+      },
+      {
+        "number": "07",
+        "eyebrow": "Insurance applications",
+        "title": "What carries the most risk.",
+        "tags": [
+          "Policy calculations",
+          "Product configuration",
+          "Quotation",
+          "Digital applications",
+          "New-business workflows",
+          "Underwriting referrals",
+          "Customer servicing",
+          "Payment journeys",
+          "Claims",
+          "Partner APIs",
+          "Core integrations"
+        ]
+      },
+      {
+        "number": "08",
+        "eyebrow": "Continuous quality",
+        "title": "Learn from production, not just from the test plan.",
+        "tags": [
+          "Shift-left review",
+          "Automated checks",
+          "Quality dashboards",
+          "Production defect learning",
+          "Observability feedback",
+          "Release retrospectives",
+          "Regression improvement"
+        ]
+      },
+      {
+        "number": "09",
+        "eyebrow": "Governance & reporting",
+        "title": "Make release readiness a decision, not a feeling.",
+        "tags": [
+          "Coverage",
+          "Defects",
+          "Severity",
+          "Leakage",
+          "Automation health",
+          "Performance trends",
+          "Release readiness",
+          "Risks and exceptions"
+        ]
+      }
+    ],
+    "cta": {
+      "title": "Quality throughout delivery, not only before launch.",
+      "convert": "Talk to Iorta TechNXT",
+      "evaluate": "Discuss a Quality Strategy",
+      "explore": "Agile, Cloud & DevOps"
+    }
+  }
+}

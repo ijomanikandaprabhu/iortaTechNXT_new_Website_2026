@@ -1,0 +1,13 @@
+{
+  "frameCount": 192,
+  "desktop": {
+    "width": 1280,
+    "height": 720
+  },
+  "mobile": {
+    "width": 720,
+    "height": 405
+  },
+  "aspectRatio": 1.7777777777777777,
+  "sourceFrames": 361
+}

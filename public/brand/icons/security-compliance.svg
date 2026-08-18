@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" width="96" height="96" role="img" aria-hidden="true">
+  <!-- PLACEHOLDER — replace with the real security-compliance icon (keep this 96x96 viewBox). -->
+  <defs><linearGradient id="g8" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#2BB6FF"/><stop offset="1" stop-color="#0A8CFF"/>
+  </linearGradient></defs>
+  <rect x="6" y="6" width="84" height="84" rx="24" fill="url(#g8)" opacity="0.16"/>
+  <rect x="6" y="6" width="84" height="84" rx="24" fill="none" stroke="url(#g8)" stroke-width="2"/>
+  <text x="48" y="60" text-anchor="middle" font-family="Inter Tight, sans-serif" font-size="30"
+        font-weight="700" fill="#0A8CFF">8</text>
+</svg>

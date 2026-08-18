@@ -1,0 +1,142 @@
+/**
+ * Looping words section — a dark band between the client wall and the rest of
+ * the page, with one phrase held in a bracket selector at a time.
+ *
+ * Replaces the utility classes the upstream Osmo component assumed. The
+ * geometry matters: every item is exactly one slot tall and the viewport shows
+ * exactly one slot, so a `yPercent` of -(100 / count) advances precisely one
+ * word. Change the item height and the travel must change with it.
+ */
+
+.loopwords {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  padding: var(--space-9) var(--space-6);
+  background: var(--ink);
+  color: var(--white);
+}
+
+.loopwords__inner {
+  max-width: 84rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.loopwords__eyebrow {
+  margin: 0 0 var(--space-6);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.62);
+}
+
+/* ---- The animated block ---- */
+
+/* Sets the type size the slot geometry is measured in — the viewport and each
+   item are sized in `em`, so they track the font size at every breakpoint. */
+.lw__words {
+  position: relative;
+  display: block;
+  width: 100%;
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 6vw, 4.5rem);
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+}
+
+.lw__viewport {
+  height: 1.3em;
+  overflow: hidden;
+}
+
+.lw__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.lw__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 1.3em;
+}
+
+/* Inline-block so its measured width is the text width, which is what the
+   bracket sizes itself to. */
+.lw__word {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+/* Feathers the top and bottom edges of the slot so words are not sliced off
+   by a hard line as they travel. */
+.lw__fade {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(
+    180deg,
+    var(--ink) 0%,
+    transparent 22%,
+    transparent 78%,
+    var(--ink) 100%
+  );
+}
+
+/* ---- Bracket selector ---- */
+
+/* Width is driven by GSAP; everything else is static. */
+.lw__selector {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  height: 1.3em;
+  transform: translateX(-50%);
+  pointer-events: none;
+}
+
+.lw__edge {
+  position: absolute;
+  width: 0.22em;
+  height: 0.22em;
+  border: 2px solid var(--primary);
+}
+
+.lw__edge {
+  top: -0.08em;
+  left: -0.18em;
+  border-right: 0;
+  border-bottom: 0;
+}
+
+.lw__edge--tr {
+  top: -0.08em;
+  right: -0.18em;
+  left: auto;
+  border-left: 0;
+  border-right: 2px solid var(--primary);
+  border-bottom: 0;
+}
+
+.lw__edge--bl {
+  top: auto;
+  bottom: -0.08em;
+  left: -0.18em;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 2px solid var(--primary);
+}
+
+.lw__edge--br {
+  top: auto;
+  bottom: -0.08em;
+  right: -0.18em;
+  left: auto;
+  border-top: 0;
+  border-left: 0;
+  border-right: 2px solid var(--primary);
+  border-bottom: 2px solid var(--primary);
+}

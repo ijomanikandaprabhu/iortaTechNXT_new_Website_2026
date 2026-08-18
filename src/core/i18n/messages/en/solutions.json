@@ -1,0 +1,676 @@
+{
+  "distribution-modernization": {
+    "meta": {
+      "title": "Insurance Distribution Modernization | Iorta TechNXT",
+      "description": "Modernize direct, agency, broker, bancassurance and partner-led insurance distribution with connected sales, advisor, broker and partner operations."
+    },
+    "hero": {
+      "eyebrow": "Distribution modernization",
+      "title": "Modernize every way insurance reaches the customer.",
+      "lede": "Insurance distribution is becoming more varied, not less. Customers may buy directly, work with an advisor, use a broker, purchase through a bank or encounter protection inside another digital journey. The challenge is to modernize each channel without creating another disconnected process, another data silo or another operating model the insurer cannot see.",
+      "primary": "Talk to Us",
+      "secondary": "Explore SalesVerse"
+    },
+    "sections": [
+      {
+        "number": "01",
+        "eyebrow": "The distribution problem",
+        "title": "Every channel solving the same problem alone.",
+        "body": [
+          "Direct teams need fast digital journeys. Advisors need customer and product context. Brokers need policy, placement and financial operations. Banks need clean hand-offs into insurer processes. Partners need onboarding and controlled connectivity.",
+          "When every channel solves those needs independently, the insurer loses visibility and customers repeat information."
+        ]
+      },
+      {
+        "number": "02",
+        "eyebrow": "Modernize the channel without flattening it",
+        "title": "Different channels need different experiences.",
+        "body": [
+          "The goal is not one identical interface. The goal is a more coherent operating model."
+        ],
+        "roles": [
+          {
+            "role": "Direct",
+            "description": "Digital acquisition and assisted completion."
+          },
+          {
+            "role": "Agency",
+            "description": "Advisor onboarding, customers, leads, renewals and performance."
+          },
+          {
+            "role": "Brokerage",
+            "description": "Client, carrier, placement, policy, servicing and commission work."
+          },
+          {
+            "role": "Bancassurance",
+            "description": "Bank-originated opportunity, consent, application and insurer continuation."
+          },
+          {
+            "role": "Partner-led",
+            "description": "Partner onboarding, activation and insurer connectivity."
+          }
+        ]
+      },
+      {
+        "number": "03",
+        "eyebrow": "Connect the customer journey",
+        "title": "Context should move with the customer.",
+        "body": [
+          "Where systems and permissions allow, context should move with the customer so the next channel can continue rather than restart."
+        ],
+        "tags": [
+          "Customer identity",
+          "Lead source",
+          "Consent",
+          "Opportunity",
+          "Application",
+          "Documents",
+          "Policy status",
+          "Service",
+          "Claims"
+        ]
+      },
+      {
+        "number": "04",
+        "eyebrow": "How Iorta helps",
+        "title": "Products mapped to the distribution model.",
+        "tone": "muted",
+        "roles": [
+          {
+            "role": "SalesVerse",
+            "description": "Sales and new-business orchestration."
+          },
+          {
+            "role": "AgentVerse",
+            "description": "Advisor and distribution-workforce enablement."
+          },
+          {
+            "role": "BrokerVerse",
+            "description": "Brokerage operations."
+          },
+          {
+            "role": "MerchantVerse",
+            "description": "Partner onboarding and administration."
+          },
+          {
+            "role": "CustomerVerse",
+            "description": "Policyholder continuation after purchase."
+          },
+          {
+            "role": "API & Microservices",
+            "description": "Reusable insurer capabilities across channels."
+          }
+        ]
+      },
+      {
+        "number": "05",
+        "eyebrow": "Digital distribution at scale",
+        "title": "The capabilities behind a modern channel mix.",
+        "tags": [
+          "Mobile-first journeys",
+          "Remote selling",
+          "Lead allocation",
+          "Digital applications",
+          "Identity / eKYC connectivity",
+          "Customer consent",
+          "Partner onboarding",
+          "APIs",
+          "Notifications",
+          "Channel hierarchy",
+          "Management dashboards"
+        ]
+      },
+      {
+        "number": "06",
+        "eyebrow": "Operational control",
+        "title": "Growth without losing governance.",
+        "tags": [
+          "Roles and access",
+          "Channel ownership",
+          "Workflow configuration",
+          "Business rules",
+          "Auditability",
+          "Lead / application status",
+          "Exceptions",
+          "SLA and ageing",
+          "Management visibility"
+        ]
+      },
+      {
+        "number": "07",
+        "eyebrow": "Business outcomes",
+        "title": "What the business should feel.",
+        "body": [
+          "Faster lead handling. Better intermediary productivity. More consistent sales execution. Clearer channel performance. Easier partner activation. Fewer manual hand-offs. More reuse of insurer services across channels.",
+          "Outcomes should be measured against an agreed baseline rather than presented as guaranteed percentages."
+        ]
+      }
+    ],
+    "proof": {
+      "eyebrow": "Proof in practice",
+      "title": "Evidence, close to the claim.",
+      "body": "Internal material supports a mobile-first advisor and sales transformation with lead distribution, core integration and management visibility.",
+      "pending": "Awaiting approval",
+      "pendingNote": "Customer identity and metrics require public-use approval."
+    },
+    "cta": {
+      "title": "Modernize distribution without forcing every channel into the same model.",
+      "convert": "Talk to Iorta TechNXT",
+      "evaluate": "Explore SalesVerse",
+      "explore": "View SalesVerse Use Cases"
+    }
+  },
+  "underwriting-modernization": {
+    "meta": {
+      "title": "Underwriting Modernization | Insurance Decision Workflows | Iorta TechNXT",
+      "description": "Modernize underwriting with structured submissions, document understanding, decision-ready data, configurable rules, workflow orchestration, STP and human-governed review."
+    },
+    "hero": {
+      "eyebrow": "Underwriting modernization",
+      "title": "Turn underwriting from an inbox into a decision workflow.",
+      "lede": "Underwriters create value where judgement matters. They create less value searching for documents, re-entering information, checking whether an application is complete or chasing the same missing requirement several times. Iorta TechNXT helps move underwriting toward a more structured operating model while keeping expertise and authority explicit.",
+      "primary": "Modernize the Underwriting Journey",
+      "secondary": "Intelligent Operations & Decisioning"
+    },
+    "sections": [
+      {
+        "number": "01",
+        "eyebrow": "Understand the submission",
+        "title": "Make the case decision-ready before specialist time is spent.",
+        "body": [
+          "The first objective is to make the submission decision-ready before specialist time is consumed."
+        ],
+        "tags": [
+          "Document intake",
+          "Data extraction",
+          "Submission summarization",
+          "Application completeness",
+          "Missing information",
+          "Customer and policy context",
+          "External information where required"
+        ]
+      },
+      {
+        "number": "02",
+        "eyebrow": "Triage and prioritize",
+        "title": "Not every case needs the same path.",
+        "body": [
+          "Routine, incomplete and complex submissions can be separated early."
+        ],
+        "tags": [
+          "Configured referral rules",
+          "Complexity",
+          "Product criteria",
+          "Authority requirements",
+          "Missing information",
+          "Risk indicators",
+          "SLA and ageing",
+          "Priority queues"
+        ]
+      },
+      {
+        "number": "03",
+        "eyebrow": "Decision-ready context",
+        "title": "Put information beside the decision.",
+        "body": [
+          "The underwriter should be able to see why a case is in front of them and what still needs to be resolved."
+        ],
+        "tags": [
+          "Risk information",
+          "Application data",
+          "Documents",
+          "Previous decisions where relevant",
+          "Customer and policy context",
+          "External data",
+          "Rules",
+          "Referral criteria",
+          "Authority levels"
+        ]
+      },
+      {
+        "number": "04",
+        "eyebrow": "Straight-through processing",
+        "title": "Progress eligible routine business.",
+        "body": [
+          "Configured straight-through processing can validate, route or progress cases that meet defined criteria: required data, required documents, rule outcomes, thresholds, verification results and referral conditions.",
+          "Exceptions should return to a human queue with the reason visible."
+        ]
+      },
+      {
+        "number": "05",
+        "eyebrow": "Human-governed decisions",
+        "title": "Keep responsibility for the outcome visible.",
+        "body": [
+          "Automation should make professional judgement easier to apply, not obscure who is responsible for the outcome."
+        ],
+        "tags": [
+          "Human review",
+          "Authority limits",
+          "Referrals",
+          "Multi-level approval",
+          "Override controls",
+          "Decision reasons",
+          "Audit history",
+          "Exception escalation"
+        ]
+      },
+      {
+        "number": "06",
+        "eyebrow": "Connect sales and underwriting",
+        "title": "One thread from opportunity to issuance.",
+        "body": [
+          "SalesVerse can preserve new-business context before and after submission. APIs and integrations connect policy, customer, document and external services. Data and analytics can improve workload and turnaround visibility."
+        ],
+        "steps": [
+          "Opportunity",
+          "Application",
+          "Validation",
+          "Underwriting",
+          "Decision",
+          "Issuance"
+        ]
+      },
+      {
+        "number": "07",
+        "eyebrow": "Manager and operations visibility",
+        "title": "See the bottleneck, not just the production.",
+        "body": [
+          "This helps underwriting leaders identify process bottlenecks, not just final production."
+        ],
+        "tags": [
+          "Submission volumes",
+          "Queue workload",
+          "Referral rate",
+          "Ageing",
+          "Turnaround",
+          "Missing-information trends",
+          "STP rate where applicable",
+          "Decision outcomes",
+          "Underwriter workload"
+        ]
+      },
+      {
+        "number": "08",
+        "eyebrow": "Built for",
+        "title": "The teams around the decision.",
+        "roles": [
+          {
+            "role": "New-business underwriters",
+            "description": "Decision-ready submissions and clear referral paths."
+          },
+          {
+            "role": "Underwriting operations",
+            "description": "Queues, requirements and exception handling."
+          },
+          {
+            "role": "Underwriting managers",
+            "description": "Workload, ageing and turnaround visibility."
+          },
+          {
+            "role": "Distribution operations",
+            "description": "Status back to the teams talking to the customer."
+          },
+          {
+            "role": "Product teams",
+            "description": "Rules and criteria that can change without a release."
+          },
+          {
+            "role": "Technology teams",
+            "description": "A workflow layer that connects to existing core systems."
+          }
+        ]
+      },
+      {
+        "number": "09",
+        "eyebrow": "Business outcomes",
+        "title": "What the business should feel.",
+        "body": [
+          "Less administrative handling. Better submission quality. Shorter waiting time. More consistent workflow. Clearer referrals. Greater specialist capacity. Better decision traceability."
+        ]
+      }
+    ],
+    "proof": {
+      "eyebrow": "Proof in practice",
+      "title": "Evidence, close to the claim.",
+      "body": "Internal case-study material supports structured underwriting workflows, configurable rules and reported straight-through processing improvements.",
+      "pending": "Awaiting approval",
+      "pendingNote": "Public metrics require approval before publication."
+    },
+    "cta": {
+      "title": "Put the underwriter at the centre of the decision, not the administration.",
+      "convert": "Modernize the Underwriting Journey",
+      "evaluate": "Read an Underwriting Transformation Story",
+      "explore": "Intelligent Operations & Decisioning"
+    }
+  },
+  "core-modernization": {
+    "meta": {
+      "title": "Insurance Core Modernization | APIs, Experience & Progressive Modernization",
+      "description": "Modernize insurance experiences, integrations, workflows, data and applications progressively around established core platforms."
+    },
+    "hero": {
+      "eyebrow": "Core modernization",
+      "title": "Keep the core. Change what's possible.",
+      "lede": "A core platform can still contain valuable policy, product and business logic while creating constraints around user experience, integration, data access and change speed. Core modernization does not have to begin with a multi-year replacement.",
+      "primary": "Start a Core Modernization Conversation",
+      "secondary": "Technology Foundation"
+    },
+    "sections": [
+      {
+        "number": "01",
+        "eyebrow": "Start with the business constraint",
+        "title": "Target what is stopping the business, not the age of the technology.",
+        "body": [
+          "Modernization should target the constraint that is stopping the business, not technology age alone."
+        ],
+        "tags": [
+          "Slow channel launches",
+          "Legacy interfaces",
+          "Long product-change cycles",
+          "Point-to-point integrations",
+          "Difficult partner connectivity",
+          "Manual workarounds",
+          "Inaccessible data",
+          "Fragile releases"
+        ]
+      },
+      {
+        "number": "02",
+        "eyebrow": "Modernize the experience",
+        "title": "Separate experience change from core change.",
+        "body": [
+          "Build modern customer, advisor, broker, partner and employee experiences over established policy or enterprise services.",
+          "Separate experience change from core change where that creates faster value."
+        ]
+      },
+      {
+        "number": "03",
+        "eyebrow": "Expose reusable capabilities",
+        "title": "Stop rebuilding the same integration for every channel.",
+        "body": [
+          "Expose useful core capabilities with clear contracts and controls."
+        ],
+        "tags": [
+          "API facades",
+          "Integration services",
+          "Business-service layers",
+          "Events",
+          "Data services",
+          "Identity",
+          "Documents",
+          "Payments"
+        ]
+      },
+      {
+        "number": "04",
+        "eyebrow": "Modernize workflows",
+        "title": "Move hand-offs out of email and into configuration.",
+        "body": [
+          "Move manual hand-offs, email-based cases and hard-coded processes into configurable workflow where appropriate."
+        ],
+        "tags": [
+          "Applications",
+          "Underwriting referrals",
+          "Customer requests",
+          "Renewals",
+          "Claims",
+          "Partner onboarding",
+          "Operational approvals"
+        ]
+      },
+      {
+        "number": "05",
+        "eyebrow": "Improve data access",
+        "title": "Reach the data without a new database query every time.",
+        "body": [
+          "Create controlled operational and analytical access to policy, customer, distribution and claims data without depending on direct database queries for every new use case."
+        ]
+      },
+      {
+        "number": "06",
+        "eyebrow": "Introduce modular applications",
+        "title": "Move high-change functions somewhere they can change.",
+        "body": [
+          "Move high-change functions into modular applications or services when the existing core becomes too difficult to modify safely.",
+          "Examples can include digital sales, customer service, partner management, claims workbenches or reporting layers."
+        ]
+      },
+      {
+        "number": "07",
+        "eyebrow": "Replace progressively",
+        "title": "Replace when the business case is clear.",
+        "body": [
+          "Prioritize components by business value, change frequency, risk, supportability and dependency. Use coexistence and controlled migration instead of forcing a single cut-over where risk is too high."
+        ]
+      },
+      {
+        "number": "08",
+        "eyebrow": "Modernization approach",
+        "title": "A sequence tied to business outcomes.",
+        "body": [
+          "Architecture decisions should be tied to a sequence of business outcomes."
+        ],
+        "steps": [
+          "Assess",
+          "Prioritize",
+          "Decouple",
+          "Expose",
+          "Modernize",
+          "Migrate and optimize"
+        ]
+      },
+      {
+        "number": "09",
+        "eyebrow": "Technology layers",
+        "title": "What modernization actually touches.",
+        "tags": [
+          "Experience",
+          "APIs",
+          "Integration",
+          "Workflow",
+          "Applications",
+          "Data",
+          "Cloud and infrastructure",
+          "Security",
+          "Observability",
+          "Quality engineering"
+        ]
+      }
+    ],
+    "proof": {
+      "eyebrow": "Proof in practice",
+      "title": "Evidence, close to the claim.",
+      "body": "Iorta cases involve Oracle policy administration optimization, REST APIs, microservices, real-time synchronization and modern front ends. One internal case reports partner onboarding moving from months to weeks.",
+      "pending": "Awaiting approval",
+      "pendingNote": "Customer identity and metrics require public-use approval."
+    },
+    "cta": {
+      "title": "Modernize for speed and flexibility, not modernization for its own sake.",
+      "convert": "Start a Core Modernization Conversation",
+      "evaluate": "Read a Core Modernization Story",
+      "explore": "Technology Foundation"
+    }
+  },
+  "digital-insurance-takaful": {
+    "meta": {
+      "title": "Digital Insurance & Takaful Technology | Iorta TechNXT",
+      "description": "Build digital insurance and Takaful propositions across acquisition, distribution, onboarding, servicing, claims, operations and integration."
+    },
+    "hero": {
+      "eyebrow": "Digital insurance & Takaful",
+      "title": "Build a digital insurance business around modern technology from day one.",
+      "lede": "A digital insurer or Takaful proposition needs more than a customer app. Acquisition, distribution, onboarding, operations, policy servicing, claims, data, identity and core connectivity all have to work as one operating model.",
+      "primary": "Talk to Iorta TechNXT",
+      "secondary": "Explore SalesVerse"
+    },
+    "sections": [
+      {
+        "number": "01",
+        "eyebrow": "Acquire",
+        "title": "Meet demand wherever it starts.",
+        "body": [
+          "Use SalesVerse and relevant channel experiences according to the distribution model."
+        ],
+        "tags": [
+          "Direct digital journeys",
+          "Campaign conversion",
+          "Advisor-assisted sales",
+          "Bank or partner-originated opportunities",
+          "Lead management",
+          "Product discovery"
+        ]
+      },
+      {
+        "number": "02",
+        "eyebrow": "Distribute",
+        "title": "Support each channel on its own terms.",
+        "body": [
+          "AgentVerse, BrokerVerse and MerchantVerse can support different parts of the distribution organization without forcing them into one generic interface."
+        ],
+        "tags": [
+          "Agency",
+          "Bancassurance",
+          "Brokers",
+          "Partners",
+          "Direct",
+          "Digital platforms"
+        ]
+      },
+      {
+        "number": "03",
+        "eyebrow": "Onboard",
+        "title": "Turn interest into a complete application.",
+        "tags": [
+          "Digital application",
+          "Customer information",
+          "Identity and eKYC connectivity",
+          "Consent",
+          "Documents",
+          "Digital signatures",
+          "Payment",
+          "Application tracking",
+          "Operational review"
+        ]
+      },
+      {
+        "number": "04",
+        "eyebrow": "Underwrite",
+        "title": "Decide with rules and with judgement.",
+        "body": [
+          "Underwriting Modernization can be introduced according to product complexity and risk."
+        ],
+        "tags": [
+          "Submission completeness",
+          "Rules",
+          "Referrals",
+          "Decision support",
+          "Straight-through processing for eligible business",
+          "Human-governed review"
+        ]
+      },
+      {
+        "number": "05",
+        "eyebrow": "Serve",
+        "title": "Keep the relationship after issuance.",
+        "body": [
+          "CustomerVerse provides the policyholder experience layer."
+        ],
+        "tags": [
+          "Customer home",
+          "Policy information",
+          "Documents",
+          "Payments",
+          "Requests",
+          "Renewals",
+          "Communication",
+          "Assisted support"
+        ]
+      },
+      {
+        "number": "06",
+        "eyebrow": "Claim",
+        "title": "Resolve the moment that matters most.",
+        "body": [
+          "ClaimVerse can support configured lines of business and claim types."
+        ],
+        "steps": [
+          "Digital FNOL",
+          "Evidence",
+          "Triage",
+          "Claim workflow",
+          "Assessment",
+          "Decision",
+          "Settlement",
+          "Communication"
+        ]
+      },
+      {
+        "number": "07",
+        "eyebrow": "Operate and control",
+        "title": "Digital does not mean uncontrolled.",
+        "tags": [
+          "Work queues",
+          "Roles",
+          "Business rules",
+          "SLA",
+          "Exceptions",
+          "Audit",
+          "Data",
+          "Reporting",
+          "Security",
+          "Operational resilience",
+          "Responsible automation"
+        ]
+      },
+      {
+        "number": "08",
+        "eyebrow": "Takaful readiness",
+        "title": "Support the operating model the operator defines.",
+        "body": [
+          "Participant journeys, advisor distribution, contribution-related interactions, Shariah-aligned workflow requirements, product and business-rule configuration, servicing, claims and core connectivity.",
+          "Shariah governance is not a software feature. Technology supports the operating requirements defined by the Takaful organization."
+        ]
+      },
+      {
+        "number": "09",
+        "eyebrow": "Built for inclusion",
+        "title": "Reduce friction without overstating the effect.",
+        "body": [
+          "Mobile-first experiences. Assisted digital. Partner distribution. Simplified journeys. Lower-touch service. Digital claims. Straight-through processing where appropriate.",
+          "Technology can reduce access and operating friction, but product affordability and suitability remain business and regulatory responsibilities."
+        ]
+      },
+      {
+        "number": "10",
+        "eyebrow": "Technology foundation",
+        "title": "What sits underneath the proposition.",
+        "tags": [
+          "APIs",
+          "Identity",
+          "Consent",
+          "Payments",
+          "Documents",
+          "Data",
+          "Communication",
+          "Cloud and DevOps",
+          "Security",
+          "Quality",
+          "Core modernization"
+        ]
+      }
+    ],
+    "proof": {
+      "eyebrow": "Proof in practice",
+      "title": "Evidence, close to the claim.",
+      "body": "A Takaful and core modernization engagement demonstrates configurable product and workflow capability over an established policy platform.",
+      "pending": "Awaiting approval",
+      "pendingNote": "Customer identity and metrics require public-use approval."
+    },
+    "cta": {
+      "title": "Build the customer proposition and the operating model behind it.",
+      "convert": "Talk to Iorta TechNXT",
+      "evaluate": "Read a Digital or Takaful Story",
+      "explore": "Explore CustomerVerse"
+    }
+  }
+}

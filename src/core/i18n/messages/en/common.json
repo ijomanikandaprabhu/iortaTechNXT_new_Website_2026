@@ -1,0 +1,279 @@
+{
+  "nav": {
+    "home": "Home",
+    "contact": "Contact",
+    "dashboard": "Dashboard",
+    "language": "Language",
+    "products": "Products",
+    "solutions": "Solutions",
+    "industries": "Industries",
+    "capabilities": "Capabilities",
+    "resources": "Resources",
+    "company": "Company",
+    "signIn": "Sign in",
+    "seeDemo": "See a demo",
+    "getStarted": "Get started",
+    "menu": "Open menu",
+    "close": "Close menu",
+    "back": "Back",
+    "announcement": "New: SalesVerse, insurance sales and new business on one platform.",
+    "announcementCta": "See SalesVerse",
+    "dismiss": "Dismiss announcement",
+    "groups": {
+      "featured": "FEATURED",
+      "solutions": "BY OUTCOME",
+      "insurance": "INSURANCE",
+      "adjacent": "ADJACENT SECTORS",
+      "build": "BUILD & DESIGN",
+      "data": "DATA & DECISIONS",
+      "engineer": "ENGINEERING & OPERATIONS",
+      "advisory": "ADVISORY",
+      "additional": "TALENT",
+      "technology": "TECHNOLOGY",
+      "learn": "LEARN",
+      "company": "COMPANY"
+    },
+    "productSections": {
+      "overview": "Overview",
+      "features": "Features",
+      "use-cases": "Use cases"
+    },
+    "productSectionDesc": {
+      "features": "Capability detail",
+      "use-cases": "How teams use it"
+    },
+    "productNames": {
+      "salesverse": "SALESVERSE",
+      "brokerverse": "BROKERVERSE",
+      "agentverse": "AGENTVERSE",
+      "customerverse": "CUSTOMERVERSE",
+      "merchantverse": "MERCHANTVERSE",
+      "claimverse": "CLAIMVERSE"
+    },
+    "entries": {
+      "products": {
+        "salesverse": "Insurance sales and new business",
+        "brokerverse": "Broker and intermediary operations",
+        "agentverse": "Agency distribution and servicing",
+        "customerverse": "Customer self-service and engagement",
+        "merchantverse": "Partner and embedded distribution",
+        "claimverse": "Claims intake through settlement"
+      },
+      "solutions": {
+        "distribution-modernization": {
+          "label": "Distribution modernization",
+          "description": "Reach and serve customers across every channel"
+        },
+        "underwriting-modernization": {
+          "label": "Underwriting modernization",
+          "description": "Faster, more consistent risk decisions"
+        },
+        "core-modernization": {
+          "label": "Core modernization",
+          "description": "Replace or surround ageing policy systems"
+        },
+        "digital-insurance-takaful": {
+          "label": "Digital insurance and Takaful",
+          "description": "Launch new propositions without a rebuild"
+        }
+      },
+      "industries": {
+        "insurance-carriers": {
+          "label": "Insurance carriers",
+          "description": "The carrier operating model, end to end"
+        },
+        "life-health-insurance": {
+          "label": "Life and health insurance",
+          "description": "Protection, savings and health lines"
+        },
+        "general-insurance": {
+          "label": "General insurance",
+          "description": "Motor, property and personal lines"
+        },
+        "commercial-specialty-insurance": {
+          "label": "Commercial and specialty",
+          "description": "Complex and negotiated risk"
+        },
+        "bancassurance": {
+          "label": "Bancassurance",
+          "description": "Insurance distributed through banks"
+        },
+        "takaful": {
+          "label": "Takaful",
+          "description": "Takaful operators and windows"
+        },
+        "insurance-brokers-agencies": {
+          "label": "Brokers and agencies",
+          "description": "Intermediated distribution and servicing"
+        },
+        "fintech-digital-platforms": {
+          "label": "Fintech and digital platforms",
+          "description": "Cover embedded in digital products"
+        },
+        "travel-commerce": {
+          "label": "Travel and commerce",
+          "description": "Point-of-sale and journey-based cover"
+        },
+        "health-benefits-healthcare": {
+          "label": "Health benefits and healthcare",
+          "description": "Group benefits and provider networks"
+        }
+      },
+      "capabilities": {
+        "experience-design": {
+          "label": "Experience design",
+          "description": "Journeys people can actually complete"
+        },
+        "api-microservices": {
+          "label": "API and microservices",
+          "description": "Services, contracts and integration"
+        },
+        "oracle-coe": {
+          "label": "Oracle centre of excellence",
+          "description": "Oracle platform engineering"
+        },
+        "application-development-support": {
+          "label": "Application development and support",
+          "description": "Build, run and keep running"
+        },
+        "intelligent-operations-decisioning": {
+          "label": "Intelligent operations and decisioning",
+          "description": "Rules, automation and straight-through work"
+        },
+        "data-analytics": {
+          "label": "Data and analytics",
+          "description": "Reporting across the whole book"
+        },
+        "agile-cloud-devops": {
+          "label": "Agile, cloud and DevOps",
+          "description": "Delivery, environments and release"
+        },
+        "cybersecurity": {
+          "label": "Cybersecurity",
+          "description": "Security engineering and controls"
+        },
+        "quality-engineering": {
+          "label": "Quality engineering",
+          "description": "Test strategy and automation"
+        },
+        "digital-consulting": {
+          "label": "Digital consulting",
+          "description": "Roadmaps and operating models"
+        },
+        "talent-services": {
+          "label": "Talent services",
+          "description": "Specialist teams alongside yours"
+        }
+      },
+      "technology": {
+        "foundation": {
+          "label": "Platform foundation",
+          "description": "How the platform is put together"
+        },
+        "integrations": {
+          "label": "Integrations",
+          "description": "Connecting to systems you already run"
+        },
+        "trust-security-operational-resilience": {
+          "label": "Trust and resilience",
+          "description": "Security and operational practices"
+        },
+        "implementation-customer-success": {
+          "label": "Implementation and success",
+          "description": "How delivery actually works"
+        }
+      },
+      "resources": {
+        "insights": {
+          "label": "Insights",
+          "description": "Articles and industry perspective"
+        },
+        "news-events": {
+          "label": "News and events",
+          "description": "Announcements and appearances"
+        },
+        "newsletter": {
+          "label": "Newsletter",
+          "description": "Insurance technology, monthly"
+        },
+        "customers": {
+          "label": "Customer stories",
+          "description": "What teams built and what changed"
+        }
+      },
+      "company": {
+        "about": {
+          "label": "About",
+          "description": "Who we are and what we build"
+        },
+        "leadership": {
+          "label": "Leadership",
+          "description": "The team behind the platform"
+        },
+        "careers": {
+          "label": "Careers",
+          "description": "Open roles and how we work"
+        },
+        "contact": {
+          "label": "Talk to us",
+          "description": "Start a conversation with the team"
+        }
+      },
+      "legal": {
+        "privacy": "Privacy",
+        "cookies": "Cookies",
+        "terms": "Terms",
+        "accessibility": "Accessibility",
+        "responsible-disclosure": "Responsible disclosure"
+      }
+    },
+    "featured": {
+      "label": "Introducing the TECHNXT platform",
+      "description": "One system for policy, claims and payments."
+    }
+  },
+  "footer": {
+    "tagline": "Build what's next in insurance.",
+    "blurb": "Insurance technology for carriers, brokers and the platforms that distribute cover.",
+    "columns": {
+      "products": "Products",
+      "solutions": "Solutions",
+      "industries": "Industries",
+      "capabilities": "Capabilities",
+      "resources": "Resources",
+      "company": "Company"
+    },
+    "legal": "Legal",
+    "rights": "All rights reserved.",
+    "nav": "Footer"
+  },
+  "contact": {
+    "meta": {
+      "title": "Contact us",
+      "description": "Get in touch with the Iorta Technxt team."
+    },
+    "title": "Contact us",
+    "intro": "Tell us about your project and we will get back to you.",
+    "form": {
+      "firstName": "First name",
+      "lastName": "Last name",
+      "email": "Email",
+      "company": "Company",
+      "message": "Message",
+      "submit": "Send message",
+      "submitting": "Sending…",
+      "success": "Thanks, we have received your message.",
+      "error": "Something went wrong. Please try again."
+    }
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "welcome": "Welcome back."
+  },
+  "appearance": {
+    "title": "Appearance",
+    "description": "Choose how the interface looks.",
+    "light": "Light",
+    "dark": "Dark"
+  }
+}

@@ -1,0 +1,330 @@
+/**
+ * Challenge section — short centred break between the system stack and
+ * whatever follows. Pill eyebrow, one-line question, two-line answer.
+ */
+
+.challenge {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  padding: var(--space-9) var(--space-6);
+  background: var(--paper);
+}
+
+.challenge__inner {
+  max-width: 44rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Plain uppercase label, no pill — matches the eyebrow style already used
+   above it in the bento grid and the system stack, rather than the ticker's
+   filled-pill treatment. */
+.challenge__eyebrow {
+  margin: 0 0 var(--space-4);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+
+.challenge__headline {
+  margin: 0 0 var(--space-5);
+  font-family: var(--font-display);
+  font-size: clamp(1.75rem, 3.2vw, 2.5rem);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  color: var(--ink);
+}
+
+.challenge__sub {
+  margin: 0;
+  font-size: clamp(1rem, 1.6vw, 1.1875rem);
+  line-height: var(--leading-snug);
+  color: var(--ink-soft);
+}
+
+/* ---- Outcome cards ---- */
+
+/**
+ * Card track.
+ *
+ * Stacked vertically by default. On a wide screen the wrapper grows to one
+ * viewport plus the sideways distance, the inner pin holds still, and the track
+ * is translated horizontally as the page scrolls — three cards in view at a
+ * time. The wrapper's height is set inline from the measured travel.
+ */
+.chscroll {
+  --ch-gap: var(--space-5);
+  position: relative;
+}
+
+/* Only needed in the stacked layout; in the pinned one the pin's own gap
+   separates the heading from the track. */
+.chscroll[data-mode="stacked"] .chcards {
+  margin-top: var(--space-8);
+}
+
+.chcards {
+  display: grid;
+  gap: var(--ch-gap);
+  max-width: 68rem;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  text-align: left;
+}
+
+.chcards__item {
+  display: flex;
+}
+
+@media (min-width: 1024px) {
+  /**
+   * Heading and track sit together as one block, started right under the
+   * header rather than centred in the full viewport height.
+   *
+   * `align-content: center` was tried first and reads worse than it sounds:
+   * the pin is a full 100vh tall, so centring a ~600px block inside it left
+   * roughly 380px of dead space above the heading the moment the section is
+   * reached — arriving at the section, then a beat of nothing, then content.
+   * Starting at the top removes that beat; the leftover room falls below the
+   * cards instead, which is inert space you scroll the pin *through*, not
+   * space you have to look at before anything happens.
+   */
+  .chscroll[data-mode="horizontal"] .chscroll__pin {
+    position: sticky;
+    top: 0;
+    display: grid;
+    align-content: start;
+    gap: var(--space-7);
+    height: 100vh;
+    padding-top: calc(var(--nav-h, 112px) + var(--space-8));
+    overflow: hidden;
+  }
+
+  /**
+   * Columns are sized against the track's own 100% width, so exactly three fit
+   * and the rest overflow to the right ready to be pulled in. `max-content`
+   * would make the percentage circular.
+   */
+  .chscroll[data-mode="horizontal"] .chcards {
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% - var(--ch-gap) * 2) / 3);
+    width: 100%;
+    max-width: 76rem;
+    will-change: transform;
+  }
+}
+
+.chcard {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-5);
+  align-content: start;
+  width: 100%;
+  padding: var(--space-6);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  background: var(--white);
+  box-shadow: var(--shadow-neutral);
+  transition:
+    border-color 200ms ease,
+    box-shadow 200ms ease,
+    transform 200ms ease;
+}
+
+/* Two-up inside the card only while it has the full width to itself. */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .chcard {
+    grid-template-columns: 1fr 17rem;
+    align-items: center;
+    gap: var(--space-7);
+    padding: var(--space-7);
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .chcard:hover {
+    transform: translateY(-3px);
+    border-color: color-mix(in srgb, var(--ui-blue) 40%, var(--line));
+    box-shadow: 0 2px 4px color-mix(in srgb, var(--ink) 4%, transparent),
+      0 16px 40px color-mix(in srgb, var(--ink) 10%, transparent);
+  }
+}
+
+.chcard__title {
+  margin: 0 0 var(--space-3);
+  font-family: var(--font-display);
+  font-size: clamp(1.25rem, 2vw, 1.625rem);
+  font-weight: 700;
+  line-height: var(--leading-tight);
+  letter-spacing: -0.02em;
+  color: var(--ink);
+}
+
+.chcard__body {
+  margin: 0 0 var(--space-4);
+  max-width: 42ch;
+  font-size: 1rem;
+  line-height: var(--leading-snug);
+  color: var(--ink-soft);
+}
+
+.chcard__cta {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-family: var(--font-display);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--ui-blue);
+  text-decoration: none;
+}
+
+.chcard__arrow {
+  transition: transform 160ms ease;
+}
+
+.chcard:hover .chcard__arrow {
+  transform: translateX(4px);
+}
+
+.chcard__cta:focus-visible {
+  outline: var(--state-focus-width, 3px) solid var(--state-focus);
+  outline-offset: var(--state-focus-offset, 2px);
+  border-radius: 4px;
+}
+
+/* ---- Motif panels ---- */
+
+.chcard__visual {
+  display: grid;
+  place-items: center;
+  padding: var(--space-4);
+  border-radius: var(--radius-md);
+  background: var(--paper);
+}
+
+/* In the horizontal track every card is the same height, so the motif panel
+   takes whatever room the copy leaves rather than each card sizing itself. */
+@media (min-width: 1024px) {
+  .chscroll[data-mode="horizontal"] .chcard {
+    height: 26rem;
+    grid-template-rows: auto 1fr;
+  }
+
+  .chscroll[data-mode="horizontal"] .chcard__visual {
+    min-height: 0;
+  }
+}
+
+.chm {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 15rem;
+}
+
+/* Every motif shape resolves to a token — no literal colours. */
+.chm__chip,
+.chm__sheet,
+.chm__frame,
+.chm__slot {
+  fill: var(--white);
+  stroke: var(--line);
+  stroke-width: 1.5;
+}
+
+.chm__slot {
+  fill: color-mix(in srgb, var(--ui-blue) 8%, var(--white));
+  stroke: color-mix(in srgb, var(--ui-blue) 35%, var(--line));
+}
+
+.chm__line {
+  fill: color-mix(in srgb, var(--ink) 22%, transparent);
+}
+
+.chm__linefaint {
+  fill: color-mix(in srgb, var(--ink) 10%, transparent);
+}
+
+.chm__lineaccent {
+  fill: var(--ui-blue);
+}
+
+.chm__label {
+  fill: color-mix(in srgb, var(--ink) 14%, transparent);
+}
+
+.chm__wire {
+  fill: none;
+  stroke: color-mix(in srgb, var(--ui-blue) 45%, transparent);
+  stroke-width: 2;
+  stroke-linecap: round;
+}
+
+.chm__track {
+  fill: var(--line);
+}
+
+.chm__fill,
+.chm__hub,
+.chm__stop,
+.chm__tick {
+  fill: var(--ui-blue);
+}
+
+.chm__stop {
+  stroke: var(--white);
+  stroke-width: 3;
+}
+
+.chm__check {
+  fill: none;
+  stroke: var(--white);
+  stroke-width: 2.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/**
+ * The one looping element per card: a slow halo on the hub. Kept to a single
+ * shape so six cards on screen cost six animated nodes, not sixty.
+ */
+.chm__pulse {
+  fill: none;
+  stroke: var(--ui-blue);
+  stroke-width: 2;
+  transform-origin: 200px 72px;
+  animation: chm-pulse 3.2s ease-out infinite;
+}
+
+@keyframes chm-pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.5;
+  }
+  70%,
+  100% {
+    transform: scale(1.9);
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .chm__pulse {
+    animation: none;
+    opacity: 0;
+  }
+
+  .chcard,
+  .chcard__arrow {
+    transition: none;
+  }
+
+  .chcard:hover {
+    transform: none;
+  }
+}

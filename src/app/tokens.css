@@ -1,0 +1,102 @@
+/**
+ * TECHNXT design tokens — the single source of truth for the brand.
+ *
+ * These are constants, not per-tenant values. The tenant theme system in
+ * core/theme/config.ts maps its semantic variables (--bg, --primary, …) onto
+ * these primitives, so the two systems agree instead of competing.
+ *
+ * Naming: brand-* is logo-accurate and reserved for the wordmark and brand
+ * surfaces. ui-* is the brighter interactive family. Never swap them.
+ */
+
+:root {
+  /* ---- Brand (logo-accurate — text and wordmark only) ---- */
+  --brand-blue: #1d74ba;
+  --brand-blue-deep: #2671a8;
+  --brand-blue-light: #08afef;
+
+  /* ---- UI (interactive: buttons, links, focus) ---- */
+  --ui-blue: #0a8cff;
+  --ui-blue-bright: #2bb6ff;
+  --ui-blue-deep: #0c5fd1;
+
+  /* ---- Facet accents (one at a time, never together) ---- */
+  --brand-green: #4fcb2e; /* success / positive financial ONLY — never a CTA */
+  --brand-teal: #01a69e; /* secondary / informational tags */
+
+  /* ---- Neutrals ---- */
+  --ink: #0a0e1a;
+  --ink-soft: #4b5468;
+  --paper: #fafcff;
+  --white: #ffffff;
+  --line: #e4e8f1;
+  /* Light fill for controls that need a body without reading as disabled
+     (--state-disabled-bg is reserved for that). Deliberately NOT named
+     --surface: that token is owned by the theme registry and is overridden
+     per tenant on .theme-root, which would silently change this. */
+  --control-fill: #f1f4f9;
+
+  /* ---- States ---- */
+  --state-error: #e5484d;
+  --state-error-bg: #fde8e8;
+  --state-warning: #b4680a;
+  --state-warning-bg: #fcf0d9;
+  --state-success: var(--brand-green);
+  /* Darkened green for success TEXT — raw --brand-green is ~1.9:1 on its own
+     tint and fails WCAG AA. Use --brand-green for fills/figures, this for copy. */
+  --state-success-text: #2f7a1b;
+  --state-success-bg: rgba(79, 203, 46, 0.12);
+  --state-focus: #0a8cff;
+  --state-focus-width: 3px;
+  --state-focus-offset: 2px;
+  --state-disabled-bg: #eef0f3;
+  --state-disabled-text: #a6acb8;
+
+  /* ---- Typography ----
+     Families are injected by next/font in the root layout; the fallbacks here
+     keep the tokens usable if a component renders outside that tree. */
+  --font-display: var(--font-inter-tight), "Inter Tight", sans-serif;
+  --font-body: var(--font-inter), "Inter", sans-serif;
+
+  --text-display-lg: 3.5rem; /* 56 */
+  --text-display-md: 2.75rem; /* 44 */
+  --text-display-sm: 2.25rem; /* 36 */
+  --text-heading: 1.5rem; /* 24 */
+  --text-body-lg: 1.125rem; /* 18 */
+  --text-body: 0.9375rem; /* 15 */
+  --text-caption: 0.8125rem; /* 13 */
+  --text-caption-sm: 0.75rem; /* 12 */
+
+  --leading-tight: 1.1;
+  --leading-snug: 1.3;
+  --leading-normal: 1.6;
+
+  --tracking-label: 0.07em; /* caption/label uppercase, spec range .06–.08 */
+
+  /* ---- Spacing (8px base) ---- */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+  --space-9: 96px;
+
+  /* ---- Radius ---- */
+  --radius-sm: 10px; /* small controls */
+  --radius-md: 16px; /* buttons */
+  --radius-lg: 24px; /* cards */
+  --radius-xl: 32px; /* hero panels */
+  --radius-full: 999px; /* pills, avatars */
+
+  /* ---- Elevation ---- */
+  --shadow-neutral: 0 1px 2px rgba(10, 14, 26, 0.04), 0 8px 24px rgba(10, 14, 26, 0.06);
+  --shadow-blue-glow: 0 2px 8px rgba(10, 140, 255, 0.24), 0 12px 32px rgba(10, 140, 255, 0.18);
+  --shadow-dark: 0 12px 40px rgba(10, 14, 26, 0.32);
+
+  /* ---- Glass surface ---- */
+  --glass-bg: rgba(43, 182, 255, 0.08);
+  --glass-border: rgba(10, 140, 255, 0.22);
+}

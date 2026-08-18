@@ -1,0 +1,42 @@
+/**
+ * DotPattern — replaces the Tailwind utilities the upstream component assumed
+ * (`pointer-events-none absolute inset-0 h-full w-full fill-neutral-400/80`).
+ */
+
+.dotpattern {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  /* Matched to ramp.com's hero field: small, low-contrast dots reading as
+     paper texture rather than a visible grid. Theirs is a WebGL canvas, so
+     these were measured optically, not read from their source. */
+  fill: var(--ink);
+  /* Kept in step with DOT_COLOUR in SkyDots.tsx — this is the static
+     reduced-motion field, and the two should look the same. */
+  fill-opacity: 0.16;
+}
+
+/* ---- Sky field ---- */
+
+.skydots {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+  /* Carries the full height so the field sits behind the copy, the buttons
+     and the video panel alike; it only releases at the very bottom where the
+     ticker sits. */
+  mask-image: linear-gradient(180deg, #000 0%, #000 88%, transparent 100%);
+  -webkit-mask-image: linear-gradient(180deg, #000 0%, #000 88%, transparent 100%);
+}
+
+/* The canvas fills the field exactly; displacement happens inside it, so no
+   oversizing is needed the way the old translate-based drift required. */
+.skydots__canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}

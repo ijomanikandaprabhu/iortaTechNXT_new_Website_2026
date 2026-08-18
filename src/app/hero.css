@@ -1,0 +1,175 @@
+:root {
+  /* Inset around the hero card, used for the top offset and side padding. */
+  --hero-gap: 12px;
+}
+
+/**
+ * Scroll-driven hero sequence, presented as an inset rounded card.
+ * The section still breaks out of the marketing container to full width, then
+ * pads back in so the card sits evenly between the page edges.
+ */
+
+/**
+ * The hero is a contained card, not a full-bleed band: it sits inset from the
+ * page edges with rounded corners, and the page ground shows around it.
+ */
+/**
+ * --hero-t is written by HeroSequence each frame: 0 = inset card, 1 = full
+ * bleed. Gap, corner radius and the top offset all interpolate from it, so the
+ * card expands out of its frame and the rounding flattens as you scroll in.
+ */
+.seq {
+  --hero-t: 0;
+  --gap: calc(var(--hero-gap) * (1 - var(--hero-t)));
+  --top: calc(var(--nav-h, 112px) * (1 - var(--hero-t)) + var(--gap));
+
+  position: relative;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  padding: 0 var(--gap);
+  background: var(--paper);
+}
+
+.seq__pin {
+  position: relative;
+}
+
+/**
+ * Sticky stage, offset to clear the fixed nav and inset by the same gap all
+ * round. --nav-h is published by NavBar, so dismissing the announcement bar
+ * reflows this correctly.
+ */
+.seq__stage {
+  position: sticky;
+  top: var(--top);
+  height: calc(100vh - var(--top) - var(--gap));
+  border-radius: calc(var(--radius-xl, 32px) * (1 - var(--hero-t)));
+  overflow: hidden;
+  background: var(--ink);
+}
+
+.seq__canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* ---- Film grain ----
+   Equivalent of `noise-overlay pointer-events-none absolute inset-0
+   opacity-[0.7] mix-blend-overlay`, written as plain CSS since this project
+   has no Tailwind. The texture is an inline SVG turbulence tile — no asset
+   file, no extra request — and it is static, so it costs nothing per frame. */
+
+.seq__noise {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.7;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.82' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-size: 180px 180px;
+  background-repeat: repeat;
+}
+
+/* ---- Scene copy ----
+   No panel and no scrim. Left-aligned on a fixed baseline in the lower third:
+   the copy stays put while the film moves behind it, which reads as
+   deliberate rather than as captions drifting around the frame. */
+
+.seq__scenes {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+/* Centre-bottom: horizontally centred, anchored to the lower third so every
+   scene shares one baseline whatever its line count. */
+.seq__scene {
+  position: absolute;
+  left: 50%;
+  bottom: 14vh;
+  transform: translateX(-50%);
+  /* Wide enough that the authored two-line breaks hold: the longest line
+     ("It can move faster. Connect better.") measures ~814px at full type
+     size, so a 48rem cap silently wrapped it to three lines. */
+  width: min(92vw, 56rem);
+  text-align: center;
+}
+
+.seq__line {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.12em;
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(1.75rem, 4.2vw, 3.25rem);
+  font-weight: 700;
+  line-height: var(--leading-tight);
+  letter-spacing: -0.025em;
+  color: var(--white);
+}
+
+.seq__linetext {
+  display: block;
+  /* Layered shadows instead of a background box: a tight dark rim for edge
+     definition plus a wide soft one to sink the bright glass behind it. */
+  text-shadow:
+    0 1px 2px rgba(10, 14, 26, 0.92),
+    0 2px 10px rgba(10, 14, 26, 0.75),
+    0 8px 42px rgba(10, 14, 26, 0.62);
+}
+
+/* Blank line in the source string — a paragraph break, not a text node. */
+.seq__gap {
+  height: 0.55em;
+}
+
+@media (max-width: 768px) {
+  .seq__scene {
+    width: 88vw;
+    bottom: 12vh;
+  }
+}
+
+/* ---- Capability arc ----
+   Icons are absolutely positioned from the top-left; the engine writes a
+   translate3d for each one every frame, so only transform/opacity animate. */
+
+.seq__arc {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.seq__icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5.5rem;
+  height: 5.5rem;
+  opacity: 0;
+  will-change: transform, opacity;
+  /* Lifts the icons off the bright glass without a panel behind them. */
+  filter: drop-shadow(0 6px 18px rgba(10, 14, 26, 0.45));
+}
+
+.seq__icon img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .seq__icon {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+}
+
+/* Reduced motion: hold a single stable frame, no scroll-linked movement. */
+@media (prefers-reduced-motion: reduce) {
+  .seq__pin {
+    height: 100vh !important;
+  }
+}

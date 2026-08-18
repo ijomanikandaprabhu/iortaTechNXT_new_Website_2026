@@ -1,0 +1,68 @@
+{
+  "meta": {
+    "title": "Request an Iorta TechNXT Product Demo",
+    "description": "Request a demo of SalesVerse, BrokerVerse, AgentVerse, CustomerVerse, MerchantVerse or ClaimVerse."
+  },
+  "hero": {
+    "eyebrow": "Request a demo",
+    "title": "See what your insurance journey could look like.",
+    "lede": "Tell us which product or business challenge you want to explore. We will shape the conversation around your distribution model, workflows and technology environment."
+  },
+  "before": [
+    {
+      "eyebrow": "Select a product",
+      "title": "Six products, one conversation.",
+      "tags": [
+        "SalesVerse",
+        "BrokerVerse",
+        "AgentVerse",
+        "CustomerVerse",
+        "MerchantVerse",
+        "ClaimVerse"
+      ]
+    }
+  ],
+  "form": {
+    "eyebrow": "Your details",
+    "title": "Tell us where to start.",
+    "fields": [
+      { "name": "firstName", "label": "First name", "required": true },
+      { "name": "lastName", "label": "Last name", "required": true },
+      { "name": "email", "label": "Business email", "type": "email", "required": true },
+      { "name": "company", "label": "Company", "required": true },
+      { "name": "role", "label": "Role" },
+      { "name": "country", "label": "Country" },
+      {
+        "name": "product",
+        "label": "Product of interest",
+        "prompt": "Select a product",
+        "options": [
+          { "value": "salesverse", "label": "SalesVerse" },
+          { "value": "brokerverse", "label": "BrokerVerse" },
+          { "value": "agentverse", "label": "AgentVerse" },
+          { "value": "customerverse", "label": "CustomerVerse" },
+          { "value": "merchantverse", "label": "MerchantVerse" },
+          { "value": "claimverse", "label": "ClaimVerse" },
+          { "value": "not-sure", "label": "Not sure yet" }
+        ]
+      },
+      { "name": "message", "label": "Business challenge", "multiline": true }
+    ],
+    "submit": "Request Demo",
+    "submitting": "Sending…",
+    "success": "Thanks. The relevant Iorta team will be in touch.",
+    "error": "Something went wrong. Please try again.",
+    "microcopy": "No technical preparation required for the first conversation."
+  },
+  "after": [
+    {
+      "eyebrow": "What happens next",
+      "title": "Three steps, no preparation needed.",
+      "body": [
+        "We review the product and business context you shared.",
+        "The relevant Iorta team contacts you.",
+        "The demo focuses on the workflows most relevant to your use case."
+      ]
+    }
+  ]
+}
