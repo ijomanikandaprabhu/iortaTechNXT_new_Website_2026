@@ -6,6 +6,7 @@ import { TokenValue } from "@/features/design-system/TokenValue";
 import {
   COLOR_GROUPS,
   ELEVATION,
+  PRODUCT_PALETTE,
   RADIUS_SCALE,
   SPACE_SCALE,
   TYPE_SCALE,
@@ -57,6 +58,67 @@ export default function DesignSystemPage({ params: { locale } }: { params: { loc
                   {s.note && <p className="ds__note">{s.note}</p>}
                 </div>
               ))}
+            </div>
+          </div>
+        ))}
+      </section>
+
+      {/* ---- Product palette ---- */}
+      <section className="ds__section">
+        <h2 className="ds__h2">Product palette</h2>
+        <p className="ds__desc">
+          One palette per Verse product (<code>brand.config.ts</code>), four roles each. Plain
+          hex, not CSS tokens — these are only ever set inline, per product, on the page that
+          needs them (see product pages and the bento grid).
+        </p>
+        {PRODUCT_PALETTE.map((group) => (
+          <div key={group.product} className="ds__group">
+            <h3 className="ds__h3">{group.product}</h3>
+            <div className="ds__swatches">
+              {group.swatches.map((s) => (
+                <div key={s.role} className="ds__swatch">
+                  <span className="ds__chip" style={{ background: s.hex }} />
+                  <code className="ds__token">{s.role}</code>
+                  <span className="ds__value">{s.hex}</span>
+                  <p className="ds__note">{s.note}</p>
+                </div>
+              ))}
+            </div>
+
+            {/* Live specimens, not just swatches — this is what the roles
+                actually look like assembled, matching how product pages and
+                the bento grid use them. */}
+            <div className="ds__specimens">
+              <button
+                type="button"
+                className="btn btn--primary"
+                style={{
+                  backgroundImage: "none",
+                  backgroundColor: group.palette.primaryStrong,
+                  color: "var(--white)",
+                }}
+              >
+                Request demo
+              </button>
+              <button
+                type="button"
+                className="btn btn--secondary"
+                style={{ color: group.palette.dark, borderColor: group.palette.dark }}
+              >
+                Explore features
+              </button>
+            </div>
+
+            <div className="ds__cards">
+              <article className="card card--white" style={{ background: group.palette.supporting }}>
+                <p className="card__label" style={{ color: group.palette.dark }}>
+                  {group.product}
+                </p>
+                <h3 className="card__title" style={{ color: group.palette.dark }}>
+                  Flat supporting fill
+                </h3>
+                <p className="card__body">Card background is the `supporting` role; text is `dark`.</p>
+              </article>
             </div>
           </div>
         ))}

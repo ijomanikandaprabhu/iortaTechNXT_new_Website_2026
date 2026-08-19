@@ -1,9 +1,17 @@
+import { productBrand } from "@/config/brand.config";
+
 /**
  * Catalogue for the design-system reference page.
  *
  * Token NAMES only — every value is read from CSS at render time via
  * var(--token), so this page can never drift from tokens.css. If a swatch
  * shows the wrong colour, the token changed; the page is telling the truth.
+ *
+ * `PRODUCT_PALETTE` is the one exception: those colours are plain hex in
+ * brand.config.ts, not CSS custom properties (they are only ever set inline,
+ * per product, on the element that needs them), so there is no token to read
+ * from CSS. It is still sourced directly from `productBrand` rather than
+ * copied, so it cannot drift from the config either.
  */
 
 export type Swatch = {
@@ -100,3 +108,38 @@ export const RADIUS_SCALE = [
 ] as const;
 
 export const ELEVATION = ["--shadow-neutral", "--shadow-blue-glow", "--shadow-dark"] as const;
+
+const PRODUCT_NAMES: Record<string, string> = {
+  salesverse: "SalesVerse",
+  brokerverse: "BrokerVerse",
+  agentverse: "AgentVerse",
+  customerverse: "CustomerVerse",
+  merchantverse: "MerchantVerse",
+  claimverse: "ClaimVerse",
+};
+
+const ROLE_NOTES = {
+  primary: "The vivid brand colour — reference swatch; buttons use primaryStrong instead.",
+  primaryStrong: "Flat button fill — white text on top clears WCAG AA on all six.",
+  supporting: "Pale tint for washes and light chip backgrounds.",
+  dark: "Foreground use — title, lede, link text on --paper.",
+} as const;
+
+export type ProductPaletteGroup = {
+  product: string;
+  /** Raw roles, for rendering live button/card specimens. */
+  palette: { primary: string; primaryStrong: string; supporting: string; dark: string };
+  swatches: { role: keyof typeof ROLE_NOTES; hex: string; note: string }[];
+};
+
+export const PRODUCT_PALETTE: ProductPaletteGroup[] = Object.entries(productBrand).map(
+  ([slug, palette]) => ({
+    product: PRODUCT_NAMES[slug] ?? slug,
+    palette,
+    swatches: (Object.keys(ROLE_NOTES) as (keyof typeof ROLE_NOTES)[]).map((role) => ({
+      role,
+      hex: palette[role],
+      note: ROLE_NOTES[role],
+    })),
+  }),
+);
