@@ -100,7 +100,17 @@ export async function Footer({ locale }: { locale: Locale }) {
     <footer className="foot">
       <div className="foot__inner">
         <div className="foot__brand">
-          <Logo variant="full" size={160} alt={tenant.name} />
+          {/*
+            The shield, not the full lockup. The lockup's wordmark paths are
+            #1D74BA, which sits at roughly 3.8:1 on --ink and goes muddy;
+            `shield-filled` is the variant brand.config documents as the one
+            for dark grounds. The name is set as text beside it, which is also
+            what lets it invert cleanly.
+          */}
+          <p className="foot__mark">
+            <Logo alt="" size={40} variant="shield-filled" />
+            <span className="foot__markname">{tenant.name}</span>
+          </p>
           <p className="foot__tagline">{t("tagline")}</p>
           <p className="foot__blurb">{t("blurb")}</p>
         </div>
@@ -147,6 +157,17 @@ export async function Footer({ locale }: { locale: Locale }) {
           </ul>
         </div>
       </div>
+
+      {/*
+        The closing wordmark. Decoration, not content: the brand name is
+        already in the block above and in the copyright line, so this is
+        hidden from assistive tech rather than read out a third time.
+        Deliberately outside `.foot__inner` so it can span the full width and
+        clip against the footer's edge.
+      */}
+      <p aria-hidden="true" className="foot__wordmark">
+        TECHNXT
+      </p>
     </footer>
   );
 }

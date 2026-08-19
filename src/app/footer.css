@@ -8,11 +8,21 @@
  * width. Using `100vw` here would overflow by the scrollbar's width.
  */
 
+/**
+ * Dark on every page. The hairline is load-bearing rather than decorative:
+ * pages end on varying tones now, and a product page can end on its own dark
+ * band, so without it the footer would merge into the section above.
+ *
+ * `overflow: hidden` clips the closing wordmark against the bottom edge.
+ */
 .foot {
+  position: relative;
+  overflow: hidden;
   margin-top: var(--space-9);
   padding: var(--space-9) var(--space-6) var(--space-6);
-  background: var(--paper);
-  border-top: 1px solid var(--line);
+  background: var(--ink);
+  color: var(--white);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .foot__inner {
@@ -28,6 +38,21 @@
   max-width: 26rem;
 }
 
+.foot__mark {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  margin: 0;
+}
+
+.foot__markname {
+  font-family: var(--font-display);
+  font-size: var(--text-heading);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--white);
+}
+
 .foot__tagline {
   margin: var(--space-5) 0 var(--space-3);
   font-family: var(--font-display);
@@ -35,14 +60,14 @@
   font-weight: 700;
   line-height: var(--leading-tight);
   letter-spacing: -0.02em;
-  color: var(--ink);
+  color: var(--white);
 }
 
 .foot__blurb {
   margin: 0;
   font-size: var(--text-body);
   line-height: var(--leading-normal);
-  color: var(--ink-soft);
+  color: rgba(255, 255, 255, 0.72);
 }
 
 /* ---- Columns ---- */
@@ -69,13 +94,15 @@
   min-width: 0;
 }
 
+/* Same alpha as `.sec--dark .sec__label`, so the footer sits on the ladder the
+   dark bands already established rather than inventing its own greys. */
 .foot__coltitle {
   margin: 0 0 var(--space-4);
   font-size: var(--text-caption-sm);
   font-weight: 600;
   letter-spacing: var(--tracking-label);
   text-transform: uppercase;
-  color: var(--ink-soft);
+  color: rgba(255, 255, 255, 0.62);
 }
 
 .foot__list {
@@ -90,20 +117,28 @@
   display: inline-block;
   font-size: var(--text-caption);
   line-height: var(--leading-snug);
-  color: var(--ink);
+  color: var(--white);
   text-decoration: none;
 }
 
+/* --ui-blue measures about 3.6:1 on --ink, under the floor for text this
+   size; the brighter token clears it. */
 .foot__link:hover {
-  color: var(--ui-blue);
+  color: var(--ui-blue-bright);
   text-decoration: underline;
+}
+
+.foot__link:focus-visible {
+  outline: var(--state-focus-width) solid var(--ui-blue-bright);
+  outline-offset: var(--state-focus-offset);
+  border-radius: 2px;
 }
 
 /* Not built yet — see the `href`-less case in Footer. Dimmed so the footer
    reads as a map of the site without implying every entry is clickable. */
 .foot__link--pending,
 .foot__link--pending:hover {
-  color: var(--ink-soft);
+  color: rgba(255, 255, 255, 0.45);
   text-decoration: none;
   cursor: default;
 }
@@ -117,13 +152,13 @@
   justify-content: space-between;
   gap: var(--space-3) var(--space-5);
   padding-top: var(--space-5);
-  border-top: 1px solid var(--line);
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
 }
 
 .foot__copy {
   margin: 0;
   font-size: var(--text-caption-sm);
-  color: var(--ink-soft);
+  color: rgba(255, 255, 255, 0.72);
 }
 
 .foot__legal {
@@ -145,5 +180,57 @@
 
   .foot__base {
     grid-column: 1 / -1;
+  }
+}
+
+/* ---- Closing wordmark ---- */
+
+/**
+ * The footer's one bold move: the brand set oversized across the full width
+ * and clipped by the footer's bottom edge.
+ *
+ * Painted in the gradient from the logo itself (`paint0_linear` in
+ * technxt-lockup.svg runs --brand-blue-light → --brand-blue-deep), so this is
+ * the mark's own colour enlarged rather than a decorative gradient.
+ *
+ * `color` is declared BEFORE the clip so a browser without
+ * `background-clip: text` support renders solid brand blue instead of
+ * transparent — i.e. invisible — text.
+ *
+ * `min-width: 0` on the flex/grid ancestors is not needed here because this
+ * sits outside `.foot__inner`; the size is driven by `vw` so it tracks the
+ * viewport and cannot force a horizontal scrollbar.
+ */
+.foot__wordmark {
+  /* The negative bottom margin is what clips the glyphs: it shortens the
+     footer by less than the line box, and `overflow: hidden` above trims the
+     difference. Measured against the type — at 19vw the seven characters span
+     ~90% of the viewport, matching the reference, and the ratio holds at every
+     width because the size is driven by vw. The max stops it dominating an
+     ultrawide screen. */
+  margin: var(--space-7) 0 calc(var(--space-7) * -1);
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 19vw, 18rem);
+  font-weight: 800;
+  line-height: 0.75;
+  letter-spacing: -0.04em;
+  text-align: center;
+  user-select: none;
+
+  color: var(--brand-blue-light);
+  background-image: linear-gradient(
+    180deg,
+    var(--brand-blue-light),
+    var(--brand-blue-deep)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+/* Only make the text transparent where the clip is actually supported, so the
+   fallback colour above survives everywhere else. */
+@supports ((background-clip: text) or (-webkit-background-clip: text)) {
+  .foot__wordmark {
+    color: transparent;
   }
 }
