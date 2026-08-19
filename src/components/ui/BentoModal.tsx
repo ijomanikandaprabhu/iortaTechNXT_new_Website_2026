@@ -23,8 +23,8 @@ export type BentoPanel = {
   getStarted: { title: string; primary: Action; secondary: Action };
   /** Decorative; the heading carries the meaning. */
   icon?: string;
-  /** Product brand hue; set on the sheet so every art panel inherits it. */
-  tint?: { h: number; s: number };
+  /** Product brand palette; set on the sheet so every art panel inherits it. */
+  tint?: { primary: string; supporting: string; dark: string };
 };
 
 /**
@@ -99,8 +99,9 @@ export function BentoModal({
           style={
             panel.tint
               ? ({
-                  "--product-h": panel.tint.h,
-                  "--product-s": `${panel.tint.s}%`,
+                  "--product-primary": panel.tint.primary,
+                  "--product-supporting": panel.tint.supporting,
+                  "--product-dark": panel.tint.dark,
                 } as React.CSSProperties)
               : undefined
           }

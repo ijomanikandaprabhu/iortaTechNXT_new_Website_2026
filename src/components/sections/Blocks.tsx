@@ -1,4 +1,6 @@
 import Link from "next/link";
+import { cn } from "@/lib/utils";
+import type { SectionTint } from "./Section";
 
 /**
  * Self-contained page blocks: role grids, FAQs, proof callouts, the CTA band
@@ -95,14 +97,29 @@ export function CtaBand({
   explore,
   evaluate,
   convert,
+  tint,
 }: {
   title: string;
   explore?: CtaAction;
   evaluate?: CtaAction;
   convert?: CtaAction;
+  /** Product brand palette, for product pages only (see Section.tsx). */
+  tint?: SectionTint;
 }) {
   return (
-    <section className="ctaband">
+    <section
+      className={cn("ctaband", tint && "ctaband--tinted")}
+      style={
+        tint
+          ? ({
+              "--product-primary": tint.primary,
+              "--product-primary-strong": tint.primaryStrong,
+              "--product-supporting": tint.supporting,
+              "--product-dark": tint.dark,
+            } as React.CSSProperties)
+          : undefined
+      }
+    >
       <div className="ctaband__inner">
         <h2 className="ctaband__title">{title}</h2>
 

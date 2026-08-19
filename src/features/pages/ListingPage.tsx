@@ -1,5 +1,5 @@
 import { PageHero } from "@/components/sections/PageHero";
-import { Prose, Section } from "@/components/sections/Section";
+import { Prose, Section, bandTone } from "@/components/sections/Section";
 import { CardGrid, FilterList, type CardItem } from "@/components/sections/Cards";
 import { CtaBand } from "@/components/sections/Blocks";
 import type { Locale } from "@/core/i18n/config";
@@ -62,17 +62,20 @@ export async function ListingPage({
       />
 
       {filters ? (
-        <Section>
+        <Section tone={bandTone(0)}>
           <FilterList items={filters.items} label={filters.label} />
         </Section>
       ) : null}
 
-      {groups.map((group) => (
+      {groups.map((group, index) => (
         <Section
           eyebrow={group.eyebrow}
           key={group.eyebrow ?? group.title}
           lede={group.title && group.body?.length === 1 ? group.body[0] : undefined}
           title={group.title}
+          // Offset past the filter bar when this listing has one, so the
+          // rhythm counts every band on the page rather than restarting.
+          tone={bandTone(index + (filters ? 1 : 0))}
         >
           {group.body && group.body.length > 1 ? <Prose paragraphs={group.body} /> : null}
           {group.items?.length ? <CardGrid items={group.items} /> : null}

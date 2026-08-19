@@ -5,6 +5,7 @@ import {
   Prose,
   Section,
   TagList,
+  bandTone,
   type FeatureItem,
 } from "@/components/sections/Section";
 import {
@@ -46,7 +47,6 @@ export type ContentSection = {
   roles?: RoleItem[];
   /** A linear journey. */
   steps?: string[];
-  tone?: "muted" | "dark";
 };
 
 type Hero = {
@@ -115,14 +115,14 @@ export async function ContentPage({
         title={hero.title}
       />
 
-      {sections.map((section) => (
+      {sections.map((section, index) => (
         <Section
           eyebrow={section.eyebrow}
           key={section.eyebrow ?? section.title}
           lede={section.title && section.body?.length === 1 ? section.body[0] : undefined}
           number={section.number}
           title={section.title}
-          tone={section.tone}
+          tone={bandTone(index)}
         >
           {/* A single paragraph is rendered as the section lede above, so it is
               not repeated here. */}
@@ -134,8 +134,10 @@ export async function ContentPage({
         </Section>
       ))}
 
+      {/* The rhythm runs continuously across every band on the page, so these
+          two pick up where the mapped sections left off rather than restarting. */}
       {proof ? (
-        <Section eyebrow={proof.eyebrow} title={proof.title}>
+        <Section eyebrow={proof.eyebrow} title={proof.title} tone={bandTone(sections.length)}>
           <ProofBlock
             body={proof.body}
             pending={Boolean(proof.pending)}
@@ -145,7 +147,11 @@ export async function ContentPage({
       ) : null}
 
       {related ? (
-        <Section eyebrow={related.eyebrow} title={related.title}>
+        <Section
+          eyebrow={related.eyebrow}
+          title={related.title}
+          tone={bandTone(sections.length + (proof ? 1 : 0))}
+        >
           <RelatedLinks items={related.items} />
         </Section>
       ) : null}

@@ -34,10 +34,11 @@ export type BentoItem = {
   /** Absent = the cell is a plain panel, as it was before the pages existed. */
   href?: string;
   /**
-   * The product's brand hue, carried into CSS as custom properties. Optional so
-   * a grid without brand colours still renders on the default wash.
+   * The product's brand palette, carried into CSS as custom properties.
+   * Optional so a grid without brand colours still renders on the default
+   * wash.
    */
-  tint?: { h: number; s: number };
+  tint?: { primary: string; supporting: string; dark: string };
 };
 
 type BentoGridProps = {
@@ -72,8 +73,9 @@ export function BentoGrid({
             style={
               item.tint
                 ? ({
-                    "--product-h": item.tint.h,
-                    "--product-s": `${item.tint.s}%`,
+                    "--product-primary": item.tint.primary,
+                    "--product-supporting": item.tint.supporting,
+                    "--product-dark": item.tint.dark,
                   } as React.CSSProperties)
                 : undefined
             }

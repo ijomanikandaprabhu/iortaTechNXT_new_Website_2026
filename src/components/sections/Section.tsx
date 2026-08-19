@@ -19,6 +19,28 @@ import { cn } from "@/lib/utils";
  * 30 of the 31 em dashes on the site, against the standing preference to keep
  * them out of the copy.
  */
+/** Same four-role shape as PageHero's tint (see brand.config.ts). */
+export type SectionTint = { primary: string; primaryStrong: string; supporting: string; dark: string };
+
+export type SectionTone = "default" | "muted" | "dark";
+
+/**
+ * The site-wide band rhythm: two light bands, then one dark, repeating.
+ *
+ * Every page template runs its bands through this rather than choosing tones by
+ * hand, so the cadence is identical across products, solutions, industries,
+ * capabilities and the rest — and stays that way when a page gains or loses a
+ * section. `index` counts Sections only, from 0, starting after the page hero.
+ *
+ * The two light bands alternate `default` and `muted` so a pair never reads as
+ * one long block; only the third band inverts.
+ */
+export function bandTone(index: number): SectionTone {
+  const position = index % 3;
+  if (position === 2) return "dark";
+  return position === 1 ? "muted" : "default";
+}
+
 export function Section({
   id,
   number,
@@ -26,6 +48,7 @@ export function Section({
   title,
   lede,
   tone = "default",
+  tint,
   children,
 }: {
   id?: string;
@@ -35,12 +58,32 @@ export function Section({
   lede?: string;
   /** `muted` tints the band; `dark` inverts it. Both run full-bleed. */
   tone?: "default" | "muted" | "dark";
+  /**
+   * Product brand palette, for product pages only. Set once here as CSS
+   * custom properties; every descendant (RoleGrid, TagList, JourneySteps,
+   * FaqList, ProofBlock...) picks them up through inheritance rather than
+   * each needing its own tint prop.
+   */
+  tint?: SectionTint;
   children?: React.ReactNode;
 }) {
   const label = [number, eyebrow].filter(Boolean).join(" · ");
 
   return (
-    <section className={cn("sec", tone !== "default" && `sec--${tone}`)} id={id}>
+    <section
+      className={cn("sec", tone !== "default" && `sec--${tone}`, tint && "sec--tinted")}
+      id={id}
+      style={
+        tint
+          ? ({
+              "--product-primary": tint.primary,
+              "--product-primary-strong": tint.primaryStrong,
+              "--product-supporting": tint.supporting,
+              "--product-dark": tint.dark,
+            } as React.CSSProperties)
+          : undefined
+      }
+    >
       <div className="sec__inner">
         {label ? <p className="sec__label">{label}</p> : null}
         {title ? <h2 className="sec__title">{title}</h2> : null}

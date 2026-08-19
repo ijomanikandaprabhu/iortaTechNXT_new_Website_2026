@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { cn } from "@/lib/utils";
 
 /**
  * The opening block every content page shares: eyebrow, headline, lede and up
@@ -16,15 +17,30 @@ export function PageHero({
   lede,
   primary,
   secondary,
+  tint,
 }: {
   eyebrow: string;
   title: string;
   lede?: string;
   primary?: HeroCta;
   secondary?: HeroCta;
+  /** Product brand palette, for product pages only (see brand.config.ts). */
+  tint?: { primary: string; primaryStrong: string; supporting: string; dark: string };
 }) {
   return (
-    <header className="phero">
+    <header
+      className={cn("phero", tint && "phero--tinted")}
+      style={
+        tint
+          ? ({
+              "--product-primary": tint.primary,
+              "--product-primary-strong": tint.primaryStrong,
+              "--product-supporting": tint.supporting,
+              "--product-dark": tint.dark,
+            } as React.CSSProperties)
+          : undefined
+      }
+    >
       <p className="phero__eyebrow">{eyebrow}</p>
       <h1 className="phero__title">{title}</h1>
       {lede ? <p className="phero__lede">{lede}</p> : null}

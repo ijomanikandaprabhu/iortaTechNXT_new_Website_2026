@@ -37,30 +37,69 @@ export const logoMinSize: Record<LogoVariant, number> = {
 export const lockupAspectRatio = 841 / 239;
 
 /**
- * Brand hue and saturation per Verse product.
+ * Brand palette per Verse product: four roles per product rather than one
+ * hue, so each role can be accessible where the others cannot be.
  *
- * Stored as HSL channels rather than hex so one formula in bento.css can derive
- * a whole gradient from them, and so the six cards stay a family: identical
- * lightness curve, only the hue moves.
- *
- * ## Artwork only
- *
- * These drive background washes and never text, links, borders or focus rings.
- * Yellow is the reason: ClaimVerse's lemon as a foreground colour measures
- * 1.9:1 on white, far below the 4.5:1 floor. Interactive colour stays on
- * `--ui-blue`, which is the same for every product.
- *
- * ## Why SalesVerse is 32 and not 70
- *
- * It was supplied as "Bronze 70", but hue 70 renders as plain yellow, and at
- * 15 degrees from ClaimVerse's lemon the two products were indistinguishable
- * as pale washes. 32 reads as actual bronze and separates the pair.
+ * - `primary` — the vivid brand colour. Flat fills only (buttons, chips),
+ *   paired with dark text — white text on the raw value fails WCAG AA on
+ *   most of the six (AgentVerse/CustomerVerse/MerchantVerse fail badly).
+ * - `primaryStrong` — same hue and saturation as `primary`, darkened to a
+ *   fixed 27% lightness. This is what the primary CTA button actually uses:
+ *   a flat fill dark enough that WHITE text clears WCAG AA on all six
+ *   (verified; AgentVerse is the tightest margin at ~5.1:1), while staying
+ *   visibly the same colour family as `primary` rather than falling back to
+ *   `dark`, which reads as near-black and would lose the product's colour
+ *   entirely.
+ * - `supporting` — the pale tint for washes and light chip backgrounds.
+ * - `dark` — a near-black, product-specific shade built for foreground use:
+ *   title/lede/link text and anything else that needs to sit on `--paper`.
+ *   This is what makes ClaimVerse's pink legible as text at all — the raw
+ *   value measures well below the 4.5:1 floor as foreground colour, but its
+ *   `dark` tone is designed to clear that floor while staying recognisably
+ *   part of the same family.
  */
-export const productBrand: Record<string, { h: number; s: number }> = {
-  salesverse: { h: 32, s: 55 },
-  agentverse: { h: 310, s: 58 },
-  customerverse: { h: 230, s: 72 },
-  merchantverse: { h: 345, s: 70 },
-  claimverse: { h: 52, s: 88 },
-  brokerverse: { h: 272, s: 60 },
+export type ProductPalette = {
+  primary: string;
+  primaryStrong: string;
+  supporting: string;
+  dark: string;
+};
+
+export const productBrand: Record<string, ProductPalette> = {
+  salesverse: {
+    primary: "#7C5CFC",
+    primaryStrong: "#1D0287",
+    supporting: "#A78BFA",
+    dark: "#17122E",
+  },
+  brokerverse: {
+    primary: "#2878FF",
+    primaryStrong: "#00338A",
+    supporting: "#60A5FA",
+    dark: "#0C1C35",
+  },
+  agentverse: {
+    primary: "#00AFC8",
+    primaryStrong: "#00798A",
+    supporting: "#5EE7E7",
+    dark: "#08272D",
+  },
+  customerverse: {
+    primary: "#16B87A",
+    primaryStrong: "#0F7B52",
+    supporting: "#6EE7B7",
+    dark: "#09291E",
+  },
+  merchantverse: {
+    primary: "#F59A23",
+    primaryStrong: "#844D06",
+    supporting: "#FBBF5A",
+    dark: "#30200B",
+  },
+  claimverse: {
+    primary: "#E9508F",
+    primaryStrong: "#7A0F3B",
+    supporting: "#F58AB7",
+    dark: "#321020",
+  },
 };

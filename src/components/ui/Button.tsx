@@ -9,7 +9,7 @@ export type ButtonVariant = "primary" | "secondary" | "accent";
 
 type Props = ButtonHTMLAttributes<HTMLButtonElement> & {
   variant?: ButtonVariant;
-  /** Force the pill radius on secondary/accent (primary is always a pill). */
+  /** Force the full pill radius instead of the default --radius-md corners. */
   pill?: boolean;
 };
 

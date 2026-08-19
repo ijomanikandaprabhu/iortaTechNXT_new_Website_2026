@@ -64,7 +64,13 @@
   gap: var(--space-2);
   padding: var(--space-3) var(--space-5);
   border: 1.5px solid transparent;
-  border-radius: var(--radius-md);
+  /* Not --radius-md (16px): on a ~42px button that still reads as a near-pill.
+     6px keeps a visible flat edge, matching the boxier corner the reference
+     asked for. Buttons get their own fixed value rather than repurposing a
+     shared token that also drives cards, FAQ items and other unrelated UI.
+     Same value the compact (nav/hero) variant already used, so every button
+     on the site now shares one corner radius. */
+  border-radius: 6px;
   font-family: var(--font-body);
   font-size: var(--text-body);
   font-weight: 600;
@@ -88,10 +94,9 @@
 }
 
 .btn--primary {
-  background-image: linear-gradient(180deg, var(--ui-blue-bright), var(--ui-blue));
+  background-color: var(--ui-blue);
   color: var(--white);
-  border-radius: var(--radius-full);
-  box-shadow: var(--shadow-blue-glow);
+  box-shadow: var(--shadow-neutral);
 }
 
 .btn--primary:hover:not(:disabled) {
@@ -109,18 +114,17 @@
   color: var(--ui-blue);
 }
 
-/* Header style: tighter padding, 6px corners, and a solid body on the
-   secondary so it holds its shape over imagery as well as on white.
+/* Header style: tighter padding and a solid body on the secondary so it
+   holds its shape over imagery as well as on white. Corner radius is
+   inherited from .btn — same 6px as every other button now.
    Shared by the nav and the hero so the two never drift. */
 .btn--compact {
   padding: 0.75rem 1rem;
-  border-radius: 6px;
   font-size: 0.875rem;
   font-weight: 500;
 }
 
 .btn--compact.btn--primary {
-  border-radius: 6px;
   box-shadow: 0 1px 2px rgba(10, 140, 255, 0.24);
 }
 

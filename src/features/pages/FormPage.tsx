@@ -1,5 +1,5 @@
 import { PageHero } from "@/components/sections/PageHero";
-import { Prose, Section, TagList } from "@/components/sections/Section";
+import { Prose, Section, TagList, bandTone } from "@/components/sections/Section";
 import { LeadForm, type LeadField } from "@/features/crm/components/LeadForm";
 import type { Locale } from "@/core/i18n/config";
 import { getLocalizedPath } from "@/core/i18n/routing";
@@ -51,18 +51,35 @@ export async function FormPage({
       : field,
   );
 
+  /**
+   * The form band never inverts.
+   *
+   * A dark band behind a form needs its own input, label, placeholder and
+   * validation-state styling, none of which exists yet, and an untested dark
+   * treatment on the site's two conversion forms is not a risk worth taking
+   * for cadence. It still consumes an index, so the rhythm resumes correctly
+   * on the blocks after it rather than shifting the whole tail of the page.
+   */
+  const formBand = bandTone(before.length);
+  const formTone = formBand === "dark" ? "muted" : formBand;
+
   return (
     <>
       <PageHero eyebrow={hero.eyebrow} lede={hero.lede} title={hero.title} />
 
-      {before.map((block) => (
-        <Section eyebrow={block.eyebrow} key={block.eyebrow ?? block.title} title={block.title}>
+      {before.map((block, index) => (
+        <Section
+          eyebrow={block.eyebrow}
+          key={block.eyebrow ?? block.title}
+          title={block.title}
+          tone={bandTone(index)}
+        >
           {block.body ? <Prose paragraphs={block.body} /> : null}
           {block.tags ? <TagList items={block.tags} /> : null}
         </Section>
       ))}
 
-      <Section eyebrow={form.eyebrow} title={form.title}>
+      <Section eyebrow={form.eyebrow} title={form.title} tone={formTone}>
         <LeadForm
           fields={fields}
           labels={{
@@ -77,8 +94,13 @@ export async function FormPage({
         {form.microcopy && <p className="leadform__microcopy">{form.microcopy}</p>}
       </Section>
 
-      {after.map((block) => (
-        <Section eyebrow={block.eyebrow} key={block.eyebrow ?? block.title} title={block.title}>
+      {after.map((block, index) => (
+        <Section
+          eyebrow={block.eyebrow}
+          key={block.eyebrow ?? block.title}
+          title={block.title}
+          tone={bandTone(before.length + 1 + index)}
+        >
           {block.body ? <Prose paragraphs={block.body} /> : null}
           {block.tags ? <TagList items={block.tags} /> : null}
         </Section>

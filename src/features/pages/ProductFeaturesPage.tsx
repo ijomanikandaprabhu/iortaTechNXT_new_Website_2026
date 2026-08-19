@@ -4,6 +4,7 @@ import {
   Prose,
   Section,
   TagList,
+  bandTone,
   type FeatureItem,
 } from "@/components/sections/Section";
 import { CtaBand } from "@/components/sections/Blocks";
@@ -11,6 +12,7 @@ import type { Locale } from "@/core/i18n/config";
 import { getPageTranslations } from "./translator";
 import { getLocalizedPath } from "@/core/i18n/routing";
 import { productPath } from "@/config/site.config";
+import { productBrand } from "@/config/brand.config";
 
 /**
  * Product features page — the deepest page type in the site.
@@ -52,6 +54,11 @@ export async function ProductFeaturesPage({ locale, slug }: { locale: Locale; sl
   const overviewHref = getLocalizedPath(productPath(slug), locale);
   const useCasesHref = getLocalizedPath(productPath(slug, "use-cases"), locale);
 
+  // Carries the product's brand palette through the whole page body (not
+  // just the hero) — everywhere except the header and footer, which stay
+  // neutral regardless of which product page is open.
+  const tint = productBrand[slug];
+
   return (
     <>
       <PageHero
@@ -60,10 +67,11 @@ export async function ProductFeaturesPage({ locale, slug }: { locale: Locale; sl
         primary={{ label: hero.primary, href: demoHref }}
         secondary={{ label: hero.secondary, href: overviewHref }}
         title={hero.title}
+        tint={tint}
       />
 
       {/* Scope caveat sits before the capability list, not buried under it. */}
-      <Section>
+      <Section tint={tint} tone={bandTone(0)}>
         <Prose paragraphs={[note]} />
       </Section>
 
@@ -74,9 +82,11 @@ export async function ProductFeaturesPage({ locale, slug }: { locale: Locale; sl
           lede={group.body}
           number={group.number}
           title={group.title}
-          // Alternating tint keeps sixteen possible capability families
+          // +1 because the scope caveat above is the page's first band; the
+          // shared rhythm then keeps sixteen possible capability families
           // distinguishable while scrolling.
-          tone={index % 2 === 1 ? "muted" : undefined}
+          tone={bandTone(index + 1)}
+          tint={tint}
         >
           {group.items ? <FeatureList items={group.items} /> : null}
           {group.tags ? <TagList items={group.tags} /> : null}
@@ -88,6 +98,7 @@ export async function ProductFeaturesPage({ locale, slug }: { locale: Locale; sl
         evaluate={{ label: cta.evaluate, href: overviewHref }}
         explore={{ label: cta.explore, href: useCasesHref }}
         title={cta.title}
+        tint={tint}
       />
     </>
   );

@@ -3,11 +3,6 @@
     "title": "iorta TechNXT | Insurance Automation & Modernization",
     "description": "Modernize insurance distribution, underwriting, servicing and claims with products, automation and decision support that keep people in control."
   },
-  "hero": {
-    "title": "Start with the change you want to make.",
-    "subtitle": "Distribution, underwriting, servicing or claims: tell us what needs to move, and we will shape the conversation around it.",
-    "cta": "Talk to us"
-  },
   "sequence": {
     "label": "Insurance platform film",
     "loading": "Loading sequence",
@@ -356,5 +351,180 @@
         "cta": "Explore Claims"
       }
     }
+  },
+  "why": {
+    "eyebrow": "Why Iorta",
+    "title": "Product thinking. Insurance depth. Engineering reality.",
+    "items": [
+      {
+        "term": "Insurance-first",
+        "description": "Not a generic CRM, workflow tool or development practice adapted to insurance. Iorta organizes technology around the work insurers, intermediaries, underwriters, service teams and claims teams actually perform."
+      },
+      {
+        "term": "Product + transformation",
+        "description": "Use a focused Verse product where it fits. Extend, integrate or modernize around it where enterprise reality requires more."
+      },
+      {
+        "term": "Modernize without starting over",
+        "description": "Create new experiences, APIs, workflows and data access around established platforms instead of assuming transformation begins with full replacement."
+      },
+      {
+        "term": "Built for mixed technology",
+        "description": "Work across legacy and modern systems, different integration patterns and different levels of digital maturity."
+      },
+      {
+        "term": "Regional understanding",
+        "description": "Bancassurance, Takaful, advisor-led distribution, localization and multi-market operating requirements are part of the design conversation, not afterthoughts."
+      },
+      {
+        "term": "Measured by business movement",
+        "description": "Turnaround. Adoption. Productivity. Operational visibility. Change speed. The value is in what the business can do differently."
+      }
+    ],
+    "capabilityStrip": ["Experience", "Data", "APIs", "Cloud", "Security", "Quality"]
+  },
+  "operatingModel": {
+    "eyebrow": "The insurance operating model is changing",
+    "title": "More channels. Faster decisions. Less room for friction.",
+    "lede": "Insurance transformation is moving beyond another portal or isolated application. Customers move between digital and assisted channels. Advisors need useful information while they work. Brokers need greater operational control. Banks and partners need easier ways to distribute protection. Underwriters and claims specialists need better information and less repetitive work. Technology leaders need to modernize without destabilizing business-critical systems.",
+    "changingLabel": "What is changing",
+    "changing": [
+      { "term": "Modernize", "description": "Remove technology constraints progressively." },
+      { "term": "Distribute", "description": "Support direct, advisor, broker, bank and partner channels." },
+      { "term": "Underwrite", "description": "Turn submissions into more structured decision workflows." },
+      { "term": "Decide", "description": "Put relevant information where decisions happen." },
+      { "term": "Serve", "description": "Move from basic access to proactive service." },
+      { "term": "Resolve", "description": "Create clearer claims journeys from notification to settlement." }
+    ],
+    "improveLabel": "What should improve",
+    "improveTitle": "Grow capacity without growing complexity.",
+    "improve": [
+      { "term": "Reduce repetitive work", "description": "Automate predictable activities and repeated hand-offs." },
+      { "term": "Shorten turnaround", "description": "Remove avoidable waits between teams, systems and approvals." },
+      { "term": "Prioritize attention", "description": "Put urgent, valuable or exceptional work at the top of the queue." },
+      { "term": "Increase visibility", "description": "See where work is waiting, ageing or becoming a bottleneck." },
+      { "term": "Improve consistency", "description": "Apply structured rules and repeatable workflows." },
+      { "term": "Protect specialist time", "description": "Keep expertise focused on decisions that require judgement." }
+    ]
+  },
+  "transformationPriorities": {
+    "eyebrow": "Four transformation priorities",
+    "title": "Start with the business problem.",
+    "cards": {
+      "distribution-modernization": {
+        "title": "Distribution Modernization",
+        "lede": "Modernize every way insurance reaches the customer.",
+        "body": "Connect direct, agency, brokerage, banking and partner-led distribution with clearer digital processes and better business visibility.",
+        "cta": "Explore Distribution Modernization"
+      },
+      "underwriting-modernization": {
+        "title": "Underwriting Modernization",
+        "lede": "Turn submissions into decision workflows.",
+        "body": "Bring document understanding, submission completeness, rules, decision-ready information, referrals and human review into a more structured underwriting model.",
+        "cta": "Explore Underwriting Modernization"
+      },
+      "core-modernization": {
+        "title": "Core Modernization",
+        "lede": "Keep the core. Change what's possible.",
+        "body": "Modernize experiences, APIs, workflows, data access and applications progressively around the systems that still create business value.",
+        "cta": "Explore Core Modernization"
+      },
+      "digital-insurance-takaful": {
+        "title": "Digital Insurance & Takaful",
+        "lede": "Build digital propositions around modern technology from day one.",
+        "body": "Support digital acquisition, distribution, onboarding, servicing, claims and operational journeys with configurable foundations.",
+        "cta": "Explore Digital Insurance & Takaful"
+      }
+    }
+  },
+  "intelligentOps": {
+    "eyebrow": "Intelligence where the work happens",
+    "title": "Automate the routine. Surface what needs judgement.",
+    "lede": "Modern insurance technology should do more than store information. It should help teams interpret what has arrived, identify what requires attention and move straightforward work forward while preserving specialist control.",
+    "steps": [
+      { "term": "Understand", "description": "Extract and organize information." },
+      { "term": "Prioritize", "description": "Surface urgent, high-value or exceptional work." },
+      { "term": "Recommend", "description": "Guide users toward relevant next actions." },
+      { "term": "Orchestrate", "description": "Coordinate approved multi-step work." },
+      { "term": "Route", "description": "Move work through configured processes." },
+      { "term": "Decide", "description": "Bring decision-ready information together." },
+      { "term": "Execute", "description": "Progress eligible routine work automatically." },
+      { "term": "Escalate", "description": "Move complex or unusual cases to specialists." }
+    ],
+    "supportingLine": "Human-controlled by design.",
+    "cta": "Explore Intelligent Operations & Decisioning"
+  },
+  "techFoundation": {
+    "eyebrow": "Connect with control",
+    "title": "Add new journeys without rebuilding everything underneath.",
+    "lede": "Modern insurance experiences increasingly depend on secure connectivity, identity, permission, governance and resilient operations.",
+    "groups": {
+      "connect": {
+        "title": "Connect",
+        "items": ["Policy administration", "CRM", "Claims", "Billing", "Payments", "Identity", "Documents", "Communication", "Data platforms", "Partner systems"]
+      },
+      "control": {
+        "title": "Control",
+        "items": ["Digital identity", "eKYC connectivity", "Customer consent", "Role-based authorization", "Secure APIs", "Auditability"]
+      },
+      "change": {
+        "title": "Change",
+        "items": ["Configurable workflows", "Business rules", "Modular applications", "Reusable services", "Progressive modernization"]
+      },
+      "trust": {
+        "title": "Trust",
+        "items": ["Security", "Human review", "Traceability", "Monitoring", "Exception handling", "Operational resilience"]
+      }
+    },
+    "ctaPrimary": "Explore Technology Foundation",
+    "ctaSecondary": "Explore Trust & Operational Resilience"
+  },
+  "regionalReality": {
+    "eyebrow": "Global technology. Regional reality.",
+    "title": "Adapt without rebuilding market by market.",
+    "lede": "Insurance varies across regulation, language, product structure, distribution models and technology maturity. Iorta TechNXT is designed around configurable foundations that can support different operating environments.",
+    "items": [
+      { "term": "Localization", "description": "Multiple languages and market-specific experiences." },
+      { "term": "Configurable rules", "description": "Products, approvals and workflows that can vary by market." },
+      { "term": "Distribution models", "description": "Agency, broker, bancassurance, direct and partner-led structures." },
+      { "term": "Takaful", "description": "Relevant participant and Shariah-aligned operating requirements where applicable." },
+      { "term": "Local connectivity", "description": "Market-specific identity, payments, documents and external services." },
+      { "term": "Multi-market operations", "description": "Common technology foundations without forcing every country to work identically." }
+    ],
+    "supportingLine": "Regional flexibility without regional fragmentation."
+  },
+  "customerProofSection": {
+    "eyebrow": "Proven in real insurance environments",
+    "title": "Show the problem, what changed and the result.",
+    "lede": "Use one approved customer story as the primary proof unit.",
+    "beats": [
+      { "term": "Challenge", "description": "What limited growth, service, decision speed or operational visibility." },
+      { "term": "What changed", "description": "The product, modernization layer, workflow or integration introduced." },
+      { "term": "Result", "description": "One or two approved outcomes such as faster issuance, higher adoption, shorter partner onboarding or improved productivity." }
+    ],
+    "ctaPrimaryPending": "Read the Featured Customer Story",
+    "ctaSecondary": "Explore All Customer Stories",
+    "publishingNote": "Placeholder section. Customer names and metrics require public-use approval; this does not use a generic logo carousel as the main proof mechanism."
+  },
+  "insightsSection": {
+    "eyebrow": "What's next in insurance",
+    "title": "Ideas designed to support real transformation decisions.",
+    "items": [
+      { "term": "Modernize", "description": "Core modernization, architecture, APIs and progressive replacement." },
+      { "term": "Distribute", "description": "Agent, broker, bancassurance and partner-led distribution." },
+      { "term": "Decide", "description": "Underwriting, intelligent operations and data." },
+      { "term": "Serve", "description": "Policyholder experience and proactive service." },
+      { "term": "Resolve", "description": "Claims orchestration and catastrophe operations." },
+      { "term": "Operate", "description": "Security, resilience, productivity, fraud and responsible automation." },
+      { "term": "Markets", "description": "Takaful, Southeast Asia, Open Finance, health and changing regulation." }
+    ],
+    "cta": "Explore Insights"
+  },
+  "closingCta": {
+    "eyebrow": "What's next?",
+    "title": "Turn the next insurance idea into working technology.",
+    "lede": "Modernize a critical journey. Improve distribution. Build a better underwriting workflow. Create a more proactive customer experience. Transform claims. Connect new partners.",
+    "primary": "Talk to Iorta TechNXT",
+    "secondary": "Request a Product Demo"
   }
 }

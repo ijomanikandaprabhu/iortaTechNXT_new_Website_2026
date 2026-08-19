@@ -86,7 +86,7 @@
 
   /* ---- Radius ---- */
   --radius-sm: 10px; /* small controls */
-  --radius-md: 16px; /* buttons */
+  --radius-md: 16px; /* cards, FAQ items, nav featured art — not buttons (see .btn in components.css) */
   --radius-lg: 24px; /* cards */
   --radius-xl: 32px; /* hero panels */
   --radius-full: 999px; /* pills, avatars */

@@ -1,10 +1,11 @@
 import { PageHero } from "@/components/sections/PageHero";
-import { Section } from "@/components/sections/Section";
+import { Section, bandTone } from "@/components/sections/Section";
 import { CtaBand } from "@/components/sections/Blocks";
 import type { Locale } from "@/core/i18n/config";
 import { getPageTranslations } from "./translator";
 import { getLocalizedPath } from "@/core/i18n/routing";
 import { productPath } from "@/config/site.config";
+import { productBrand } from "@/config/brand.config";
 
 /**
  * Product use-cases page.
@@ -44,6 +45,11 @@ export async function ProductUseCasesPage({ locale, slug }: { locale: Locale; sl
   const overviewHref = getLocalizedPath(productPath(slug), locale);
   const featuresHref = getLocalizedPath(productPath(slug, "features"), locale);
 
+  // Carries the product's brand palette through the whole page body (not
+  // just the hero) — everywhere except the header and footer, which stay
+  // neutral regardless of which product page is open.
+  const tint = productBrand[slug];
+
   return (
     <>
       <PageHero
@@ -52,6 +58,7 @@ export async function ProductUseCasesPage({ locale, slug }: { locale: Locale; sl
         primary={{ label: hero.primary, href: demoHref }}
         secondary={{ label: hero.secondary, href: featuresHref }}
         title={hero.title}
+        tint={tint}
       />
 
       {cases.map((useCase, index) => (
@@ -59,7 +66,8 @@ export async function ProductUseCasesPage({ locale, slug }: { locale: Locale; sl
           key={useCase.number}
           number={useCase.number}
           title={useCase.title}
-          tone={index % 2 === 1 ? "muted" : undefined}
+          tone={bandTone(index)}
+          tint={tint}
         >
           <dl className="usecase">
             <div className="usecase__row">
@@ -83,6 +91,7 @@ export async function ProductUseCasesPage({ locale, slug }: { locale: Locale; sl
         evaluate={{ label: cta.evaluate, href: featuresHref }}
         explore={{ label: cta.explore, href: overviewHref }}
         title={cta.title}
+        tint={tint}
       />
     </>
   );

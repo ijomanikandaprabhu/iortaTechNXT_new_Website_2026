@@ -34,6 +34,45 @@
   color: var(--ink-soft);
 }
 
+/**
+ * Product pages carry their three-role palette as `--product-primary`,
+ * `--product-supporting` and `--product-dark` (see brand.config.ts). Every
+ * rule below uses exactly one role for exactly the job it was designed for —
+ * none of them borrow the wash tone for text or the text tone for a fill,
+ * which is what breaks contrast (ClaimVerse's `primary` fails as its own
+ * foreground; `dark` is the shade built to pass instead).
+ */
+.phero--tinted .phero__eyebrow {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: var(--radius-full);
+  background: var(--product-supporting);
+}
+
+.phero--tinted .phero__title,
+.phero--tinted .phero__lede {
+  color: var(--product-dark);
+}
+
+/* Flat fill, not the site-wide blue gradient. Uses `primaryStrong`, not
+   `primary` — the raw primary is too light for white text to clear WCAG AA
+   on most of the six products (see brand.config.ts). */
+.phero--tinted .phero__ctas .btn--primary {
+  background-image: none;
+  background-color: var(--product-primary-strong);
+  color: var(--white);
+  box-shadow: var(--shadow-neutral);
+}
+
+.phero--tinted .phero__ctas .btn--secondary {
+  color: var(--product-dark);
+}
+
+.phero--tinted .phero__ctas .btn--secondary:hover:not(:disabled) {
+  border-color: var(--product-dark);
+  color: var(--product-dark);
+}
+
 .phero__title {
   margin: 0 0 var(--space-5);
   font-family: var(--font-display);
@@ -82,6 +121,14 @@
   background: var(--paper);
 }
 
+/* Product pages: the muted band becomes the product's own wash instead of
+   the neutral paper tone, so colour carries through the body of the page,
+   not just the hero. Default (non-muted) tinted sections stay on plain
+   white and pick up colour only on their accents (label, cards, chips). */
+.sec--tinted.sec--muted {
+  background: var(--product-supporting);
+}
+
 .sec--dark {
   background: var(--ink);
   color: var(--white);
@@ -104,6 +151,10 @@
 
 .sec--dark .sec__label {
   color: rgba(255, 255, 255, 0.62);
+}
+
+.sec--tinted .sec__label {
+  color: var(--product-dark);
 }
 
 .sec__title {
@@ -135,6 +186,174 @@
 
 .sec__body {
   margin-top: var(--space-6);
+}
+
+/* Spacer between two stacked blocks inside one Section's children, e.g. a
+   FeatureList followed by a TagList — used by the homepage supplement
+   sections, which stack more than one block per band. */
+.supplement__gap {
+  margin-top: var(--space-6);
+}
+
+/* ---- Dark band: content primitives ----
+ *
+ * `sec--dark` originally covered only the band's own label, title and lede,
+ * which was enough while no dark band carried content. The homepage now runs a
+ * 2-light : 1-dark rhythm, so every primitive that can sit inside one needs an
+ * inversion — otherwise cards keep their white surface on ink, and body copy
+ * stays `--ink-soft`, which measures roughly 2:1 against `--ink` and is
+ * unreadable.
+ *
+ * Surfaces lift with white alpha rather than a fixed hex, so one rule holds on
+ * any dark ground. Body text reuses the 0.72 alpha already set by
+ * `.sec--dark .sec__lede` so the whole band shares one ladder.
+ */
+
+.sec--dark .prose__p,
+.sec--dark .featlist__desc,
+.sec--dark .rolegrid__desc,
+.sec--dark .faq__a,
+.sec--dark .proof__body,
+.sec--dark .usecase__text {
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.sec--dark .featlist__term,
+.sec--dark .rolegrid__role,
+.sec--dark .faq__q,
+.sec--dark .usecase__row--change .usecase__text {
+  color: var(--white);
+}
+
+.sec--dark .featlist__row {
+  border-top-color: rgba(255, 255, 255, 0.16);
+}
+
+.sec--dark .taglist__item {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.18);
+  color: rgba(255, 255, 255, 0.82);
+}
+
+/* Raised rather than white: a white card on ink reads as a hole punched in the
+   band, and drops the shadow's purpose entirely. */
+.sec--dark .rolegrid__item,
+.sec--dark .faq__item {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.14);
+  box-shadow: none;
+}
+
+.sec--dark .proof {
+  background: rgba(255, 255, 255, 0.05);
+  border-left-color: var(--ui-blue-bright);
+}
+
+.sec--dark .usecase__row {
+  border-left-color: rgba(255, 255, 255, 0.16);
+}
+
+.sec--dark .usecase__label {
+  color: rgba(255, 255, 255, 0.62);
+}
+
+.sec--dark .usecase__row--change {
+  border-left-color: var(--ui-blue-bright);
+}
+
+.sec--dark .usecase__row--change .usecase__label {
+  color: var(--ui-blue-bright);
+}
+
+/* Links lift to the brighter blue: `--ui-blue` measures about 3.6:1 on
+   `--ink`, under the 4.5:1 floor for body-size text. `--ui-blue-bright`
+   clears it. */
+.sec--dark .related__link,
+.sec--dark .proof__cta {
+  color: var(--ui-blue-bright);
+}
+
+.sec--dark .related__item {
+  border-top-color: rgba(255, 255, 255, 0.16);
+}
+
+.sec--dark .related__pending {
+  color: rgba(255, 255, 255, 0.55);
+}
+
+/* The secondary button is transparent with ink text, so it vanishes on a dark
+   ground until both are inverted. */
+.sec--dark .btn--secondary {
+  border-color: rgba(255, 255, 255, 0.28);
+  color: var(--white);
+}
+
+.sec--dark .btn--secondary:hover:not(:disabled) {
+  border-color: var(--ui-blue-bright);
+  color: var(--ui-blue-bright);
+}
+
+/* ---- Dark band on a product page: the palette's roles invert ----
+ *
+ * A product page band can now be both tinted and dark. Left alone the two rule
+ * sets fight: the tinted rules paint `--product-dark` labels and
+ * `--product-primary-strong` borders, both near-black, onto a near-black
+ * ground.
+ *
+ * So the roles swap. `dark` stops being the text colour and becomes the
+ * ground — which also gives every product its own dark rather than a shared
+ * `--ink`, so ClaimVerse's band reads deep maroon and AgentVerse's deep teal.
+ * `supporting`, the palette's light role, takes over text and accents, where
+ * it clears AA comfortably on all six (the tightest is BrokerVerse at ~6.6:1;
+ * `--product-primary` was rejected here because the same pair measures ~4.0:1,
+ * under the floor for body-size text).
+ *
+ * Every selector below is `.sec--tinted.sec--dark` (0,3,0 with its descendant),
+ * which outranks both `.sec--tinted X` and `.sec--dark X` at (0,2,0) — so this
+ * wins regardless of source order.
+ */
+.sec--tinted.sec--dark {
+  background: var(--product-dark);
+}
+
+.sec--tinted.sec--dark .sec__label,
+.sec--tinted.sec--dark .proof__cta,
+.sec--tinted.sec--dark .related__link,
+.sec--tinted.sec--dark .usecase__row--change .usecase__label {
+  color: var(--product-supporting);
+}
+
+/* Hairlines stay neutral: a tinted border on a tinted ground of the same hue
+   disappears, and these only need to separate rows.
+
+   These come FIRST because `border-color` is a shorthand — declared after the
+   accent rules below it would reset the very edge they set. */
+.sec--tinted.sec--dark .faq__item,
+.sec--tinted.sec--dark .rolegrid__item {
+  border-color: rgba(255, 255, 255, 0.14);
+}
+
+.sec--tinted.sec--dark .taglist__item {
+  border-color: rgba(255, 255, 255, 0.22);
+}
+
+.sec--tinted.sec--dark .featlist__row,
+.sec--tinted.sec--dark .related__item {
+  border-top-color: rgba(255, 255, 255, 0.16);
+}
+
+.sec--tinted.sec--dark .usecase__row {
+  border-left-color: rgba(255, 255, 255, 0.16);
+}
+
+/* The one edge per element that carries the product accent. */
+.sec--tinted.sec--dark .rolegrid__item {
+  border-top-color: var(--product-supporting);
+}
+
+.sec--tinted.sec--dark .proof,
+.sec--tinted.sec--dark .usecase__row--change {
+  border-left-color: var(--product-supporting);
 }
 
 /* ---- Prose ---- */
@@ -170,6 +389,10 @@
 .featlist__row {
   border-top: 1px solid var(--line);
   padding-top: var(--space-4);
+}
+
+.sec--tinted .featlist__row {
+  border-top-color: var(--product-primary-strong);
 }
 
 .featlist__term {
@@ -208,6 +431,10 @@
   color: var(--ink-soft);
 }
 
+.sec--tinted .taglist__item {
+  border-color: var(--product-primary-strong);
+}
+
 /* ---- Journey ---- */
 
 .journey {
@@ -243,6 +470,10 @@
   color: var(--white);
 }
 
+.sec--tinted .journey__step:not(:last-child)::after {
+  color: var(--product-dark);
+}
+
 /* ---- Role grid ---- */
 
 .rolegrid {
@@ -273,6 +504,13 @@
   box-shadow: var(--shadow-neutral);
 }
 
+/* Coloured top edge rather than a full-colour card: the card body (title,
+   description) stays neutral and legible, only the accent carries the
+   product's brand. */
+.sec--tinted .rolegrid__item {
+  border-top: 3px solid var(--product-primary-strong);
+}
+
 .rolegrid__role {
   margin: 0 0 var(--space-2);
   font-family: var(--font-display);
@@ -300,6 +538,10 @@
   border: 1px solid var(--line);
   border-radius: var(--radius-md);
   background: var(--white);
+}
+
+.sec--tinted .faq__item {
+  border-color: var(--product-primary-strong);
 }
 
 .faq__q {
@@ -335,6 +577,10 @@
   border-radius: 0 var(--radius-md) var(--radius-md) 0;
 }
 
+.sec--tinted .proof {
+  border-left-color: var(--product-primary-strong);
+}
+
 .proof__body {
   margin: 0;
   font-size: var(--text-body);
@@ -367,6 +613,10 @@
   text-decoration: none;
 }
 
+.sec--tinted .proof__cta {
+  color: var(--product-dark);
+}
+
 /* ---- CTA band ---- */
 
 .ctaband {
@@ -375,6 +625,10 @@
   padding: var(--space-9) var(--space-6);
   background: var(--paper);
   border-top: 1px solid var(--line);
+}
+
+.ctaband--tinted {
+  background: var(--product-supporting);
 }
 
 .ctaband__inner {
@@ -394,6 +648,28 @@
   color: var(--ink);
 }
 
+.ctaband--tinted .ctaband__title {
+  color: var(--product-dark);
+}
+
+/* Flat fill, not the site-wide blue gradient — same treatment as the
+   product hero's primary CTA (see .phero--tinted above). */
+.ctaband--tinted .btn--primary {
+  background-image: none;
+  background-color: var(--product-primary-strong);
+  color: var(--white);
+  box-shadow: var(--shadow-neutral);
+}
+
+.ctaband--tinted .btn--secondary {
+  color: var(--product-dark);
+}
+
+.ctaband--tinted .btn--secondary:hover:not(:disabled) {
+  border-color: var(--product-dark);
+  color: var(--product-dark);
+}
+
 .ctaband__actions {
   display: flex;
   flex-wrap: wrap;
@@ -409,6 +685,10 @@
   font-weight: 600;
   color: var(--ui-blue);
   text-decoration: none;
+}
+
+.ctaband--tinted .ctaband__explore {
+  color: var(--product-dark);
 }
 
 /* ---- Use case ---- */
@@ -434,6 +714,10 @@
   border-left-color: var(--ui-blue);
 }
 
+.sec--tinted .usecase__row--change {
+  border-left-color: var(--product-primary-strong);
+}
+
 .usecase__label {
   margin: 0 0 var(--space-2);
   font-family: var(--font-display);
@@ -445,6 +729,10 @@
 
 .usecase__row--change .usecase__label {
   color: var(--ui-blue);
+}
+
+.sec--tinted .usecase__row--change .usecase__label {
+  color: var(--product-dark);
 }
 
 .usecase__text {

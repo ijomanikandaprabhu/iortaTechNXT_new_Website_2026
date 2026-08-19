@@ -1,5 +1,5 @@
 import { PageHero } from "@/components/sections/PageHero";
-import { JourneySteps, Prose, Section, TagList } from "@/components/sections/Section";
+import { JourneySteps, Prose, Section, TagList, bandTone } from "@/components/sections/Section";
 import {
   CtaBand,
   FaqList,
@@ -12,6 +12,7 @@ import type { Locale } from "@/core/i18n/config";
 import { getPageTranslations } from "./translator";
 import { getLocalizedPath } from "@/core/i18n/routing";
 import { productPath } from "@/config/site.config";
+import { productBrand } from "@/config/brand.config";
 
 /**
  * Product overview page.
@@ -66,6 +67,11 @@ export async function ProductOverviewPage({ locale, slug }: { locale: Locale; sl
   const featuresHref = getLocalizedPath(productPath(slug, "features"), locale);
   const useCasesHref = getLocalizedPath(productPath(slug, "use-cases"), locale);
 
+  // Carries the product's brand palette through the whole page body (not
+  // just the hero) — everywhere except the header and footer, which stay
+  // neutral regardless of which product page is open.
+  const tint = productBrand[slug];
+
   return (
     <>
       <PageHero
@@ -74,40 +80,56 @@ export async function ProductOverviewPage({ locale, slug }: { locale: Locale; sl
         primary={{ label: hero.primary, href: demoHref }}
         secondary={{ label: hero.secondary, href: featuresHref }}
         title={hero.title}
+        tint={tint}
       />
 
-      <Section eyebrow={problem.eyebrow} title={problem.title}>
+      {/* Band tones come from the shared rhythm, indexed in render order, so
+          this page keeps the same two-light-then-dark cadence as every other. */}
+      <Section eyebrow={problem.eyebrow} title={problem.title} tint={tint} tone={bandTone(0)}>
         <Prose paragraphs={problem.body} />
       </Section>
 
-      <Section eyebrow={journey.eyebrow} lede={journey.body} title={journey.title} tone="muted">
+      <Section
+        eyebrow={journey.eyebrow}
+        lede={journey.body}
+        title={journey.title}
+        tint={tint}
+        tone={bandTone(1)}
+      >
         <JourneySteps steps={journey.steps} />
       </Section>
 
-      <Section eyebrow={builtFor.eyebrow} title={builtFor.title}>
+      <Section eyebrow={builtFor.eyebrow} title={builtFor.title} tint={tint} tone={bandTone(2)}>
         <RoleGrid items={builtFor.items} />
       </Section>
 
-      <Section eyebrow={intelligence.eyebrow} lede={intelligence.body} title={intelligence.title} />
+      <Section
+        eyebrow={intelligence.eyebrow}
+        lede={intelligence.body}
+        title={intelligence.title}
+        tint={tint}
+        tone={bandTone(3)}
+      />
 
       <Section
         eyebrow={integration.eyebrow}
         lede={integration.body}
         title={integration.title}
-        tone="muted"
+        tint={tint}
+        tone={bandTone(4)}
       >
         <TagList items={integration.tags} />
       </Section>
 
-      <Section eyebrow={outcomes.eyebrow} title={outcomes.title}>
+      <Section eyebrow={outcomes.eyebrow} title={outcomes.title} tint={tint} tone={bandTone(5)}>
         <RoleGrid items={outcomes.items} />
       </Section>
 
-      <Section eyebrow={proof.eyebrow} title={proof.title}>
+      <Section eyebrow={proof.eyebrow} title={proof.title} tint={tint} tone={bandTone(6)}>
         <ProofBlock body={proof.body} pending pendingNote={proof.pendingNote} />
       </Section>
 
-      <Section eyebrow={faq.eyebrow} title={faq.title}>
+      <Section eyebrow={faq.eyebrow} title={faq.title} tint={tint} tone={bandTone(7)}>
         <FaqList items={faq.items} />
       </Section>
 
@@ -115,6 +137,7 @@ export async function ProductOverviewPage({ locale, slug }: { locale: Locale; sl
         convert={{ label: cta.convert, href: demoHref }}
         explore={{ label: cta.explore, href: useCasesHref }}
         title={cta.title}
+        tint={tint}
       />
     </>
   );
