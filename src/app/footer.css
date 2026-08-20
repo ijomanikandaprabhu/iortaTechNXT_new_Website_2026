@@ -234,7 +234,11 @@
      ~90% of the viewport, matching the reference, and the ratio holds at every
      width because the size is driven by vw. The max stops it dominating an
      ultrawide screen. */
-  margin: var(--space-7) 0 calc(var(--space-7) * -1);
+  /* The bottom offset has to beat the footer's own bottom padding before it
+     starts cutting: visible height = line box - this margin + padding-bottom.
+     At --space-9 that leaves roughly two thirds of the letterform, so the
+     word sits into the edge rather than resting above it. */
+  margin: var(--space-7) 0 calc(var(--space-9) * -1);
   font-family: var(--font-display);
   font-size: clamp(3rem, 19vw, 18rem);
   font-weight: 800;
@@ -273,17 +277,21 @@
    */
   -webkit-mask-image: linear-gradient(
     90deg,
-    rgba(0, 0, 0, 0.14) 0%,
-    rgba(0, 0, 0, 1) 26%,
-    rgba(0, 0, 0, 1) 74%,
-    rgba(0, 0, 0, 0.14) 100%
+    rgba(0, 0, 0, 0.1) 0%,
+    rgba(0, 0, 0, 0.1) 7%,
+    rgba(0, 0, 0, 1) 34%,
+    rgba(0, 0, 0, 1) 66%,
+    rgba(0, 0, 0, 0.1) 93%,
+    rgba(0, 0, 0, 0.1) 100%
   );
   mask-image: linear-gradient(
     90deg,
-    rgba(0, 0, 0, 0.14) 0%,
-    rgba(0, 0, 0, 1) 26%,
-    rgba(0, 0, 0, 1) 74%,
-    rgba(0, 0, 0, 0.14) 100%
+    rgba(0, 0, 0, 0.1) 0%,
+    rgba(0, 0, 0, 0.1) 7%,
+    rgba(0, 0, 0, 1) 34%,
+    rgba(0, 0, 0, 1) 66%,
+    rgba(0, 0, 0, 0.1) 93%,
+    rgba(0, 0, 0, 0.1) 100%
   );
 }
 
