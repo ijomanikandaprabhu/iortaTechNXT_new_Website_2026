@@ -77,15 +77,33 @@
         "eyebrow": "Emerging topics",
         "title": "What we are watching.",
         "items": [
-          { "title": "Climate & resilience" },
-          { "title": "Parametric insurance" },
-          { "title": "Protection gaps" },
-          { "title": "Open finance" },
-          { "title": "Digital identity" },
-          { "title": "Predict & prevent" },
-          { "title": "AI risk & liability" },
-          { "title": "Health affordability" },
-          { "title": "Future distribution models" }
+          {
+            "title": "Climate & resilience"
+          },
+          {
+            "title": "Parametric insurance"
+          },
+          {
+            "title": "Protection gaps"
+          },
+          {
+            "title": "Open finance"
+          },
+          {
+            "title": "Digital identity"
+          },
+          {
+            "title": "Predict & prevent"
+          },
+          {
+            "title": "AI risk & liability"
+          },
+          {
+            "title": "Health affordability"
+          },
+          {
+            "title": "Future distribution models"
+          }
         ]
       },
       {
@@ -94,6 +112,13 @@
         "body": [
           "Every article answers two questions: what is changing in insurance, and what should an insurer do differently because of it.",
           "Each one connects onward to a related solution, product, customer proof and an appropriate next step: explore a related article or story, evaluate product features and architecture, or talk to us."
+        ]
+      },
+      {
+        "eyebrow": "Automation & intelligence",
+        "title": "Where automation creates value, and where AI adds something beyond workflow.",
+        "body": [
+          "This stream explains where automation creates value in insurance, and where AI genuinely adds something beyond workflow: measurement, accountability, document understanding, decision support and the control model around them."
         ]
       }
     ],
@@ -182,11 +207,30 @@
       "eyebrow": "Subscribe",
       "title": "Join the list.",
       "fields": [
-        { "name": "firstName", "label": "First name", "required": true },
-        { "name": "lastName", "label": "Last name", "required": true },
-        { "name": "email", "label": "Business email", "type": "email", "required": true },
-        { "name": "company", "label": "Company" },
-        { "name": "country", "label": "Country" }
+        {
+          "name": "firstName",
+          "label": "First name",
+          "required": true
+        },
+        {
+          "name": "lastName",
+          "label": "Last name",
+          "required": true
+        },
+        {
+          "name": "email",
+          "label": "Business email",
+          "type": "email",
+          "required": true
+        },
+        {
+          "name": "company",
+          "label": "Company"
+        },
+        {
+          "name": "country",
+          "label": "Country"
+        }
       ],
       "submit": "Subscribe",
       "submitting": "Subscribing…",

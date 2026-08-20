@@ -23,7 +23,13 @@
     "journey": {
       "eyebrow": "Experience model",
       "title": "Access. Act. Serve. Resolve. Continue.",
-      "steps": ["Access", "Act", "Service", "Resolve", "Continue"],
+      "steps": [
+        "Access",
+        "Act",
+        "Service",
+        "Resolve",
+        "Continue"
+      ],
       "body": "Policies, documents and coverage information. Payments, renewals and outstanding requirements. Policy-related requests and updates. Claims and customer support. Move into assisted support when human help is appropriate."
     },
     "builtFor": {
@@ -124,6 +130,13 @@
           "answer": "Yes. It can be implemented as a digital experience layer connected to established policy, payment, document and claims systems."
         }
       ]
+    },
+    "automation": {
+      "eyebrow": "Automation, intelligence & analytics",
+      "title": "Automate routine service. Use AI where understanding is required.",
+      "body": "Use workflow automation for reminders, status updates, routing and service progression. Use conversational or language intelligence for natural-language questions, intent understanding and summaries where validated. Use analytics to measure self-service, resolution and escalation.",
+      "responsibility": "Human support remains available for complex or sensitive situations.",
+      "cta": "Explore CustomerVerse Automation & Intelligence"
     },
     "cta": {
       "title": "Make every policyholder interaction easier to continue.",
@@ -461,7 +474,10 @@
             "term": "FAQs and knowledge content",
             "description": "Answer the common question in place."
           },
-          { "term": "Search", "description": "Help customers find the answer themselves." },
+          {
+            "term": "Search",
+            "description": "Help customers find the answer themselves."
+          },
           {
             "term": "Secure messaging",
             "description": "Let customers ask without exposing personal data over email."
@@ -641,6 +657,214 @@
       "convert": "Request a CustomerVerse Demo",
       "evaluate": "Review CustomerVerse Features",
       "explore": "Explore the CustomerVerse Overview"
+    },
+    "automation": {
+      "eyebrow": "Automation, intelligence & analytics",
+      "title": "The same automation and intelligence across the policy relationship.",
+      "features": [
+        {
+          "term": "Automation",
+          "description": "Reminders, status updates, intent routing and service progression."
+        },
+        {
+          "term": "Intelligence",
+          "description": "Conversational assistance, intent understanding and summarization where validated."
+        },
+        {
+          "term": "Analytics",
+          "description": "Self-service, resolution and escalation measurement."
+        }
+      ],
+      "note": "Human support remains available for complex or sensitive situations.",
+      "cta": "Explore CustomerVerse Automation & Intelligence"
+    }
+  },
+  "automationIntelligenceAnalytics": {
+    "meta": {
+      "title": "CustomerVerse AI & Analytics | Conversational Service & Customer Intelligence",
+      "description": "Use AI-assisted insurance customer service for questions, intent routing, proactive actions, communication and policyholder experience analytics with human escalation."
+    },
+    "hero": {
+      "eyebrow": "CustomerVerse AI & analytics",
+      "title": "Resolve the routine quickly. Bring people in when the moment needs them.",
+      "lede": "CustomerVerse AI should make insurance easier to understand and service, not trap policyholders inside an automated conversation.",
+      "primary": "Request a demo",
+      "secondary": "Explore features"
+    },
+    "sections": [
+      {
+        "body": [
+          "Use AI for repetitive questions, navigation, status, classification and proactive next actions, while transferring complex, sensitive or judgement-intensive situations to a person with context preserved."
+        ]
+      },
+      {
+        "eyebrow": "How we use the terms",
+        "title": "Automation, AI and analytics are not the same thing.",
+        "features": [
+          {
+            "term": "Automation",
+            "description": "Configured rules and workflows that perform predictable tasks automatically."
+          },
+          {
+            "term": "AI / intelligence",
+            "description": "Predictive, language, vision or generative capability used to interpret, predict, summarize or recommend."
+          },
+          {
+            "term": "Analytics",
+            "description": "Dashboards and metrics used to understand performance, and to measure whether automation and intelligence are creating value."
+          }
+        ],
+        "note": "We use the word AI only when the capability genuinely depends on AI, not as a label for ordinary workflow automation."
+      },
+      {
+        "number": "01",
+        "eyebrow": "Conversational insurance assistant",
+        "body": [
+          "A policyholder can ask natural-language questions about available policy information, documents, payments, service requests, renewal steps or claim status."
+        ],
+        "roles": [
+          {
+            "role": "AI assistance",
+            "description": "Interpret intent, retrieve approved information, explain the next step and navigate to the correct action."
+          },
+          {
+            "role": "Your service team decides",
+            "description": "Complex advice, disputes, complaints, sensitive claims and exceptions."
+          },
+          {
+            "role": "Time returned",
+            "description": "Fewer routine calls and chats for information already available digitally."
+          }
+        ]
+      },
+      {
+        "number": "02",
+        "eyebrow": "Intent classification & smart routing",
+        "body": [
+          "Classify incoming requests and route them to self-service, customer service, claims, billing, an advisor or a specialist queue."
+        ],
+        "roles": [
+          {
+            "role": "Time returned",
+            "description": "Less manual triage and fewer transfers."
+          }
+        ]
+      },
+      {
+        "number": "03",
+        "eyebrow": "Proactive next-action guidance",
+        "body": [
+          "AI can help prioritize or personalize the action based on permitted data."
+        ],
+        "tags": [
+          "Payment due",
+          "Renewal ready",
+          "Missing document",
+          "Service request updated",
+          "Claim needs information",
+          "Claim progressed"
+        ]
+      },
+      {
+        "number": "04",
+        "eyebrow": "Service-request assistance",
+        "body": [
+          "Help customers understand the information required, prefill or extract selected details where supported, and check whether a request appears complete."
+        ],
+        "roles": [
+          {
+            "role": "Time returned",
+            "description": "Less back-and-forth and less first-pass review."
+          }
+        ]
+      },
+      {
+        "number": "05",
+        "eyebrow": "Communication drafting & summarization",
+        "body": [
+          "Prepare drafts for routine confirmations and status messages, and summarize customer conversations for the representative taking over."
+        ]
+      },
+      {
+        "number": "06",
+        "eyebrow": "Human hand-off with context",
+        "body": [
+          "Transfer customer identity, intent, conversation summary, relevant policy or request status, and documents already provided."
+        ],
+        "roles": [
+          {
+            "role": "Time returned",
+            "description": "Representatives do not ask customers to repeat the whole issue."
+          }
+        ]
+      },
+      {
+        "number": "07",
+        "eyebrow": "Customer analytics",
+        "title": "Understand what customers actually come here to do.",
+        "features": [
+          {
+            "term": "Adoption",
+            "description": "Active users and digital usage."
+          },
+          {
+            "term": "Self-service",
+            "description": "Completion versus abandonment."
+          },
+          {
+            "term": "Intent",
+            "description": "The top reasons customers seek help."
+          },
+          {
+            "term": "Service",
+            "description": "Request volumes and turnaround."
+          },
+          {
+            "term": "Payments",
+            "description": "Reminder-to-payment, where the data exists."
+          },
+          {
+            "term": "Renewals",
+            "description": "Engagement and completion."
+          },
+          {
+            "term": "Claims",
+            "description": "Notification and status-information usage."
+          },
+          {
+            "term": "Channel",
+            "description": "Assistant, portal, messaging, call centre and human hand-off."
+          }
+        ]
+      },
+      {
+        "number": "08",
+        "eyebrow": "AI service metrics",
+        "body": [
+          "Measure self-service completion, first-contact resolution, escalation, re-escalation, time to resolution, customer effort, abandonment, assistant answer acceptance, human correction, repeat contact and complaints.",
+          "Containment rate should not be the only goal."
+        ]
+      },
+      {
+        "number": "09",
+        "eyebrow": "Personalization with boundaries",
+        "body": [
+          "Use preferences, policy context and permitted behavioural information to surface relevant actions, not opaque high-impact decisions."
+        ]
+      },
+      {
+        "number": "10",
+        "eyebrow": "Human-controlled by design",
+        "body": [
+          "Provide an obvious route to a person. Avoid autonomous denial, complaint resolution or high-impact policy decisions without the required review. Use approved knowledge and monitor incorrect-answer risk."
+        ]
+      }
+    ],
+    "cta": {
+      "title": "Make digital service faster without making it less human.",
+      "explore": "CustomerVerse features",
+      "evaluate": "CustomerVerse use cases",
+      "convert": "Request a CustomerVerse demo"
     }
   }
 }

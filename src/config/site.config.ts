@@ -49,8 +49,14 @@ export const PRODUCTS: PageEntry[] = [
   { slug: "claimverse", built: true },
 ];
 
-/** The sub-pages every product has, in nav order. */
-export const PRODUCT_SECTIONS = ["overview", "features", "use-cases"] as const;
+/**
+ * The sub-pages every product has, in nav order.
+ *
+ * `automation-intelligence-analytics` sits before `use-cases` deliberately: it is capability
+ * detail, so it belongs beside Features, while Use cases closes the set by
+ * showing the capability applied.
+ */
+export const PRODUCT_SECTIONS = ["overview", "features", "automation-intelligence-analytics", "use-cases"] as const;
 export type ProductSection = (typeof PRODUCT_SECTIONS)[number];
 
 export const SOLUTIONS: PageEntry[] = [

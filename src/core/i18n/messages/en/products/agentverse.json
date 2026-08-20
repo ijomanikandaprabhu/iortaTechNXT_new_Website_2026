@@ -126,6 +126,13 @@
         }
       ]
     },
+    "automation": {
+      "eyebrow": "Automation, intelligence & analytics",
+      "title": "Return more of the advisor's day to customers.",
+      "body": "Automate reminders, follow-up tasks, renewal alerts and routine workflow. Use predictive or generative intelligence for lead priority, customer preparation, recommendations and summaries where validated. Use analytics to help managers coach and allocate attention.",
+      "responsibility": "Advice remains human-led.",
+      "cta": "Explore AgentVerse Automation & Intelligence"
+    },
     "cta": {
       "title": "Give advisors more time for the relationship.",
       "convert": "Request an AgentVerse Demo",
@@ -260,7 +267,10 @@
             "term": "Daily planner",
             "description": "Bring appointments, tasks and follow-ups together."
           },
-          { "term": "Calendar", "description": "Organize scheduled activities." },
+          {
+            "term": "Calendar",
+            "description": "Organize scheduled activities."
+          },
           {
             "term": "Appointments",
             "description": "Connect customer meetings with relevant context."
@@ -557,6 +567,26 @@
       "convert": "Request an AgentVerse Demo",
       "evaluate": "Explore the AgentVerse Overview",
       "explore": "View AgentVerse Use Cases"
+    },
+    "automation": {
+      "eyebrow": "Automation, intelligence & analytics",
+      "title": "What runs automatically behind these features.",
+      "features": [
+        {
+          "term": "Automation",
+          "description": "Reminders, follow-up tasks, renewal alerts, notes capture and routine workflow."
+        },
+        {
+          "term": "Intelligence",
+          "description": "Lead prioritization, daily planning, conversation preparation, next-best-action assistance and coaching signals where validated."
+        },
+        {
+          "term": "Analytics",
+          "description": "Advisor productivity, distribution-leader visibility and automation effectiveness."
+        }
+      ],
+      "note": "Advice remains human-led.",
+      "cta": "Explore AgentVerse Automation & Intelligence"
     }
   },
   "useCases": {
@@ -646,6 +676,201 @@
       "convert": "Request an AgentVerse Demo",
       "evaluate": "Review AgentVerse Features",
       "explore": "Explore the AgentVerse Overview"
+    },
+    "automation": {
+      "eyebrow": "Automation, intelligence & analytics",
+      "title": "The same automation and intelligence at every stage of advisor productivity.",
+      "features": [
+        {
+          "term": "Automation",
+          "description": "Reminders, follow-ups, renewal alerts and routine advisor workflow."
+        },
+        {
+          "term": "Intelligence",
+          "description": "Lead priority, customer preparation and recommendations where validated."
+        },
+        {
+          "term": "Analytics",
+          "description": "Advisor productivity and manager coaching visibility."
+        }
+      ],
+      "note": "Advice remains human-led.",
+      "cta": "Explore AgentVerse Automation & Intelligence"
+    }
+  },
+  "automationIntelligenceAnalytics": {
+    "meta": {
+      "title": "AgentVerse AI & Analytics | Advisor Copilot & Performance Intelligence",
+      "description": "Use AI-assisted advisor workflows for lead priority, customer preparation, next actions, cross-sell, follow-ups, coaching and distribution analytics."
+    },
+    "hero": {
+      "eyebrow": "AgentVerse AI & analytics",
+      "title": "Give every advisor a digital copilot for the work around the relationship.",
+      "lede": "Agents create value through trust, advice and customer understanding. AI is most useful when it removes the preparation, searching, note-taking and planning around those conversations.",
+      "primary": "Request a demo",
+      "secondary": "Explore features"
+    },
+    "sections": [
+      {
+        "eyebrow": "How we use the terms",
+        "title": "Automation, AI and analytics are not the same thing.",
+        "features": [
+          {
+            "term": "Automation",
+            "description": "Configured rules and workflows that perform predictable tasks automatically."
+          },
+          {
+            "term": "AI / intelligence",
+            "description": "Predictive, language, vision or generative capability used to interpret, predict, summarize or recommend."
+          },
+          {
+            "term": "Analytics",
+            "description": "Dashboards and metrics used to understand performance, and to measure whether automation and intelligence are creating value."
+          }
+        ],
+        "note": "We use the word AI only when the capability genuinely depends on AI, not as a label for ordinary workflow automation."
+      },
+      {
+        "number": "01",
+        "eyebrow": "Smart daily plan",
+        "body": [
+          "Combine assigned leads, overdue tasks, upcoming meetings, renewals and application status to propose a prioritized day."
+        ],
+        "roles": [
+          {
+            "role": "Time returned",
+            "description": "Less time reviewing separate lead, task, calendar and renewal screens every morning."
+          }
+        ]
+      },
+      {
+        "number": "02",
+        "eyebrow": "Lead prioritization",
+        "body": [
+          "Use available lead and engagement information to help advisors focus on the opportunities more likely to require action. Potential signals include lead score, engagement, campaign source, recent activity and purchase propensity."
+        ]
+      },
+      {
+        "number": "03",
+        "eyebrow": "Customer conversation preparation",
+        "body": [
+          "AI can summarize customer information, existing policies, recent activities, open requirements and upcoming renewal events."
+        ],
+        "roles": [
+          {
+            "role": "Time returned",
+            "description": "Less pre-call searching, and fewer missed details."
+          }
+        ]
+      },
+      {
+        "number": "04",
+        "eyebrow": "Next-best-action & cross-sell assistance",
+        "body": [
+          "Use customer and policy context to suggest relevant follow-up or additional protection conversations."
+        ],
+        "roles": [
+          {
+            "role": "The advisor decides",
+            "description": "Suitability, advice, disclosures and the final recommendation."
+          }
+        ]
+      },
+      {
+        "number": "05",
+        "eyebrow": "Automated notes & follow-ups",
+        "body": [
+          "Where conversations are captured lawfully and with appropriate consent, AI can summarize interaction notes and propose tasks."
+        ],
+        "roles": [
+          {
+            "role": "Time returned",
+            "description": "Less CRM entry and task creation."
+          }
+        ]
+      },
+      {
+        "number": "06",
+        "eyebrow": "Voice, chat & knowledge assistant",
+        "body": [
+          "Advisors can ask product and process questions, locate approved content, prepare customer explanations and navigate workflow without searching multiple repositories."
+        ]
+      },
+      {
+        "number": "07",
+        "eyebrow": "Intelligent coaching",
+        "body": [
+          "Managers can use activity, pipeline, conversion, renewal and learning data to identify coaching opportunities such as high activity with low conversion, slow lead response, renewal backlog or incomplete applications.",
+          "The manager decides the coaching response."
+        ]
+      },
+      {
+        "number": "08",
+        "eyebrow": "Advisor analytics",
+        "title": "Measure the whole advisor lifecycle, not just sales.",
+        "features": [
+          {
+            "term": "Activation",
+            "description": "Onboarding completion and time-to-active."
+          },
+          {
+            "term": "Activity",
+            "description": "Leads, calls, meetings, tasks and follow-up."
+          },
+          {
+            "term": "Sales",
+            "description": "Pipeline, conversion and issued business."
+          },
+          {
+            "term": "Customers",
+            "description": "Portfolio, service and cross-sell activity."
+          },
+          {
+            "term": "Renewals",
+            "description": "Upcoming, contacted, completed and at-risk."
+          },
+          {
+            "term": "Performance",
+            "description": "Target progress, product mix and incentives where supported."
+          }
+        ]
+      },
+      {
+        "number": "09",
+        "eyebrow": "Distribution-leader analytics",
+        "tags": [
+          "Team performance",
+          "Territory and branch comparison",
+          "Lead allocation",
+          "Advisor activation",
+          "Productivity",
+          "Conversion",
+          "Renewal coverage",
+          "Coaching opportunities",
+          "Digital adoption"
+        ]
+      },
+      {
+        "number": "10",
+        "eyebrow": "AI effectiveness metrics",
+        "body": [
+          "Time spent preparing for meetings, manual CRM entry time, suggested-task acceptance, lead-score lift, recommendation acceptance, response time, customer-facing activity, manager report preparation, coaching actions and renewal follow-up coverage.",
+          "Do not publish generic productivity percentages without production evidence."
+        ]
+      },
+      {
+        "number": "11",
+        "eyebrow": "Human-controlled by design",
+        "body": [
+          "AI should not autonomously provide regulated advice or make suitability decisions. Maintain approved content, user override and clear escalation."
+        ]
+      }
+    ],
+    "cta": {
+      "title": "Return more of the advisor's day to customers.",
+      "explore": "AgentVerse features",
+      "evaluate": "AgentVerse use cases",
+      "convert": "Request an AgentVerse demo"
     }
   }
 }

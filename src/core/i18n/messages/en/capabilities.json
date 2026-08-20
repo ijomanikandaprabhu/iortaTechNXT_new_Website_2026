@@ -150,6 +150,14 @@
           "Core-system modernization",
           "Operations dashboards"
         ]
+      },
+      {
+        "eyebrow": "Automation & intelligence",
+        "title": "Designing automation and intelligent experiences.",
+        "body": [
+          "Design should make it clear when the system has automated an action, when a recommendation is generated and when the user must decide.",
+          "Show source and context where useful. Provide accept, reject or override controls for recommendations. Make escalation visible. Distinguish generated content from verified system data. Design exception states as carefully as the happy path."
+        ]
       }
     ],
     "cta": {
@@ -313,6 +321,21 @@
         "body": [
           "Start with a specific business decision or workload. Identify data and rules. Design the human and automation boundary. Connect required systems. Test against real exceptions. Introduce monitoring and controls. Measure operational impact."
         ]
+      },
+      {
+        "eyebrow": "Automation before AI",
+        "title": "Use the simplest reliable mechanism that solves the work.",
+        "features": [
+          {
+            "term": "Rules and workflow automation",
+            "description": "For deterministic actions."
+          },
+          {
+            "term": "AI",
+            "description": "Only when prediction, natural-language understanding, vision, generation or model-based classification adds real value."
+          }
+        ],
+        "note": "This reduces cost, complexity and governance burden, while making the intelligent functions easier to explain and measure."
       }
     ],
     "cta": {
@@ -481,6 +504,15 @@
         "body": [
           "A dashboard alone does not change operations. Where appropriate, analytics can create alerts, prioritize queues, trigger workflows, recommend actions or support decisions inside SalesVerse, AgentVerse, ClaimVerse or operational applications."
         ]
+      },
+      {
+        "eyebrow": "Automation & intelligence",
+        "title": "Automation and intelligence measurement.",
+        "body": [
+          "Data should support both the workflow and the measurement of its impact.",
+          "Track automation rate, exception rate, human touches, override rate, recommendation acceptance, extraction corrections, turnaround, workload, productivity and customer outcome."
+        ],
+        "note": "These metrics help distinguish real operational improvement from technology usage alone."
       }
     ],
     "cta": {
@@ -635,6 +667,15 @@
           "Assess delivery constraints. Identify high-friction hand-offs. Automate repeatable steps. Improve test coverage. Introduce release and operational telemetry. Adjust team and architecture boundaries where necessary.",
           "Measure lead time, failure rate, recovery and production quality."
         ]
+      },
+      {
+        "eyebrow": "Automation & intelligence",
+        "title": "Automation and intelligent-service operations.",
+        "body": [
+          "Use delivery automation for build, test, deployment, environment provisioning and monitoring.",
+          "Where AI or model services are implemented, add appropriate versioning, evaluation, monitoring, rollback and change controls."
+        ],
+        "note": "Ordinary CI/CD automation is delivery automation. It is not described as AI."
       }
     ],
     "cta": {
@@ -781,6 +822,14 @@
           "Open Finance and consent journeys",
           "Data platforms"
         ]
+      },
+      {
+        "eyebrow": "Automation & intelligence",
+        "title": "Automation and intelligence connectivity.",
+        "body": [
+          "Expose approved policy, customer, product, claim, payment, document and workflow services, so automation and intelligent applications can consume enterprise capabilities through controlled APIs."
+        ],
+        "note": "Data ownership, permissions, rate limits, auditability and failure handling stay explicit."
       }
     ],
     "proof": {
@@ -905,6 +954,14 @@
           "Customer portals",
           "Claims integration",
           "Reporting and data access"
+        ]
+      },
+      {
+        "eyebrow": "Automation & intelligence",
+        "title": "Automation around established Oracle platforms.",
+        "body": [
+          "Use APIs, workflow layers and modern applications to automate work around Oracle-based insurance platforms, without forcing immediate core replacement.",
+          "Where intelligent applications need Oracle-held data, expose it through governed services and data layers rather than uncontrolled direct access."
         ]
       }
     ],
@@ -1055,6 +1112,14 @@
           "Product and project engineering teams, modernization programs, managed application support, enhancement teams and mixed build-and-run models.",
           "Engagement structure should be matched to ownership, business criticality and release cadence."
         ]
+      },
+      {
+        "eyebrow": "Automation & intelligence",
+        "title": "Build automation into the application.",
+        "body": [
+          "Automate repetitive workflow, validation, notifications, routing and operational tasks during application design, not as an afterthought.",
+          "Add AI only where a genuine interpretation, prediction or generative use case exists, and include monitoring, human override and production support for that capability."
+        ]
       }
     ],
     "cta": {
@@ -1188,6 +1253,27 @@
           "Customer servicing",
           "Regional rollouts"
         ]
+      },
+      {
+        "eyebrow": "Automation & intelligence",
+        "title": "Automation and intelligence strategy.",
+        "body": [
+          "Identify where work is deterministic, where judgement is required and where AI can genuinely reduce interpretation effort. Create a roadmap that separates:"
+        ],
+        "features": [
+          {
+            "term": "Automate now",
+            "description": "Rules, workflow, tasks, routing."
+          },
+          {
+            "term": "Use intelligence where valuable",
+            "description": "Prediction, summarization, document understanding, recommendations."
+          },
+          {
+            "term": "Measure everything",
+            "description": "Time, throughput, exceptions, quality and business outcome."
+          }
+        ]
       }
     ],
     "cta": {
@@ -1313,6 +1399,14 @@
           "Performance feedback",
           "Knowledge transition"
         ]
+      },
+      {
+        "eyebrow": "Automation & intelligence",
+        "title": "Automation and intelligence skills.",
+        "body": [
+          "Where required, extend teams with workflow engineers, data engineers, analytics specialists, ML and AI engineers, QA specialists, and product and business analysts."
+        ],
+        "note": "Skills are matched to the actual delivery need rather than labelled as AI roles by default."
       }
     ],
     "cta": {
@@ -1491,6 +1585,21 @@
           "Security contact",
           "Responsible disclosure support"
         ]
+      },
+      {
+        "eyebrow": "Automation & AI-specific risk",
+        "title": "Match the control to the mechanism.",
+        "features": [
+          {
+            "term": "Automation risk",
+            "description": "Incorrect rules, over-broad permissions, failed escalations and unintended workflow progression."
+          },
+          {
+            "term": "AI risk",
+            "description": "Prompt and instruction abuse, sensitive-data leakage, hallucination, model misuse, adversarial input, deepfake and social engineering, and third-party model risk."
+          }
+        ],
+        "note": "Controls should match the mechanism and the business impact."
       }
     ],
     "cta": {
@@ -1662,6 +1771,21 @@
           "Release readiness",
           "Risks and exceptions"
         ]
+      },
+      {
+        "eyebrow": "Automation & intelligence",
+        "title": "Test automation and intelligent functions differently.",
+        "features": [
+          {
+            "term": "Workflow automation testing",
+            "description": "Rules, triggers, routing, retries, approvals, exception paths and idempotency."
+          },
+          {
+            "term": "AI testing",
+            "description": "Evaluation sets, accuracy, hallucination and error rate, confidence and uncertainty, bias and fairness where relevant, human escalation, regression, and model or service changes."
+          }
+        ],
+        "note": "Deterministic workflow logic is tested as workflow. It does not carry a generic AI testing label."
       }
     ],
     "cta": {

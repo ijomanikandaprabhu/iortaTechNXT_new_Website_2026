@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { PageHero } from "@/components/sections/PageHero";
 import { JourneySteps, Prose, Section, TagList, bandTone } from "@/components/sections/Section";
 import {
@@ -61,11 +62,25 @@ export async function ProductOverviewPage({ locale, slug }: { locale: Locale; sl
     pendingNote: string;
   };
   const faq = t.raw("faq") as { eyebrow: string; title: string; items: FaqItem[] };
+  /**
+   * `responsibility` is optional on purpose. Every product states who stays in
+   * control of the judgement calls — except MerchantVerse, whose spec block
+   * carries no such line because its AI capability is not yet validated for
+   * publication.
+   */
+  const automation = t.raw("automation") as {
+    eyebrow: string;
+    title: string;
+    body: string;
+    responsibility?: string;
+    cta: string;
+  };
   const cta = t.raw("cta") as { title: string; convert: string; explore: string };
 
   const demoHref = getLocalizedPath("/contact", locale);
   const featuresHref = getLocalizedPath(productPath(slug, "features"), locale);
   const useCasesHref = getLocalizedPath(productPath(slug, "use-cases"), locale);
+  const aiHref = getLocalizedPath(productPath(slug, "automation-intelligence-analytics"), locale);
 
   // Carries the product's brand palette through the whole page body (not
   // just the hero) — everywhere except the header and footer, which stay
@@ -131,6 +146,24 @@ export async function ProductOverviewPage({ locale, slug }: { locale: Locale; sl
 
       <Section eyebrow={faq.eyebrow} title={faq.title} tint={tint} tone={bandTone(7)}>
         <FaqList items={faq.items} />
+      </Section>
+
+      {/* The spec places this after the questions and immediately before the
+          conversion band: it is the last thing read before the ask. */}
+      <Section
+        eyebrow={automation.eyebrow}
+        lede={automation.body}
+        title={automation.title}
+        tint={tint}
+        tone={bandTone(8)}
+      >
+        {automation.responsibility ? (
+          <p className="sec__note">{automation.responsibility}</p>
+        ) : null}
+        <Link className="related__link" href={aiHref}>
+          {automation.cta}
+          <span aria-hidden="true"> →</span>
+        </Link>
       </Section>
 
       <CtaBand

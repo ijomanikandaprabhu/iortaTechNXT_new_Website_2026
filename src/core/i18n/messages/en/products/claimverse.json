@@ -23,7 +23,13 @@
     "journey": {
       "eyebrow": "Claim journey",
       "title": "Notify. Triage. Assess. Decide. Settle.",
-      "steps": ["Notify", "Triage", "Assess", "Decide", "Settle"],
+      "steps": [
+        "Notify",
+        "Triage",
+        "Assess",
+        "Decide",
+        "Settle"
+      ],
       "body": "Capture claim information. Determine the appropriate path. Bring evidence, tasks and assessment together. Support review and approval. Progress settlement and communication."
     },
     "builtFor": {
@@ -124,6 +130,13 @@
           "answer": "Claim status and customer communication can be exposed through appropriate digital experiences and integrations."
         }
       ]
+    },
+    "automation": {
+      "eyebrow": "Automation, intelligence & analytics",
+      "title": "Automate routine claim work. Use intelligence where interpretation is needed.",
+      "body": "Use workflow automation for tasks, queues, SLA escalation, status communication and straight-through processing. Use intelligent assistance for document understanding, summaries, model-based triage or anomaly signals where validated. Use analytics to measure cycle time, workload, automation and exceptions.",
+      "responsibility": "Material claim decisions remain under defined human authority.",
+      "cta": "Explore ClaimVerse Automation & Intelligence"
     },
     "cta": {
       "title": "Move every claim forward with clearer control.",
@@ -676,6 +689,26 @@
       "convert": "Request a ClaimVerse Demo",
       "evaluate": "Explore the ClaimVerse Overview",
       "explore": "View ClaimVerse Use Cases"
+    },
+    "automation": {
+      "eyebrow": "Automation, intelligence & analytics",
+      "title": "What runs automatically behind these features.",
+      "features": [
+        {
+          "term": "Automation",
+          "description": "Tasks, queues, routing, SLA escalation, status communication and straight-through processing for eligible claims."
+        },
+        {
+          "term": "Intelligence",
+          "description": "Document and evidence understanding, claim summarization, model-based triage and anomaly signals where validated."
+        },
+        {
+          "term": "Analytics",
+          "description": "Cycle time, workload, automation rate and exception visibility."
+        }
+      ],
+      "note": "Material claim decisions remain under defined human authority.",
+      "cta": "Explore ClaimVerse Automation & Intelligence"
     }
   },
   "useCases": {
@@ -772,6 +805,218 @@
       "convert": "Request a ClaimVerse Demo",
       "evaluate": "Review ClaimVerse Features",
       "explore": "Explore the ClaimVerse Overview"
+    },
+    "automation": {
+      "eyebrow": "Automation, intelligence & analytics",
+      "title": "The same automation and intelligence across every claim path.",
+      "features": [
+        {
+          "term": "Automation",
+          "description": "Tasks, queues, SLA escalation, status communication and straight-through processing where eligible."
+        },
+        {
+          "term": "Intelligence",
+          "description": "Document understanding, summarization and model-based triage where validated."
+        },
+        {
+          "term": "Analytics",
+          "description": "Cycle time, workload, automation rate and exceptions."
+        }
+      ],
+      "note": "Material claim decisions remain under defined human authority.",
+      "cta": "Explore ClaimVerse Automation & Intelligence"
+    }
+  },
+  "automationIntelligenceAnalytics": {
+    "meta": {
+      "title": "ClaimVerse AI & Analytics | Claims Triage, Fraud Signals & STP",
+      "description": "Use AI-assisted claims intake, document processing, triage, fraud signals, claim summaries, next actions, straight-through processing and claims analytics."
+    },
+    "hero": {
+      "eyebrow": "ClaimVerse AI & analytics",
+      "title": "Let claim professionals spend more time resolving the claim.",
+      "lede": "Claims teams lose time reading documents, re-keying information, assigning cases, checking completeness, answering routine status questions and preparing repetitive communication.",
+      "primary": "Request a demo",
+      "secondary": "Explore features"
+    },
+    "sections": [
+      {
+        "body": [
+          "AI can reduce that administrative load while keeping coverage, liability, fraud, settlement and complex customer decisions under human control."
+        ]
+      },
+      {
+        "eyebrow": "How we use the terms",
+        "title": "Automation, AI and analytics are not the same thing.",
+        "features": [
+          {
+            "term": "Automation",
+            "description": "Configured rules and workflows that perform predictable tasks automatically."
+          },
+          {
+            "term": "AI / intelligence",
+            "description": "Predictive, language, vision or generative capability used to interpret, predict, summarize or recommend."
+          },
+          {
+            "term": "Analytics",
+            "description": "Dashboards and metrics used to understand performance, and to measure whether automation and intelligence are creating value."
+          }
+        ],
+        "note": "We use the word AI only when the capability genuinely depends on AI, not as a label for ordinary workflow automation."
+      },
+      {
+        "number": "01",
+        "eyebrow": "Conversational first notification",
+        "body": [
+          "AI-assisted voice or chat can guide a customer through first notification, ask relevant follow-up questions and capture structured information where supported."
+        ],
+        "roles": [
+          {
+            "role": "Time returned",
+            "description": "Less call-centre scripting and manual re-keying during routine notification."
+          }
+        ]
+      },
+      {
+        "number": "02",
+        "eyebrow": "Document & evidence intelligence",
+        "body": [
+          "Classify documents, extract selected fields, summarize reports, identify missing items, link evidence to the claim and surface inconsistencies.",
+          "For image and vision capabilities, publish only assessment use cases validated for the current release."
+        ],
+        "roles": [
+          {
+            "role": "Time returned",
+            "description": "Less first-pass document reading and data entry."
+          }
+        ]
+      },
+      {
+        "number": "03",
+        "eyebrow": "Claim summarization",
+        "body": [
+          "Create a concise working summary from claim details, timeline, documents, tasks, provider activity and communication."
+        ],
+        "roles": [
+          {
+            "role": "Time returned",
+            "description": "Less time reconstructing the case when it is reassigned or escalated."
+          }
+        ]
+      },
+      {
+        "number": "04",
+        "eyebrow": "Intelligent triage & routing",
+        "body": [
+          "Use claim type, severity, completeness, product, customer context, risk and fraud signals, and workload to recommend priority and queue."
+        ],
+        "roles": [
+          {
+            "role": "Time returned",
+            "description": "Less manual queue sorting."
+          }
+        ]
+      },
+      {
+        "number": "05",
+        "eyebrow": "Fraud & anomaly signals",
+        "body": [
+          "AI routes for investigation. It should not automatically accuse or deny."
+        ],
+        "tags": [
+          "Potential duplicate",
+          "Identity mismatch",
+          "Document anomaly",
+          "Inconsistent loss information",
+          "Suspicious pattern",
+          "External fraud or risk signal"
+        ]
+      },
+      {
+        "number": "06",
+        "eyebrow": "Next-best-action assistance",
+        "body": [
+          "Suggest missing evidence, provider assignment, follow-up task, customer communication or approval step according to claim state."
+        ]
+      },
+      {
+        "number": "07",
+        "eyebrow": "Straight-through processing",
+        "title": "Let eligible routine claims move automatically.",
+        "body": [
+          "Claims meeting defined criteria can progress through validation, routing, approval or settlement preparation with limited touch. Exceptions stop and move to human review."
+        ]
+      },
+      {
+        "number": "08",
+        "eyebrow": "Communication assistance",
+        "body": [
+          "Draft acknowledgement, missing-information requests, status updates, provider communication and settlement messages for review."
+        ]
+      },
+      {
+        "number": "09",
+        "eyebrow": "Claims analytics",
+        "title": "See the inventory, the speed and the exceptions.",
+        "features": [
+          {
+            "term": "Volume",
+            "description": "Notifications, open inventory and closures."
+          },
+          {
+            "term": "Speed",
+            "description": "Intake-to-assignment, stage time and cycle time."
+          },
+          {
+            "term": "Workload",
+            "description": "Queue and handler inventory."
+          },
+          {
+            "term": "Quality",
+            "description": "Missing documents, rework, reopen and exceptions."
+          },
+          {
+            "term": "Automation",
+            "description": "Touchless rate, automated tasks and human interventions."
+          },
+          {
+            "term": "Fraud and control",
+            "description": "Referrals and reviewed outcomes."
+          },
+          {
+            "term": "Providers",
+            "description": "Assignment and turnaround where supported."
+          },
+          {
+            "term": "Customer",
+            "description": "Status enquiries and communication."
+          },
+          {
+            "term": "Financial",
+            "description": "Settlement and payment progress; leakage and reserving only where validated."
+          }
+        ]
+      },
+      {
+        "number": "10",
+        "eyebrow": "AI effectiveness analytics",
+        "body": [
+          "Measure minutes saved on intake, documents processed automatically, extraction correction rate, triage override rate, straight-through exception rate, handler touches per claim, communication-draft edit rate, investigation precision, cycle-time movement and customer repeat contact."
+        ]
+      },
+      {
+        "number": "11",
+        "eyebrow": "Human-controlled by design",
+        "body": [
+          "Keep coverage interpretation, liability decisions, fraud investigation, material settlement decisions and sensitive customer interactions under defined authority. Provide evidence, confidence and exception handling, audit trail, override and escalation."
+        ]
+      }
+    ],
+    "cta": {
+      "title": "Automate routine claim work without automating away judgement.",
+      "explore": "ClaimVerse features",
+      "evaluate": "ClaimVerse use cases",
+      "convert": "Request a ClaimVerse demo"
     }
   }
 }

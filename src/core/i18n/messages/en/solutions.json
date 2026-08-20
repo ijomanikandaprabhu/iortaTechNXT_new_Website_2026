@@ -144,6 +144,25 @@
           "Faster lead handling. Better intermediary productivity. More consistent sales execution. Clearer channel performance. Easier partner activation. Fewer manual hand-offs. More reuse of insurer services across channels.",
           "Outcomes should be measured against an agreed baseline rather than presented as guaranteed percentages."
         ]
+      },
+      {
+        "eyebrow": "Automation, intelligence & analytics",
+        "title": "Reduce the administration around every distribution channel.",
+        "features": [
+          {
+            "term": "Automation",
+            "description": "Lead assignment, follow-up tasks, reminders, workflow progression, application status, renewal alerts and SLA escalation."
+          },
+          {
+            "term": "Intelligence",
+            "description": "Predictive lead scoring, propensity, recommendations, customer and advisor summaries, and conversational assistance where validated."
+          },
+          {
+            "term": "Analytics",
+            "description": "Channel conversion, advisor productivity, partner performance, pipeline ageing, response time and issuance turnaround."
+          }
+        ],
+        "note": "The goal is not to automate the relationship. It is to automate the work around the relationship."
       }
     ],
     "proof": {
@@ -327,6 +346,25 @@
         "body": [
           "Less administrative handling. Better submission quality. Shorter waiting time. More consistent workflow. Clearer referrals. Greater specialist capacity. Better decision traceability."
         ]
+      },
+      {
+        "eyebrow": "Automation, intelligence & analytics",
+        "title": "Prepare the case before specialist time is consumed.",
+        "features": [
+          {
+            "term": "Automation",
+            "description": "Completeness checks, routing, referrals, tasks, authority workflow, straight-through progression and exception escalation."
+          },
+          {
+            "term": "Intelligence",
+            "description": "Document understanding, submission summarization, and model-assisted triage or risk signals where validated."
+          },
+          {
+            "term": "Analytics",
+            "description": "Submission volume, completeness, referral rate, turnaround, queue ageing, straight-through rate and human override."
+          }
+        ],
+        "note": "Automation moves predictable work; underwriting judgement remains with the appropriate authority."
       }
     ],
     "proof": {
@@ -475,6 +513,28 @@
           "Observability",
           "Quality engineering"
         ]
+      },
+      {
+        "eyebrow": "Automation, intelligence & analytics",
+        "title": "Make core capabilities usable by modern workflows and intelligence.",
+        "body": [
+          "Core modernization can expose policy, customer, claims, product, payment and document services through APIs and data layers, so new automation and intelligent applications do not depend on direct access to legacy interfaces."
+        ],
+        "features": [
+          {
+            "term": "Automation",
+            "description": "Orchestrate processes around established core transactions."
+          },
+          {
+            "term": "Intelligence",
+            "description": "Use approved data and services for summarization, prediction or recommendations where justified."
+          },
+          {
+            "term": "Analytics",
+            "description": "Measure operational performance across both modern and legacy components."
+          }
+        ],
+        "note": "This extends the value of the core while reducing the amount of manual work around it."
       }
     ],
     "proof": {
@@ -657,6 +717,25 @@
           "Quality",
           "Core modernization"
         ]
+      },
+      {
+        "eyebrow": "Automation, intelligence & analytics",
+        "title": "Build digital operations, not only digital screens.",
+        "features": [
+          {
+            "term": "Automation",
+            "description": "Onboarding tasks, documents, approvals, service requests, reminders, claim routing and eligible straight-through progression."
+          },
+          {
+            "term": "Intelligence",
+            "description": "Lead scoring, document understanding, conversational assistance and model-based decision support where validated."
+          },
+          {
+            "term": "Analytics",
+            "description": "Acquisition, conversion, servicing, claims, workload and operational turnaround."
+          }
+        ],
+        "note": "Technology should support Takaful-specific rules and governance. Automation or AI does not replace the operator's Shariah or regulatory responsibilities."
       }
     ],
     "proof": {

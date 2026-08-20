@@ -1,5 +1,5 @@
 import { PageHero } from "@/components/sections/PageHero";
-import { Prose, Section, bandTone } from "@/components/sections/Section";
+import { FeatureList, Prose, Section, bandTone, type FeatureItem } from "@/components/sections/Section";
 import { CardGrid, FilterList, type CardItem } from "@/components/sections/Cards";
 import { CtaBand } from "@/components/sections/Blocks";
 import type { Locale } from "@/core/i18n/config";
@@ -24,7 +24,16 @@ type Filters = { label: string; items: string[] };
  * has no published announcements or confirmed events at all, and both listings
  * end with a "how we publish" group that is explanation rather than cards.
  */
-type Group = { eyebrow?: string; title?: string; body?: string[]; items?: CardItem[] };
+type Group = {
+  eyebrow?: string;
+  title?: string;
+  body?: string[];
+  items?: CardItem[];
+  /** Term/description pairs — the Customer Stories proof frame. */
+  features?: FeatureItem[];
+  /** Closing line, rendered after every other block. */
+  note?: string;
+};
 type Cta = { title: string; convert?: string; evaluate?: string; explore?: string };
 
 export async function ListingPage({
@@ -78,7 +87,9 @@ export async function ListingPage({
           tone={bandTone(index + (filters ? 1 : 0))}
         >
           {group.body && group.body.length > 1 ? <Prose paragraphs={group.body} /> : null}
+          {group.features ? <FeatureList items={group.features} /> : null}
           {group.items?.length ? <CardGrid items={group.items} /> : null}
+          {group.note ? <p className="sec__note">{group.note}</p> : null}
         </Section>
       ))}
 

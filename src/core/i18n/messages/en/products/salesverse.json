@@ -49,7 +49,10 @@
           "role": "Sales managers",
           "description": "Pipeline, conversion, forecasting and team performance."
         },
-        { "role": "Business leaders", "description": "Channel and growth visibility." },
+        {
+          "role": "Business leaders",
+          "description": "Channel and growth visibility."
+        },
         {
           "role": "Operations teams",
           "description": "Applications, documents, exceptions and turnaround."
@@ -133,13 +136,19 @@
         }
       ]
     },
+    "automation": {
+      "eyebrow": "Automation, intelligence & analytics",
+      "title": "Automate the follow-up. Use intelligence for the next decision.",
+      "body": "Use workflow automation for tasks, reminders, alerts and application progression. Use predictive intelligence for lead scoring, propensity and recommendations. Use analytics to understand pipeline, conversion, productivity and turnaround.",
+      "responsibility": "The seller remains responsible for advice and customer decisions.",
+      "cta": "Explore SalesVerse Automation & Intelligence"
+    },
     "cta": {
       "title": "Don't just manage leads. Move business.",
       "convert": "Request a SalesVerse Demo",
       "explore": "View SalesVerse Use Cases"
     }
   },
-
   "features": {
     "meta": {
       "title": "SalesVerse Features | Insurance Sales, Applications & New Business",
@@ -508,9 +517,28 @@
       "convert": "Request a SalesVerse Demo",
       "evaluate": "Explore the SalesVerse Overview",
       "explore": "View SalesVerse Use Cases"
+    },
+    "automation": {
+      "eyebrow": "Automation, intelligence & analytics",
+      "title": "What runs automatically behind these features.",
+      "features": [
+        {
+          "term": "Automation",
+          "description": "Follow-up tasks, due dates, reminders, rule-triggered next actions and application progression."
+        },
+        {
+          "term": "Intelligence",
+          "description": "Predictive lead scoring and segmentation, cross-sell and up-sell recommendations, interaction summaries and document understanding."
+        },
+        {
+          "term": "Analytics",
+          "description": "Pipeline, conversion, first-response and follow-up time, application turnaround and manager visibility."
+        }
+      ],
+      "note": "The seller remains responsible for advice and customer decisions.",
+      "cta": "Explore SalesVerse Automation & Intelligence"
     }
   },
-
   "useCases": {
     "meta": {
       "title": "SalesVerse Use Cases | Agency, Bancassurance, Direct & Assisted Sales",
@@ -598,6 +626,271 @@
       "convert": "Request a SalesVerse Demo",
       "evaluate": "Review SalesVerse Features",
       "explore": "Explore the SalesVerse Overview"
+    },
+    "automation": {
+      "eyebrow": "Automation, intelligence & analytics",
+      "title": "The same automation and intelligence across every sales model.",
+      "features": [
+        {
+          "term": "Automation",
+          "description": "Lead allocation, follow-up tasks, reminders and application progression, whichever channel the sale starts in."
+        },
+        {
+          "term": "Intelligence",
+          "description": "Lead scoring, recommendations and interaction summaries where validated."
+        },
+        {
+          "term": "Analytics",
+          "description": "Channel conversion, productivity and issuance turnaround."
+        }
+      ],
+      "note": "The seller remains responsible for advice and customer decisions.",
+      "cta": "Explore SalesVerse Automation & Intelligence"
+    }
+  },
+  "automationIntelligenceAnalytics": {
+    "meta": {
+      "title": "SalesVerse AI & Analytics | Lead Intelligence & Sales Automation",
+      "description": "Use SalesVerse AI and analytics for lead scoring, segmentation, next-action guidance, cross-sell recommendations, sentiment, assistants and sales-performance intelligence."
+    },
+    "hero": {
+      "eyebrow": "SalesVerse AI & analytics",
+      "title": "Spend less time sorting the pipeline. More time moving business.",
+      "lede": "SalesVerse can use AI and analytics to reduce the administrative work around insurance selling: deciding which lead to call first, preparing for a customer conversation, identifying the next follow-up, finding relevant cross-sell opportunities and understanding where the pipeline is slowing down.",
+      "primary": "Request a demo",
+      "secondary": "Explore features"
+    },
+    "sections": [
+      {
+        "body": [
+          "The goal is not to replace the seller. It is to return more of the seller's day to customer conversations, and keep managers focused on coaching and decisions rather than manual reporting."
+        ]
+      },
+      {
+        "eyebrow": "How we use the terms",
+        "title": "Automation, AI and analytics are not the same thing.",
+        "features": [
+          {
+            "term": "Automation",
+            "description": "Configured rules and workflows that perform predictable tasks automatically."
+          },
+          {
+            "term": "AI / intelligence",
+            "description": "Predictive, language, vision or generative capability used to interpret, predict, summarize or recommend."
+          },
+          {
+            "term": "Analytics",
+            "description": "Dashboards and metrics used to understand performance, and to measure whether automation and intelligence are creating value."
+          }
+        ],
+        "note": "We use the word AI only when the capability genuinely depends on AI, not as a label for ordinary workflow automation."
+      },
+      {
+        "number": "01",
+        "eyebrow": "Predictive lead scoring & segmentation",
+        "title": "Put the most actionable opportunities closer to the top.",
+        "body": [
+          "Use available lead, customer, campaign and interaction information to score or segment opportunities according to configured models."
+        ],
+        "roles": [
+          {
+            "role": "AI assistance",
+            "description": "Lead score, segment, priority signal, conversion propensity and engagement score."
+          },
+          {
+            "role": "The seller decides",
+            "description": "Sales strategy, suitability, customer treatment and final follow-up decisions."
+          },
+          {
+            "role": "Time returned",
+            "description": "Less manual sorting of lead lists, and less manager effort prioritizing attention from spreadsheets alone."
+          }
+        ]
+      },
+      {
+        "number": "02",
+        "eyebrow": "Smart cross-sell & up-sell recommendations",
+        "body": [
+          "Use customer, policy and interaction context to surface potential additional needs or relevant next conversations."
+        ],
+        "roles": [
+          {
+            "role": "AI assistance",
+            "description": "Recommendation candidates, purchase propensity and relationship signals."
+          },
+          {
+            "role": "The seller decides",
+            "description": "Suitability, advice, disclosures, customer context and the final recommendation."
+          },
+          {
+            "role": "Time returned",
+            "description": "Less manual portfolio scanning and fewer generic campaigns."
+          }
+        ]
+      },
+      {
+        "number": "03",
+        "eyebrow": "Automated task & follow-up suggestions",
+        "title": "Let the workflow prepare the next action.",
+        "body": [
+          "SalesVerse can suggest tasks after a meeting, application change, missing requirement, customer interaction or stalled opportunity."
+        ],
+        "roles": [
+          {
+            "role": "Automation",
+            "description": "Suggested follow-up, due date, task category, reminder and rule-triggered next action."
+          },
+          {
+            "role": "The seller decides",
+            "description": "Accept, change, reject or escalate the suggestion."
+          },
+          {
+            "role": "Time returned",
+            "description": "Less repetitive CRM task creation, and less pipeline scanning to remember who needs attention."
+          }
+        ]
+      },
+      {
+        "number": "04",
+        "eyebrow": "Interaction intelligence & sentiment",
+        "body": [
+          "Where interaction data is available and permitted, AI can summarize calls, chats or notes and surface sentiment or customer concerns."
+        ],
+        "roles": [
+          {
+            "role": "AI assistance",
+            "description": "Interaction summary, key topics, sentiment signal, unresolved question and follow-up item."
+          },
+          {
+            "role": "Automation",
+            "description": "Create the resulting follow-up task or alert."
+          },
+          {
+            "role": "Time returned",
+            "description": "Less note writing, and less time rereading long interaction histories before the next conversation."
+          }
+        ]
+      },
+      {
+        "number": "05",
+        "eyebrow": "AI voice & chat assistance",
+        "body": [
+          "Use conversational assistance for product information, process questions, lead and customer preparation, and routine interactions where the configured use case permits."
+        ],
+        "roles": [
+          {
+            "role": "AI assistance",
+            "description": "Answer retrieval, guided questions, workflow help, draft responses and conversation summary."
+          },
+          {
+            "role": "Automation",
+            "description": "Trigger approved workflow steps, tasks or reminders after the conversation."
+          },
+          {
+            "role": "The seller decides",
+            "description": "Regulated advice, complex product interpretation, exceptions and sensitive customer situations."
+          },
+          {
+            "role": "Time returned",
+            "description": "Fewer searches across product documents, and less drafting of routine communications."
+          }
+        ]
+      },
+      {
+        "number": "06",
+        "eyebrow": "Application & document intelligence",
+        "body": [
+          "AI can assist with reading uploaded documents, identifying missing information, extracting selected data and preparing applications for operational review where implemented."
+        ],
+        "roles": [
+          {
+            "role": "Time returned",
+            "description": "Less manual re-keying, less first-pass document reading, and fewer requests for information already present."
+          }
+        ]
+      },
+      {
+        "number": "07",
+        "eyebrow": "Sales analytics",
+        "title": "Turn activity into decision-ready sales intelligence.",
+        "features": [
+          {
+            "term": "Pipeline",
+            "description": "Leads, opportunities, stage ageing, conversion and drop-off."
+          },
+          {
+            "term": "Speed",
+            "description": "First-response time, follow-up time and application turnaround."
+          },
+          {
+            "term": "Channel",
+            "description": "Agency, branch, bancassurance, direct or partner performance."
+          },
+          {
+            "term": "Advisor and team",
+            "description": "Activity, conversion, target progress and productivity."
+          },
+          {
+            "term": "Product",
+            "description": "Product mix, quote-to-application and application-to-issue."
+          },
+          {
+            "term": "Customer",
+            "description": "Engagement, renewals and cross-sell response."
+          },
+          {
+            "term": "AI",
+            "description": "Score distribution, recommendation acceptance, assisted conversion and low-value alert rate."
+          }
+        ]
+      },
+      {
+        "number": "08",
+        "eyebrow": "Manager intelligence",
+        "body": [
+          "Surface pipeline at risk, leads without follow-up, applications stalled in operations, teams below expected conversion, renewal workloads and exceptions requiring management action.",
+          "Analytics should become a working queue, not only a month-end dashboard."
+        ]
+      },
+      {
+        "number": "09",
+        "eyebrow": "Measure time returned to people",
+        "body": [
+          "Track minutes spent on lead prioritization, time to first contact, manual tasks created per opportunity, time spent writing notes, application rework, sales-to-operations hand-off time, advisor customer-facing time and manager report preparation.",
+          "Do not publish generic AI time-saving percentages without production measurement."
+        ]
+      },
+      {
+        "number": "10",
+        "eyebrow": "Human-controlled by design",
+        "body": [
+          "Provide human override. Log significant AI-assisted actions. Escalate low-confidence or high-impact cases. Keep regulated advice and underwriting decisions under appropriate human accountability."
+        ]
+      },
+      {
+        "number": "11",
+        "eyebrow": "Data & integration foundation",
+        "body": [
+          "AI quality depends on source quality and clear permissions."
+        ],
+        "tags": [
+          "Lead sources",
+          "CRM and customer data",
+          "Policy data",
+          "Interaction data",
+          "Sales activities",
+          "Product content",
+          "Application status",
+          "Communication services",
+          "Reporting and data platforms"
+        ]
+      }
+    ],
+    "cta": {
+      "title": "Give every sales team a clearer next action.",
+      "explore": "SalesVerse features",
+      "evaluate": "SalesVerse use cases",
+      "convert": "Request a SalesVerse demo"
     }
   }
 }

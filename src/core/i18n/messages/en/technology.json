@@ -205,6 +205,28 @@
         "body": [
           "Modern interfaces and services can be introduced around existing systems first. Higher-change components can move out gradually. Core replacement can happen later where business value justifies it."
         ]
+      },
+      {
+        "eyebrow": "Automation & intelligence layer",
+        "title": "Place automation and intelligence between experience and enterprise services.",
+        "body": [
+          "Automation and intelligence sit between the experience layer and the enterprise services beneath it."
+        ],
+        "steps": [
+          "Experience",
+          "Automation & Intelligence",
+          "Workflow & Business Rules",
+          "APIs / Services",
+          "Data",
+          "Core Insurance Systems"
+        ],
+        "tags": [
+          "Identity",
+          "Security",
+          "Governance",
+          "Observability"
+        ],
+        "note": "Use rules and workflow for deterministic behaviour, and AI or model services only when interpretation, prediction or generation is required."
       }
     ],
     "cta": {
@@ -416,6 +438,15 @@
           "Response time",
           "Business transaction tracing where possible"
         ]
+      },
+      {
+        "eyebrow": "Connectivity for automation & intelligence",
+        "title": "Automation needs transactions. Intelligence needs governed data.",
+        "body": [
+          "Automation needs reliable transactional connectivity. Intelligent functions additionally need governed access to approved data, documents, knowledge and model services.",
+          "Potential integration areas include enterprise knowledge sources, document-intelligence services, model and LLM services where approved, data platforms, search and vector services where used, risk and fraud services, and communication channels."
+        ],
+        "note": "Sensitive core data is not exposed directly to external AI services without approved architecture and controls."
       }
     ],
     "cta": {
@@ -610,6 +641,21 @@
           "We do not publish unsupported certifications, guaranteed uptime, recovery objectives, hosting regions, data-residency commitments, penetration-test results or regulatory compliance statements."
         ],
         "tone": "muted"
+      },
+      {
+        "eyebrow": "Automation & AI controls",
+        "title": "Separate automation controls from AI controls.",
+        "features": [
+          {
+            "term": "Automation controls",
+            "description": "Rule ownership, approval paths, permissions, exception handling, audit, rollback and workflow monitoring."
+          },
+          {
+            "term": "AI controls",
+            "description": "Approved purpose, data boundary, evaluation, human review, source and reference visibility where possible, override, monitoring, model and service change governance, and escalation."
+          }
+        ],
+        "note": "This distinction avoids over-governing simple rules while under-governing higher-risk AI behaviour."
       }
     ],
     "cta": {
@@ -825,6 +871,40 @@
           "Support volumes",
           "Release and change speed",
           "Business outcomes relevant to the implementation"
+        ]
+      },
+      {
+        "eyebrow": "Automation & intelligence",
+        "title": "Implement automation and intelligence in stages.",
+        "features": [
+          {
+            "term": "01 Baseline the work",
+            "description": "Time, touches, backlog, quality and exceptions."
+          },
+          {
+            "term": "02 Automate deterministic steps",
+            "description": "Tasks, routing, alerts, checks and workflow."
+          },
+          {
+            "term": "03 Add intelligence where interpretation remains expensive",
+            "description": "Documents, summaries, recommendations or predictive prioritization."
+          },
+          {
+            "term": "04 Define human boundaries",
+            "description": "What must be reviewed or approved."
+          },
+          {
+            "term": "05 Pilot on real cases",
+            "description": "Include exceptions, not only ideal examples."
+          },
+          {
+            "term": "06 Measure",
+            "description": "Time returned, turnaround, accuracy, overrides and outcome."
+          },
+          {
+            "term": "07 Scale",
+            "description": "Expand only when operational evidence supports it."
+          }
         ]
       }
     ],

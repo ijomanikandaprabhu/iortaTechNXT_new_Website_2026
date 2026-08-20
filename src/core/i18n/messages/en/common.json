@@ -36,11 +36,15 @@
     "productSections": {
       "overview": "Overview",
       "features": "Features",
-      "use-cases": "Use cases"
+      "automation-intelligence-analytics": "Automation & Intelligence",
+      "use-cases": "Use cases",
+      "request-demo": "Request Demo"
     },
     "productSectionDesc": {
       "features": "Capability detail",
-      "use-cases": "How teams use it"
+      "automation-intelligence-analytics": "Intelligence and measurement",
+      "use-cases": "How teams use it",
+      "request-demo": "Talk to us about your journey"
     },
     "productNames": {
       "salesverse": "SALESVERSE",

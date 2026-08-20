@@ -1,6 +1,7 @@
 import { PageHero } from "@/components/sections/PageHero";
-import { Section, bandTone } from "@/components/sections/Section";
+import { FeatureList, Section, bandTone, type FeatureItem } from "@/components/sections/Section";
 import { CtaBand } from "@/components/sections/Blocks";
+import Link from "next/link";
 import type { Locale } from "@/core/i18n/config";
 import { getPageTranslations } from "./translator";
 import { getLocalizedPath } from "@/core/i18n/routing";
@@ -22,6 +23,21 @@ type UseCase = {
   change: string;
 };
 
+/**
+ * The automation, intelligence and analytics section shared by the product
+ * Features and Use Cases pages. Its claims are derived from that product's own
+ * Automation, Intelligence & Analytics page rather than newly asserted, so the
+ * three pages cannot drift apart. `note` is optional: MerchantVerse makes no
+ * AI claim and so states no human-responsibility boundary here.
+ */
+type AutomationBlock = {
+  eyebrow: string;
+  title: string;
+  features: FeatureItem[];
+  note?: string;
+  cta: string;
+};
+
 export async function ProductUseCasesPage({ locale, slug }: { locale: Locale; slug: string }) {
   const t = await getPageTranslations(locale, `products.${slug}.useCases`);
 
@@ -33,6 +49,7 @@ export async function ProductUseCasesPage({ locale, slug }: { locale: Locale; sl
     secondary: string;
   };
   const labels = t.raw("labels") as { situation: string; usage: string; change: string };
+  const automation = t.raw("automation") as AutomationBlock;
   const cases = t.raw("cases") as UseCase[];
   const cta = t.raw("cta") as {
     title: string;
@@ -44,6 +61,7 @@ export async function ProductUseCasesPage({ locale, slug }: { locale: Locale; sl
   const demoHref = getLocalizedPath("/contact", locale);
   const overviewHref = getLocalizedPath(productPath(slug), locale);
   const featuresHref = getLocalizedPath(productPath(slug, "features"), locale);
+  const aiHref = getLocalizedPath(productPath(slug, "automation-intelligence-analytics"), locale);
 
   // Carries the product's brand palette through the whole page body (not
   // just the hero) — everywhere except the header and footer, which stay
@@ -85,6 +103,22 @@ export async function ProductUseCasesPage({ locale, slug }: { locale: Locale; sl
           </dl>
         </Section>
       ))}
+
+      <Section
+        eyebrow={automation.eyebrow}
+        tint={tint}
+        title={automation.title}
+        tone={bandTone(cases.length)}
+      >
+        <FeatureList items={automation.features} />
+        {automation.note ? <p className="sec__note">{automation.note}</p> : null}
+        <p className="supplement__gap">
+          <Link className="related__link" href={aiHref}>
+            {automation.cta}
+            <span aria-hidden="true"> →</span>
+          </Link>
+        </p>
+      </Section>
 
       <CtaBand
         convert={{ label: cta.convert, href: demoHref }}

@@ -110,6 +110,35 @@
         "body": [
           "Faster change. Better channel visibility. Cleaner hand-offs. More digital service. Better operational prioritization. Reduced repetitive work. Stronger integration reuse."
         ]
+      },
+      {
+        "eyebrow": "Automation, intelligence & analytics",
+        "title": "Automate the predictable. Interpret the rest.",
+        "body": [
+          "Across the carrier operating model, use automation for predictable workflow and intelligence for interpretation, prediction and recommendation."
+        ],
+        "features": [
+          {
+            "term": "Distribution",
+            "description": "Assignment, follow-up, prioritization and conversion analytics."
+          },
+          {
+            "term": "Underwriting",
+            "description": "Completeness, routing, document intelligence and decision support."
+          },
+          {
+            "term": "Service",
+            "description": "Status automation, intent routing and assisted digital service."
+          },
+          {
+            "term": "Claims",
+            "description": "Triage, document processing, straight-through processing and exception analytics."
+          },
+          {
+            "term": "Operations",
+            "description": "Queues, SLA, workload and productivity analytics."
+          }
+        ]
       }
     ],
     "proof": {
@@ -261,6 +290,24 @@
         "title": "What the business should feel.",
         "body": [
           "Faster new-business progression. Better advisor productivity. More digital servicing. Earlier renewal action. Cleaner customer communication. Greater operational visibility."
+        ]
+      },
+      {
+        "eyebrow": "Automation, intelligence & analytics",
+        "title": "Support the long-term relationship without adding administration.",
+        "features": [
+          {
+            "term": "Automation",
+            "description": "Advisor tasks, application requirements, underwriting referrals, premium and renewal reminders, service requests and claims workflow."
+          },
+          {
+            "term": "Intelligence",
+            "description": "Lead and propensity signals, application and document understanding, customer summaries, and underwriting support where validated."
+          },
+          {
+            "term": "Analytics",
+            "description": "Advisor productivity, new-business turnaround, referral rate, servicing volume, renewal activity and claims performance."
+          }
         ]
       }
     ],
@@ -423,6 +470,27 @@
         "title": "What the business should feel.",
         "body": [
           "Faster digital distribution. Easier servicing. Better broker and partner connectivity. Cleaner claim intake. Improved operational capacity during high volumes."
+        ]
+      },
+      {
+        "eyebrow": "Automation, intelligence & analytics",
+        "title": "Automate the routine at volume.",
+        "body": [
+          "High-volume insurance benefits most from automating routine work."
+        ],
+        "features": [
+          {
+            "term": "Automation",
+            "description": "Digital application progression, service requests, claim routing, provider tasks, alerts and eligible straight-through processing."
+          },
+          {
+            "term": "Intelligence",
+            "description": "Document understanding, model-based triage, anomaly and fraud signals, and customer assistance where validated."
+          },
+          {
+            "term": "Analytics",
+            "description": "Quote to buy conversion, service turnaround, claim cycle time, catastrophe and event workload, and automation rate."
+          }
         ]
       }
     ],
@@ -589,6 +657,27 @@
         "body": [
           "Less administrative underwriting work. Better submission quality. Faster broker response. Clearer referrals. More specialist capacity. Better decision traceability."
         ]
+      },
+      {
+        "eyebrow": "Automation, intelligence & analytics",
+        "title": "Organize the complexity rather than flatten it.",
+        "body": [
+          "Commercial insurance should use automation to organize complexity rather than pretend complex risk can be made simple."
+        ],
+        "features": [
+          {
+            "term": "Automation",
+            "description": "Submission intake, document checklists, work queues, referrals, authority workflow and broker communication."
+          },
+          {
+            "term": "Intelligence",
+            "description": "Document extraction, submission summaries, external-data synthesis and model-assisted triage where validated."
+          },
+          {
+            "term": "Analytics",
+            "description": "Submission pipeline, turnaround, referrals, workload, decision outcomes and broker response."
+          }
+        ]
       }
     ],
     "related": {
@@ -720,6 +809,24 @@
         "body": [
           "Cleaner bank-to-insurer hand-off. Better relationship-manager support. Less repeated information. Stronger status visibility. More consistent servicing after issuance."
         ]
+      },
+      {
+        "eyebrow": "Automation, intelligence & analytics",
+        "title": "Keep the bank-originated opportunity moving.",
+        "features": [
+          {
+            "term": "Automation",
+            "description": "Bank-originated lead routing, follow-up, application status, document requirements and insurer hand-off."
+          },
+          {
+            "term": "Intelligence",
+            "description": "Lead prioritization, relationship-manager assistance, customer summaries and cross-sell recommendations where validated."
+          },
+          {
+            "term": "Analytics",
+            "description": "Branch and channel conversion, response time, application turnaround and partner performance."
+          }
+        ]
       }
     ],
     "related": {
@@ -845,6 +952,15 @@
           "Data access",
           "Progressive replacement"
         ]
+      },
+      {
+        "eyebrow": "Automation, intelligence & analytics",
+        "title": "Reduce administration without touching governance.",
+        "body": [
+          "Use automation to reduce administration around Takaful distribution, participant service, application processing and claims.",
+          "Use intelligence only where the capability genuinely predicts, interprets or summarizes information."
+        ],
+        "note": "Shariah governance, suitability and material decisions remain with the responsible people and governance bodies. Measure advisor productivity, application turnaround, servicing workload, claim cycle time and exception rates."
       }
     ],
     "proof": {
@@ -997,6 +1113,32 @@
         "body": [
           "More time on relationships. Better renewal control. Faster placement follow-up. More structured advisor management. Better management visibility."
         ]
+      },
+      {
+        "eyebrow": "Automation, intelligence & analytics",
+        "title": "Different work, different automation.",
+        "features": [
+          {
+            "term": "Brokerage automation",
+            "description": "Renewals, tasks, status, service cases, document checklists and finance exceptions."
+          },
+          {
+            "term": "Brokerage intelligence",
+            "description": "Document summaries and comparison assistance where validated."
+          },
+          {
+            "term": "Agency automation",
+            "description": "Lead assignment, tasks, renewal alerts and workflow."
+          },
+          {
+            "term": "Agency intelligence",
+            "description": "Predictive lead priority, customer summaries, recommendations and coaching signals where validated."
+          },
+          {
+            "term": "Analytics",
+            "description": "Placement, renewal, advisor, premium, commission and workload performance."
+          }
+        ]
       }
     ],
     "related": {
@@ -1131,6 +1273,24 @@
         "body": [
           "Faster partner enablement. More reusable insurer connectivity. Lower integration duplication. Better customer continuity after purchase. Stronger control over data exchange."
         ]
+      },
+      {
+        "eyebrow": "Automation, intelligence & analytics",
+        "title": "Insurance workflow your platform does not have to build.",
+        "features": [
+          {
+            "term": "Automation",
+            "description": "Partner onboarding, consent and identity workflow, application progression, policy status and service routing."
+          },
+          {
+            "term": "Intelligence",
+            "description": "Conversational assistance, document understanding, and model-based personalization or anomaly detection where validated."
+          },
+          {
+            "term": "Analytics",
+            "description": "Partner funnel, conversion, API usage, servicing and customer journey performance."
+          }
+        ]
       }
     ],
     "related": {
@@ -1239,6 +1399,24 @@
         "title": "What the business should feel.",
         "body": [
           "Faster partner onboarding. Less integration duplication. Lower checkout friction. Better post-purchase service. Cleaner transition into claims."
+        ]
+      },
+      {
+        "eyebrow": "Automation, intelligence & analytics",
+        "title": "Protection that does not slow the transaction.",
+        "features": [
+          {
+            "term": "Automation",
+            "description": "Partner onboarding, contextual offer workflow, policy confirmation, service notifications and claim routing."
+          },
+          {
+            "term": "Intelligence",
+            "description": "Conversational support, document understanding, and claim summaries or model-based anomaly signals where validated."
+          },
+          {
+            "term": "Analytics",
+            "description": "Attach and conversion rate, partner performance, service volume, claim turnaround and digital completion."
+          }
         ]
       }
     ],
@@ -1394,6 +1572,25 @@
         "body": [
           "Clearer member service. Faster document exchange. Better authorization status. Lower administrative handling. Better provider and member visibility."
         ]
+      },
+      {
+        "eyebrow": "Automation, intelligence & analytics",
+        "title": "Automate the administration around care.",
+        "features": [
+          {
+            "term": "Automation",
+            "description": "Enrollment changes, document requests, authorization routing, member notifications and claims-related workflow."
+          },
+          {
+            "term": "Intelligence",
+            "description": "Natural-language member support, document understanding and model-assisted prioritization where validated."
+          },
+          {
+            "term": "Analytics",
+            "description": "Enrollment, service volume, authorization turnaround, member enquiries, provider workflow and claims-related performance."
+          }
+        ],
+        "note": "These capabilities support the administration around care. Clinical decisions remain with qualified professionals."
       }
     ],
     "related": {

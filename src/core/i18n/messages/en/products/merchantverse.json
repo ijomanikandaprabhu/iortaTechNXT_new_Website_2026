@@ -127,6 +127,12 @@
         }
       ]
     },
+    "automation": {
+      "eyebrow": "Automation, intelligence & analytics",
+      "title": "Reduce the administration behind partner onboarding.",
+      "body": "Use workflow automation for document checklists, review routing, status, reminders, missing-information requests and approval progression. Use analytics for funnel, turnaround and reviewer workload.",
+      "cta": "Explore MerchantVerse Automation & Intelligence"
+    },
     "cta": {
       "title": "Make partner growth easier to operate.",
       "convert": "Request a MerchantVerse Demo",
@@ -543,6 +549,175 @@
       "convert": "Request a MerchantVerse Demo",
       "evaluate": "Review MerchantVerse Features",
       "explore": "Explore Partner Distribution"
+    },
+    "automation": {
+      "eyebrow": "Automation, intelligence & analytics",
+      "title": "The same automation and measurement across every partner model.",
+      "features": [
+        {
+          "term": "Automation",
+          "description": "Document checklists, review routing, status, reminders, missing-information requests and approval progression."
+        },
+        {
+          "term": "Analytics",
+          "description": "Funnel, turnaround and reviewer workload."
+        }
+      ],
+      "cta": "Explore MerchantVerse Automation & Intelligence"
+    }
+  },
+  "automationIntelligenceAnalytics": {
+    "meta": {
+      "title": "MerchantVerse AI & Analytics | Partner Onboarding Intelligence",
+      "description": "Explore AI-assisted partner onboarding for document intake, completeness, application summaries, exception routing and partner-operational analytics."
+    },
+    "hero": {
+      "eyebrow": "MerchantVerse AI & analytics",
+      "title": "Reduce the manual work behind partner onboarding.",
+      "lede": "Partner onboarding creates repetitive effort: read application documents, re-key business information, identify missing items, route reviews, answer status questions and monitor the onboarding pipeline.",
+      "primary": "Request a demo",
+      "secondary": "Explore features"
+    },
+    "sections": [
+      {
+        "body": [
+          "AI can assist those steps while leaving partner acceptance, risk, compliance and commercial decisions under human authority."
+        ]
+      },
+      {
+        "eyebrow": "How we use the terms",
+        "title": "Automation, AI and analytics are not the same thing.",
+        "features": [
+          {
+            "term": "Automation",
+            "description": "Configured rules and workflows that perform predictable tasks automatically."
+          },
+          {
+            "term": "AI / intelligence",
+            "description": "Predictive, language, vision or generative capability used to interpret, predict, summarize or recommend."
+          },
+          {
+            "term": "Analytics",
+            "description": "Dashboards and metrics used to understand performance, and to measure whether automation and intelligence are creating value."
+          }
+        ],
+        "note": "We use the word AI only when the capability genuinely depends on AI, not as a label for ordinary workflow automation."
+      },
+      {
+        "number": "01",
+        "eyebrow": "Application summary",
+        "body": [
+          "Summarize business identity, contact information, partner type, documents received, missing items, previous review activity and open exceptions."
+        ],
+        "roles": [
+          {
+            "role": "Time returned",
+            "description": "Less time assembling the partner record before review."
+          }
+        ]
+      },
+      {
+        "number": "02",
+        "eyebrow": "Document extraction & completeness",
+        "body": [
+          "Where document intelligence is implemented, extract selected business information and compare the submission against required-document checklists."
+        ],
+        "roles": [
+          {
+            "role": "Time returned",
+            "description": "Less manual data entry and first-pass document checking."
+          }
+        ]
+      },
+      {
+        "number": "03",
+        "eyebrow": "Missing-information follow-up",
+        "body": [
+          "Prepare requests for missing documents or incomplete information based on workflow status, with review before sending where required."
+        ]
+      },
+      {
+        "number": "04",
+        "eyebrow": "Review routing & prioritization",
+        "body": [
+          "Prioritize applications according to completeness, partner type, ageing, exceptions or configured risk and control conditions."
+        ],
+        "roles": [
+          {
+            "role": "Time returned",
+            "description": "Less manual sorting of review queues."
+          }
+        ]
+      },
+      {
+        "number": "05",
+        "eyebrow": "Duplicate & anomaly assistance",
+        "body": [
+          "Where reliable reference data exists, surface potential duplicates, inconsistent business information or unusual patterns for additional review. AI flags; it does not automatically reject."
+        ]
+      },
+      {
+        "number": "06",
+        "eyebrow": "Partner support assistant",
+        "body": [
+          "Use conversational assistance for onboarding status, required documents, process questions and next steps where supported."
+        ]
+      },
+      {
+        "number": "07",
+        "eyebrow": "Partner onboarding analytics",
+        "title": "Watch the funnel, the speed and the rework.",
+        "features": [
+          {
+            "term": "Funnel",
+            "description": "Started, submitted, under review, approved, declined and activated."
+          },
+          {
+            "term": "Speed",
+            "description": "Time to submit, review, approval and activation."
+          },
+          {
+            "term": "Quality",
+            "description": "Missing-document rate, rework and incomplete applications."
+          },
+          {
+            "term": "Operations",
+            "description": "Queue ageing, reviewer workload and exceptions."
+          },
+          {
+            "term": "Market and channel",
+            "description": "Partner type, geography and source."
+          }
+        ]
+      },
+      {
+        "number": "08",
+        "eyebrow": "AI effectiveness analytics",
+        "tags": [
+          "Documents processed",
+          "Extraction exception rate",
+          "Human corrections",
+          "Summary usage",
+          "Missing-information reduction",
+          "Time per application",
+          "Automated versus manual routing",
+          "Reviewer productivity",
+          "Partner-support deflection"
+        ]
+      },
+      {
+        "number": "09",
+        "eyebrow": "Human-controlled by design",
+        "body": [
+          "Partner approval, compliance review, risk acceptance, contract approval and distribution authorization remain human and governed decisions. Preserve source documents, audit history, reviewer override and reasoned exceptions."
+        ]
+      }
+    ],
+    "cta": {
+      "title": "Let operations review the exception, not re-key every application.",
+      "explore": "MerchantVerse features",
+      "evaluate": "MerchantVerse use cases",
+      "convert": "Request a MerchantVerse demo"
     }
   }
 }

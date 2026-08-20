@@ -7,6 +7,7 @@ import {
   TagList,
   bandTone,
   type FeatureItem,
+  type SectionTint,
 } from "@/components/sections/Section";
 import {
   CtaBand,
@@ -47,6 +48,13 @@ export type ContentSection = {
   roles?: RoleItem[];
   /** A linear journey. */
   steps?: string[];
+  /**
+   * Closing line, rendered after every other block. The spec ends most
+   * automation sections with a governance statement ("underwriting judgement
+   * remains with the appropriate authority") that has to sit *after* the
+   * capability list — which `body` cannot do, since it renders above.
+   */
+  note?: string;
 };
 
 type Hero = {
@@ -75,6 +83,7 @@ export async function ContentPage({
   primaryHref,
   secondaryHref,
   ctaHrefs,
+  tint,
 }: {
   locale: Locale;
   /**
@@ -86,6 +95,11 @@ export async function ContentPage({
   primaryHref: string;
   secondaryHref?: string;
   ctaHrefs: { convert: string; evaluate?: string; explore?: string };
+  /**
+   * Product brand palette. Only product-owned pages pass this; solutions,
+   * industries and the rest stay on the neutral palette.
+   */
+  tint?: SectionTint;
 }) {
   // next-intl types `namespace` as a union of literal message paths. These are
   // assembled from registry slugs at runtime, so the literal type is not
@@ -113,31 +127,47 @@ export async function ContentPage({
             : undefined
         }
         title={hero.title}
+        tint={tint}
       />
 
-      {sections.map((section, index) => (
+      {sections.map((section, index) => {
+        /**
+         * A lone paragraph reads better as the section's lede than as a
+         * one-line Prose block — but only when there is a title for it to sit
+         * under. Without that check an untitled single-paragraph section
+         * rendered as neither, and its copy silently disappeared.
+         */
+        const bodyAsLede = Boolean(section.title) && section.body?.length === 1;
+
+        return (
         <Section
           eyebrow={section.eyebrow}
           key={section.eyebrow ?? section.title}
-          lede={section.title && section.body?.length === 1 ? section.body[0] : undefined}
+          lede={bodyAsLede ? section.body![0] : undefined}
           number={section.number}
           title={section.title}
+          tint={tint}
           tone={bandTone(index)}
         >
-          {/* A single paragraph is rendered as the section lede above, so it is
-              not repeated here. */}
-          {section.body && section.body.length > 1 ? <Prose paragraphs={section.body} /> : null}
+          {section.body && !bodyAsLede ? <Prose paragraphs={section.body} /> : null}
           {section.steps ? <JourneySteps steps={section.steps} /> : null}
           {section.features ? <FeatureList items={section.features} /> : null}
           {section.roles ? <RoleGrid items={section.roles} /> : null}
           {section.tags ? <TagList items={section.tags} /> : null}
+          {section.note ? <p className="sec__note">{section.note}</p> : null}
         </Section>
-      ))}
+        );
+      })}
 
       {/* The rhythm runs continuously across every band on the page, so these
           two pick up where the mapped sections left off rather than restarting. */}
       {proof ? (
-        <Section eyebrow={proof.eyebrow} title={proof.title} tone={bandTone(sections.length)}>
+        <Section
+          eyebrow={proof.eyebrow}
+          tint={tint}
+          title={proof.title}
+          tone={bandTone(sections.length)}
+        >
           <ProofBlock
             body={proof.body}
             pending={Boolean(proof.pending)}
@@ -149,6 +179,7 @@ export async function ContentPage({
       {related ? (
         <Section
           eyebrow={related.eyebrow}
+          tint={tint}
           title={related.title}
           tone={bandTone(sections.length + (proof ? 1 : 0))}
         >
@@ -169,6 +200,7 @@ export async function ContentPage({
               ? { label: cta.explore, href: ctaHrefs.explore }
               : undefined
           }
+          tint={tint}
           title={cta.title}
         />
       ) : null}

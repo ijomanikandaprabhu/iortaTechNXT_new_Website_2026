@@ -33,6 +33,7 @@ export async function SupplementSections({ locale }: { locale: Locale }) {
   const tRegional = await getTranslations({ locale, namespace: "home.regionalReality" });
   const tProof = await getTranslations({ locale, namespace: "home.customerProofSection" });
   const tInsights = await getTranslations({ locale, namespace: "home.insightsSection" });
+  const tAia = await getTranslations({ locale, namespace: "home.automationIntelligence" });
   const tClosing = await getTranslations({ locale, namespace: "home.closingCta" });
 
   const whyItems = tWhy.raw("items") as FeatureItem[];
@@ -156,6 +157,24 @@ export async function SupplementSections({ locale }: { locale: Locale }) {
         <p className="supplement__gap">
           <Link className="related__link" href={localize(resourcePath("insights"))}>
             {tInsights("cta")}
+            <span aria-hidden="true"> →</span>
+          </Link>
+        </p>
+      </Section>
+
+      {/* Automation, intelligence & analytics — the site-wide positioning.
+          Distinct from section 07 above: that one describes how intelligent
+          operations work, this one states what is automated, what is assisted
+          and what stays a human call. */}
+      <Section eyebrow={tAia("eyebrow")} lede={tAia("lede")} title={tAia("title")} tone="muted">
+        <FeatureList items={tAia.raw("items") as { term: string; description: string }[]} />
+        <p className="sec__note">{tAia("note")}</p>
+        <p className="supplement__gap">
+          <Link
+            className="related__link"
+            href={localize(capabilityPath("intelligent-operations-decisioning"))}
+          >
+            {tAia("cta")}
             <span aria-hidden="true"> →</span>
           </Link>
         </p>

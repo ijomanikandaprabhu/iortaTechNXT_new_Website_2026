@@ -36,25 +36,33 @@
           "category": "Sales & distribution",
           "title": "Field Sales Transformation",
           "summary": "Modernizing offline field-sales operations with mobile-first advisor workflows, core integration, lead distribution and management visibility.",
-          "detail": ["Customer name and results pending approval."]
+          "detail": [
+            "Customer name and results pending approval."
+          ]
         },
         {
           "category": "API & integration",
           "title": "Legacy PAS API Modernization",
           "summary": "Creating reusable APIs and modular integration around an established policy platform to support digital channels and partners.",
-          "detail": ["Customer name and results pending approval."]
+          "detail": [
+            "Customer name and results pending approval."
+          ]
         },
         {
           "category": "Underwriting",
           "title": "Underwriting Transformation",
           "summary": "Structuring new-business review with configurable rules, decision workflows and straight-through processing for qualifying applications.",
-          "detail": ["Customer name and results pending approval."]
+          "detail": [
+            "Customer name and results pending approval."
+          ]
         },
         {
           "category": "Takaful",
           "title": "Takaful Core & Workflow Modernization",
           "summary": "Improving product and workflow flexibility around an established Oracle policy environment with configurable Takaful business rules.",
-          "detail": ["Customer name and results pending approval."]
+          "detail": [
+            "Customer name and results pending approval."
+          ]
         }
       ]
     },
@@ -64,6 +72,39 @@
       "body": [
         "Every published story shows the problem, what changed and the result together, with the baseline stated wherever a number appears.",
         "Customer names, logos, quotations and metrics are published only when approved for external use. A story without that approval stays a capability description, not a claim."
+      ]
+    },
+    {
+      "eyebrow": "Automation & intelligence proof",
+      "title": "Show the baseline and the mechanism, not just the outcome.",
+      "body": [
+        "For any story involving automation or AI, we show the operating baseline and the mechanism used."
+      ],
+      "features": [
+        {
+          "term": "Before",
+          "description": "Manual touches, handling time, rework, backlog or status-chasing."
+        },
+        {
+          "term": "Automation introduced",
+          "description": "Rules, workflow, routing, alerts, straight-through processing or other deterministic changes."
+        },
+        {
+          "term": "Intelligence introduced",
+          "description": "Prediction, summarization, document understanding or recommendation, where genuinely used."
+        },
+        {
+          "term": "Human role",
+          "description": "What remained under human judgement."
+        },
+        {
+          "term": "Measured result",
+          "description": "Turnaround, productivity, capacity, quality, conversion or customer outcome."
+        },
+        {
+          "term": "Control metrics",
+          "description": "Overrides, exceptions, corrections or false positives where relevant."
+        }
       ]
     }
   ],

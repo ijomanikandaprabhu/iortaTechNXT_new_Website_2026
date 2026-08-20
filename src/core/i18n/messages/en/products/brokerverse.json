@@ -23,7 +23,13 @@
     "journey": {
       "eyebrow": "Brokerage lifecycle",
       "title": "Win. Place. Service. Renew. Reconcile.",
-      "steps": ["Win", "Place", "Service", "Renew", "Reconcile"],
+      "steps": [
+        "Win",
+        "Place",
+        "Service",
+        "Renew",
+        "Reconcile"
+      ],
       "body": "Manage prospects, clients and opportunities. Coordinate requirements, carrier responses and placement. Manage policy and customer activity. Turn expiries into assigned work. Connect policy activity with premiums and commissions."
     },
     "builtFor": {
@@ -50,7 +56,10 @@
           "role": "Brokerage leaders",
           "description": "Portfolio, revenue and operational visibility."
         },
-        { "role": "Administrators", "description": "Roles, access and controls." }
+        {
+          "role": "Administrators",
+          "description": "Roles, access and controls."
+        }
       ]
     },
     "intelligence": {
@@ -121,6 +130,13 @@
           "answer": "Yes. Integration can be designed around carrier, policy, finance and other enterprise systems as required."
         }
       ]
+    },
+    "automation": {
+      "eyebrow": "Automation, intelligence & analytics",
+      "title": "Automate the routine. Use intelligence to prepare the broker.",
+      "body": "Use workflow automation for renewal tasks, reminders, status and exceptions. Use intelligent document, summary and comparison assistance where validated. Use analytics for renewal, placement, workload, premium and commission visibility.",
+      "responsibility": "Brokers retain control of coverage interpretation, market selection and client advice.",
+      "cta": "Explore BrokerVerse Automation & Intelligence"
     },
     "cta": {
       "title": "Run more of the brokerage from one insurance-first workspace.",
@@ -291,7 +307,10 @@
             "term": "Renewal diary",
             "description": "Surface policies approaching expiry."
           },
-          { "term": "Responsibility", "description": "Assign renewal ownership." },
+          {
+            "term": "Responsibility",
+            "description": "Assign renewal ownership."
+          },
           {
             "term": "Client engagement",
             "description": "Track discussions, requirements and follow-up."
@@ -530,6 +549,26 @@
       "convert": "Request a BrokerVerse Demo",
       "evaluate": "Explore the BrokerVerse Overview",
       "explore": "View BrokerVerse Use Cases"
+    },
+    "automation": {
+      "eyebrow": "Automation, intelligence & analytics",
+      "title": "What runs automatically behind these features.",
+      "features": [
+        {
+          "term": "Automation",
+          "description": "Renewal tasks, reminders, status, open-service alerts, document checklists and finance exceptions."
+        },
+        {
+          "term": "Intelligence",
+          "description": "Client and account summaries, document understanding, coverage comparison assistance and communication drafting."
+        },
+        {
+          "term": "Analytics",
+          "description": "Renewal, placement, workload, premium and commission visibility, and automation effectiveness."
+        }
+      ],
+      "note": "Brokers retain control of coverage interpretation, market selection and client advice.",
+      "cta": "Explore BrokerVerse Automation & Intelligence"
     }
   },
   "useCases": {
@@ -619,6 +658,213 @@
       "convert": "Request a BrokerVerse Demo",
       "evaluate": "Review BrokerVerse Features",
       "explore": "Explore the BrokerVerse Overview"
+    },
+    "automation": {
+      "eyebrow": "Automation, intelligence & analytics",
+      "title": "The same automation and intelligence across every brokerage workflow.",
+      "features": [
+        {
+          "term": "Automation",
+          "description": "Renewal work, service cases, document checklists, status and finance exceptions."
+        },
+        {
+          "term": "Intelligence",
+          "description": "Account summaries, document understanding and comparison assistance where validated."
+        },
+        {
+          "term": "Analytics",
+          "description": "Placement, renewal, workload, premium and commission performance."
+        }
+      ],
+      "note": "Brokers retain control of coverage interpretation, market selection and client advice.",
+      "cta": "Explore BrokerVerse Automation & Intelligence"
+    }
+  },
+  "automationIntelligenceAnalytics": {
+    "meta": {
+      "title": "BrokerVerse AI & Analytics | Broker Copilot & Portfolio Intelligence",
+      "description": "Explore AI-assisted broker operations for document intelligence, renewal preparation, quote comparison, communication and operational analytics."
+    },
+    "hero": {
+      "eyebrow": "BrokerVerse AI & analytics",
+      "title": "Give brokers more time for clients, markets and judgement.",
+      "lede": "Broker work is document-heavy and interruption-heavy. Teams read submissions, policies and endorsements, prepare renewals, compare carrier responses, chase missing information and reconstruct account history before they can advise the client.",
+      "primary": "Request a demo",
+      "secondary": "Explore features"
+    },
+    "sections": [
+      {
+        "body": [
+          "AI should reduce that preparation work while leaving placement strategy, advice and client relationships with the broker."
+        ]
+      },
+      {
+        "eyebrow": "How we use the terms",
+        "title": "Automation, AI and analytics are not the same thing.",
+        "features": [
+          {
+            "term": "Automation",
+            "description": "Configured rules and workflows that perform predictable tasks automatically."
+          },
+          {
+            "term": "AI / intelligence",
+            "description": "Predictive, language, vision or generative capability used to interpret, predict, summarize or recommend."
+          },
+          {
+            "term": "Analytics",
+            "description": "Dashboards and metrics used to understand performance, and to measure whether automation and intelligence are creating value."
+          }
+        ],
+        "note": "We use the word AI only when the capability genuinely depends on AI, not as a label for ordinary workflow automation."
+      },
+      {
+        "number": "01",
+        "eyebrow": "Client & account summary",
+        "body": [
+          "AI can prepare a working summary from available client, policy, claims-support, activity and renewal information."
+        ],
+        "roles": [
+          {
+            "role": "AI assistance",
+            "description": "Account summary and context synthesis."
+          },
+          {
+            "role": "Automation",
+            "description": "Upcoming tasks, reminders, open-service alerts and renewal actions."
+          },
+          {
+            "role": "The broker decides",
+            "description": "Verify important facts and decide what matters to the client."
+          },
+          {
+            "role": "Time returned",
+            "description": "Less searching across records before a client call or renewal meeting."
+          }
+        ]
+      },
+      {
+        "number": "02",
+        "eyebrow": "Document intelligence",
+        "body": [
+          "Classify policy, proposal, quote, endorsement and claims-support documents; extract selected information; summarize content; identify what is missing; and compare versions."
+        ],
+        "roles": [
+          {
+            "role": "Time returned",
+            "description": "Less first-pass reading and re-keying."
+          }
+        ]
+      },
+      {
+        "number": "03",
+        "eyebrow": "Quote & coverage comparison assistance",
+        "body": [
+          "Where structured quotation and coverage data is available, AI can help compare insurer responses and highlight differences for broker review."
+        ],
+        "roles": [
+          {
+            "role": "Intelligent assistance",
+            "description": "Summarize complex wording or unstructured differences."
+          },
+          {
+            "role": "Automation and rules",
+            "description": "Identify missing fields and known structured variances."
+          },
+          {
+            "role": "The broker decides",
+            "description": "Coverage interpretation, wording, exclusions, suitability and recommendation."
+          },
+          {
+            "role": "Time returned",
+            "description": "Less manual comparison-table preparation."
+          }
+        ]
+      },
+      {
+        "number": "04",
+        "eyebrow": "Renewal copilot",
+        "body": [
+          "AI can summarize the expiring account, identify incomplete information, surface recent claims and service activity, and prepare a renewal checklist."
+        ],
+        "roles": [
+          {
+            "role": "Time returned",
+            "description": "Less repetitive renewal preparation."
+          }
+        ]
+      },
+      {
+        "number": "05",
+        "eyebrow": "Communication drafting",
+        "body": [
+          "Prepare first drafts for missing-information requests, renewal reminders, status updates, document requests and meeting summaries. The broker reviews before sending."
+        ],
+        "roles": [
+          {
+            "role": "Time returned",
+            "description": "Less repetitive email drafting."
+          }
+        ]
+      },
+      {
+        "number": "06",
+        "eyebrow": "Commission & finance anomaly signals",
+        "body": [
+          "Where BrokerVerse holds reliable premium, commission and transaction data, analytics can flag unusual variances, missing expected values or reconciliation items for finance review."
+        ],
+        "roles": [
+          {
+            "role": "Time returned",
+            "description": "Less manual scanning of reconciliation lists, so finance teams focus on exceptions."
+          }
+        ]
+      },
+      {
+        "number": "07",
+        "eyebrow": "Broker analytics",
+        "title": "See the book, the workload and the money in one place.",
+        "tags": [
+          "New-business pipeline",
+          "Quote and placement turnaround",
+          "Carrier response time",
+          "Quote-to-bind",
+          "Renewal pipeline and retention",
+          "Client and service workload",
+          "Claims-support workload",
+          "Premium and commission visibility",
+          "Commission variance",
+          "Carrier concentration",
+          "Team workload",
+          "Ageing and SLA"
+        ]
+      },
+      {
+        "number": "08",
+        "eyebrow": "Automation & intelligence effectiveness analytics",
+        "tags": [
+          "Documents processed",
+          "Extraction exception rate",
+          "Summary corrections",
+          "Comparison acceptance",
+          "Draft acceptance and edit rate",
+          "Time saved per renewal or submission",
+          "Anomaly precision",
+          "Cases escalated to human review"
+        ]
+      },
+      {
+        "number": "09",
+        "eyebrow": "Human-controlled by design",
+        "body": [
+          "Complex coverage interpretation, client advice, market selection and negotiation remain broker responsibilities. AI should distinguish extracted facts from generated summaries, and preserve source references where practical."
+        ]
+      }
+    ],
+    "cta": {
+      "title": "Let AI prepare the work. Let brokers make the judgement.",
+      "explore": "BrokerVerse features",
+      "evaluate": "BrokerVerse use cases",
+      "convert": "Request a BrokerVerse demo"
     }
   }
 }

@@ -79,14 +79,25 @@ function group(
 function productGroups(t: NavT, localize: Localize): PanelGroup[] {
   return PRODUCTS.map((product) => ({
     title: t(`productNames.${product.slug}`),
-    items: PRODUCT_SECTIONS.map((section) => ({
-      label: t(`productSections.${section}`),
-      description:
-        section === "overview"
-          ? t(`entries.products.${product.slug}`)
-          : t(`productSectionDesc.${section}`),
-      href: product.built ? localize(productPath(product.slug, section)) : undefined,
-    })),
+    items: [
+      ...PRODUCT_SECTIONS.map((section) => ({
+        label: t(`productSections.${section}`),
+        description:
+          section === "overview"
+            ? t(`entries.products.${product.slug}`)
+            : t(`productSectionDesc.${section}`),
+        href: product.built ? localize(productPath(product.slug, section)) : undefined,
+      })),
+      // The spec ends each product's secondary nav with Request Demo. It is not
+      // a `PRODUCT_SECTIONS` entry: there is no per-product demo route, and
+      // adding one there would generate `/products/<slug>/request-demo`, which
+      // does not exist. It points at the single global demo page instead.
+      {
+        label: t("productSections.request-demo"),
+        description: t("productSectionDesc.request-demo"),
+        href: localize(STANDALONE_PATHS.requestDemo),
+      },
+    ],
   }));
 }
 
