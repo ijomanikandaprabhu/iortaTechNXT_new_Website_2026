@@ -121,13 +121,13 @@
   background: var(--paper);
 }
 
-/* Product pages: the muted band becomes the product's own wash instead of
-   the neutral paper tone, so colour carries through the body of the page,
-   not just the hero. Default (non-muted) tinted sections stay on plain
-   white and pick up colour only on their accents (label, cards, chips). */
-.sec--tinted.sec--muted {
-  background: var(--product-supporting);
-}
+/* Product pages deliberately do NOT wash the muted band in the product's
+   colour. `--product-supporting` is a chip-and-card tint; stretched across a
+   full-bleed band it reads as a saturated block (SalesVerse's #A78BFA being
+   the worst case) and overpowers the copy sitting on it. Muted bands stay on
+   the neutral --paper like every other page, and the palette shows up in the
+   accents instead: the hero chip, card edges, chip borders and the dark
+   bands. */
 
 .sec--dark {
   background: var(--ink);
@@ -627,9 +627,11 @@
   border-top: 1px solid var(--line);
 }
 
-.ctaband--tinted {
-  background: var(--product-supporting);
-}
+/* No product wash here either, for the same reason as `.sec--tinted.sec--muted`
+   above: `--product-supporting` is a chip-and-card tint and reads as a
+   saturated block at full-bleed width. The band keeps the neutral --paper
+   ground; the product shows in the title, the filled CTA and the explore
+   link. */
 
 .ctaband__inner {
   max-width: 72rem;
