@@ -238,7 +238,10 @@
      starts cutting: visible height = line box - this margin + padding-bottom.
      At --space-9 that leaves roughly two thirds of the letterform, so the
      word sits into the edge rather than resting above it. */
-  margin: var(--space-7) 0 calc(var(--space-9) * -1);
+  /* 56px, not a spacing token: how deep the word sits into the edge is an
+     optical call, and the nearest tokens land either side of it (48px leaves
+     it floating, 64px buries it). */
+  margin: var(--space-7) 0 -56px;
   font-family: var(--font-display);
   font-size: clamp(3rem, 19vw, 18rem);
   font-weight: 800;
