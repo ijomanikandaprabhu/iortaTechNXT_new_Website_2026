@@ -754,9 +754,17 @@
         "number": "03",
         "eyebrow": "Customer conversation preparation",
         "body": [
-          "AI can summarize customer information, existing policies, recent activities, open requirements and upcoming renewal events."
+          "AI can summarize customer information, existing policies and recent activity before a conversation."
         ],
         "roles": [
+          {
+            "role": "AI assistance",
+            "description": "Customer, policy and activity summaries ahead of the call."
+          },
+          {
+            "role": "Automation",
+            "description": "Upcoming renewal events, open requirements and reminders, where these are rule-triggered."
+          },
           {
             "role": "Time returned",
             "description": "Less pre-call searching, and fewer missed details."

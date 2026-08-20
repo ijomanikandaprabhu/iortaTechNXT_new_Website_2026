@@ -800,9 +800,17 @@
         "number": "06",
         "eyebrow": "Application & document intelligence",
         "body": [
-          "AI can assist with reading uploaded documents, identifying missing information, extracting selected data and preparing applications for operational review where implemented."
+          "AI can assist with reading uploaded documents, extracting selected data and summarizing what a document contains, where machine-learning, language or vision capability is actually used."
         ],
         "roles": [
+          {
+            "role": "AI assistance",
+            "description": "Document reading, data extraction and content summarization."
+          },
+          {
+            "role": "Automation",
+            "description": "Rule-based completeness checks, missing-information requests and queue progression."
+          },
           {
             "role": "Time returned",
             "description": "Less manual re-keying, less first-pass document reading, and fewer requests for information already present."
@@ -839,8 +847,12 @@
             "description": "Engagement, renewals and cross-sell response."
           },
           {
-            "term": "AI",
-            "description": "Score distribution, recommendation acceptance, assisted conversion and low-value alert rate."
+            "term": "Intelligence",
+            "description": "Score distribution, recommendation acceptance and model-assisted conversion."
+          },
+          {
+            "term": "Automation",
+            "description": "Automated tasks, alerts, workflow progression and exception rate."
           }
         ]
       },

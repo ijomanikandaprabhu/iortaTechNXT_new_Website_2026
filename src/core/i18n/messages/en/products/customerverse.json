@@ -721,7 +721,11 @@
         "roles": [
           {
             "role": "AI assistance",
-            "description": "Interpret intent, retrieve approved information, explain the next step and navigate to the correct action."
+            "description": "Interpret natural-language intent and explain approved information."
+          },
+          {
+            "role": "Automation",
+            "description": "Navigate to the correct action, trigger the relevant workflow or route the service request."
           },
           {
             "role": "Your service team decides",

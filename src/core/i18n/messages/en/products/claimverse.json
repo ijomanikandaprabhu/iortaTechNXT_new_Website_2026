@@ -868,9 +868,17 @@
         "number": "01",
         "eyebrow": "Conversational first notification",
         "body": [
-          "AI-assisted voice or chat can guide a customer through first notification, ask relevant follow-up questions and capture structured information where supported."
+          "AI-assisted voice or chat can guide a customer through first notification, ask relevant follow-up questions and understand free-form answers where supported."
         ],
         "roles": [
+          {
+            "role": "AI assistance",
+            "description": "Conversational guidance and understanding of free-form answers."
+          },
+          {
+            "role": "Automation",
+            "description": "Deterministic form questions, validations and claim creation."
+          },
           {
             "role": "Time returned",
             "description": "Less call-centre scripting and manual re-keying during routine notification."
@@ -921,7 +929,7 @@
         "number": "05",
         "eyebrow": "Fraud & anomaly signals",
         "body": [
-          "AI routes for investigation. It should not automatically accuse or deny."
+          "Configured rules can route a claim for investigation. That is automation. It is AI only when a predictive or anomaly model produces the signal."
         ],
         "tags": [
           "Potential duplicate",
@@ -930,7 +938,8 @@
           "Inconsistent loss information",
           "Suspicious pattern",
           "External fraud or risk signal"
-        ]
+        ],
+        "note": "Neither should automatically accuse or deny."
       },
       {
         "number": "06",
