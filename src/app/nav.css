@@ -16,6 +16,20 @@
   z-index: 60;
 }
 
+/*
+ * Product pages stack a second bar under this one and manage both together: the
+ * header rides the page upward until it is gone, then the sub-bar comes back
+ * down and takes over as the page's main bar.
+ *
+ * `--nav-shift` is written each frame by ProductSubNav and tracks scroll 1:1,
+ * so this is deliberately not transitioned. Every other page leaves the
+ * attribute unset and this rule never applies.
+ */
+html[data-subnav] .nav {
+  transform: translate3d(0, var(--nav-shift, 0px), 0);
+  will-change: transform;
+}
+
 /* ---- Announcement bar ---- */
 
 .nav__banner {

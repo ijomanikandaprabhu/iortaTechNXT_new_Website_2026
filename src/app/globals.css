@@ -5,6 +5,7 @@
 @import "./components.css";
 @import "./sections.css";
 @import "./nav.css";
+@import "./subnav.css";
 @import "./footer.css";
 @import "./hero.css";
 @import "./intro.css";
@@ -42,6 +43,10 @@ body {
   font-size: var(--text-body);
   line-height: var(--leading-normal);
   -webkit-font-smoothing: antialiased;
+  /* Clears the product dock, which is fixed to the bottom edge on phones.
+     `--subnav-dock-h` is published by ProductSubNav and is absent everywhere the
+     dock is not rendered, so no other page or breakpoint is affected. */
+  padding-bottom: var(--subnav-dock-h, 0px);
 }
 
 h1,

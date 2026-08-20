@@ -1,0 +1,449 @@
+/* ---- Product sub-header ----
+ *
+ * A second fixed bar, under the main header, carrying one product's identity and
+ * its four sections. Once the page scrolls past the main header, that header
+ * hides (see `nav.css`) and this bar takes the top edge, revealing a demo CTA.
+ *
+ * The ground is the product's own near-black (`--product-dark`), set inline by
+ * the component. Text uses the same white-alpha ladder as `.sec--dark` so a
+ * reader moving from the bar into the page sees one system, not two.
+ */
+
+.subnav {
+  position: fixed;
+  top: var(--nav-h, 112px);
+  left: 0;
+  right: 0;
+  /* Below `.nav` (60), so the header's mega panels still overlap this bar while
+     both are on screen. */
+  z-index: 50;
+  background-color: var(--product-dark);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  /*
+   * Rides the page upward with the header, tracking scroll 1:1. `--subnav-shift`
+   * is written each frame by ProductSubNav; a transform is used rather than
+   * `top` because it is composited and does not re-run layout.
+   */
+  transform: translate3d(0, var(--subnav-shift, 0px), 0);
+  will-change: transform;
+  transition:
+    background-color 240ms ease,
+    border-color 240ms ease;
+}
+
+/*
+ * Once both bars have left the viewport this brings the sub-bar back down to the
+ * top edge: `-–nav-h` cancels its offset exactly, landing it at 0.
+ */
+.subnav--pinned {
+  transform: translate3d(0, calc(-1 * var(--nav-h, 112px)), 0);
+}
+
+/*
+ * Transitioned only across a pin change. While the bars ride the scroll the
+ * transform must follow the page exactly, and a transition there would make them
+ * drift behind it.
+ */
+.subnav--animating {
+  transition:
+    transform 320ms cubic-bezier(0.22, 0.61, 0.36, 1),
+    background-color 240ms ease,
+    border-color 240ms ease;
+}
+
+/* ---- Pinned: reads as the page's main bar ----
+ *
+ * Same glass treatment as `.nav__bar`, so once the header is gone this does not
+ * look like a leftover coloured strip but like the bar that replaced it. The
+ * product colour stays, moved from the ground to the accents.
+ */
+
+.subnav--pinned {
+  background-color: rgba(255, 255, 255, 0.72);
+  backdrop-filter: saturate(180%) blur(18px);
+  -webkit-backdrop-filter: saturate(180%) blur(18px);
+  border-bottom: 1px solid var(--line);
+}
+
+.subnav--pinned .subnav__name {
+  color: var(--ink);
+}
+
+.subnav--pinned .subnav__link {
+  color: var(--ink-soft);
+}
+
+.subnav--pinned .subnav__link:hover,
+.subnav--pinned .subnav__link:focus-visible {
+  color: var(--ink);
+}
+
+/* After the rule above, not before it: both are two-class selectors, so on equal
+   specificity the later one wins and an earlier accent would be overwritten. */
+.subnav--pinned .subnav__glyph,
+.subnav--pinned .subnav__link--active {
+  /* `primaryStrong`, not `primary`: the raw primary is too light to read as text
+     on a near-white ground for most of the six products. */
+  color: var(--product-primary-strong);
+}
+
+.subnav--pinned .subnav__link--active::after {
+  background: var(--product-primary-strong);
+}
+
+.subnav--pinned .subnav__cta {
+  background-color: var(--product-primary-strong);
+  color: var(--white);
+}
+
+.subnav__inner {
+  display: flex;
+  align-items: center;
+  gap: var(--space-5);
+  height: 60px;
+  /* Same track as `.nav__inner`, so the two bars' contents line up vertically. */
+  max-width: 82rem;
+  margin: 0 auto;
+  padding: 0 var(--space-6);
+}
+
+/* ---- Sections menu button ----
+ * Docked-only. Hidden above the dock breakpoint, where the four labels sit on
+ * the bar itself and need no disclosure. */
+
+.subnav__toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+  flex: 0 0 auto;
+  width: 56px;
+  align-self: stretch;
+  padding: 0;
+  background: none;
+  border: 0;
+  border-right: 1px solid rgba(255, 255, 255, 0.16);
+  cursor: pointer;
+}
+
+.subnav__togglebar {
+  display: block;
+  width: 18px;
+  height: 1.5px;
+  margin: 0 auto;
+  background: var(--white);
+}
+
+/* ---- Product identity ---- */
+
+.subnav__brand {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-3);
+  flex: 0 0 auto;
+  text-decoration: none;
+  color: var(--white);
+}
+
+.subnav__glyph {
+  display: inline-flex;
+  color: var(--product-supporting);
+}
+
+.subnav__glyph svg {
+  width: 24px;
+  height: 24px;
+}
+
+/* Overview has no nav item, so the product name shows the current page instead.
+   Weight rather than colour: the name is already the brightest thing on the bar,
+   and colouring it would read as a second accent competing with the active
+   section marker. */
+.subnav__brand--active .subnav__name {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 5px;
+  text-decoration-color: var(--product-supporting);
+}
+
+.subnav--pinned .subnav__brand--active .subnav__name {
+  text-decoration-color: var(--product-primary-strong);
+}
+
+.subnav__name {
+  font-family: var(--font-display);
+  font-size: var(--text-body);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  white-space: nowrap;
+}
+
+/* ---- Section links ----
+ *
+ * `margin-left: auto` pushes the links right, so they sit beside the CTA once it
+ * appears.
+ *
+ * Deliberately NOT a scroll container at this width. The four labels and the
+ * product name always fit above the two-row breakpoint, so `overflow-x: auto`
+ * here would create a live scroll container with nothing to scroll — which still
+ * paints a scrollbar wherever the OS is set to always show them. Scrolling is
+ * added back in the narrow-screen block below, where it is actually needed.
+ */
+
+.subnav__links {
+  display: flex;
+  align-items: stretch;
+  align-self: stretch;
+  gap: var(--space-5);
+  margin-left: auto;
+  min-width: 0;
+}
+
+/* Each link spans the full height of the bar, so the active underline can be
+   anchored to its own bottom edge and land exactly on the bar's baseline. The
+   earlier version offset the underline by a hand-measured -19px, which put it
+   4px *below* the bar, floating on the page content. It also gives the link a
+   full-height hit area rather than a text-sized one. */
+.subnav__link {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  font-size: var(--text-body);
+  line-height: 1;
+  white-space: nowrap;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.72);
+  transition: color 160ms ease;
+}
+
+.subnav__link:hover,
+.subnav__link:focus-visible {
+  color: var(--white);
+}
+
+/* The accent is `--product-supporting`, not `--product-primary`: primary sits at
+   roughly 4.0:1 on the BrokerVerse ground, under the AA floor for body text. */
+.subnav__link--active {
+  color: var(--product-supporting);
+  font-weight: 600;
+}
+
+.subnav__link--active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 3px;
+  background: var(--product-supporting);
+}
+
+/* ---- Demo CTA ----
+ *
+ * Present in the DOM at all times so the bar does not reflow when it appears,
+ * and so the server and client render the same markup. `visibility` (not
+ * `display`) keeps it out of the accessibility tree while hidden; the component
+ * also drops it from the tab order.
+ */
+
+.subnav__cta {
+  flex: 0 0 auto;
+  margin-left: var(--space-5);
+  padding: var(--space-2) var(--space-4);
+  border-radius: 6px;
+  background-color: var(--product-supporting);
+  color: var(--product-dark);
+  font-size: var(--text-body);
+  font-weight: 600;
+  line-height: 1.6;
+  white-space: nowrap;
+  text-decoration: none;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(6px);
+  transition:
+    opacity 260ms cubic-bezier(0.22, 0.61, 0.36, 1),
+    transform 260ms cubic-bezier(0.22, 0.61, 0.36, 1),
+    visibility 0s linear 260ms;
+}
+
+.subnav--pinned .subnav__cta {
+  opacity: 1;
+  visibility: visible;
+  transform: none;
+  transition-delay: 0s, 0s, 0s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .subnav,
+  .subnav--animating,
+  .subnav__cta {
+    transition-duration: 1ms;
+  }
+}
+
+/*
+ * Tablet: the four labels cannot share a row with the product name and the CTA.
+ * Squeezed onto one line the link strip collapses to a few pixels, so the bar
+ * becomes two rows: identity and CTA above, links below.
+ *
+ * 1024px, not the ~875px where the content actually stops fitting: the widest
+ * product name (CustomerVerse) leaves only about 27px of slack there, and a
+ * longer label in another locale would overflow with no warning. The taller bar
+ * needs no other change, because `--subnav-h` is measured rather than assumed
+ * and the hero's clearance follows it.
+ */
+@media (max-width: 1024px) {
+  .subnav__inner {
+    flex-wrap: wrap;
+    height: auto;
+    gap: var(--space-4);
+    row-gap: var(--space-3);
+    padding: var(--space-3) var(--space-5);
+  }
+
+  .subnav__brand {
+    order: 1;
+  }
+
+  .subnav__cta {
+    order: 2;
+    margin-left: auto;
+  }
+
+  /* Here the strip genuinely can outrun its row, so it scrolls. The scrollbar
+     is hidden: the row is short and the clipped label at the edge already shows
+     there is more. */
+  .subnav__links {
+    order: 3;
+    flex: 0 0 100%;
+    margin-left: 0;
+    gap: var(--space-4);
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+
+  .subnav__links::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* ---- Compact layout (phones) ----
+ *
+ * The bar splits. The product identity stays at the top and keeps the same
+ * behaviour as on a wide screen: it rises to the top edge on scroll and the main
+ * header steps aside. The sections and the CTA move to a dock at the bottom,
+ * where a thumb can reach them.
+ *
+ * Keep the width in sync with `COMPACT_QUERY` in ProductSubNav.tsx.
+ */
+@media (max-width: 768px) {
+  .subnav__inner {
+    flex-wrap: nowrap;
+    height: 52px;
+    gap: var(--space-3);
+    padding: 0 var(--space-5);
+  }
+
+  /* Both live in the dock at this width. */
+  .subnav__inner .subnav__links,
+  .subnav__inner .subnav__cta {
+    display: none;
+  }
+
+  .subnav__brand {
+    min-width: 0;
+  }
+
+  .subnav__name {
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  /* ---- The dock ---- */
+
+  .subnav__dock {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 55;
+  }
+
+  .subnav__dockbar {
+    display: flex;
+    align-items: stretch;
+    height: 56px;
+    background-color: var(--product-dark);
+    border-top: 1px solid rgba(255, 255, 255, 0.14);
+  }
+
+  .subnav__toggle {
+    display: flex;
+    flex: 0 0 auto;
+    width: 56px;
+    border-right: 1px solid rgba(255, 255, 255, 0.16);
+  }
+
+  .subnav__dockcta {
+    display: flex;
+    flex: 1 1 auto;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--product-supporting);
+    color: var(--product-dark);
+    font-size: var(--text-body);
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  /* Sections sheet, opening upward out of the dock. */
+  .subnav__dock .subnav__links {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    margin: 0;
+    padding: var(--space-2) 0;
+    background-color: var(--product-dark);
+    border-top: 1px solid rgba(255, 255, 255, 0.14);
+    overflow: visible;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(8px);
+    transition:
+      opacity 200ms ease,
+      transform 200ms ease,
+      visibility 0s linear 200ms;
+  }
+
+  .subnav__dock--open .subnav__links {
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    transition-delay: 0s, 0s, 0s;
+  }
+
+  .subnav__dock .subnav__link {
+    height: 48px;
+    padding: 0 var(--space-5);
+  }
+
+  /* A full-width row reads better with a leading marker than an underline
+     stretched across the whole sheet. */
+  .subnav__dock .subnav__link--active::after {
+    left: 0;
+    right: auto;
+    top: 50%;
+    bottom: auto;
+    width: 3px;
+    height: 20px;
+    transform: translateY(-50%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .subnav__dock .subnav__links {
+    transition-duration: 1ms;
+  }
+}

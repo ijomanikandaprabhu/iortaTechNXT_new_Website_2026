@@ -22,7 +22,9 @@
  */
 .phero {
   max-width: 46rem;
-  padding: calc(var(--nav-h, 112px) + var(--space-7)) 0 var(--space-7);
+  /* `--subnav-h` is published by ProductSubNav and only exists on product pages;
+     the 0px fallback keeps every other page's spacing exactly as it was. */
+  padding: calc(var(--nav-h, 112px) + var(--subnav-h, 0px) + var(--space-7)) 0 var(--space-7);
 }
 
 .phero__eyebrow {
