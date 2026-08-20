@@ -17,21 +17,28 @@
  */
 .foot {
   /**
-   * Grain, kept deliberately near the threshold of noticing.
+   * Dense, even film grain — the reference look, where the texture covers the
+   * whole surface rather than scattering a few specks over it.
    *
-   * Three things keep it from reading as dirt:
-   * - `baseFrequency: 1.1` — fine. Coarse noise looks like dust on the screen.
-   * - `numOctaves: 2` — fractalNoise sums octaves, and the lower ones show up
-   *   as blotchy patches rather than grain. Two is enough for irregularity.
-   * - `feFuncA gamma` — cubes the alpha so mid values collapse and only the
-   *   top of the distribution survives, which keeps the ground properly black
-   *   instead of lifting it to charcoal.
+   * - `numOctaves: 3` — feTurbulence builds noise on a square lattice. With a
+   *   single octave there is nothing to disguise it and the lattice itself
+   *   shows through as visible boxes. Superimposing octaves at different
+   *   scales breaks that regularity up.
+   * - `baseFrequency: 1.15` — high enough that even the lowest octave stays
+   *   fine, so the extra octaves add irregularity without the blotchy patches
+   *   that a coarser base produced in an earlier pass.
+   * - `feFuncA gamma 1.6` — a gentle shape, not the cube used before. Cubing
+   *   collapsed most of the distribution and left sparse specks; 1.6 keeps the
+   *   field dense while still pulling the floor down so the ground stays dark.
    *
    * Inline SVG, not an asset: a few hundred bytes, no request, and
    * `stitchTiles` keeps the tile seamless where it repeats.
    */
-  --grain-ground: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='1.1' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3CfeComponentTransfer%3E%3CfeFuncA type='gamma' exponent='3'/%3E%3C/feComponentTransfer%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23g)' opacity='0.24'/%3E%3C/svg%3E");
-  --grain-type: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='1.1' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23g)' opacity='0.42'/%3E%3C/svg%3E");
+  --grain-ground: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='1.15' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3CfeComponentTransfer%3E%3CfeFuncA type='gamma' exponent='1.6'/%3E%3C/feComponentTransfer%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23g)' opacity='0.22'/%3E%3C/svg%3E");
+  /* Same field and same character as the ground, so the type and the surface
+     it sits on share one grain rather than two different ones. Carried at a
+     higher opacity because it blends with `overlay` on the brighter blue. */
+  --grain-type: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='1.15' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23g)' opacity='0.4'/%3E%3C/svg%3E");
 
   position: relative;
   overflow: hidden;
