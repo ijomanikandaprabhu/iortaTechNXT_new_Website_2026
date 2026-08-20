@@ -16,13 +16,32 @@
  * `overflow: hidden` clips the closing wordmark against the bottom edge.
  */
 .foot {
+  /**
+   * Grain, kept deliberately near the threshold of noticing.
+   *
+   * Three things keep it from reading as dirt:
+   * - `baseFrequency: 1.1` — fine. Coarse noise looks like dust on the screen.
+   * - `numOctaves: 2` — fractalNoise sums octaves, and the lower ones show up
+   *   as blotchy patches rather than grain. Two is enough for irregularity.
+   * - `feFuncA gamma` — cubes the alpha so mid values collapse and only the
+   *   top of the distribution survives, which keeps the ground properly black
+   *   instead of lifting it to charcoal.
+   *
+   * Inline SVG, not an asset: a few hundred bytes, no request, and
+   * `stitchTiles` keeps the tile seamless where it repeats.
+   */
+  --grain-ground: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='1.1' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3CfeComponentTransfer%3E%3CfeFuncA type='gamma' exponent='3'/%3E%3C/feComponentTransfer%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23g)' opacity='0.24'/%3E%3C/svg%3E");
+  --grain-type: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='1.1' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23g)' opacity='0.42'/%3E%3C/svg%3E");
+
   position: relative;
   overflow: hidden;
   margin-top: var(--space-9);
   padding: var(--space-9) var(--space-6) var(--space-6);
-  background: var(--ink);
   color: var(--white);
   border-top: 1px solid rgba(255, 255, 255, 0.1);
+
+  background-color: var(--ink);
+  background-image: var(--grain-ground);
 }
 
 .foot__inner {
@@ -218,13 +237,47 @@
   user-select: none;
 
   color: var(--brand-blue-light);
-  background-image: linear-gradient(
-    180deg,
-    var(--brand-blue-light),
-    var(--brand-blue-deep)
-  );
+
+  /* Same field on the type, under `overlay` — which works here where it fails
+     on the ink ground, because the blue is bright enough for the blend to
+     actually move it. */
+  background-image:
+    var(--grain-type),
+    linear-gradient(180deg, var(--brand-blue-light), var(--brand-blue-deep));
+  background-blend-mode: overlay, normal;
   -webkit-background-clip: text;
   background-clip: text;
+
+  /**
+   * The outer letters fall away toward both edges, brightest through the
+   * middle — a horizontal falloff sitting across the vertical brand gradient
+   * above, not replacing it.
+   *
+   * Done with a mask rather than by fading the gradient to `--ink`: a mask
+   * modulates alpha, so the letters genuinely thin out and would still read
+   * correctly if the footer's background ever changed. Fading to a hard-coded
+   * ink would only work while the ground stays exactly that colour.
+   *
+   * The stops are pulled in to 26%/74% rather than sitting at the very edges:
+   * the element is full-width but the centred text only spans ~89% of it, so
+   * edge-anchored stops would spend most of the fade on empty space either
+   * side and barely touch the outer glyphs. Only the mask's alpha is read,
+   * so the colour is arbitrary.
+   */
+  -webkit-mask-image: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.14) 0%,
+    rgba(0, 0, 0, 1) 26%,
+    rgba(0, 0, 0, 1) 74%,
+    rgba(0, 0, 0, 0.14) 100%
+  );
+  mask-image: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.14) 0%,
+    rgba(0, 0, 0, 1) 26%,
+    rgba(0, 0, 0, 1) 74%,
+    rgba(0, 0, 0, 0.14) 100%
+  );
 }
 
 /* Only make the text transparent where the clip is actually supported, so the
