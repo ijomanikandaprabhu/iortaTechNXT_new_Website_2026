@@ -133,8 +133,8 @@
     },
     "automation": {
       "eyebrow": "Automation, intelligence & analytics",
-      "title": "Automate routine service. Use AI where understanding is required.",
-      "body": "Use workflow automation for reminders, status updates, routing and service progression. Use conversational or language intelligence for natural-language questions, intent understanding and summaries where validated. Use analytics to measure self-service, resolution and escalation.",
+      "title": "Automate routine service and measure what resolves.",
+      "body": "Use workflow automation for reminders, status updates, routing and service progression. Use analytics to measure self-service, resolution and escalation.",
       "responsibility": "Human support remains available for complex or sensitive situations.",
       "cta": "Explore CustomerVerse Automation & Intelligence"
     },
@@ -660,15 +660,11 @@
     },
     "automation": {
       "eyebrow": "Automation, intelligence & analytics",
-      "title": "The same automation and intelligence across the policy relationship.",
+      "title": "The same automation and measurement across the policy relationship.",
       "features": [
         {
           "term": "Automation",
           "description": "Reminders, status updates, intent routing and service progression."
-        },
-        {
-          "term": "Intelligence",
-          "description": "Conversational assistance, intent understanding and summarization where validated."
         },
         {
           "term": "Analytics",
