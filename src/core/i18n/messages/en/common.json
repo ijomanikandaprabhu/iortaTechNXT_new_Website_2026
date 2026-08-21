@@ -234,7 +234,8 @@
     "featured": {
       "label": "Introducing the TECHNXT platform",
       "description": "One system for policy, claims and payments."
-    }
+    },
+    "allFeatures": "All features"
   },
   "footer": {
     "tagline": "Build what's next in insurance.",

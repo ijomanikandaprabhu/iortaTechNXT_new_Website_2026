@@ -1,10 +1,11 @@
+import { getTranslations } from "next-intl/server";
 import { PageHero } from "@/components/sections/PageHero";
+import { FeatureRail, type RailItem } from "@/components/layout/FeatureRail";
 import {
   FeatureList,
   Prose,
   Section,
   TagList,
-  bandTone,
   type FeatureItem,
 } from "@/components/sections/Section";
 import { CtaBand } from "@/components/sections/Blocks";
@@ -22,6 +23,13 @@ import { productBrand } from "@/config/brand.config";
  * per the spec. Each group carries either term/description pairs or a body plus
  * chips, so integration and control surfaces do not have to be forced into the
  * same shape as functional capabilities.
+ *
+ * The families sit beside a sticky rail rather than running down the page as
+ * bands. With up to fifteen of them there was no way to see what the page
+ * covered, or to reach the twelfth without scrolling past eleven others. The
+ * alternating band rhythm is deliberately not used here: a sticky rail needs one
+ * stable ground to sit against, and full-bleed dark bands fight a two-column
+ * layout. Every other page type keeps the rhythm.
  */
 type FeatureGroup = {
   number: string;
@@ -47,8 +55,13 @@ type AutomationBlock = {
   cta: string;
 };
 
+/** Group numbers are "01".."15" and unique within a page, so they make stable
+ *  anchor targets without slugifying a label that may be translated. */
+const panelId = (number: string) => `feature-${number}`;
+
 export async function ProductFeaturesPage({ locale, slug }: { locale: Locale; slug: string }) {
   const t = await getPageTranslations(locale, `products.${slug}.features`);
+  const tNav = await getTranslations({ locale, namespace: "nav" });
 
   const hero = t.raw("hero") as {
     eyebrow: string;
@@ -82,6 +95,11 @@ export async function ProductFeaturesPage({ locale, slug }: { locale: Locale; sl
   // neutral regardless of which product page is open.
   const tint = productBrand[slug];
 
+  const railItems: RailItem[] = groups.map((group) => ({
+    id: panelId(group.number),
+    label: group.eyebrow,
+  }));
+
   return (
     <>
       <PageHero
@@ -94,34 +112,43 @@ export async function ProductFeaturesPage({ locale, slug }: { locale: Locale; sl
       />
 
       {/* Scope caveat sits before the capability list, not buried under it. */}
-      <Section tint={tint} tone={bandTone(0)}>
+      <Section tint={tint}>
         <Prose paragraphs={[note]} />
       </Section>
 
-      {groups.map((group, index) => (
-        <Section
-          eyebrow={group.eyebrow}
-          key={group.number}
-          lede={group.body}
-          number={group.number}
-          title={group.title}
-          // +1 because the scope caveat above is the page's first band; the
-          // shared rhythm then keeps sixteen possible capability families
-          // distinguishable while scrolling.
-          tone={bandTone(index + 1)}
-          tint={tint}
-        >
-          {group.items ? <FeatureList items={group.items} /> : null}
-          {group.tags ? <TagList items={group.tags} /> : null}
-        </Section>
-      ))}
+      {/* The palette is set here rather than inherited: this region sits outside
+          any `Section`, which is what normally carries the `--product-*` values. */}
+      <div
+        className="featlayout"
+        style={
+          {
+            "--product-primary": tint.primary,
+            "--product-primary-strong": tint.primaryStrong,
+            "--product-supporting": tint.supporting,
+            "--product-dark": tint.dark,
+          } as React.CSSProperties
+        }
+      >
+        <FeatureRail heading={tNav("allFeatures")} items={railItems} />
+
+        <div className="featpanels">
+          {groups.map((group) => (
+            <section className="featpanel" id={panelId(group.number)} key={group.number}>
+              <p className="featpanel__eyebrow">{group.eyebrow}</p>
+              <h2 className="featpanel__title">{group.title}</h2>
+              {group.body ? <p className="featpanel__lede">{group.body}</p> : null}
+              {group.items ? <FeatureList items={group.items} /> : null}
+              {group.tags ? <TagList items={group.tags} /> : null}
+            </section>
+          ))}
+        </div>
+      </div>
 
       {automation ? (
         <Section
           eyebrow={automation.eyebrow}
           tint={tint}
           title={automation.title}
-          tone={bandTone(groups.length + 1)}
         >
           <FeatureList items={automation.features} />
           {automation.note ? <p className="sec__note">{automation.note}</p> : null}

@@ -1,0 +1,292 @@
+/* ---- Product features: rail + panels ----
+ *
+ * The Features page carries up to fifteen capability families. As a run of
+ * bands there was no way to see the page's shape or reach a family without
+ * scrolling past every one before it, so they sit beside a sticky rail instead.
+ *
+ * This page deliberately does not use the site's alternating band rhythm: a
+ * sticky rail needs one stable ground to sit against, and the full-bleed dark
+ * bands fight a two-column layout. Every other page type keeps the rhythm.
+ */
+
+.featlayout {
+  display: grid;
+  grid-template-columns: 15rem minmax(0, 1fr);
+  gap: var(--space-8);
+  /* Deliberately NOT `align-items: start`. That collapses the rail's cell to its
+     own content height, which becomes the sticky element's containing block, so
+     the rail sticks for one screen and then scrolls away with the page. Stretched
+     to the full row, it travels the whole length of the panels. */
+  align-items: stretch;
+  padding: var(--space-7) 0 var(--space-8);
+}
+
+/* ---- Rail ---- */
+
+.featrail__inner {
+  position: sticky;
+  /* Once the page is scrolled the product bar is the only fixed chrome left at
+     the top, so the offset is its height rather than the header's. `--subnav-h`
+     is published by ProductSubNav and tracks the real height. */
+  top: calc(var(--subnav-h, 61px) + var(--space-5));
+  max-height: calc(100vh - var(--subnav-h, 61px) - var(--space-7));
+  overflow-y: auto;
+  scrollbar-width: thin;
+}
+
+.featrail__heading {
+  margin: 0 0 var(--space-4);
+  padding-bottom: var(--space-3);
+  border-bottom: 1px solid var(--line);
+  font-size: var(--text-caption-sm);
+  font-weight: 600;
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+
+.featrail__list {
+  display: grid;
+  gap: 2px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.featrail__link {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-3) var(--space-4);
+  border-radius: 8px;
+  font-size: var(--text-body);
+  line-height: var(--leading-snug);
+  text-decoration: none;
+  color: var(--ink-soft);
+  transition:
+    color 160ms ease,
+    background-color 160ms ease;
+}
+
+.featrail__icon {
+  display: inline-flex;
+  flex: 0 0 auto;
+  color: var(--ink-soft);
+  transition: color 160ms ease;
+}
+
+.featrail__text {
+  min-width: 0;
+}
+
+.featrail__link:hover,
+.featrail__link:focus-visible {
+  background-color: var(--paper);
+  color: var(--ink);
+}
+
+.featrail__link:hover .featrail__icon,
+.featrail__link:focus-visible .featrail__icon {
+  color: var(--ink);
+}
+
+/*
+ * Active reads as a filled block rather than a marker in the margin, so the
+ * whole row registers as the place you are. The fill is the product colour
+ * thinned into the page ground; `color-mix` degrades to `--paper` where it is
+ * unsupported, which still separates the row from its neighbours.
+ *
+ * Text and icon use `primaryStrong`, not `primary`: the raw primary is too
+ * light to read on a near-white ground for most of the six products. Same
+ * choice as the pinned product bar.
+ */
+/*
+ * The fade runs to genuine transparency, not to a near-white tint.
+ *
+ * Mixing toward `#ffffff` leaves the far end opaque, so the fill stopped dead at
+ * the chip's edge — a hard colour step against the page that reads as a stroke
+ * down the right side. Mixing toward `transparent` makes it an alpha ramp, so
+ * the fill dissolves and the chip has no edge at all.
+ *
+ * No opaque fallback underneath, for the same reason: any flat colour beneath
+ * the ramp reinstates the hard edge. Without `color-mix` the row is still marked
+ * by its weight and its product-coloured label and icon.
+ */
+.featrail__link--active {
+  background-image: linear-gradient(
+    90deg,
+    color-mix(in srgb, var(--product-primary, #2878ff) 20%, transparent) 0%,
+    color-mix(in srgb, var(--product-primary, #2878ff) 6%, transparent) 55%,
+    transparent 100%
+  );
+  color: var(--product-primary-strong, var(--ui-blue));
+  font-weight: 600;
+}
+
+.featrail__link--active .featrail__icon {
+  color: var(--product-primary-strong, var(--ui-blue));
+}
+
+/* ---- Panels ---- */
+
+.featpanels {
+  display: grid;
+  gap: var(--space-8);
+  min-width: 0;
+}
+
+.featpanel {
+  /* Keeps an anchor jump from parking the heading under the fixed product bar. */
+  scroll-margin-top: calc(var(--subnav-h, 61px) + var(--space-6));
+}
+
+.featpanel__eyebrow {
+  margin: 0 0 var(--space-3);
+  font-size: var(--text-caption-sm);
+  font-weight: 600;
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+  color: var(--product-primary-strong, var(--ink-soft));
+}
+
+.featpanel__title {
+  margin: 0 0 var(--space-4);
+  max-width: 24ch;
+  font-family: var(--font-display);
+  font-size: clamp(1.5rem, 2.8vw, 2.125rem);
+  font-weight: 700;
+  line-height: var(--leading-tight);
+  letter-spacing: -0.025em;
+  color: var(--ink);
+}
+
+.featpanel__lede {
+  margin: 0 0 var(--space-5);
+  max-width: 46rem;
+  font-size: var(--text-body-lg);
+  line-height: var(--leading-snug);
+  color: var(--ink-soft);
+}
+
+/*
+ * The cards. `FeatureList` already renders the right markup as a single column;
+ * this is the same rows laid out in a grid, which is all that separates the
+ * site's existing list from the reference's card wall.
+ */
+.featpanels .featlist {
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: var(--space-5) var(--space-6);
+}
+
+.featpanels .featlist__row {
+  border-top-color: var(--line);
+}
+
+/* ---- Narrow screens ----
+ *
+ * Two columns stop working well before the rail becomes unreadable, so it turns
+ * into a horizontally scrolling strip above the panels — the same overflow
+ * pattern the product bar's sections use.
+ */
+@media (max-width: 900px) {
+  /*
+   * Block, not grid. A grid item's sticky range is its own grid area, so a rail
+   * in row one can only travel its own height before it scrolls away — the same
+   * trap as collapsing the rail's cell with `align-items: start`. As an ordinary
+   * child of a tall block the strip sticks for the whole run of panels.
+   */
+  .featlayout {
+    display: block;
+    padding-top: 0;
+  }
+
+  .featrail {
+    position: sticky;
+    top: var(--subnav-h, 61px);
+    z-index: 20;
+    margin: 0 calc(var(--space-5) * -1) var(--space-6);
+    /*
+     * No horizontal padding: the strip runs to both screen edges so a chip that
+     * is partly scrolled off is cut at the edge of the screen and reads as more
+     * to scroll. Padded, chips were clipped 24px short of the edge, which left a
+     * few pixels of the next chip and its border standing on their own — it
+     * looked like a rendering fault rather than an affordance.
+     */
+    padding: var(--space-3) 0;
+    /* Opaque: the panels scroll underneath it. */
+    background-color: var(--bg);
+    border-bottom: 1px solid var(--line);
+  }
+
+  .featrail__inner {
+    position: static;
+    max-height: none;
+    overflow: visible;
+  }
+
+  /* The strip is self-evident at this width, and the heading costs a line of
+     height on a bar that is pinned over the content. */
+  .featrail__heading {
+    display: none;
+  }
+
+  .featrail__list {
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+    gap: var(--space-2);
+    overflow-x: auto;
+    scrollbar-width: none;
+    /* The inset moves here from the rail, so the first and last chips still
+       clear the screen edge while the ones between can scroll under it. */
+    padding-inline: var(--space-5);
+    scroll-padding-inline: var(--space-5);
+    /*
+     * Fades both ends. A chip scrolled almost fully off shows nothing but its
+     * own 1px border, which stands next to the selected chip and reads as a
+     * stroke on it. Fading the edges dissolves a clipped chip instead of ending
+     * it on a hard line, and signals there is more to scroll.
+     */
+    -webkit-mask-image: linear-gradient(
+      90deg,
+      transparent 0,
+      #000 var(--space-5),
+      #000 calc(100% - var(--space-6)),
+      transparent 100%
+    );
+    mask-image: linear-gradient(
+      90deg,
+      transparent 0,
+      #000 var(--space-5),
+      #000 calc(100% - var(--space-6)),
+      transparent 100%
+    );
+  }
+
+  .featrail__list::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Squared, not a pill: the chips carry an icon and a multi-word label, and a
+     999px radius on a box that wide reads as a lozenge rather than a control.
+     Buttons in this project set their own 6px for the same reason. */
+  .featrail__link {
+    border-radius: 8px;
+    border: 1px solid var(--line);
+    padding: var(--space-2) var(--space-4);
+    white-space: nowrap;
+  }
+
+  /* The selected chip keeps the same neutral stroke as the others, so the whole
+     strip reads as one set of controls and only the fill marks the current one. */
+  .featrail__link--active {
+    border-color: var(--line);
+  }
+
+  /* Clear the sticky chip strip too, not just the product bar. `--featrail-h`
+     is published by FeatureRail and only exists at this width. */
+  .featpanel {
+    scroll-margin-top: calc(
+      var(--subnav-h, 61px) + var(--featrail-h, 0px) + var(--space-5)
+    );
+  }
+}
